@@ -20,7 +20,7 @@ In my past experience, the infrastructure used to deliver the software has tende
 
 I say tended to be, because the notion of a business managed “rules engine” would sometimes lift the orchestration of lower level code to the hands of a business user, often in a third-party tool outside your control.
 
-Concerns raised by the use of commercial rules engines tend to center around the weakening of the business domain model by fragmenting the business logic between regular code and rules.
+Concerns raised by the use of commercial rules engines tend to centre around the weakening of the business domain model by fragmenting the business logic between regular code and rules.
 
 I see this akin to fragmenting logic between regular code and database stored procedures, or regular code and a distant JavaScript-driven web front end.
 
@@ -44,7 +44,7 @@ But now, like the commercial rules engine, those business decisions (state trans
 
 You can no longer test business facing functionality with the same level of process isolation.
 
-The best you can do is turn this into a locally run integration test using AWS’ SAM cli and docker images that simulate what AWS will do on their network. Nanoseconds for function or method calls turn into milliseconds for http transactions between docker images and your computer.
+Maybe the best you can do is turn this into a locally run integration test using AWS’ SAM cli and docker images that simulate what AWS will do on their network. Nanoseconds for function or method calls turn into milliseconds for http transactions between docker images and your computer.
 
 I’m left thinking of the same concerns we heard around the notion of rules engines. A fragmented domain model, now coupled to a vendor.
 
