@@ -6,7 +6,7 @@ published: true
 
 Saw [this post](http://www.boingboing.net/2007/11/07/mlb-rips-off-fans-wh.html) on Boing Boing today.
 
-<shaking head>
+*shaking head*
 
 To-date I haven't had a problem with DRM'd content that I've purchased online (I have only bought content through iTunes). Of course in Canada we can't buy movies or TV shows on iTunes (grumble grumble) so perhaps I'm not a frequent enough user to get burned.
 
