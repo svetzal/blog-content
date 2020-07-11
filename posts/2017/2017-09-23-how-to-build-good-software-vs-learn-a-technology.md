@@ -2,6 +2,7 @@
 title: "How To Build Good Software vs. Learn a Technology"
 date: "2017-09-23"
 published: true
+image: images/how-to-build-good-software.jpg
 ---
 
 ## The Problem

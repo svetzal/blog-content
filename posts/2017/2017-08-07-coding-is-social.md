@@ -8,6 +8,8 @@ imageAlt: Auditorium with people at tables coding games
 
 This past weekend, I took part in the [PTBOGameJam03](http://ptbogamejam.com) event in Peterborough, Ontario, an event that has steadily grown since August 2016. In case you don’t know, a Game Jam is an event where people come and work alone or in teams to build a video game, start to finish. Art, sound, code, gameplay, all of it.
 
+![](images/IMG_0067.jpg)
+
 And I have to give props to the organizers of PTBOGameJam – bringing in over 60 developers, on a long weekend in August, in Peterborough Ontario (1.5h North East of Toronto) is no small feat!
 
 I’ve written on the theme of social coding many times before, and it is worth repeating. Everywhere I look I see the stereotypical depiction of a software developer. Closed off from the world, socially inept, stick 'em in a back room and slide pizza under the door, don’t let 'em talk to the customers, feed 'em requirements and they churn out code, they’re a “resource” so just hire more of 'em when you need to, and if you can get ’em cheaper elsewhere all the better. I’ve also written a lot about the commoditization of software developers and other creative professionals.
@@ -28,4 +30,4 @@ When we cut ourselves off from each other, the electricity can’t flow. When we
 
 People who denigrate the agile movement by reducing it to the removal of process and the encouragement of chaos, have failed to see the unifying effect of purpose. This past weekend's PTBOGameJam was a testament to how a common goal, community, a seemingly impossible timeline, and a genuine internal desire to achieve brings out greatness in people.
 
-\*Photo credit, [Rick Dolishny (@rdolishny)](https://twitter.com/rdolishny)
+*Photo credit, [Rick Dolishny (@rdolishny)](https://twitter.com/rdolishny)

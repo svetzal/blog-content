@@ -1,8 +1,9 @@
 ---
 title: "In Memory of Nancy Diamond"
 date: "2017-02-12"
-image: images/nancy-and-stacey.jpg"
 published: true
+image: images/nancy-and-stacey.jpg
+imageAlt: Nancy Diamond, left, and Stacey Vetzal, right 
 ---
 
 When I was growing up, I didn't have a lot of friends. I had a small circle of friends in high school, and through this small circle of friends we began to congregate at one house, where there was space for us and we were always welcomed. When I first met Nancy, I thought she was "the cool mom", though she'd been just as happy with keeping us away from the kinds of trouble teenagers tend to find I think. That was so long ago, most of my memories are just feelings now.
