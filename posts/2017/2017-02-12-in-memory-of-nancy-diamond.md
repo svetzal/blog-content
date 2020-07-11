@@ -1,7 +1,7 @@
 ---
 title: "In Memory of Nancy Diamond"
 date: "2017-02-12"
-coverImage: "dsc_0118.jpg"
+image: images/nancy-and-stacey.jpg"
 published: true
 ---
 
