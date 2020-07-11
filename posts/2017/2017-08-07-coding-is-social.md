@@ -2,9 +2,11 @@
 title: "Coding Is Social"
 date: "2017-08-07"
 published: true
+image: images/IMG_0068.jpg
+imageAlt: Auditorium with people at tables coding games
 ---
 
-[![](images/IMG_0067-300x169.jpg)](https://codingculture.io/wp-content/uploads/2017/08/IMG_0067.jpg)This past weekend, I took part in the [PTBOGameJam03](http://ptbogamejam.com) event in Peterborough, Ontario, an event that has steadily grown since August 2016. In case you don’t know, a Game Jam is an event where people come and work alone or in teams to build a video game, start to finish. Art, sound, code, gameplay, all of it.
+This past weekend, I took part in the [PTBOGameJam03](http://ptbogamejam.com) event in Peterborough, Ontario, an event that has steadily grown since August 2016. In case you don’t know, a Game Jam is an event where people come and work alone or in teams to build a video game, start to finish. Art, sound, code, gameplay, all of it.
 
 And I have to give props to the organizers of PTBOGameJam – bringing in over 60 developers, on a long weekend in August, in Peterborough Ontario (1.5h North East of Toronto) is no small feat!
 

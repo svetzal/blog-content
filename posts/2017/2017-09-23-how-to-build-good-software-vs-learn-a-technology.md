@@ -18,17 +18,18 @@ I think we can do better.
 
 ## The Symptom
 
-Consider a React component that is a simple RPN calculator, here is some of the code (sorry for the bad JSX formatting):
+Consider a React component that is a simple RPN calculator, here is some of the code:
 
+```jsx
 class Calculator extends React.Component {
   constructor() {
     super();
-    this.state = {error: false, values: \[\], input: ''};
+    this.state = {error: false, values: [], input: ''};
     this.inputDidChange = this.inputDidChange.bind(this);
   }
 
   get operations() {
-    return \[ '+', '-', '\*', '/' \];
+    return [ '+', '-', '*', '/' ];
   }
 
   userDidPressEnter() {
@@ -44,7 +45,7 @@ class Calculator extends React.Component {
   }
 
   userDidPressClear() {
-    this.setState({values: \[\], error: false});
+    this.setState({values: [], error: false});
   }
 
   addToValuesIfNumeric(input) {
@@ -58,12 +59,12 @@ class Calculator extends React.Component {
   }
 
   inputDidChange(event) {
-    let newValue = event.target.value.replace(/\[^0-9\\.\]/g, '');
+    let newValue = event.target.value.replace(/[^0-9\\.]/g, '');
     this.setState({input: newValue});
   }
 
   calculate() {
-    let stack = \[\];
+    let stack = [];
     this.state.values.forEach(el => {
       if (typeof(el) === 'number') stack.push(el);
       else {
@@ -82,8 +83,8 @@ class Calculator extends React.Component {
             case '/':
               stack.push(a / b);
               break;
-            case '\*':
-              stack.push(a \* b);
+            case '*':
+              stack.push(a * b);
               break;
           }
         }
@@ -126,18 +127,20 @@ class Calculator extends React.Component {
 }
 
 ReactDOM.render(<Calculator/>, document.getElementById('app'));
+```
 
 ## Cleaning Up
 
 Now let’s thin this component out to just the React code that delegates to an extracted RPN implementation:
 
+```js
 class RPN {
   constructor() {
-    this.values = \[\];
+    this.values = [];
   }
 
   get operations() {
-    return \[ '+', '-', '\*', '/' \];
+    return [ '+', '-', '*', '/' ];
   }
 
   addToValuesIfNumeric(input) {
@@ -152,7 +155,7 @@ class RPN {
 
   calculate() {
     console.log(this.values);
-    let stack = \[\];
+    let stack = [];
     this.values.forEach(el => {
       if (typeof(el) === 'number') stack.push(el);
       else {
@@ -171,8 +174,8 @@ class RPN {
             case '/':
               stack.push(a / b);
               break;
-            case '\*':
-              stack.push(a \* b);
+            case '*':
+              stack.push(a * b);
               break;
           }
         }
@@ -188,7 +191,7 @@ class Calculator extends React.Component {
   constructor() {
     super();
     this.rpn = new RPN();
-    this.state = {error: false, values: \[\], input: ''};
+    this.state = {error: false, values: [], input: ''};
     this.inputDidChange = this.inputDidChange.bind(this);
   }
 
@@ -209,11 +212,11 @@ class Calculator extends React.Component {
   }
 
   userDidPressClear() {
-    this.setState({values: \[\], error: false});
+    this.setState({values: [], error: false});
   }
 
   inputDidChange(event) {
-    let newValue = event.target.value.replace(/\[^0-9\\.\]/g, '');
+    let newValue = event.target.value.replace(/[^0-9\\.]/g, '');
     this.setState({input: newValue});
   }
 
@@ -250,16 +253,18 @@ class Calculator extends React.Component {
 }
 
 ReactDOM.render(<Calculator/>, document.getElementById('app'));
+```
 
 Look at how it has become clearer, the boundaries between what is React specific and what is application logic?
 
 Now, if we know what the RPN class does, and we just want to learn how to use React, we can shorten the example to just:
 
+```js
 class Calculator extends React.Component {
   constructor() {
     super();
     this.rpn = new RPN();
-    this.state = {error: false, values: \[\], input: ''};
+    this.state = {error: false, values: [], input: ''};
     this.inputDidChange = this.inputDidChange.bind(this);
   }
 
@@ -280,11 +285,11 @@ class Calculator extends React.Component {
   }
 
   userDidPressClear() {
-    this.setState({values: \[\], error: false});
+    this.setState({values: [], error: false});
   }
 
   inputDidChange(event) {
-    let newValue = event.target.value.replace(/\[^0-9\\.\]/g, '');
+    let newValue = event.target.value.replace(/[^0-9\\.]/g, '');
     this.setState({input: newValue});
   }
 
@@ -319,6 +324,7 @@ class Calculator extends React.Component {
     );
   }
 }
+```
 
 ## Beyond The Trivial
 

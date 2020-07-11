@@ -2,11 +2,14 @@
 title: "The Thing You Need On Your Radar"
 date: "2017-09-02"
 published: true
+image: images/radar.jpg
+imageAlt: Radar screen
 ---
 
 I was talking to a colleague yesterday, smart guy, basically been focusing on systems level architecture and is maneuvering his employer in a good direction. After my session that day on agile technical practices, I'd left their whiteboard cluttered with my stuff and two of my leftover words drew attention and helped him drive his topic a bit more home.
 
-[![](https://codingculture.io/wp-content/uploads/2017/09/fullsizeoutput_2641-300x300.jpeg)](https://codingculture.io/wp-content/uploads/2017/09/fullsizeoutput_2641.jpeg)"Tight Coupling."
+![](images/every-tight-coupling.jpg)
+*Tight Coupling.*
 
 Afterwards, he tagged me and brought it up, I mentioned that in my next session I would be talking about the Last Responsible Moment, excited that our work was dovetailing so nicely.
 
@@ -24,7 +27,9 @@ Here was the surprise, I said that if they'd been following good technical pract
 
 He pushed on the deferring the abstraction point.
 
-[![](https://codingculture.io/wp-content/uploads/2017/09/fullsizeoutput_2643-1024x1024.jpeg)](https://codingculture.io/wp-content/uploads/2017/09/fullsizeoutput_2643.jpeg)I said that deferring the abstraction was likely a violation of the Single Responsibility Principle and a breakdown in cohesion because they were mixing high-level business logic with low-level database calls.
+![](images/cone-of-uncertainty.jpg)
+
+I said that deferring the abstraction was likely a violation of the Single Responsibility Principle and a breakdown in cohesion because they were mixing high-level business logic with low-level database calls.
 
 And bang, I gave him the language he needed to further progress what he is trying to accomplish.
 
