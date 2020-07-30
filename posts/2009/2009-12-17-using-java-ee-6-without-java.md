@@ -16,8 +16,7 @@ Maven needs 2 blocks in the POM (pom.xml) to be able to build your Groovy code -
 
 The service bean looks like this:
 
-`
-
+```
 @ManagedBean(name="groovyBean")
 @RequestScoped
 class GroovyService {
@@ -27,13 +26,14 @@ class GroovyService {
         "Hello, Groovy World!"
     }
 }
-
-`
+```
 
 Notice that in Groovy the Java EE 6 annotations look exactly the same as in Java. The class doesn't illustrate any of the power of the Groovy language itself but as long as you use "bean patterns" - ie. get / set method names - you'll have no problem interfacing with your service from JSF.
 
 Referencing the service method in JSF is as simple as:
 
+```
 <p>It says - #{groovyBean.message}</p>
+```
 
 And that special bonus? Using "ab" to measure pure HTTP transactional performance, under Glassfish 3 my simple page does over a THOUSAND requests per second. Yeah, I know, benchmarks suck. Stay tuned and we'll slow this down a whole lot by tackling some more interesting things like database connectivity and transactional services.
