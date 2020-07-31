@@ -6,17 +6,18 @@ published: true
 
 I drew this picture to illustrate a few ideas, and it’s long overdue for an explanation beyond the few folks at whom I’ve stood in front of and waved my arms.
 
-\[caption id="attachment\_437" align="aligncenter" width="300"\][![](images/IMG_0036-300x300.png)](https://codingculture.io/wp-content/uploads/2017/07/IMG_0036.png) Note to the reader: This isn't a cartesian graph, there is no X and Y axis, despite the way I drew it... In future iterations I will draw the diagonal line from top-left to bottom right to more closely align that interpretation with my intent.\[/caption\]
+![](images/IMG_0036-300x300.png)
+Note to the reader: This isn't a cartesian graph, there is no X and Y axis, despite the way I drew it... In future iterations I will draw the diagonal line from top-left to bottom right to more closely align that interpretation with my intent.
 
 So let’s decompose it a little, starting with this.
 
-[![](images/IMG_0024-300x300.png)](images/IMG_0024.png)
+![](images/IMG_0024-300x300.png)
 
 As a coach, or a trainer, or really as a human, we have only so much time in our day. We can choose to spend all day with a single person, divide our day and spend an hour with each of 8 people, or half an hour with 16 people.
 
 So simply put, at the top of the picture you’re spending larger amounts of time with fewer people, and at the bottom of the picture, you’re spending smaller amounts of time with more people.
 
-[![](images/IMG_0026-300x300.png)](images/IMG_0026.png)
+[](images/IMG_0026-300x300.png)
 
 So we strategize on how to reach more people.
 
@@ -26,7 +27,7 @@ Our communication style becomes more one way, less interactive, but we can build
 
 At the bottom of the picture, we take this to the extreme. We write a book, a blog post, do a webinar, assemble some courseware. We can now speak to our widest audience because each incremental person doesn’t require additional attention. Feedback is limited, and no longer in real-time.
 
-[![](images/IMG_0027-300x300.png)](images/IMG_0027.png)
+![](images/IMG_0027-300x300.png)
 
 Now let’s layer a learning model on top of it, and this is where it gets interesting. I’m most familiar with [Dreyfus’ model of skills acquisition](https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition), so I will use that terminology.
 
@@ -42,7 +43,7 @@ Things are this way for many reasons, particularly in the lower rungs of the lad
 
 Also, naturally, there are fewer people nearer the top of the picture than nearer the bottom, so we automatically have a system with a distributed means of reaching people effectively at every level. The many Advanced Beginners can teach rules to Novices, for example, as long as their learning path aligns towards the experts’ understanding.
 
-[![](images/IMG_0028-300x300.png)](images/IMG_0028.png)
+![](images/IMG_0028-300x300.png)
 
 And finally we’re at the full diagram, illustrating people at every level contributing to the overall learning of the system or organization.
 
