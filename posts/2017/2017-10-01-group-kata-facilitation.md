@@ -2,17 +2,20 @@
 title: "Group Kata Facilitation"
 date: "2017-10-01"
 published: true
+tags: ["facilitation", "coaching", "pattern"]
 ---
 
 This is my fall-back group format when facilitating kata.
 
-> Timeframe: **60m total - 45-50m exercise, 10-15m retrospective** Group Size: **6-16 participants (3-8 pairs)** Room Setup: **one laptop per pair, optional projector or TV for kata description**
+> Timeframe: **60m total - 45-50m exercise, 10-15m retrospective**<br>
+> Group Size: **6-16 participants (3-8 pairs)**<br>
+> Room Setup: **one laptop per pair, optional projector or TV for kata description**
 
 ## Choosing a Kata
 
 Choose your kata ahead of time, and come in prepared with it. A projector or TV with the kata description shown throughout the session can be a helpful reference. My favourite place for kata ideas is Dave Thomas' [CodeKata](http://codekata.com) site.
 
-There are some helpful technologies out there too, if the team wants to explore a new programming language or test framework then [cyber-dojo](http://cyber-dojo.org) is a great zero-setup web based environment with which to start. _If you're doing this within an organization, I recommend supporting the [cyber-dojo Foundation](http://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html) who assembled and maintain the technologies._
+There are some helpful technologies out there too, if the team wants to explore a new programming language or test framework then [cyber-dojo](http://cyber-dojo.org) is a great zero-setup web based environment with which to start. If you're doing this within an organization, I recommend supporting the [cyber-dojo Foundation](http://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html) who assembled and maintain the technologies._
 
 Any kata will do, though when starting a practice regime with a team [I like to focus on simpler code katas like Fizzbuzz](https://codingculture.io/2017/05/13/worthiness-fizzbuzz-kata/). I find it useful to start from a baseline, uncover some assumptions, and help the pairs focus on their approach rather than solving a puzzle.
 
@@ -88,9 +91,9 @@ Warning: This will stress folks' creativity, and can lead to much laughter!
 
 While doing Ping Pong, count the number of keystrokes typed to pass a test. Who got the lowest score?
 
-#### Kata Chain
+#### Pair Chain
 
-[A group kata exercise, described here](https://codingculture.io/2017/10/01/my-fishbowl-group-kata-exercise/).
+[A group kata exercise, described here](2017-10-01-pair-chain-exercise.md).
 
 ## During The Kata
 

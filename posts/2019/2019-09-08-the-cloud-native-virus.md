@@ -2,6 +2,7 @@
 title: "The Cloud Native Virus"
 date: "2019-09-08"
 published: true
+tags: ["architecture", "design", "cloud"]
 ---
 
 Think about good application design.
