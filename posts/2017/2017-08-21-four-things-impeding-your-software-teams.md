@@ -2,7 +2,7 @@
 title: "Four Things Impeding Your Software Teams"
 date: "2017-08-21"
 published: true
-tags: ["business"]
+tags: ["business", "sales"]
 ---
 
 In the beginning, teams tend to be able to deliver working software with little friction. In fact, developers tend to love “green field” projects in which they get to start again with a blank slate.

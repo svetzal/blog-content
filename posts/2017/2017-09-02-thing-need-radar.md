@@ -4,7 +4,7 @@ date: "2017-09-02"
 published: true
 image: images/radar.jpg
 imageAlt: Radar screen
-tags: ["coaching", "design"]
+tags: ["coaching", "design", "sales"]
 ---
 
 I was talking to a colleague yesterday, smart guy, basically been focusing on systems level architecture and is maneuvering his employer in a good direction. After my session that day on agile technical practices, I'd left their whiteboard cluttered with my stuff and two of my leftover words drew attention and helped him drive his topic a bit more home.
