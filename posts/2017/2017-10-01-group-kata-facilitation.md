@@ -7,8 +7,8 @@ tags: ["facilitation", "coaching", "pattern"]
 
 This is my fall-back group format when facilitating kata.
 
-> Timeframe: **60m total - 45-50m exercise, 10-15m retrospective**<br>
-> Group Size: **6-16 participants (3-8 pairs)**<br>
+> Timeframe: **60m total - 45-50m exercise, 10-15m retrospective**
+> Group Size: **6-16 participants (3-8 pairs)**
 > Room Setup: **one laptop per pair, optional projector or TV for kata description**
 
 ## Choosing a Kata

@@ -9,8 +9,8 @@ When I facilitate a kata session with a group of developers, sometimes I like to
 
 In my experience, this exercise works well with 5-15 participants.
 
-> Timeframe: **60m total - 45-50m exercise, 10-15m retrospective**<br>
-> Group Size: **5-15 participants**<br>
+> Timeframe: **60m total - 45-50m exercise, 10-15m retrospective**
+> Group Size: **5-15 participants**
 > Room Setup: **Single computer on projector at front of room, IDE loaded and ready with empty or template project**
 
 Choose a moderate code kata like Bowling or Gilded Rose. FizzBuzz is too simple, we want to stress both solving the problem as well as the approach to solving the problem.
