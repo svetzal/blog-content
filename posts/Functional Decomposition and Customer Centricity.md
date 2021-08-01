@@ -5,8 +5,6 @@ published: true
 tags: ["business", "design"]
 ---
 
-# Functional Decomposition and Customer Centricity
-
 When we use Functional Decomposition to break down efforts on a software development project, we work through how a system needs to work in order to accomplish some technical capability.
 
 ## Technology and Technologists

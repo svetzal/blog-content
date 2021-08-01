@@ -4,8 +4,6 @@ date: "2021-07-29"
 published: false
 ---
 
-# Scientific Management
-
 In 1909, Frederick Taylor published a paper entitled The Principles of Scientific Management. At this time in history, things got made by artisans. It required a great deal of time for the artisan to build a thing, especially complex machines. Ironically, the “rule of thumb”, the common sense these artisans applied, was not so common. The products created varied greatly in price and quality.
 
 Taylor proposed that by leveraging the widely available generally unskilled labour force, you could get things done faster and more efficiently. The model was that someone who knew the craft could break down the work needed so that even those who didn’t know the craft could do the simple operations. He believed that people were motivated by money, and he promoted the idea that “a fair day’s pay for a fair day’s work” would inspire people to work in an organization that operated in this way.
