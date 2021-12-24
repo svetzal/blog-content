@@ -188,7 +188,7 @@ My stock on this run is African Padauk, a moderately hard wood. I'll use a 0.5mm
 cnc-gen-face -w 66 -l 260 -v 1 --stepDownRate 0.5 -z 4.0 -o penciltray-bottom.cnc
 ```
 
-![](Pastedimage20211213080448.png)
+![](images/snapmaker/Pastedimage20211213080448.png)
 _My output from installing the cnc-gen tool and generating the surfacing toolpath, I'm on a Mac so your output may be a little different - just make sure you have a recent version of NodeJS installed_
 
 This cnc-gen command will generate g-code that will surface 66mm x 260mm with the origin in the centre, where we have homed the machine.
