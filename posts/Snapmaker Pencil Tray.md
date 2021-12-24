@@ -1,6 +1,8 @@
 ---
+title: "Making a Small Pencil Tray"
 date: "2021-12-12"
 published: true
+tags: ["making", "cnc"]
 ---
 
 # Making a Small Pencil Tray
