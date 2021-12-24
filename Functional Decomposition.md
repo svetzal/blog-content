@@ -6,4 +6,4 @@ published: false
 # Functional Decomposition
 
 - [[When I Gave Up on CRUD]]
-- [[Functional Decomposition and Customer Centricity]]
+- [[functional_decomposition_and_customer_centricity]]
