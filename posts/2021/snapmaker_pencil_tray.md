@@ -11,7 +11,7 @@ I wanted to write this detailed walk-through to try and lay out visually some of
 
 This is the finished piece:
 
-![[images/snapmaker/Pasted image 20211213085510.png]]
+![[images/snapmaker/Pastedimage20211213085510.png]]
 _This one is carved from African Padauk, a beautifully coloured medium hard wood with lots of character._
 
 ![[images/snapmaker/Pasted image 20211213085500.png]]
