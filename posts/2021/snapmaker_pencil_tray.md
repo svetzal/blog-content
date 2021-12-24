@@ -182,7 +182,7 @@ The pencil tray design is 50.8mm x 203.2mm, so if we surface 66mm x 260mm, we wi
 ![](images/snapmaker/Pastedimage20211205154539.png)
 _My design in Fusion 360 is 50.8mm x 203.2mm._
 
-My stock on this run is African Padauk, a moderately hard wood. I'll use a 0.5mm stepdown (cuts 0.5mm per pass), and a 1mm stepover (cuts with about 1/3 of the flat-end milling bit diameter per horizontal pass), and generate all the surfacing passes to a depth of 3.5mm (which will stop 20mm above the surface of my wasteboard).
+My stock on this run is African Padauk, a moderately hard wood. I'll use a 0.5mm stepdown (cuts 0.5mm per pass), and a 1mm stepover (cuts with about 1/3 of the flat-end milling bit diameter per horizontal pass), and generate all the surfacing passes to a depth of 4mm (remember I homed at 24mm above the wasteboard, so surfacing down 4mm will stop 20mm above the surface of my wasteboard).
 
 ```
 cnc-gen-face -w 66 -l 260 -v 1 --stepDownRate 0.5 -z 4.0 -o penciltray-bottom.cnc
