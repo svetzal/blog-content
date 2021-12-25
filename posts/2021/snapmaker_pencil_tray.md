@@ -15,11 +15,11 @@ This is the finished piece:
 _This one is carved from African Padauk, a beautifully coloured medium hard wood with lots of character._
 
 ![](images/snapmaker/Pastedimage20211213085500.png)
-_At first when I posed pictures, people had no idea what this was! So I took another picture to illustrate..._
+_At first when I posted pictures, people had no idea what this was! So I took another picture to illustrate..._
 
 Please bear with me through this article, I am early enough on this journey that I remember what it was like to just sit there scratching my head trying to figure out how I could even start, or trying to interpret something someone was telling me.
 
-I know this post is really, really long.
+So I wrote, a lot, and I know this post is really, really long.
 
 My hope is that, if you're a beginner, this will give you a sense of all this so that you're more confident on your own learning journey. You'll break things and make mistakes, like I did, but keep at it! Your confidence will build, you'll learn a million things, and you'll open up a whole new world of making as you do!
 
@@ -49,7 +49,7 @@ _I have no idea why the phone-holder test project plunged into my wasteboard lik
 
 Eventually, inspired by the community, I slowly took on a variety of projects. I learned so much every step of the way.
 
-Let's dig in to my journey on this project.
+Let's dig in to my journey on this project, the pencil tray.
 
 # 1. Design
 
@@ -58,6 +58,8 @@ I don't mean this to be a Fusion 360 tutorial at all, but I wanted to show the b
 Folks who know Fusion 360 may cringe at my paths that aren't properly anchored, or perhaps my odd choice of reference surfaces here and there. All I can say is, you were learning too once! This is just a hobby for me, I'm always playing the balance between getting something accomplished and learning "the right way" to do something.
 
 If you're getting started, if I can offer any advice, is please don't get too hung up on what's "the right way" to do something, and especially don't let that hold you back! The most important thing is to start making, and keep on making. Every project gets better than the last.
+
+I got my start in Fusion 360 by watching a lot of videos from [Lars Christensen](https://www.youtube.com/user/cadcamstuff), and [Kevin Kennedy](https://www.youtube.com/user/TheKHaug). and spending hours and hours in it making my own mistakes. Fusion 360 is free for home hobbyists, you have to register. You can only have 10 "editable" projects at a time, but it's OK, I make mine read-only when I'm done with them, and haven't felt restricted. _Note: I do not have the 4th axis attachment from Snapmaker, if you do and want to build toolpaths for it in Fusion 360 you must upgrade to a paid version._
 
 ![](images/snapmaker/Pastedimage20211205154647.png)
 _I started from a basic sketch with the length and height, if you're wondering why 50.8mm x 203.2mm, that's just 2" x 8"._
@@ -75,7 +77,7 @@ _I rounded the outer corners_
 _and I rounded the inner corners_
 
 ![](images/snapmaker/Pastedimage20211205154947.png)
-_I created another sketch from the front surface, projected a couple references edges onto it and drew a bezier curve so it would be easier for my pudgy fingers to grab a pencil. Yes, I know that curve is not anchored (it's blue, not black), trust me I tried, one day I'll figure it out. Maybe when I make this model parametric._
+_I created another sketch from the front surface, projected a couple references edges onto it and drew a bezier curve so it would be easier for my pudgy fingers to grab a pencil. Yes, I know that curve is not anchored (it's blue, not black), trust me I tried, one day I'll figure it out. Maybe one day if I make this model parametric._
 
 ![](images/snapmaker/Pastedimage20211205155034.png)
 _I extruded the area above the bezier curve to cut out the curve from the component._
@@ -104,7 +106,7 @@ _Knowing my stock was about 60mm wide and my model was 50.8mm, I added 5mm to th
 I have found it convenient to pick up "large" boxes of 4/4 Mixed Hardwood Offcuts from [KJP Select Hardwoods](https://kjpselecthardwoods.com). These are rough milled (unfinished, so the edges are not smooth nor squared) 22-24mm thick, about 12" long and a variety of widths.
 
 ![](images/snapmaker/17904416-752A-4CB3-9472-8620BDF292D8.jpg)
-_this is what's left in my current box of 4/4 Mixed Hardwood Offcuts from KJP Select Hardwoods_
+_This is what's left in my current box of 4/4 Mixed Hardwood Offcuts from KJP Select Hardwoods_
 
 The rough stock is not perfectly squared, so the first thing I do is set up a reference face by milling a clean flat top, cutting it down to a target thickness of 20mm.
 
@@ -182,7 +184,7 @@ The pencil tray design is 50.8mm x 203.2mm, so if we surface 66mm x 260mm, we wi
 ![](images/snapmaker/Pastedimage20211205154539.png)
 _My design in Fusion 360 is 50.8mm x 203.2mm._
 
-My stock on this run is African Padauk, a moderately hard wood. I'll use a 0.5mm stepdown (cuts 0.5mm per pass), and a 1mm stepover (cuts with about 1/3 of the flat-end milling bit diameter per horizontal pass), and generate all the surfacing passes to a depth of 4mm (remember I homed at 24mm above the wasteboard, so surfacing down 4mm will stop 20mm above the surface of my wasteboard).
+My stock on this run is African Padauk, a moderately hard wood. I'll use a 0.5mm stepdown (cuts 0.5mm per pass), and a 1mm stepover (cuts with about 1/3 of the flat-end milling bit diameter per horizontal pass), and generate all the surfacing passes to a depth of 4mm (remember I homed at 24mm above the wasteboard, so surfacing down 4mm will stop 20mm above the surface of my wasteboard). The cnc-gen tools assume a default work speed of 400mm/m and uses the machine's default "Rapid Move" jog speed which I think is 3000mm/m.
 
 ```
 cnc-gen-face -w 66 -l 260 -v 1 --stepDownRate 0.5 -z 4.0 -o penciltray-bottom.cnc
