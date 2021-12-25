@@ -234,12 +234,12 @@ _Nicely trimmed, the whole stock is now 20mm high, with one flat milled face to 
 
 Now it's time to mount the stock, milled side down, so that we can start running the CNC toolpaths for the top of the pencil tray.
 
-Because the piece was re-mounted, the new mounting position shifted the X and Y for the centre of the piece, but the Z height is still the same. I scored the stock with diagonal lines to find the centre.
+Because the piece was re-mounted, the new mounting position shifted the X and Y for the centre of the piece, so we'll have to re-home it. We can also move the Z home down 4mm from 24mm off the wasteboard to 20mm, the new height of the stock. I scored the stock with diagonal lines to find the new X-Y centre.
 
 ![](images/snapmaker/Pastedimage20211213170704.png)
 _The trimmed stock, fastened down, with diagonal lines to set the X and Y work origin against._
 
-Then I jogged the Z up 1mm above the origin, set the bit at the intersection of the two diagonal lines, and set the X and Y work origin.
+Then I moved the Z position down to -4mm to set the new Z work origin. I raised it an extra mm so I wouldn't accidentally bump the stock, and then found the intersection of the two diagonal lines in order to set the X and Y work origin.
 
 ![](images/snapmaker/Pastedimage20211213170708.png)
 _Re-setting the X and Y work origin._
