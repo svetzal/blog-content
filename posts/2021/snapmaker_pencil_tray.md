@@ -329,5 +329,4 @@ _Fusion 360 shows the remaining material after doing the cut-out._
 _Looks like my wasteboard is no longer perfectly aligned, a bit of variance as you can see where it cut into the wasteboard on the right but barely grazed it on the left. Not sure when this happened, but resurfacing the wasteboard is easy. This means the left side of the tray will be a bit thicker on the bottom. Nobody's going to notice!_
 
 # 9. Sanding and Oiling
-
-
+Hope to have this section finished soon.
