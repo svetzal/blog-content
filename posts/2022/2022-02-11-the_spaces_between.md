@@ -1,3 +1,9 @@
+---
+title: "The Spaces Between"
+date: "2022-02-11"
+published: true
+tags: ["coaching", "design"]
+---
 # The Spaces Between
 
 On teams that are newly cross-functional, or in places with waterfallish reflexes, the coaching opportunities lie in helping them find ways to combine their skills. Pair two roles and challenge them. Encourage them to explore sooner than they’d normally individually work.
