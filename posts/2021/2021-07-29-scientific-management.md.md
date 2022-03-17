@@ -1,6 +1,7 @@
 ---
 title: "Scientific Management"
 date: "2021-07-29"
+tags: ["agile", "business"]
 ---
 
 In 1909, Frederick Taylor published a paper entitled The Principles of Scientific Management. At this time in history, things got made by artisans. It required a great deal of time for the artisan to build a thing, especially complex things. Ironically, the “rule of thumb”, the common sense these artisans applied, was not so common. The products created varied greatly in price and quality.

@@ -2,7 +2,7 @@
 title: "The Spaces Between"
 date: "2022-02-11"
 published: true
-tags: ["coaching", "design"]
+tags: ["agile", "coaching", "design"]
 ---
 # The Spaces Between
 
