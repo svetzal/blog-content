@@ -3,13 +3,13 @@ title: "Scientific Management"
 date: "2021-07-29"
 ---
 
-In 1909, Frederick Taylor published a paper entitled The Principles of Scientific Management. At this time in history, things got made by artisans. It required a great deal of time for the artisan to build a thing, especially complex machines. Ironically, the “rule of thumb”, the common sense these artisans applied, was not so common. The products created varied greatly in price and quality.
+In 1909, Frederick Taylor published a paper entitled The Principles of Scientific Management. At this time in history, things got made by artisans. It required a great deal of time for the artisan to build a thing, especially complex things. Ironically, the “rule of thumb”, the common sense these artisans applied, was not so common. The products created varied greatly in price and quality.
 
 Taylor proposed that by leveraging the widely available generally unskilled labour force, you could get things done faster and more efficiently. The model was that someone who knew the craft could break down the work needed so that even those who didn’t know the craft could do the simple operations. He believed that people were motivated by money, and he promoted the idea that “a fair day’s pay for a fair day’s work” would inspire people to work in an organization that operated in this way.
 
 Optimizing those operations fit well with Taylor’s background in mechanical engineering. The notion of “time and motion” studies helped operations understand how they could better utilize people’s time.
 
-The Canadian Region of the United Auto Workers, known today as Unifor, was formed in 1937. My grandfather (union member #8) and his co-workers formed it after the workers’ strike at the GM Oshawa plant that year, following the charter established by workers in the US. This information is very hard to find in the history books, because at the time it would have gotten you killed. My grandfather and my father were tool and die makers - the makers of the machines that made the machines. Apprenticeship remains the primary means of educating folks in the skilled trades, and university education was uncommon in my family.
+The Canadian Region of the United Auto Workers, known today as Unifor, was formed in 1937. My grandfather (he had a single-digit union member number) and his co-workers formed it after the workers’ strike at the GM Oshawa plant that year, following the charter established by workers in the US. This information is very hard to find in the history books, because at the time it would have gotten you at least beat up, maybe killed. My grandfather and my father were tool and die makers - makers of the machines that made the machines. Apprenticeship remains the primary means of educating folks in the skilled trades, and university education was uncommon in my family.
 
 Unions were borne of the need at the time to protect the workers from unsafe working conditions, and to help companies understand what “a fair day’s pay for a fair day’s work” entailed from the perspective of the workers.
 
@@ -32,9 +32,9 @@ And moreover, we work in software. In addition to having little to no uniformity
 
 > Software has about as much analog to manufacturing as hummingbirds to shovels. 
 
-This drastic change in climate has largely invalidated Taylor’s 1909 paper. When our context shifts, our solutions shift, and a hundred years provides a dramatic difference in context. It was groundbreaking at the time, but today it has little application.
+This drastic change in climate, this shift towards knowledge work, forces us to consider how Taylor's 1909 paper could even apply. When our context shifts, our solutions shift, and a hundred years provides a dramatic difference in context. It was groundbreaking at the time, but today it has little application.
 
-But us humans, we have many great thinkers among us. And in 1982, W Edwards Deming wrote a book called “Out of the Crisis” which famously presented his 14 points that could help organizations in North America pull out of the crisis in quality in the North American manufacturing industry at the time.
+But us humans, we have many great thinkers among us. In 1982, W Edwards Deming wrote a book called “Out of the Crisis” which famously presented his 14 points that could help organizations in North America pull out of the crisis in quality in the manufacturing industry at the time.
 
 Deming’s points read very much differently than Taylor’s.
 
@@ -55,7 +55,7 @@ Deming’s points read very much differently than Taylor’s.
 
 Again, these points geared towards manufacturing, and some of them don’t really mean what the words seem to indicate. They can be a little confusing in software development.
 
-I could write volumes on the 14 points above, but I couldn’t as eloquently as and this post is long enough as it is. If you’re curious, you should start with reading books by Mary and Tom Poppendieck in the field of Lean Software Development. They’ve 
+I could write volumes on the 14 points above, but I couldn’t do as much justice as others already have. If you’re curious, you should start with reading books by Mary and Tom Poppendieck in the field of Lean Software Development.
 
 But in my mind, the distillation is fairly simple.
 
@@ -65,6 +65,6 @@ Today, we live in a world where higher education is the norm. We have a sense of
 
 Deming’s 14 points centre on purpose, autonomy and mastery. Everyone is responsible for our purpose, and we pull together as a team rather than as a composite of disciplines.
 
-Software development as a career or commercial endeavour has never existed in the same world in which Taylor laid the foundation of management theory that is still taught and followed even today.
+Software development as a career or commercial endeavour has never existed in the same world in which Taylor laid the foundation of management theory that is still taught and followed even today. And yet I continually see these ideas applied in organizations doing software development.
 
-As an agile coach, I challenge you, let’s embark on a new way.
+As an agile coach, I challenge you, let’s embark on a better way.
