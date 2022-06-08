@@ -1,4 +1,11 @@
-# Splitting Product Design and Implementation
+---
+title: "Splitting Product Design and Implementation"
+date: "2022-06-08"
+published: true
+image: images/tobi-aSnTrU-UrnM-unsplash.jpg
+imageAlt: Photo by tobi on unsplash
+tags: ["agile", "coaching", "🍓"]
+---
 
 Why do we continue to separate the design of a product from its implementation?
 
@@ -8,7 +15,7 @@ In software development, this is a ruinous separation. It is a rift that we forc
 
 Software implementation involves more than the crucial, apparent aspects of the technology. It includes designing the surrounding system in which we assemble the product. It is here already that we start building a system that either hinders or accelerates our ability to create, and more importantly, evolve a product that delivers on the imperative.
 
-We meticulously construct high-fidelity visual mock-ups of the apps we want. Then, when considering a mock-up in isolation, we become lost in the minutia of all the code details we need to deliver on that fidelity.
+We meticulously construct high-fidelity visual mock-ups of the apps we want. Then, when considering a mock-up in isolation, we become lost, repeatedly, in the minutia of all the code details we need to deliver on that fidelity.
 
 What if, instead, we codify the underlying concepts of those high fidelity details as we define them. We build a system to code our user interface in a way that can't help but be compliant with our design standards. Then we spend less time assembling new screens. Then our design system is centralized and easy to adjust.
 
