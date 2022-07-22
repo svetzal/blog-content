@@ -27,6 +27,6 @@ The stance of designing, then writing, then delivering that software is becoming
 
 Instead, the expectation is that we build and continually evolve both the design and implementation to suit the needs of our stakeholders. We deploy the software when our stakeholders need it, not after some long technical cycle of ensuring it will work for them.
 
-From effective design and continuous refactoring to continuous integration to ship at will, we have established practices that allow us to rethink our engineering at the pace of business.
+From emergent design and continuous refactoring to continuous integration to ship at will, we have established practices that allow us to rethink our engineering at the pace of business.
 
 The modern frontier of business agility, continuous product discovery, is now possible. Instead of guessing what the design of a product should be upfront, we continually use real stakeholder feedback on real functioning systems to hone their edge in the market and ensure our competitive advantage.
