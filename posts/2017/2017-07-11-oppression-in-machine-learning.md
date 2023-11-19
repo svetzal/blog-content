@@ -6,7 +6,7 @@ published: true
 
 Popular media loves to talk about "artificial intelligence" these days. It is a hot topic, one riddled with misunderstanding.
 
-Artificial intelligence is a misnomer in our field - professionals call this emerging interest "machine learning" because the [jury is out as to whether there is any real intelligence behind it](https://codingculture.io/wp-content/uploads/2017/07/can-machines-be-intelligent).
+Artificial intelligence is a misnomer in our field - professionals call this emerging interest "machine learning" because the [jury is out as to whether there is any real intelligence behind it](https://www.psychologytoday.com/ca/blog/the-intelligence-report/201103/can-machines-be-intelligent).
 
 Ask any researcher about how easy it is to bias a survey through what question we ask, how we ask it, what questions we ask before and after it, and you will begin to understand the mechanisms through which decisions made by computers can be similarly biased. Simply put, I can ask you "Are you feeling well?" or I can ask you "How are you feeling?", the first question anchors your context so your answer relates to "well". The second question, because of the lack of context could elicit answers like "hungry", or "with my fingers."
 
