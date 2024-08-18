@@ -36,14 +36,14 @@ I'm reminded of the robots in the Star Wars universe. I think C-3P0 was assemble
 
 ![z3660-loaded.jpeg](images/z3660-loaded.jpeg)
 
-With today's relative performance of embedded computing technology, my Amiga Z3660 accelerator card emulates the hardware signalling of an old Motorolla 68040 CPU and a whole CPU expansion card, pin for pin, using a little ARM based prototyper board and a Software Defined Logic Chip (SDLC). For fun, it can even delegate the work to a real 68060 CPU, simulating all the circuitry around that too. The PiStorm replaces the 68000 CPU in the Amiga 500 with a Raspberry Pi board and an SDLC. Everything in the Amiga is authentic running on 35 year old chips, except for the guts of your CPU chip, which are emulated in software at a hundred times its original speed on this tiny little modern ARM processor.
+With today's relative performance of embedded computing technology, my Amiga [Z3660](https://github.com/shanshe/Z3660) accelerator card emulates the hardware signalling of an old Motorolla 68040 CPU and a whole CPU expansion card, pin for pin, using a little ARM based prototyper board and a Software Defined Logic Chip (SDLC). For fun, it can even delegate the work to a real 68060 CPU, simulating all the circuitry around that too. The [PiStorm](https://github.com/captain-amygdala/pistorm) replaces the 68000 CPU in the Amiga 500 with a Raspberry Pi board and an SDLC. Everything in the Amiga is authentic running on 35 year old chips, except for the guts of your CPU chip, which are emulated in software at a hundred times its original speed on this tiny little modern ARM processor.
 
 Was the C-3P0 that Anakin assembled like a 36 year old Amiga 500 with a PiStorm for a CPU?
 
 > Han Solo and Chewbacca had to re-assemble C-3P0. Luke Skywalker maintained R2-D2. Rey maintained BB-8. Ahsoka maintained R7-A7. I think there's a bit of a parallel between droids in the Star Wars universe, and the computers that the people who participate in the Retro Computing community continue to steward.
 
-So here I sit. Checking off the simple diagnostic tests one by one, inching closer to running out and having to lean into the complicated ones. The economics of spending $1,000 on a piece of electronics repair equipment burning a hole in my Amazon cart, as I work another weekend on not needing it.
+So here I sit. Checking off the simple diagnostic tests one by one, inching closer to the last of them and then I'll have to lean into the complicated ones. The economics of spending $1,000 on a piece of electronics repair equipment burning a hole in my Amazon cart, as I work another weekend on not needing it.
 
 If you have an old piece of computing history, you should know that it's worth something in this community. Sometimes that translates into dollars, sometimes it just translates into someone keeping their friend C-3P0 running. If you don't know what else to do, connect with me, reclaim the space in your home and know it'll get some attention.
 
-Or better yet, come hang out with us at the [World of Retro Computing](https://worldofretrocomputing.com/) in Kitchener, Ontario on September 14th and 15th this year! Maybe you'll rekindle something, or maybe you'll find a new home for old neglected computers.
+Or better yet, if you recall enjoying that computer, come hang out with us at the [World of Retro Computing](https://worldofretrocomputing.com/) in Kitchener, Ontario on September 14th and 15th this year! Maybe you'll rekindle something, or maybe you'll find a new home for it.
