@@ -7,8 +7,8 @@ tags:
 imageAlt: A mesh rendering of a woman at a computer, on an abstract cyberpunk-style line background
 image: images/tdd-design-perspective.png
 published: true
-date: 2024-06-23
-title: London and Chicago Style TDD, A Design Perspective
+date: 2025-02-13
+title: The Bionic Developer
 ---
 Thanks to a colleague, I came across this article today, and it's been energizing. The author and his editors at O'Reilly have put together a tremendously thoughtful piece that examines this emergent field from a number of perspectives.
 
