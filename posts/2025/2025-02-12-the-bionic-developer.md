@@ -5,7 +5,7 @@ tags:
   - developer
   - coding
 imageAlt: A mesh rendering of a woman at a computer, on an abstract cyberpunk-style line background
-image: images/tdd-design-perspective.png
+image: images/older_woman_coding.png
 published: true
 date: 2025-02-13
 title: The Bionic Developer
