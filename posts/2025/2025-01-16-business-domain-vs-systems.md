@@ -1,6 +1,7 @@
 ---
 title: Business Domain vs Systems Domain
 published: false
+date: 2025-01-16
 ---
 I sat in a meeting yesterday that was probably the best illustration of conflict between business models and systems models that Ive seen yet.
 
