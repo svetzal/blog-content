@@ -16,7 +16,9 @@ Really, though, I often will talk about code boundaries in situations where I'm 
 
 So, coding is design. I have a post somewhere that basically says "there's no such thing as implementation" because implementation is simply the emergence of the design of the code that solves the problem at hand. There's a lot more I can go into here, but it's not central to the point of this post.
 
-Let's look at two code examples.
+## Example 1
+
+Let's look at two code examples. Here's the first.
 
 ```java
 public class OrderService {
@@ -49,7 +51,7 @@ public class OrderService {
 
 How do we test it? Well, the code has some obvious boundaries. The implementation is contained in the `OrderService` and we have this handy `placeOrder` method.
 
-Now, let's check our happy path:
+Let's check our happy path:
 
 ```java
 @Test
@@ -113,9 +115,13 @@ This all seems to make a lot of sense.
 
 But can you spot the challenges? I'll give you a minute. Take your time.
 
-Yes, you've got it, the tests know an awful lot about the internals of the `placeOrder` method, we kind of have to. We need to know how it interacts with both the `inventoryRepository` as well as the `paymentGateway` in order to validate that it performed the steps we needed it to from a business perspective. Mocking those out was our only real choice to inspect those internals and ensure it did the right thing.
+Yes, you've got it, the tests know an awful lot about the internals of the `placeOrder` method, we kind of have to. See those checks to verify `updateStock` and `charge` were called (or not called) correctly?
 
-Now, let's consider a different set of boundaries. I'm taking a bit of a cue here from Ivar Jacobsen and a book he wrote over 30 years ago that seems to have been forgotten. Well, actually, I didn't - rather ChatGPT did, I just saw the dots that it connected, but that's another post as well.
+The challenge here is that we need to know how `placeOrder` interacts with both the `inventoryRepository` as well as the `paymentGateway` in order to validate that it did the right thing from a business perspective.
+
+## Example 2
+
+Now, let's consider a different set of boundaries. I'm taking a cue here from Ivar Jacobsen and [an old book he wrote](https://www.amazon.ca/Object-Oriented-Software-Engineering-Approach/dp/0201544350) over 30 years ago that seems to have been forgotten. *Actually, I didn't take the cue - rather ChatGPT did*. I just noticed the dots that it connected, but that's another post as well.
 
 Consider this implementation:
 
@@ -184,7 +190,7 @@ public void testPlaceOrder_Success() {
 }
 ```
 
-Wait, why didn't we have to check any internal method calls from the `inventoryService` or `paymentService`?
+Wait, why didn't we have to check any internal method calls were made to the `inventoryService` or `paymentService`?
 
 Well, let's look at how we'd test some of the sad paths:
 
@@ -202,7 +208,7 @@ public void testPlaceOrder_InsufficientStock() {
 }
 ```
 
-Yes, that's right. Instead of having to know about the internals of the `placeOrder` method, we externalized the specific check we're trying to make by making it an exception - we made a better boundary to check.
+Yes, that's right. Instead of having to know about the internals of the `placeOrder` method, we ***externalized*** the specific check we're trying to make by making it an exception - we ***made a better boundary*** to check.
 
 Same with the second sad path:
 
@@ -220,17 +226,21 @@ public void testPlaceOrder_PaymentFails() {
 
 We no longer require any internal knowledge of how `placeOrder` works. This means many things.
 
-What if there were other more complex conditions for the order to fail due to inventory? So every time we change how inventory management works, we have to change that test as well. And maybe the test failed to remind us to fix it, but maybe it didn't and we have let a bug through.
+Consider if we needed to change how inventory management works? Example 1 would break, and Example 2 wouldn't. Also, with any additional conditions that change the implementation of `placeOrder` we'd have to seek those out and expose them in Example 1's tests, making them even more brittle and prone to breakage.
 
-But the second example? It doesn't care how the condition occurred, it doesn't need to know about the implementation in order to know that the specific failure was due to lack of inventory, or a failed payment.
+This is the foundation of "how not to hate your test suite" - don't design code that forces you to write brittle tests. Use good Object-Oriented design tactics like encapsulation and information hiding. If you've ever wondered how to test a private method, you've probably walked yourself into a poor design. You shouldn't have to. (Private methods are the programmer equivalent of **keep out, you have no business knowing how this works***).
 
-In the second example, we made the business contract explicit, with a method call delineating responsibility, as well as two specific failure conditions. And we tested that business contract, not the implementation inside `placeOrder`.
+The second example doesn't care how the condition occurred that threw the exception, those details were irrelevant to the business case. You don't need to know about the implementation in order to know whether the specific failure was due to lack of inventory, or a failed payment.
 
-In other words, we tested the behaviour, not the implementation.
+In the second example, we made the business contract explicit, with a method call delineating responsibility, as well as two specific failure conditions. **And we tested that business contract**, not the implementation inside `placeOrder`.
 
-Are Exceptions the only way to do this? No of course not, there are a variety of techniques you can use to achieve better boundaries, we could explore the Use Case Oriented Design further, we could explore different ways of orchestrating all the steps that need to happen as part of an order transaction, but this was plain and simple, and illustrates the point that the design of the boundaries is important, and has a material impact on the efficacy and maintainability of your tests.
+From a higher perspective, we tested the behaviour, not the implementation.
+
+Are Exceptions the only way to do this? No of course not, there are a variety of techniques you can use to achieve better boundaries, we could explore the Use Case Oriented Design further, we could explore different ways of orchestrating all the steps that need to happen as part of an order transaction, but this was plain and simple, and illustrates the point that the design of the boundaries is important, and ***has a material impact on the efficacy and maintainability of your tests***.
 
 How does a developer come to know how to write code like the second example? Well, I'd say experience, but experience is not the same as the number of years they've been coding. Experience is borne from the problems they've had to solve, and the advice and mentorship of others.
+
+## Aside
 
 I mentioned earlier, I asked ChatGPT to formulate much of this example code. Would it surprise you to learn it took several prompts?
 
@@ -251,6 +261,8 @@ I saw a few more things I didn't like.
 > I'm not sure I'm keen on those complicated fakes in the "good" example, can you trim back the dependence on that? I'd like the two examples to be as symmetrical as possible except for the choice of testing boundary.
 
 And then I still tuned the code it wrote for me for this blog post.
+
+## Finishing up
 
 My point is this, code design takes more than time. I'm reminded of the phrase, "Practice doesn't make perfect. Perfect practice makes perfect."
 
