@@ -123,7 +123,7 @@ Yes, yes, I know, the `when` statements also couple us into some of the behaviou
 
 ## Example 2
 
-Now, let's consider some different boundaries. I'm taking a cue here from Ivar Jacobsen and [an old book he wrote](https://www.amazon.ca/Object-Oriented-Software-Engineering-Approach/dp/0201544350) over 30 years ago that seems to have been forgotten. *Actually, I didn't take the cue - rather ChatGPT did. I just noticed the dots that it connected, because I use Use Case Oriented Design frequently, but that's a different blog post.*
+Now, let's consider some different boundaries. I'm taking a cue here from Ivar Jacobson and [an old book he wrote](https://www.amazon.ca/Object-Oriented-Software-Engineering-Approach/dp/0201544350) over 30 years ago that seems to have been forgotten. *Actually, I didn't take the cue - rather ChatGPT did. I just noticed the dots that it connected, because I use Use Case Oriented Design frequently, but that's a different blog post.*
 
 Consider this implementation:
 
