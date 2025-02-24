@@ -10,7 +10,7 @@ published: true
 date: 2025-02-23
 title: What Is a Developer? Part 2 - Test Boundaries
 ---
-The [seed for this article series is here](2025-02-12-what-is-a-developer), it's long and a bit ranty, but I wanted to draw a bunch of ideas into one place that we could explore in more depth over some follow-up posts. I'm going to be doing some of these articles in an odd order, it's my blog, I make the rules!
+The [seed for this article series is here](https://stacey.vetzal.com/2025/2025-02-12-what-is-a-developer/), it's long and a bit ranty, but I wanted to draw a bunch of ideas into one place that we could explore in more depth over some follow-up posts. I'm going to be doing some of these articles in an odd order, it's my blog, I make the rules!
 
 Really, though, I often will talk about code boundaries in situations where I'm not actively sitting around code to point at with people. It makes the boundaries discussion pretty abstract. That part of my prior post also generated the most direct questions, so I want to tackle this testing discussion first.
 
