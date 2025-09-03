@@ -10,6 +10,7 @@ published: true
 date: 2025-02-13
 title: What Is a Developer?
 ---
+
 Thanks to a colleague, I came across this article today, and it's been energizing. The author and his editors at O'Reilly have put together a tremendously thoughtful piece that examines this emergent field from a number of perspectives.
 
 https://www.oreilly.com/radar/preparing-for-ai-2/
@@ -22,7 +23,7 @@ Along the evolution of the software developer, let's first explore 3 core themes
 
 In my next post, we'll explore some illustrative examples of these ideas, with code, and more stories. I'm going to need a day or three to put that together.
 
-## People
+# People
 
 Consider this:
 
@@ -42,7 +43,7 @@ You can't buy that kind of energy. It even had a tangible impact on our bottom l
 
 ![](images/senior_engineers.jpg)
 
-I'm also reminded of one of my favourite two favourite quotes from Alberto Brandolini. The first is NSFW, but the second...
+I'm also reminded of one of my favourite two favourite quotes from Alberto Brandolini. The first is NSFW, but the second…
 
 "It is not the domain expert's knowledge that goes into production, it is the assumption of the developers that goes into production."
 
@@ -56,7 +57,7 @@ I've found this dance floor rich with a history of ideas I forgot or didn't know
 
 Want to have some fun? Tell the LLM it has oppositional defiance disorder. Tell it to speak to you in limerick. A year or so ago I got it to write about 10 common leadership styles, and then told it to simulate different styles as I interacted with it. Have it challenge you. Have it knock you out of your patterns. Explore the bad ideas with it. Tease out the dimensions of your creativity.
 
-## Syntax is easy. Coding is Hard.
+# Syntax is easy. Coding is Hard.
 
 C was my third programming language, after BASIC and 6809 assembly, and I lived in Kernighan & Ritchie's "The C Programming Language" book for many years, having cut my teeth on K&R C on OS-9 on my Tandy Colour Computer in the '80s.
 
@@ -84,7 +85,7 @@ To reduce our field to just debugging AI written code would be a travesty. The e
 
 ![](images/why.png)
 
-## Testing and Design
+# Testing and Design
 
 I'm a long time fan of Christopher Alexander's [Notes on the Synthesis of Form](https://en.wikipedia.org/wiki/Notes_on_the_Synthesis_of_Form). It didn't help that when I discovered it I was a reclusive teen, desperately avoiding having to confront social situations, further [complicated by my gender dysphoria](https://emergillian.blogspot.com/2012/03/my-herstory.html). It remains the most impactful paper I've read, perhaps alongside [Simulacra and Simulation](https://en.wikipedia.org/wiki/Simulacra_and_Simulation). Yeah, I know, I'm weird. Let's be weird together for a minute, though.
 
@@ -96,7 +97,7 @@ We explore the unknown, to come to know something, and then once we know it, we 
 
 I very much like Michael Bolton and James Shore's distinction between [Testing and Checking](https://www.satisfice.com/blog/archives/856). It illustrates this well. We check whether what we know is still true - do our automated checks still pass. We test to learn what we need to know. And, because we can only automate what we know, our automated "tests" aren't testing, they're just checking what we already know must be true. And thus testing is an [inherently creative, human activity](https://www.youtube.com/watch?v=KePxuKpwqoI).
 
-"Yes, but what about property-based testing, mutation testing, ...." yes, yes, I know, don't cloud the issue with facts. This is actually why there have been so many updates to Lisa Crispin's [Agile Testing Quadrants](https://lisacrispin.com/2024/10/11/the-agile-testing-quadrants/) over the years. There are some modern automated exploratory testing techniques that we can leverage as developers. But, they're driven by randomness, which is not the same as creativity.
+"Yes, but what about property-based testing, mutation testing, …." yes, yes, I know, don't cloud the issue with facts. This is actually why there have been so many updates to Lisa Crispin's [Agile Testing Quadrants](https://lisacrispin.com/2024/10/11/the-agile-testing-quadrants/) over the years. There are some modern automated exploratory testing techniques that we can leverage as developers. But, they're driven by randomness, which is not the same as creativity.
 
 Sometimes folks really latch on to legacy ideas of testing, formalizing "integration testing" or "regression testing" - in the lean agile space we've long dismantled this thinking because the barriers inherent in that thinking slowed down our path to production, with little to no impact on quality. W Edwards Deming: "You can't inspect quality into a product."
 
@@ -135,9 +136,10 @@ So what happens when you ask an LLM to write some OpenRewrite meta-refactoring c
 One of the places that's frustratingly not as helpful as we hoped it would be is RAG, where we confetti-shred a body of knowledge and feed the LLM a bunch of disparate but related confetti in order to provide a richer answer than its context window allows. Microsoft's GraphRAG paper significantly improves the idea and pointed me back at a bunch of analysis work I've done on larger code-bases to understand them at higher orders. What's the equivalent of an LLM summarizing a paper or meeting notes? Well I think about ideas like [Simon Brown's C4](https://c4model.com/), or Adam Tornhill's work first expressed in [Your Code as a Crime Scene](https://www.amazon.ca/Your-Code-Crime-Scene-Bottlenecks/dp/1680500384).
 
 There is so much to explore.
-## Next Up
 
-So now you have the themes, the lenses through which I intend to explore some examples, and a little background info. 
+# Next Up
+
+So now you have the themes, the lenses through which I intend to explore some examples, and a little background info.
 
 And finally, remember:
 
@@ -151,4 +153,4 @@ You are a leaf in the wind.
 
 And we've got a brand new friend to play with.
 
-See you in part 2...
+See you in part 2…

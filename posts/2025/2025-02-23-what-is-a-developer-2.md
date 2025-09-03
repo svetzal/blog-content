@@ -10,13 +10,14 @@ published: true
 date: 2025-02-23
 title: What Is a Developer? Part 2 - Test Boundaries
 ---
+
 The [seed for this article series is here](https://stacey.vetzal.com/2025/2025-02-12-what-is-a-developer/), it's long and a bit ranty, but I wanted to draw a bunch of ideas into one place that we could explore in more depth over some follow-up posts. I'm going to be doing some of these articles in an odd order, it's my blog, I make the rules!
 
 Really, though, I often will talk about code boundaries in situations where I'm not actively sitting around code to point at with people. It makes the boundaries discussion pretty abstract. That part of my prior post also generated the most direct questions, so I want to tackle this testing discussion first.
 
 So, coding is design. I have a post somewhere that basically says "there's no such thing as implementation" because implementation is simply the emergence of the design of the code that solves the problem at hand. There's a lot more I can go into here, but it's not central to the point of this post.
 
-## Example 1
+# Example 1
 
 Let's look at two code examples. Here's the first.
 
@@ -121,9 +122,9 @@ The challenge here is that we need to know how `placeOrder` interacts with both 
 
 Yes, yes, I know, the `when` statements also couple us into some of the behaviour of the our dependencies. I'm trying to have a simple example here. Please suspend for a moment.
 
-## Example 2
+# Example 2
 
-Now, let's consider some different boundaries. I'm taking a cue here from Ivar Jacobson and [an old book he wrote](https://www.amazon.ca/Object-Oriented-Software-Engineering-Approach/dp/0201544350) over 30 years ago that seems to have been forgotten. *Actually, I didn't take the cue - rather ChatGPT did. I just noticed the dots that it connected, because I use Use Case Oriented Design frequently, but that's a different blog post.*
+Now, let's consider some different boundaries. I'm taking a cue here from Ivar Jacobson and [an old book he wrote](https://www.amazon.ca/Object-Oriented-Software-Engineering-Approach/dp/0201544350) over 30 years ago that seems to have been forgotten. _Actually, I didn't take the cue - rather ChatGPT did. I just noticed the dots that it connected, because I use Use Case Oriented Design frequently, but that's a different blog post._
 
 Consider this implementation:
 
@@ -210,7 +211,7 @@ public void testPlaceOrder_InsufficientStock() {
 }
 ```
 
-Yes, that's right. Instead of having to know about the internals of the `placeOrder` method, we ***externalized*** the specific check we're trying to make by making it an exception - we ***made a better boundary*** to check.
+Yes, that's right. Instead of having to know about the internals of the `placeOrder` method, we _**externalized**_ the specific check we're trying to make by making it an exception - we _**made a better boundary**_ to check.
 
 Same with the second sad path:
 
@@ -238,13 +239,13 @@ In the second example, we made the business contract explicit, with a method cal
 
 From a higher perspective, we tested the behaviour, not the implementation.
 
-Are Exceptions the only way to do this? No of course not, there are a variety of techniques you can use to achieve better boundaries, we could explore the Use Case Oriented Design further, we could explore different ways of orchestrating all the steps that need to happen as part of an order transaction, but this was plain and simple, and illustrates the point that the design of the boundaries is important, and ***has a material impact on the efficacy and maintainability of your tests***.
+Are Exceptions the only way to do this? No of course not, there are a variety of techniques you can use to achieve better boundaries, we could explore the Use Case Oriented Design further, we could explore different ways of orchestrating all the steps that need to happen as part of an order transaction, but this was plain and simple, and illustrates the point that the design of the boundaries is important, and _**has a material impact on the efficacy and maintainability of your tests**_.
 
 The second example does some things differently, the code is less imperative than the first, the use-case oriented design, it also uses immutability to its benefit, and all of that is good, but the important thing to draw from this is the boundary change for the purpose of this particular post.
 
 How does a developer come to know how to write code like the second example? Well, I'd say experience, but experience is not the same as the number of years they've been coding. Experience is borne from the problems they've had to solve, and the advice and mentorship of others. The impact this has at a higher scale is in how fast projects in your organization go from green-field to brown-field.
 
-## Aside
+# Aside
 
 I mentioned earlier, I asked ChatGPT to formulate some of this example code. Would it surprise you to learn it took several prompts?
 
@@ -268,7 +269,7 @@ And then I still tuned the code it wrote for me for this blog post, like the bus
 
 And, I suppose some would argue with me about my choice of using exceptions, rather than return values, look it's Java. In the Java realm, exceptions are a big part of design, and I don't think it's unreasonable to have them participate in the business domain. I kind of like the cleanliness of it. An example in, say, Go might have been interesting, but I left it in Java because an awful lot more people know Java than Go, let alone the lineage of this whole exception vs return value argument!
 
-## Finishing up
+# Finishing up
 
 My point is this, code design takes more than time. I'm reminded of the phrase, "Practice doesn't make perfect. Perfect practice makes perfect."
 

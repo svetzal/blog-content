@@ -8,6 +8,7 @@ published: true
 date: 2025-02-13
 title: The Bionic Developer
 ---
+
 This post has moved, I have renamed it.
 
 Read the post here - [What Is A Developer?](2025-02-12-the-bionic-developer)

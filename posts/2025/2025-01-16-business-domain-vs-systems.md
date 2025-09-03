@@ -3,6 +3,7 @@ title: Business Domain vs Systems Domain
 published: false
 date: 2025-01-16
 ---
+
 I sat in a meeting yesterday that was probably the best illustration of conflict between business models and systems models that Ive seen yet.
 
 The business domain doesn't matter, but suffice to say, as most businesses, we have trouble communicating in IT terms.
@@ -20,6 +21,3 @@ And that's where the software engineers start making compromises in their once-b
 In the meeting yesterday, a business leader expressed with wonderful precision what the Behaviour Driven Design community would call a Scenario. The context was clear, the action being taken by the stakeholder was clear, and the intended result was clear.
 
 Except, the systems didn't model themselves after the business. They have weird-looking abstractions that don't use words that make sense to the business, only to the database behind the system. So "why did you put the flag on the application and not the applicant?" got waved away, because now that's what the system looks like, counter to what the business really needed. It cost money to make that change. And we're gonna leave it be for budget reasons. "We'll make do."
-
-
-
