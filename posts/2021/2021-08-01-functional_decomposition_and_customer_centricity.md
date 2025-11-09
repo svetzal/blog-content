@@ -7,7 +7,7 @@ tags: ["agile", "business", "design"]
 
 When we use Functional Decomposition to break down efforts on a software development project, we work through how a system needs to work in order to accomplish some technical capability.
 
-## Technology and Technologists
+# Technology and Technologists
 
 As systems are created and evolve, they typically become a composition of different subsystems. Think of a mobile app, a web service, a database schema, a visual design. There are likely more, but let's pretend the world's a little simpler for a moment.
 
@@ -21,7 +21,7 @@ Each of these technologies models an aspect of the implementation in different w
 
 Even within a particular technology, take React for example. For a while, the norm was to take an object-oriented approach to React development. While that's still possible, the React community firmly embraced a functional programming style a number of years ago. These require very different ways of thinking about an application's structure.
 
-## The Impedence Mismatch
+# The Impedence Mismatch
 
 OK, back to functional decomposition.
 
@@ -37,25 +37,25 @@ And that's not at all like getting chocolate in your peanut butter. It's more li
 
 I'd like to propose that two things can help you avoid this kind of situation.
 
-## Customer Centricity
+# Customer Centricity
 
  Consider decomposing the problem in a customer-centric way. Instead of systemic operations like create/read/update/delete, consider the end-user narrative. Why are they deleting this record? Does that real-life situation imply something else is going on than a simple "delete this row from the database"?
- 
+
  Tell stories about why users need to accomplish these new things we want our systems to facilitate.
- 
+
  The one where a customer changed their cell phone provider, and now needs to add a new payee in their banking system.
- 
+
  This sounds maybe like a simple "create" operation, and maybe that's your minimum viable change. But think of the opportunities around it to improve your customer experience. Do they want to be alerted if their old cell phone provider accidentally debits the next month's payment? Now suddenly that shiny new "delete payee" web service endpoint is seen in a completely new light. Does the "DELETE" http operation fully apply anymore?
- 
+
  In an increasingly competitive world, getting past the minimum viable product is critical. Striving for mediocrity in your product will be met with mediocre success unless you're creating a unique product to begin with.
- 
+
 Give your team space and opportunity to consider the customer first, and the system second. This will bias how they model and implement the minimum viable change, and just might make future change easier.
 
 Systems will always be under pressure to change, the technologies underlying our businesses change relentlessly.
 
 Paying bills, however, well I've thought about this the same across dozens of technological shifts during my career.
 
-## Anchor Bias
+# Anchor Bias
 
 If I asked you how bad you thought that apple you just ate tasted, you would literally first consider how bad it was before your brain kicked in to interrupt and say "actually, it was quite tasty." I had a friend once who loved going to yard sales, his signature question was along the lines of, "How much do you want for that $2 toaster?"
 
@@ -73,6 +73,6 @@ On a cross functional team, this opens the floor for the app developers, service
 
 This collaborative approach to solution architecture is very different than what we used to depend on, where it was often done mostly from the perspective of the systems involved, and then dictated to the individual disciplines to accomodate.
 
-## Conclusion
+# Conclusion
 
 Hopefully I've given you some things to think about, some insight into a way of working that can improve not only customer outcomes, but also how your team might work together to accomplish them.

@@ -31,7 +31,7 @@ Today, our duties require us to apply our knowledge and education to solve a pro
 
 And moreover, we work in software. In addition to having little to no uniformity in the work that comes our way, we are strongly influenced by changes in the systems we use that are outside our control. Think about that tenuous love/hate relationship we’ve developed with Apple and Google.
 
-> Software has about as much analog to manufacturing as hummingbirds to shovels. 
+> Software has about as much analog to manufacturing as hummingbirds to shovels.
 
 This drastic change in climate, this shift towards knowledge work, forces us to consider how Taylor's 1909 paper could even apply. When our context shifts, our solutions shift, and a hundred years provides a dramatic difference in context. It was groundbreaking at the time, but today it has little application.
 

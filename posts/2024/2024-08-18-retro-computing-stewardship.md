@@ -8,6 +8,7 @@ tags:
   - retro
   - hardware
 ---
+
 > stew·ard·ship
 > /ˈsto͞oərdˌSHip/
 > The job of supervising or taking care of something, such as an organization or property. "responsible stewardship of our public lands"

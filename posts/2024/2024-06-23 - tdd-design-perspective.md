@@ -10,6 +10,7 @@ tags:
   - developer
   - coding
 ---
+
 # London and Chicago Style TDD, A Design Perspective
 
 In the field of TDD, two primary schools of thought have emerged, that are often used in tandem. [In this video series, Robert C. Martin and Sandro Mancuso debate](https://cleancoders.com/series/comparativeDesign) the merits of each - concluding that to execute only one exclusively is not the most effective course of action.
