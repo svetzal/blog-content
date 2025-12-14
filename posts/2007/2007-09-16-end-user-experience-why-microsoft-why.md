@@ -6,6 +6,8 @@ tags:
   - software-development
   - culture
   - human-experience
+  - hardware
+  - personal
 ---
 I recently purchased a new laptop for one of my daughters, it came with Vista. This is the first Vista based computer in the house.
 

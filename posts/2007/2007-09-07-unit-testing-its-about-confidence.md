@@ -6,7 +6,7 @@ tags:
   - software-development
   - coding
   - developer
-  - team
+  - learning
 ---
 I was reading [this post](http://www.deaded.com/staticpages/index.php/whywritetestcode), which raises some interesting points, but it sidesteps what I believe is the absolutely **most important reason** to unit test.
 

@@ -6,6 +6,7 @@ tags:
   - software-development
   - coding
   - developer
+  - architecture
 ---
 So my ranting continues. My friend is adamantly refusing to change his Servlet/JSP habits and I'm afraid I have to take it out on everyone else around me.
 
