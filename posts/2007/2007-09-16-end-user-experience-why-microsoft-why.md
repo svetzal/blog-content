@@ -3,8 +3,6 @@ title: "End User Experience - Why, Microsoft, why?"
 date: "2007-09-16"
 published: true
 tags:
-  - ai
-  - engineering
   - software-development
   - culture
   - human-experience

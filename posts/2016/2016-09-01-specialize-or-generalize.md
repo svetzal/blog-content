@@ -3,24 +3,16 @@ title: "[DRAFT] Specialize or Generalize?"
 date: "2016-09-01"
 published: false
 tags:
-  - architecture
-  - engineering
-  - software-development
-  - coding
-  - developer
   - agile
-  - mentoring
   - team
-  - collaboration
   - culture
-  - business
+  - learning
+  - mentoring
+  - diversity
+  - inclusion
   - consulting
-  - entrepreneurship
   - leadership
-  - human-experience
-  - humanity
-  - trans
-  - personal
+  - entrepreneurship
 ---
 I've seen some thoughts floating around today around what kind of mix of generalists or specialists should you have on an agile team. It started when I saw a tweet out from @GregerWikstrand on the topic and it got me thinking. I'm afraid of generalists. And specialists. Why?
 

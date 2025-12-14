@@ -4,14 +4,13 @@ date: "2017-02-20"
 published: false
 tags:
   - software-development
-  - coding
   - developer
   - mentoring
+  - learning
+  - diversity
+  - inclusion
   - human-experience
   - humanity
-  - diversity
-  - trans
-  - personal
 ---
 _More than occasionally, I get asked, "How can I learn programming as a beginner?" I have many thoughts on this, and here is just one of them..._
 

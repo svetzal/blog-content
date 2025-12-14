@@ -6,6 +6,8 @@ tags:
   - software-development
   - coding
   - team
+  - coaching
+  - learning
 ---
 When you've done a code kata many times, it helps to find new ways to increase the level of difficulty of the kata. We often introduce constraints, like no method greater than 3 lines of code, no primitive function arguments, no touching the mouse, etc.
 

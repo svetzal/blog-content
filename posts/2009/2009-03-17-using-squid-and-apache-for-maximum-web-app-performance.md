@@ -3,9 +3,10 @@ title: "[DRAFT] Using Squid + Apache for Maximum Web App Performance"
 date: "2009-03-17"
 published: false
 tags:
+  - architecture
+  - engineering
   - software-development
   - coding
-  - management
 ---
 In this guide, I'm going to go through how I've configured high-performance web applications in the past using Squid and Apache to front-end the application server(s).
 

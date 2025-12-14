@@ -3,6 +3,8 @@ title: "[DRAFT] Emergent Design: Refactoring and the Stable Dependencies Princip
 date: "2017-02-04"
 published: false
 tags:
+  - architecture
+  - engineering
   - software-development
   - coding
   - agile

@@ -3,7 +3,12 @@ title: "The Long Road"
 date: "2017-02-20"
 image: images/dsc_0097.jpg
 published: true
-tags: ['developer']
+tags:
+	- software-development
+	- developer
+	- learning
+	- human-experience
+	- humanity
 ---
 
 _More than occasionally, I get asked, "How can I learn programming as a beginner?" I have many thoughts on this, and here is just one of them..._
