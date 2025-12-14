@@ -6,6 +6,7 @@ tags:
   - software-development
   - coding
   - developer
+  - consulting
   - business
 ---
 I spec'd a new project the other day. Nothing new, we do this all the time, probably a few dozen times a year. We went through the usual round of analysis, what kinds of people would use the system, what screens would it have, and what entities (types of data) it would need. In the end we settled on the amount of time each element would take, compiled up a total estimate, and created a proposal for the customer.

@@ -3,8 +3,8 @@ title: "Communicate on Their Terms"
 date: "2007-08-23"
 published: true
 tags:
-  - software-development
   - business
+  - consulting
 ---
 Why are there so many form letters in the world? Pointless advertising inserts?
 
