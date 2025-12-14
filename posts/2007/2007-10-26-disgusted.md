@@ -4,7 +4,7 @@ date: "2007-10-26"
 published: true
 tags:
   - software-development
-  - coding
+  - developer
 ---
 Apple didn't ship Java 1.6 with OS-X Leopard. I've been hoping for this for months.
 

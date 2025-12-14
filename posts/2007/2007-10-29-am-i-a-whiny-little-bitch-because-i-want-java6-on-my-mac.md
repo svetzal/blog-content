@@ -7,6 +7,7 @@ tags:
   - coding
   - developer
   - business
+  - hardware
 ---
 [This post](http://www.subfurther.com/blog/?p=34) set me off today.
 

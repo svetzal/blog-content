@@ -3,7 +3,6 @@ title: "Like we needed more proof that DRM is a BAD IDEA"
 date: "2007-11-07"
 published: true
 tags:
-  - software-development
   - business
   - humanity
 ---

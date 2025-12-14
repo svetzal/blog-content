@@ -5,8 +5,8 @@ published: true
 tags:
   - software-development
   - coding
-  - human-experience
-  - humanity
+  - developer
+  - learning
 ---
 Yeah, you heard me. I love those sensationalist headlines.
 
