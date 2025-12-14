@@ -1,0 +1,12 @@
+{
+  "name": "blog-content",
+  "private": true,
+  "description": "Markdown content repository (format/lint helpers only)",
+  "devDependencies": {
+    "markdownlint-cli": "^0.44.0"
+  },
+  "scripts": {
+    "lint:md": "markdownlint -c .markdownlint.json -i .markdownlintignore \"**/*.md\"",
+    "format:md": "markdownlint --fix -c .markdownlint.json -i .markdownlintignore \"**/*.md\""
+  }
+}

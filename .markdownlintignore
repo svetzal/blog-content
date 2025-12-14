@@ -1,0 +1,4 @@
+# Things that are not meant to be published as Markdown content
+.git/
+.obsidian/
+node_modules/
