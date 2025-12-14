@@ -2,8 +2,11 @@
 title: "Java EE 6 Mess, Continued"
 date: "2009-12-28"
 published: true
+tags:
+  - architecture
+  - software-development
+  - coding
 ---
-
 OK, found another brick wall :)
 
 So if you recall, I have a Maven 2 build. I now have discreet API jars isolated for JPA 2, Servlet 3, and EJB 3.1. This allows me to build with a single dependency tree for production and still provide a suitable environment for automated testing by providing EclipseLink as a JPA2 implementation under my "test" scope.

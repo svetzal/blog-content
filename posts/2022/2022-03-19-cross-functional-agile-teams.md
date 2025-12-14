@@ -3,10 +3,9 @@ title: "Cross-Functional Agile Teams"
 date: 2022-03-19
 published: true
 tags:
-  - linkedin
   - agile
+  - linkedin
 ---
-
 In an agile organization, our primary concern is the flow of value - "concept to cash" as we've heard from the DevOps and Continuous Delivery communities. We form a hypothesis on what the market wants, we incrementally deliver and prove out that desire, bootstrapping new business opportunities using the scientific method.
 
 Let's break down the notion of agile cross-functional teams as they relate to this.

@@ -2,8 +2,18 @@
 title: "Why a Worker's Cooperative"
 date: "2013-11-12"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - coaching
+  - mentoring
+  - collaboration
+  - culture
+  - business
+  - entrepreneurship
+  - humanity
 ---
-
 This past weekend I was at the Software Craftsmanship North America conference (SCNA) hosted by 8th Light in Chicago. This is a wonderful conference that each year I manage to drag more of our staff down to experience.
 
 SCNA was a bit of a break for me, as much of my time lately has been going in to setting up The Commons Cooperative, a new organization that I'm building focused on software development services for businesses, entrepreneurs, and what I'll call "social good".

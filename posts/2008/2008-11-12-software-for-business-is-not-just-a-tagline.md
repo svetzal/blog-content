@@ -2,8 +2,11 @@
 title: "Software For Business Is Not Just A Tagline"
 date: "2008-11-12"
 published: true
+tags:
+  - software-development
+  - developer
+  - business
 ---
-
 I've been doing a lot of work on my company, [Three Wise Men Inc.](http://threewisemen.ca), lately. Honing down on what makes the business special, getting right down into why I started the business and dissecting various frustrations I felt then, and have felt throughout the past 6 years of doing business.
 
 In this market-driven society software is typically written for one of two reasons.

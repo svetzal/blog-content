@@ -2,8 +2,12 @@
 title: "[DRAFT] Scoping and Estimating Projects"
 date: "2016-03-17"
 published: false
+tags:
+  - software-development
+  - developer
+  - business
+  - humanity
 ---
-
     I had an exchange with a colleague last night, and it really pushed me back into this gear. Realizing I haven't published these kinds of thoughts on Codemanship.ca, and indeed it's been a while since I've written about this topic, I figured it was time to write down my current thinking.
 
 Colleague: \[discussing potential project, a "quote" from a developer who became unavailable\]

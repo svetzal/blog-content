@@ -4,9 +4,10 @@ date: "2022-07-20"
 published: true
 image: images/tree-bud.jpg
 imageAlt: Tree Bud, Stacey Vetzal
-tags: ["agile", "coaching", "🍓"]
+tags:
+  - agile
+  - coaching
 ---
-
 # There Is No Agility Without Technical Agility
 
 As we wish to adapt continually to an ever-shifting set of stakeholder needs, it is vital that the software and supporting technologies not calcify over time.

@@ -2,8 +2,15 @@
 title: "Oppression in Machine Learning"
 date: "2017-07-11"
 published: true
+tags:
+  - ai
+  - machine-learning
+  - software-development
+  - developer
+  - diversity
+  - trans
+  - personal
 ---
-
 Popular media loves to talk about "artificial intelligence" these days. It is a hot topic, one riddled with misunderstanding.
 
 Artificial intelligence is a misnomer in our field - professionals call this emerging interest "machine learning" because the [jury is out as to whether there is any real intelligence behind it](https://www.psychologytoday.com/ca/blog/the-intelligence-report/201103/can-machines-be-intelligent).

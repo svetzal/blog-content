@@ -2,8 +2,10 @@
 title: "iPhone Blogging"
 date: "2008-07-20"
 published: true
+tags:
+  - software-development
+  - hardware
 ---
-
 I think blogging from a portable device will have to fall under the category of microblogging,..
 
 Suffice to say this is my first iPhone blog post, and I'm sure it won't be my last.

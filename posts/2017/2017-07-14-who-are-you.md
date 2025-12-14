@@ -2,8 +2,18 @@
 title: "Who are you?"
 date: "2017-07-14"
 published: true
+tags:
+  - software-development
+  - coding
+  - agile
+  - coaching
+  - team
+  - collaboration
+  - humanity
+  - trans
+  - retro
+  - personal
 ---
-
 What’s your job title? What does it say about you? What doesn’t it say about you?
 
 We are human beings, doing what we can with the tools we have, filling a role as best we can. A job title doesn’t define who we are, and it doesn’t define all that we bring to that position.

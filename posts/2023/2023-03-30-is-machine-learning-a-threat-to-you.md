@@ -3,12 +3,10 @@ title: "Is Machine Learning a Threat to You?"
 date: 2023-03-30
 published: true
 tags:
-  - linkedin
   - machine-learning
   - humanity
-  - remix-culture
+  - linkedin
 ---
-
 All a Machine Learning model can do is regurgitate existing thoughts and ideas expressed in digital form in astonishing new ways according to the rules we already laid out for it in the digital forms from which we trained it.
 
 It is, by definition, incapable of new ideas. At best, all it can do is remix.

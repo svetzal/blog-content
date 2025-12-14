@@ -2,8 +2,12 @@
 title: "Testable Java EE 6"
 date: "2009-12-27"
 published: true
+tags:
+  - architecture
+  - software-development
+  - coding
+  - collaboration
 ---
-
 OK, so some progress has been made.
 
 I've abandoned using the Maven dependency indicated by Netbeans 6.8 and the org.codehaus.mojo.archetypes / webapp-javaee6 Maven 2 archetype and instead had to cobble together my own discreet dependencies from hints and clues. I would have much preferred actual documentation and facts :(

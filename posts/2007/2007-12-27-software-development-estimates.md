@@ -2,8 +2,11 @@
 title: "Software Development Estimates"
 date: "2007-12-27"
 published: true
+tags:
+  - software-development
+  - developer
+  - business
 ---
-
 I've blogged before on the fallacies of software development estimates. I found [this posting](http://a.khavr.com/2007/12/24/why-i-dont-give-fixed-price-software-developer-story/) particularly well thought-out and illustrative of the problem at hand.
 
 While I still engage in the "crap shoot" on smaller projects, I'm long done providing any kind of fixed-price bid on any project of significant size. I continue to estimate, but I've found the iterative approach so effective that I can't imagine approaching things any other way.

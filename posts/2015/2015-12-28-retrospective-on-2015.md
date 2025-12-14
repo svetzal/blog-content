@@ -2,8 +2,20 @@
 title: "Retrospective on 2015"
 date: "2015-12-28"
 published: true
+tags:
+  - software-development
+  - coding
+  - agile
+  - coaching
+  - team
+  - business
+  - consulting
+  - entrepreneurship
+  - humanity
+  - advocacy
+  - trans
+  - personal
 ---
-
 The past year has been exhausting. I've never felt so much like a hamster on a wheel.
 
 This year will mark 8 years into my transition, 5 years into my social transition, 3 years since my last gender affirming surgeries.

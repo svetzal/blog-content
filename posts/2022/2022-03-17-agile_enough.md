@@ -2,7 +2,10 @@
 title: "Agile Enough"
 date: "2022-03-17"
 published: true
-tags: ["agile", "trans", "coaching", "🍓"]
+tags:
+  - agile
+  - coaching
+  - trans
 ---
 When I look back at my career, I’ve been gathering ideas about agile from others since the manifesto. Testing versus checking. Last responsible moment. Make the thing easy. User stories. The ideas were fresh and exciting, from other developers like me, and I leapt into them because they indicated a path to my goals.
 

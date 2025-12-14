@@ -2,10 +2,19 @@
 title: "In Memory of Nancy Diamond"
 date: "2017-02-12"
 published: true
+tags:
+  - software-development
+  - coding
+  - mentoring
+  - business
+  - leadership
+  - inclusion
+  - lgbtq
+  - trans
+  - personal
 image: images/nancy-and-stacey.jpg
 imageAlt: Nancy Diamond, left, and Stacey Vetzal, right 
 ---
-
 When I was growing up, I didn't have a lot of friends. I had a small circle of friends in high school, and through this small circle of friends we began to congregate at one house, where there was space for us and we were always welcomed. When I first met Nancy, I thought she was "the cool mom", though she'd been just as happy with keeping us away from the kinds of trouble teenagers tend to find I think. That was so long ago, most of my memories are just feelings now.
 
 I knew that Nancy was involved in politics, a professional woman with a degree and leadership skills. She was my earliest exposure to what I believe are the best qualities of feminism. This was so different than my family - my mom was a home maker, I never witnessed her in a leadership role other than being the matriarch of our family. That's OK, but I knew in my heart that wouldn't be my path. Nancy was a capable woman, navigating a man's world, the world I was resigned to (at the time) living within. I didn't know it then, but that boy's view of the world given to me by society was gonna get shattered in my years to come.

@@ -2,8 +2,11 @@
 title: "Lies, Damned Lies, and Code Comments"
 date: "2015-02-03"
 published: true
+tags:
+  - software-development
+  - coding
+  - business
 ---
-
 Your project is lying to you.
 
 That comment that someone wrote way back over that block of code? Yeah, it was relevant a year ago. Today, it's definitely a lie. Probably a damned lie. Maybe worse.

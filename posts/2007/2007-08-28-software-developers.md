@@ -2,8 +2,10 @@
 title: "Software Developers"
 date: "2007-08-28"
 published: true
+tags:
+  - software-development
+  - developer
 ---
-
 I was reading [this post](http://www.tylercruz.com/the-rarest-commodity-the-programmer/) the other day and thinking about my particular challenges with software developers. Which I believe I have some insight into, actually being a developer myself. Also my company is not a web design company, so our technologies and requirements are a little different.
 
 It's natural I think for people to want to categorize developers, but I've found that particularly difficult. I find there are individual traits that seem to stand out, but no particular stereotype by which to categorize.

@@ -2,8 +2,13 @@
 title: "Technical Debt and The Big Rewrite"
 date: "2015-07-17"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - team
+  - culture
 ---
-
 It is so easy to sweep things under the rug.
 
 I’ll fix that comment later. One day, I’ll need to refactor this. Oooo this code is stinky, no time right now. No time right now. Just wish I had time. No time for this.

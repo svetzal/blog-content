@@ -2,8 +2,11 @@
 title: "Using Java EE 6, Without Java"
 date: "2009-12-17"
 published: true
+tags:
+  - software-development
+  - coding
+  - collaboration
 ---
-
 So this month, Java EE 6 was released. So many new capabilities are now part of the baseline stack, it's very cool.
 
 After tweeting about how much boilerplate configuration and coding can be eliminated using EE 6, a colleague pointed out that the Java language itself indeed contains much boilerplate code. I realized I'd failed at helping people understand that the Java programming language is today only one of many programming languages you might use on the JVM, and how this relates to classic Java web application development.

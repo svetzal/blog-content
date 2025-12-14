@@ -2,8 +2,13 @@
 title: "The Chaos in the Matryoshka"
 date: "2011-08-24"
 published: true
+tags:
+  - software-development
+  - developer
+  - collaboration
+  - business
+  - consulting
 ---
-
 Those that know me know that I'm not afraid of change. I'm a big proponent of "strong opinions loosely held". When something makes sense, grab ahold, if you can disprove it, move along. Don't become too attached or you'll find you've turned into an apologist.
 
 About 4 years ago I announced I was done with fixed price projects. It was the best business move I ever made.

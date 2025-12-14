@@ -2,7 +2,10 @@
 title: "The Spaces Between"
 date: "2022-02-11"
 published: true
-tags: ["agile", "coaching", "design"]
+tags:
+  - architecture
+  - agile
+  - coaching
 ---
 # The Spaces Between
 

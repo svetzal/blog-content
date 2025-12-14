@@ -3,8 +3,15 @@ title: "2016 Big Steps Forward"
 date: "2016-12-30"
 coverImage: "img_0321.jpg"
 published: true
+tags:
+  - software-development
+  - team
+  - business
+  - consulting
+  - humanity
+  - trans
+  - personal
 ---
-
 Lots of folks have been complaining lately about 2016.
 
 Certainly, as one friend of mine pointed out, as movies and celebrities have become more prominent in our lives, and my impressionable teen years were in the 80's, I've seen a lot of my childhood heroes fall away this year. This trend I'm sure will continue as I age.

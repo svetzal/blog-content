@@ -2,8 +2,12 @@
 title: "Wow, this isn't the Web Services I used to know..."
 date: "2007-11-10"
 published: true
+tags:
+  - software-development
+  - coding
+  - consulting
+  - management
 ---
-
 OK, so around 2005 we did some projects with WebServices.
 
 They were successful, but we wrote a lot more code than we wanted to. We hand-coded the WSDL to get the best interoperability between platforms (Java and .NET), and because if we'd used auto-generated WSDL it was an absolute disaster (no big shocker we had interop problems).

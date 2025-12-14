@@ -2,8 +2,14 @@
 title: "Apple: Thank You for Leaving Flash Out"
 date: "2010-01-29"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - business
+  - retro
+  - hardware
 ---
-
 Something has been weighing heavy on my mind for a while now. Years, in fact. I didn't realize it however until the past few weeks while delving back into interactive media for the book publishing industry.
 
 In the mid to late 90's I spent a lot of effort on interactive media for desktop computers and commercial television. There were promising technologies and great multimedia development platforms, and out of this open specifications emerged like SMIL (Synchronized Multimedia Integration Language) and SVG (Scalable Vector Graphics), while HTML (HyperText Markup Language) flourished.

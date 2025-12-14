@@ -2,8 +2,12 @@
 title: "Keep It Simple, (Not So) Stupid"
 date: "2007-09-23"
 published: true
+tags:
+  - software-development
+  - developer
+  - consulting
+  - humanity
 ---
-
 Have you tried this? I mean really, sat down, tried to make something simple. Not simple for you, simple for others.
 
 People always say they want simple. They go on and on about the last thing they had / did / bought and how complicated it was. And simple should cost less right?

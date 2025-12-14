@@ -2,8 +2,9 @@
 title: "Dissapointed In Dell"
 date: "2008-07-23"
 published: true
+tags:
+  - business
 ---
-
 I leased a nice Dell server this year to help stabilize our IT infrastructure at Three Wise Men. With it I purchased "next business day onsite service".
 
 On Monday this week I arrived at work to find two hard drives dead which broke our RAID storage. So I arranged a service call to replace the drives yesterday and promised my customer we would resume testing today.

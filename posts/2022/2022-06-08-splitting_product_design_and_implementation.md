@@ -4,9 +4,10 @@ date: "2022-06-08"
 published: true
 image: images/tobi-aSnTrU-UrnM-unsplash.jpg
 imageAlt: Photo by tobi on unsplash
-tags: ["agile", "coaching", "🍓"]
+tags:
+  - agile
+  - coaching
 ---
-
 Why do we continue to separate the design of a product from its implementation?
 
 When we design a product in one place with one group of people and implement it somewhere else with a different group, we fail to do either effectively.

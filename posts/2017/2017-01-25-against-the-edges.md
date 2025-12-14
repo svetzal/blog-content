@@ -2,8 +2,12 @@
 title: "Testing Against The Edges"
 date: "2017-01-25"
 published: true
+tags:
+  - architecture
+  - software-development
+  - coding
+  - culture
 ---
-
 I have found a new thing.
 
 A test culture so pervasive and intrinsic that they want to test **everything**.

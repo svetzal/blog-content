@@ -2,8 +2,18 @@
 title: "A Nurturing Culture"
 date: "2017-07-29"
 published: true
+tags:
+  - software-development
+  - developer
+  - agile
+  - coaching
+  - mentoring
+  - team
+  - collaboration
+  - culture
+  - human-experience
+  - humanity
 ---
-
 I drew this picture to illustrate a few ideas, and it’s long overdue for an explanation beyond the few folks at whom I’ve stood in front of and waved my arms.
 
 ![](images/IMG_0036-300x300.png)

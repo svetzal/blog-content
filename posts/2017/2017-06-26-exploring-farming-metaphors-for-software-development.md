@@ -2,9 +2,19 @@
 title: "Exploring Farming Metaphors for Software Development"
 date: "2017-06-26"
 published: true
+tags:
+  - architecture
+  - software-development
+  - coding
+  - developer
+  - agile
+  - team
+  - collaboration
+  - culture
+  - business
+  - humanity
 image: images/woodsmoke-and-wool.jpg
 ---
-
 _Our friends who live down the road from us, always have such a beautiful garden and take amazing care of their animals. The way they've built their life, blending art and homesteading is an inspiration!_
 
 In the software development field, manufacturing metaphors abound for what we do. It is a leaky abstraction, and I wonder if we can do better.

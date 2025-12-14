@@ -2,9 +2,12 @@
 title: "Pair Chain Exercise"
 date: "2017-10-01"
 published: true
-tags: ["facilitation", "coaching", "pattern"]
+tags:
+  - architecture
+  - coaching
+  - team
+  - collaboration
 ---
-
 When I facilitate a kata session with a group of developers, sometimes I like to mix it up a little. If the room feels like it’s getting a little bored with a format, or if it’s a sunny Friday afternoon and everyone’s anticipating the weekend, I like to raise the energy level up a little.
 
 In my experience, this exercise works well with 5-15 participants.

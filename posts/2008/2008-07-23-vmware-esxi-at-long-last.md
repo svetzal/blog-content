@@ -2,8 +2,9 @@
 title: "VMware ESXi At Long Last"
 date: "2008-07-23"
 published: true
+tags:
+  - hardware
 ---
-
 Today we finally got our Dell VM server going again. We had lost 2 disks from our 4 disk RAID5 so we needed to reinstall.
 
 So I decided to give VMware ESXi 3.5 a try. In fact I even found a how-to on installing it to a bootable USB stick.

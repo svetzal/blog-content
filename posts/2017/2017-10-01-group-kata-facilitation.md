@@ -2,9 +2,12 @@
 title: "Group Kata Facilitation"
 date: "2017-10-01"
 published: true
-tags: ["facilitation", "coaching", "pattern"]
+tags:
+  - architecture
+  - coaching
+  - team
+  - collaboration
 ---
-
 This is my fall-back group format when facilitating kata.
 
 > Timeframe: **60m total - 45-50m exercise, 10-15m retrospective**

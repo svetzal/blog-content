@@ -2,8 +2,14 @@
 title: "Decisions In The Dark"
 date: "2010-11-24"
 published: true
+tags:
+  - software-development
+  - developer
+  - agile
+  - team
+  - business
+  - entrepreneurship
 ---
-
 We write software [today](http://svetzal.wordpress.com/2008/10/23/today/ "Today"), it's important to always remember this.
 
 Often when we are asked to write software, we are typically provided with a list of "business requirements", constraints under which we need to build it. Some of these are architectural, some are design, some are technological, some are legal or regulatory constraints, some are business goals, and some are expected features.

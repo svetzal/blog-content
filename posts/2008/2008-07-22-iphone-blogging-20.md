@@ -2,8 +2,9 @@
 title: "iPhone Blogging 2.0"
 date: "2008-07-22"
 published: true
+tags:
+  - hardware
 ---
-
 I just got the native iPhone app for Wordpress.
 
 Wow.

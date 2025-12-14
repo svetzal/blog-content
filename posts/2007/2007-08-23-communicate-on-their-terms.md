@@ -2,8 +2,10 @@
 title: "Communicate on Their Terms"
 date: "2007-08-23"
 published: true
+tags:
+  - software-development
+  - business
 ---
-
 Why are there so many form letters in the world? Pointless advertising inserts?
 
 Communicating with customers with a form letter is like communicating on your terms. They don't get to see anything that truly relates to them. So you insert your latest ad campaign, and hope for the best.

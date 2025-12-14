@@ -2,8 +2,12 @@
 title: "Sanitizing your input considered harmful."
 date: "2007-10-24"
 published: true
+tags:
+  - software-development
+  - coding
+  - human-experience
+  - humanity
 ---
-
 Yeah, you heard me. I love those sensationalist headlines.
 
 I've been frustrated lately trying to bring some associates along in their web development practices. For those getting started now in web development, please don't try and climb the long road of discovery to good web development practices along the path that I and so many others have taken.

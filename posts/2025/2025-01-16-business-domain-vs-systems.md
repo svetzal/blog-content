@@ -1,9 +1,18 @@
 ---
 title: Business Domain vs Systems Domain
 published: false
+tags:
+  - architecture
+  - engineering
+  - software-development
+  - developer
+  - team
+  - collaboration
+  - culture
+  - business
+  - management
 date: 2025-01-16
 ---
-
 I sat in a meeting yesterday that was probably the best illustration of conflict between business models and systems models that Ive seen yet.
 
 The business domain doesn't matter, but suffice to say, as most businesses, we have trouble communicating in IT terms.

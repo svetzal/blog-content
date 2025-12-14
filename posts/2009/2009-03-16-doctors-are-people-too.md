@@ -2,8 +2,10 @@
 title: "Doctors are people too"
 date: "2009-03-16"
 published: true
+tags:
+  - team
+  - personal
 ---
-
 In following up my "novel" I posted the other day, I found a neat article from Dalhousie magazine published last year that talks about my surgeon and his family.
 
 Dr. Carmen Giacomantonio (he's in the middle in the photo on the front cover of the magazine) was my oncological surgeon in Halifax. He was professional, pragmatic, took the time to explain things to us, and was attentive to our needs. Oh, and managed to stay alert and focused through my entire 17 hour surgery as he was the surgical team lead.

@@ -2,8 +2,11 @@
 title: "The Fable"
 date: "2016-12-03"
 published: true
+tags:
+  - software-development
+  - developer
+  - collaboration
 ---
-
 There was once a family of beavers who lived in the forest in a quiet valley. They had found a stream and made their home there, a lovely lodge in the small pond that had formed. Food was plentiful, there was work to be done, and they were happy.
 
 Occasionally the beavers would travel to the city to see their raccoon friends, who had their own lovely home and had begun raising their family.

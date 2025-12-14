@@ -2,8 +2,12 @@
 title: "Am I a whiny little bitch because I want Java6 on my Mac?"
 date: "2007-10-29"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - business
 ---
-
 [This post](http://www.subfurther.com/blog/?p=34) set me off today.
 
 Apparently, because I want a modern Java on my Mac, I'm being selfish. Actually more specifically I'm being a "whiny little bitch".

@@ -2,8 +2,19 @@
 title: "Continuous Improvement: Tools or Process?"
 date: "2009-04-06"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - agile
+  - coaching
+  - team
+  - collaboration
+  - business
+  - leadership
+  - management
+  - human-experience
 ---
-
 Any organization who wants to survive needs to realize that they need to implement some level of Continuous Improvement. This is a concept borrowed from the Lean Manufacturing movement, and applies everywhere. You improve, or you stagnate and become irrelevant.
 
 I often run into folks who are absolutely convinced that a new tool will solve their woes. I always try as gently as possible to let them down and help them realize that while a new tool may help but what more likely is broken is their approach to the problem - it's process related. Their old tool may very well fit the new process.

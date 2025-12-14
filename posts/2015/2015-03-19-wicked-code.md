@@ -2,8 +2,12 @@
 title: "Wicked Code"
 date: "2015-03-19"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - team
 ---
-
 There is a particular class of problem, a [Wicked Problem](https://codingculture.io/wp-content/uploads/2015/03/Wicked_problem), that denies solution.
 
 These problems are difficult or impossible to solve due to their complexity, a shifting or evolving context, and that's if you can even find and identify them.

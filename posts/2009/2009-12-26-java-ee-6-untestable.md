@@ -2,8 +2,12 @@
 title: "Java EE 6, Untestable?"
 date: "2009-12-26"
 published: true
+tags:
+  - architecture
+  - software-development
+  - coding
+  - developer
 ---
-
 Trying to work something out and it just doesn't look possible right now.
 
 Since Java EE 6 was officially released earlier this month, I've been pretty jazzed about it. It represents significant leaps forward in simplicity and developer productivity.

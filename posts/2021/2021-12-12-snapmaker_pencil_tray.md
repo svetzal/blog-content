@@ -2,9 +2,10 @@
 title: "Making a Small Pencil Tray"
 date: "2021-12-12"
 published: true
-tags: ["making", "cnc"]
+tags:
+  - learning
+  - hardware
 ---
-
 # Making a Small Pencil Tray
 
 I wanted to write this detailed walk-through to try and lay out visually some of the workflow I use on my Snapmaker machine for CNC work.

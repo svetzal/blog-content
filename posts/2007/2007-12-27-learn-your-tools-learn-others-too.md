@@ -2,8 +2,14 @@
 title: "Learn Your Tools, Learn Others Too"
 date: "2007-12-27"
 published: true
+tags:
+  - architecture
+  - software-development
+  - coding
+  - collaboration
+  - humanity
+  - retro
 ---
-
 I've always lived at the fringe of computing, with a foot in the popular and a foot in the obscure. When I was a kid, I had a Tandy TRS-80 when all my friends had the Vic-20 or Commodore 64 - and I attribute my open-mindedness to this early acceptance of the obscure.
 
 In my career I spent a lot of time on alternative platforms, with my early start on the Commodore Amiga, exploring \*BSD and Linux on PC compatible hardware, a brief specialty in Silicon Graphics workstations and servers, right up to these days on my Macbook Pro.

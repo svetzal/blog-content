@@ -3,12 +3,11 @@ title: "I care not for this agile coach, bring me another!"
 date: 2022-07-08
 published: true
 tags:
-  - linkedin
   - agile
   - coaching
   - mentoring
+  - linkedin
 ---
-
 Coaches disrupt the comfortable status quo.
 
 We ask uncomfortable questions, ask people to try new things, and challenge their opinions.

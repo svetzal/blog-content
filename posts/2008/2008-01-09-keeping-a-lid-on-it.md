@@ -2,8 +2,11 @@
 title: "Keeping A Lid On It"
 date: "2008-01-09"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
 ---
-
 So I went to the TSOT Rails Project night last night, it was good to see some familiar faces and I enjoyed the presentations.
 
 There was some to-be-expected discussion about Zed's famous rant, which I won't link to because it's a little profane, and 3 presentations on projects that various members of the Toronto Rails community are working on.

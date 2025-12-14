@@ -2,8 +2,12 @@
 title: "Living with Maven2"
 date: "2008-01-29"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - humanity
 ---
-
 I often see a lot of complaining about the [Apache Maven](http://maven.apache.org/) build tool. In fact, sometimes I do a lot of complaining about it myself.
 
 The fact is, however, that ever since my friend [Mike Bowler](http://www.sphericalimprovement.com/blogs/mbowler/) introduced me to it I've been hooked.

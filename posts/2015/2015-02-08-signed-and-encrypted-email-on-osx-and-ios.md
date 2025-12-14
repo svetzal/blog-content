@@ -3,8 +3,11 @@ title: "Signed and Encrypted Email on OSX and iOS"
 date: "2015-02-08"
 coverImage: "img_0128.jpg"
 published: true
+tags:
+  - software-development
+  - humanity
+  - hardware
 ---
-
 I'm writing this as much for me as I am for you, my fellow netizen.
 
 Signing and encrypting email on iOS is a black art. Get your incense and candles ready.

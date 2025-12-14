@@ -2,8 +2,18 @@
 title: "My Ongoing Battle with Pseudomyxoma Peritonei (PMP)"
 date: "2009-03-14"
 published: true
+tags:
+  - software-development
+  - coding
+  - coaching
+  - team
+  - collaboration
+  - culture
+  - business
+  - entrepreneurship
+  - humanity
+  - hardware
 ---
-
 **Introduction**
 
 So, I haven't told a lot of people about this. Truly, it has taken me a year to learn what I know now, and my journey isn't finished yet.

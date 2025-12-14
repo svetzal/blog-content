@@ -2,8 +2,17 @@
 title: "The Concept of Millitasks"
 date: "2009-04-03"
 published: true
+tags:
+  - architecture
+  - engineering
+  - software-development
+  - coding
+  - developer
+  - agile
+  - coaching
+  - team
+  - collaboration
 ---
-
 Since I've been back at TWM and getting involved in the day to day operations again, and I'm back on task to formalize our procedures, something has been striking me lately.
 
 Big tasks get in the way of other big tasks unless you break them down. Then you can tend to get more than one thing done by doing mixing the small tasks up.

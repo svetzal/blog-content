@@ -2,8 +2,11 @@
 title: "Simplicity Lessons from EasyBrandingTools.com"
 date: "2007-10-19"
 published: true
+tags:
+  - software-development
+  - developer
+  - business
 ---
-
 Life is a learning exercise.
 
 I have two contrasting projects on my mind right now that are at different stages of complexity, although they're somewhat related.

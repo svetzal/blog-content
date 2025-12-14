@@ -2,8 +2,13 @@
 title: "End User Experience - Why, Microsoft, why?"
 date: "2007-09-16"
 published: true
+tags:
+  - ai
+  - engineering
+  - software-development
+  - culture
+  - human-experience
 ---
-
 I recently purchased a new laptop for one of my daughters, it came with Vista. This is the first Vista based computer in the house.
 
 Let me give you a little background on me. I own a couple Macs, I'm an avid Linux user, and I've extensively used every prior version of Windows. We currently have 7 computers in the house (below average for us). I run a software development company. The end-user experience of any product is very important to me.

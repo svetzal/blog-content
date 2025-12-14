@@ -2,8 +2,12 @@
 title: "Property Binding in UIs"
 date: "2007-10-31"
 published: true
+tags:
+  - ai
+  - software-development
+  - coding
+  - coaching
 ---
-
 So my ranting continues. My friend is adamantly refusing to change his Servlet/JSP habits and I'm afraid I have to take it out on everyone else around me.
 
 A few days ago I posted a short ditty on protecting yourself from SQL injection attacks. So now you have a nice shiny database tier that's being managed by Hibernate / ActiveRecord / CakePHP / etc. You're protected from SQL injection attacks. That's all you need right?

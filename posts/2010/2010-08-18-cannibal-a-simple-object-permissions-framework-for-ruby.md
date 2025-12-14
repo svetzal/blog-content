@@ -2,8 +2,11 @@
 title: "Cannibal: A simple Object permissions framework for Ruby"
 date: "2010-08-18"
 published: true
+tags:
+  - software-development
+  - coding
+  - business
 ---
-
 I'm proud to announce that we're releasing one of our newer frameworks into the open-source community - specifically under the [Simplified BSD License](http://en.wikipedia.org/wiki/BSD_licenses#2-clause_license_.28.22Simplified_BSD_License.22_or_.22FreeBSD_License.22.29).
 
 Cannibal is a permissions framework for object-to-object declaration and querying of permissions or capabilities. It is distributed as a standard [gem library through rubygems.org](http://rubygems.org/gems/cannibal). You can also view the [source-code at github](http://github.com/ThreeWiseMen/cannibal).

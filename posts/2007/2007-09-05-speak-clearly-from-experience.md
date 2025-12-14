@@ -2,8 +2,12 @@
 title: "Speak Clearly from Experience"
 date: "2007-09-05"
 published: true
+tags:
+  - software-development
+  - coding
+  - culture
+  - business
 ---
-
 So today I'm working through some more content management challenges - and hating JavaScript-based WYSIWYG editors. They really really suck.The main reason they do, are they all simply expose HTML editing capabilities from within the browser. Unfortunately, this is typically buggy and extremely clunky. If you don't believe me, try table editing. Ugh.
 
 On the Three Wise Men CMS system I overcame this by licensing a fabulous Applet based editor from Ephox. I like it so much, I continually try to work it into other projects. The only issue is that it's expensive (well that's a relative term, with our CMS product the WYSIWYG editor used to be **our largest tech-support call driver**!), so you have to have a strong business model behind the web-app. In the end, however, our users have thanked us, over and over again.

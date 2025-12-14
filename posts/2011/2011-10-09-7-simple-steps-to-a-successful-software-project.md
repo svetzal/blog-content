@@ -2,8 +2,15 @@
 title: "7 Simple Steps to a Successful Software Project"
 date: "2011-10-09"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - agile
+  - team
+  - business
+  - human-experience
 ---
-
 ### 1.  Imagine an end-result in only the coarsest detail
 
 Let's face it, we're all human. We can't juggle everything in our heads, and we don't have perfect clarity on day 1 of a project. You want to get your system in place quickly, and you definitely don't want to waste time playing imagination games for weeks on end writing detailed documentation and pixel-perfect mock-ups that will be difficult for others to understand, and could be impossible to implement.

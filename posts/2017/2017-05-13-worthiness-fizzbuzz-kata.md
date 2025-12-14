@@ -2,8 +2,14 @@
 title: "The Worthiness of the Fizzbuzz Kata"
 date: "2017-05-13"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - coaching
+  - mentoring
+  - collaboration
 ---
-
 I see a lot of misunderstanding around doing code kata in the work that I do.
 
 Just this week, I had a conversation with my apprentice about [Fizzbuzz](https://codingculture.io/wp-content/uploads/2017/05/Fizz_buzz). He felt it wasn't a worthwhile kata to do because the problem was so trivial. So we had a talk, and today's Saturday morning rant was born :)

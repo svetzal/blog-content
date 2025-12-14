@@ -2,8 +2,10 @@
 title: "Java EE 6 and Netbeans 6.8 Released"
 date: "2009-12-14"
 published: true
+tags:
+  - software-development
+  - coding
 ---
-
 It's finally here, Java EE 6 represents another serious step forward in the core Java server technology stack.
 
 It's kind of anti-climactic though - we've been using some of these technologies as standard on our Java EE apps for so long I forgot they weren't part of the core! Facelets is a big one there, building JSF pages in JSP was awful right from the start, and it's good to see Facelets in the core to bring powerful templating "out of the box".

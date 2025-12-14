@@ -5,12 +5,10 @@ published: true
 image: images/cyborg_coach.jpg
 imageAlt: A woman cyborg with grey hair and a mechanical arm with implants in her head jacked into the net facing the camera
 tags:
-  - machine
-  - learning
   - agile
   - coaching
+  - learning
 ---
-
 Back in June, I was playing with structured semantics as a way to interact with an LLM for applications. Today, I watched a video that made me realize I made quite a leap back there and may have left some folks behind. Time to catch up!
 
 For those that have been following me, I've been exploring ways to leverage generative AI as a developer. This has had a lot of implications around how I write code, and also the kind of applications I want to write.

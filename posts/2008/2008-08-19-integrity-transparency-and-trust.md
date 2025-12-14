@@ -2,8 +2,13 @@
 title: "Integrity, Transparency and Trust"
 date: "2008-08-19"
 published: true
+tags:
+  - software-development
+  - culture
+  - business
+  - entrepreneurship
+  - human-experience
 ---
-
 At Three Wise Men we've just finished off a reasonably large project, and a few things really struck me in the end about the way we operated and how it turned out.
 
 I've always been one for integrity. Do what you say you're going to do, when you say you're going to do it. It's OK to say you're not sure what you're going to build, or you're not sure when it will be built, just be sure that you have a little transparency in your processes and you involve the customer so that you maintain their trust that you are building something appropriate not wasting their time and money.

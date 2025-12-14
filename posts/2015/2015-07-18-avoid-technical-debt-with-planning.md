@@ -2,8 +2,11 @@
 title: "Avoid Technical Debt with Planning"
 date: "2015-07-18"
 published: true
+tags:
+  - software-development
+  - coding
+  - agile
 ---
-
 So, you get it. Technical debt is bad. So what do you do about it when you have it?
 
 First step is probably to try and avoid digging yourself deeper.

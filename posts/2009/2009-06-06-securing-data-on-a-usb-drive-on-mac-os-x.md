@@ -2,8 +2,10 @@
 title: "Securing Data on a USB Drive on Mac OS X"
 date: "2009-06-06"
 published: true
+tags:
+  - software-development
+  - hardware
 ---
-
 I was looking for a good way to encrypt data on a portable disk on my Mac, and was surprised at the range of misleading information out on the Internet. So, it inspired me to write this post in hopes that I can save people the pain and aggravation of figuring it out for themselves, or getting turned off and deciding that it isn't possible without buying extra software.
 
 If you want to save private data on a USB drive, or actually any disk, it's actually pretty easy and doesn't require any extra software. The encryption is reasonably strong too (well, as strong as your password is, so pick a good one!).

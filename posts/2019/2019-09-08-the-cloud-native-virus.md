@@ -2,9 +2,9 @@
 title: "The Cloud Native Virus"
 date: "2019-09-08"
 published: true
-tags: ["design", "cloud"]
+tags:
+  - architecture
 ---
-
 Think about good application design.
 
 You have good cohesion at different layers of abstraction, your code is flexible and adaptive.

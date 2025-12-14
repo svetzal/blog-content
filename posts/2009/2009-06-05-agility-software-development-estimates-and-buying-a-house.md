@@ -2,8 +2,15 @@
 title: "Agility, Software Development Estimates and Buying a House"
 date: "2009-06-05"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - agile
+  - team
+  - business
+  - human-experience
 ---
-
 Lately, software project estimation has risen to the surface as a discussion topic at [Three Wise Men](http://threewisemen.ca/). The flurry of smaller proposals we've done lately has driven the discussion forward.
 
 There are several elements at play here:

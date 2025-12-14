@@ -2,8 +2,15 @@
 title: "iPhone Applications and Intermediate Tooling Considered Harmful"
 date: "2010-04-11"
 published: true
+tags:
+  - architecture
+  - software-development
+  - coding
+  - developer
+  - business
+  - human-experience
+  - hardware
 ---
-
 I have to say, I admire Steve Jobs for taking the hard line on so many issues. It isn't easy, and he's sure taking the flack for it these days. I'm reminded of Derek Sivers' [recent TED talk on starting a movement](http://www.ted.com/talks/derek_sivers_how_to_start_a_movement.html). Apple generally isn't afraid to be the lone crazy out there.
 
 I've been involved as a user and as a developer in projects in the past providing intermediate tooling. That is, a software tool that produces a template or even finished code for a different software tool. From Maven archetypes for Java to code-generators for UI, from Flash generators to iKVM.

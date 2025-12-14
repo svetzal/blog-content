@@ -2,8 +2,11 @@
 title: "Performance Profiling with JBoss Seam - Part 1"
 date: "2008-03-02"
 published: true
+tags:
+  - architecture
+  - software-development
+  - coding
 ---
-
 So, I decided I had had enough of looking at 400-600ms server prep times for Seam pages on a project we're working on. It just didn't seam right - could the Seam framework really have this much of an impact on performance?
 
 I did some digging, and I came up with some interesting baseline stats. These were done by actually just adding a new webpage to an existing app (kind of, let's see how fast we can make this app go approach).

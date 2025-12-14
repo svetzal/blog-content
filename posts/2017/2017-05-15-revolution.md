@@ -2,8 +2,11 @@
 title: "Revolution"
 date: "2017-05-15"
 published: true
+tags:
+  - software-development
+  - developer
+  - business
 ---
-
 We have built, unwittingly, a fundamentally flawed environment for delivering software. Incapable of dealing with bugs and viruses.
 
 Commercial entities writing software inevitably must find a budget for dealing with their inevitably broken software.

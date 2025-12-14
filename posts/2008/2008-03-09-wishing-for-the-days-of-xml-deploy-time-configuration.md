@@ -2,8 +2,10 @@
 title: "Wishing for the days of XML Deploy-time configuration??!!"
 date: "2008-03-09"
 published: true
+tags:
+  - software-development
+  - coding
 ---
-
 Wow, so here's a short one for you.
 
 I'm tuning an application to utilize the Hibernate 2nd level cache. The application uses Hibernate Annotations extensively to mark up the model and map it to PostgreSQL.

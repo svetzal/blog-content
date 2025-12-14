@@ -5,10 +5,9 @@ published: true
 image: images/diverse_crowd_shot.png
 imageAlt: A black woman in focus, with cybernetic implants, in front of a slightly blurred crowd in a cyberpunk dystopia
 tags:
-  - machine
-  - learning
   - agile
   - coaching
+  - learning
 ---
  Many words have been written about the biases in "AI" training datasets. I last blogged publicly on this topic about 6 years ago, and it feels like the right time to write about it again.
 

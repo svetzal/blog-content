@@ -2,8 +2,12 @@
 title: "Database Queries - Programmatic Criteria vs. EQL?"
 date: "2007-11-16"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - business
 ---
-
 So, an associate of mine is really enjoying programmatic database query criteria, and now it's spilled over onto me :)
 
 The use-case that wins us over is when your statements introduce conditional constraints. Think of the following in SQL:

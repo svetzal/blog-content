@@ -2,8 +2,13 @@
 title: "Act on Fact, Not Conjecture"
 date: "2017-02-04"
 published: true
+tags:
+  - architecture
+  - software-development
+  - coding
+  - developer
+  - culture
 ---
-
 So, how much of a part do your feelings play in how you write software?
 
 Feelings are important. Feelings are your "spidey sense", your "System 1" or "lizard" brain telling you danger is lurking somewhere around here. It might be right. It might not.

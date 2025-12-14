@@ -2,8 +2,20 @@
 title: "A Leaf on the Wind"
 date: "2017-04-25"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - coaching
+  - mentoring
+  - team
+  - collaboration
+  - culture
+  - business
+  - consulting
+  - human-experience
+  - humanity
 ---
-
 I've been coaching other teams for over a year now (I spent 15 years coaching my own teams), but I still have a small software development shop bubbling behind me building products, where I have an apprentice and, occasionally, interns.
 
 I can continue to manage the culture there, refine what I established with our larger consultancy in years past. Compare and contrast it to what I see in my coaching engagements. Also, unlike my coaching engagements, I can blog about it!

@@ -2,8 +2,15 @@
 title: "AI Programmers Will Take Our Jobs!"
 date: "2017-02-25"
 published: true
+tags:
+  - ai
+  - software-development
+  - coding
+  - developer
+  - agile
+  - culture
+  - human-experience
 ---
-
 So, this hit my newswires today:
 
 https://www.newscientist.com/article/mg23331144-500-ai-learns-to-write-its-own-code-by-stealing-from-other-programs/

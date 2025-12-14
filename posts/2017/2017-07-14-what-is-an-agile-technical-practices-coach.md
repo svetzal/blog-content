@@ -2,8 +2,18 @@
 title: "What is an Agile Technical Practices Coach?"
 date: "2017-07-14"
 published: true
+tags:
+  - architecture
+  - engineering
+  - software-development
+  - coding
+  - developer
+  - agile
+  - coaching
+  - team
+  - collaboration
+  - business
 ---
-
 ### The Past
 
 Software development today is very different than 10 years ago, and worlds apart from what it was 20 years ago.

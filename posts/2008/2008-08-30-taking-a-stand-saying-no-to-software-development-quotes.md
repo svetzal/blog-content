@@ -2,8 +2,15 @@
 title: "Taking a stand, saying NO to software development quotes"
 date: "2008-08-30"
 published: true
+tags:
+  - engineering
+  - software-development
+  - developer
+  - agile
+  - team
+  - business
+  - human-experience
 ---
-
 Starting Tuesday, I will no longer issue quotes for software development.
 
 I've been doing a lot of thinking about our Software Development business. Over the past 6 years we've done over 75 projects. We have loosely followed an [Agile](http://en.wikipedia.org/wiki/Agile_software_development) approach to software development, but have always been pressured to provide fixed quotes. It has been difficult to reconcile the desire to be [Agile](http://en.wikipedia.org/wiki/Agile_software_development) versus the [Waterfall](http://en.wikipedia.org/wiki/Waterfall_model) approach and up-front engineering required to provide a fixed quote.

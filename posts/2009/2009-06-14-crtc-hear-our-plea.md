@@ -2,8 +2,10 @@
 title: "CRTC, Hear Our Plea"
 date: "2009-06-14"
 published: true
+tags:
+  - business
+  - human-experience
 ---
-
 Canadian ISPs are trying to make a point to the CRTC. Here's a [Boing Boing article](http://www.boingboing.net/2009/06/13/canadian-isps-need-y.html), and the [CRTC feedback page](http://support.crtc.gc.ca/crtcsubmissionmu/forms/Telecom.aspx?lang=e) so that you to can make a difference.
 
 My message to them follows.

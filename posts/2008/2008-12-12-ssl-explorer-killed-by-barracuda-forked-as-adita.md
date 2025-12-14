@@ -2,8 +2,12 @@
 title: "SSL-Explorer killed by Barracuda ?! Forked as Adito ?!"
 date: "2008-12-12"
 published: true
+tags:
+  - software-development
+  - coding
+  - coaching
+  - business
 ---
-
 I say again, ?!
 
 I have used SSL Explorer for years, it's an incredible piece of software that gives you a simple web console to initiate connectivity through ad-hoc SSL VPN connections into a private network. The VPN connections are established through a nifty little Java Applet that manages them. To say it's a VPN is a little bit of a misnomer too, it's not intended to simply give full network access to people - you have great fine-grained control over who can do what on your private network.

@@ -4,9 +4,17 @@ date: "2017-08-07"
 published: true
 image: images/IMG_0068.jpg
 imageAlt: Auditorium with people at tables coding games
-tags: ["inspiration"]
+tags:
+  - software-development
+  - coding
+  - developer
+  - agile
+  - team
+  - collaboration
+  - culture
+  - business
+  - humanity
 ---
-
 This past weekend, I took part in the [PTBOGameJam03](http://ptbogamejam.com) event in Peterborough, Ontario, an event that has steadily grown since August 2016. In case you don’t know, a Game Jam is an event where people come and work alone or in teams to build a video game, start to finish. Art, sound, code, gameplay, all of it.
 
 ![](images/IMG_0067.jpg)

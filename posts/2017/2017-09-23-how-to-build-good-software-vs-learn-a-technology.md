@@ -3,9 +3,10 @@ title: "How To Build Good Software vs. Learn a Technology"
 date: "2017-09-23"
 published: true
 image: images/how-to-build-good-software.jpg
-tags: ["design", "learning"]
+tags:
+  - architecture
+  - learning
 ---
-
 ## The Problem
 
 Go find any "learn X in 21 days", “X boot camp” training material and look at how it treats Technology X.

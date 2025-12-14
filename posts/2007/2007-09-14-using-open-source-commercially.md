@@ -2,8 +2,15 @@
 title: "Using 'Open Source' Commercially"
 date: "2007-09-14"
 published: true
+tags:
+  - architecture
+  - software-development
+  - coding
+  - developer
+  - team
+  - business
+  - humanity
 ---
-
 I've been writing recently, mostly because our [ThreeWiseMen.ca](http://threewisemen.ca) website needs an overhaul for content.
 
 Three Wise Men is my software development company. The core product offering is professional software development services. For about 15 years I've personally been leveraging open-source software components to accelerate development of personal and professional projects, and I've been rattling around in my head a good way to put what I do onto paper in understandable terms (remember my post the other week).

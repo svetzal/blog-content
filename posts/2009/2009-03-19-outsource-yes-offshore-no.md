@@ -2,8 +2,15 @@
 title: "Outsource? Yes! Offshore? NO!!!"
 date: "2009-03-19"
 published: true
+tags:
+  - architecture
+  - software-development
+  - developer
+  - team
+  - business
+  - human-experience
+  - humanity
 ---
-
 I read an [article](http://www.baselinemag.com/c/a/Outsourcing/10-Functions-Ripe-for-Outsourcing/) (well, it's more of a slide-show) this morning that just set my hair on fire.
 
 Now I understand that to many folks in I.T., outsourcing is analogous to offshoring. So I can understand at some level why an article like this would be published.

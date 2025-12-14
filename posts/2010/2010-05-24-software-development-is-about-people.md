@@ -2,8 +2,14 @@
 title: "Software Development Is About People"
 date: "2010-05-24"
 published: true
+tags:
+  - software-development
+  - coding
+  - developer
+  - agile
+  - collaboration
+  - business
 ---
-
 We as an industry forgot this for a long time, and I am proud to be part of the movement to bring it back.
 
 I hear all the time from people about projects being late, features missing, broken or "I can't believe that ever worked" code. Often this is the voice of the customer feeling like they've been "had". That their developer just didn't listen to them. And now they're stuck with something that they didn't want.
