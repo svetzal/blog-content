@@ -21,11 +21,11 @@ And, look, there, it's hinting at maybe why it was written that way last year, b
 Stop it.
 
 1. If you see a comment that lies, fix it or delete it. Immediately. If you leave that there, it _will_ do harm, and that harm will be _your_ responsibility.
-    
+
 2. If you've found the [Chaos in the Matryoshka](https://codingculture.io/wp-content/uploads/2015/02/the-chaos-in-the-matryoshka), use code comments to explain _why_ the code looks as twisted as it does. Clearly. Concisely. Don't use expletives.
-    
+
 3. If you feel you need to write a comment to explain _what_ the code is doing, refactor the code so that it is clear. That's bad code. Fix it. Immediately.
-    
+
 
 "But but but... I didn't add that time to my estimate!"
 

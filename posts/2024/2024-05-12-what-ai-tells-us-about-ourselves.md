@@ -6,6 +6,8 @@ tags:
   - ai
   - machine-learning
   - human-experience
+  - humanity
+  - business
   - linkedin
 ---
 I saw today that [Bumble is incorporating into their business model](https://slashdot.org/story/24/05/10/2040218/bumbles-dating-ai-concierge-will-date-hundreds-of-other-peoples-concierges-for-you) a way for "AI" to "go on dates" instead of people. Selling their customers on the idea that it can go on 600 dates for them, save them time in finding a mate. They even envision the chat-bots being intimate companions to those seeking mates, gathering even more word data around their feelings.

@@ -5,9 +5,12 @@ published: true
 image: images/cyborg_coach.jpg
 imageAlt: A woman cyborg with grey hair and a mechanical arm with implants in her head jacked into the net facing the camera
 tags:
-  - agile
-  - coaching
   - learning
+  - ai
+  - machine-learning
+  - coding
+  - software-development
+  - architecture
 ---
 Back in June, I was playing with structured semantics as a way to interact with an LLM for applications. Today, I watched a video that made me realize I made quite a leap back there and may have left some folks behind. Time to catch up!
 
@@ -184,9 +187,9 @@ For example, this is the JSON Schema for the `HouseHold` class:
 Docstrings are also quite useful when defining calculated properties and behaviours in your classes:
 
 ```python
-@property  
-def food_allergies(self):  
-    """A list of food allergies"""  
+@property
+def food_allergies(self):
+    """A list of food allergies"""
     return list(set([allergy for person in self.people for allergy in person.food_allergies]))
 ```
 
@@ -199,16 +202,16 @@ Again, defining our problem and solution space in this way provides a rich natur
 Of course, our goal for the LLM is to create a meal plan, and we want structured data back for that too. Here's the modelling I used, I think I was starting to get lazy:
 
 ```python
-class DayMealPlan(BaseModel):  
-    breakfast: str = Field(default_factory=list, description="Breakfast description")  
-    morning_snack: str = Field(default_factory=list, description="Morning snack description")  
-    lunch: str = Field(default_factory=list, description="Lunch description")  
-    afternoon_snack: str = Field(default_factory=list, description="Afternoon snack description")  
-    dinner: str = Field(default_factory=list, description="Dinner description")  
-    evening_snack: str = Field(default_factory=list, description="Evening snack description")  
-  
-  
-class MealPlan(BaseModel):  
+class DayMealPlan(BaseModel):
+    breakfast: str = Field(default_factory=list, description="Breakfast description")
+    morning_snack: str = Field(default_factory=list, description="Morning snack description")
+    lunch: str = Field(default_factory=list, description="Lunch description")
+    afternoon_snack: str = Field(default_factory=list, description="Afternoon snack description")
+    dinner: str = Field(default_factory=list, description="Dinner description")
+    evening_snack: str = Field(default_factory=list, description="Evening snack description")
+
+
+class MealPlan(BaseModel):
     days: list[DayMealPlan] = Field(default_factory=list, description="A list of day meal plans")
 ```
 
@@ -223,4 +226,3 @@ If you skip this modelling step,  the framing, if you don't work diligently to e
 Remember, **good code is just documentation for our co-workers that the compiler can understand.**
 
 And in this case, it is also key to guiding the LLM to generate the best kind of response for us.
-

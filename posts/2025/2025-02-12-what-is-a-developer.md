@@ -4,6 +4,12 @@ tags:
   - coaching
   - developer
   - coding
+  - ai
+  - machine-learning
+  - software-development
+  - learning
+  - humanity
+  - human-experience
 imageAlt: A mesh rendering of a woman at a computer, on an abstract cyberpunk-style line background
 image: images/older_woman_coding.png
 published: true

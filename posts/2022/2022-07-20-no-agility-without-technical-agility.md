@@ -7,6 +7,9 @@ imageAlt: Tree Bud, Stacey Vetzal
 tags:
   - agile
   - coaching
+  - architecture
+  - software-development
+  - engineering
 ---
 # There Is No Agility Without Technical Agility
 

@@ -1,9 +1,10 @@
 ---
 tags:
-  - agile
-  - coaching
-  - developer
+  - ai
+  - machine-learning
+  - learning
   - coding
+  - software-development
 imageAlt: A woman at a computer, using her phone and keyboard
 image: images/boundaries.png
 published: true

@@ -7,9 +7,9 @@ tags:
   - software-development
   - coding
   - developer
-  - agile
   - culture
   - human-experience
+  - humanity
 ---
 So, this hit my newswires today:
 

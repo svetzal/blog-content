@@ -3,11 +3,11 @@ title: "Act on Fact, Not Conjecture"
 date: "2017-02-04"
 published: true
 tags:
-  - architecture
   - software-development
   - coding
   - developer
   - culture
+  - human-experience
 ---
 So, how much of a part do your feelings play in how you write software?
 

@@ -5,6 +5,8 @@ published: true
 tags:
   - machine-learning
   - humanity
+  - human-experience
+  - business
   - linkedin
 ---
 All a Machine Learning model can do is regurgitate existing thoughts and ideas expressed in digital form in astonishing new ways according to the rules we already laid out for it in the digital forms from which we trained it.

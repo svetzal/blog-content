@@ -1,9 +1,10 @@
 ---
 tags:
-  - agile
-  - coaching
   - developer
   - coding
+    - software-development
+    - architecture
+    - learning
 imageAlt: A woman at a computer, using her phone and keyboard
 image: images/boundaries.png
 published: true
@@ -254,7 +255,7 @@ Here they are:
 > I am trying to demonstrate the importance of designing good boundaries in code. There are a number of points I try and make:
 > - if we accidentally test the implementation rather than intent, whenever we make changes to the implementation, we will have broken tests
 > - business domain is more stable than technical domain, so if we test across business domain boundaries, tests will change less often
-> 
+>
 > Can you craft me two examples, code plus tests, that demonstrate the same functionality - one with technology oriented boundaries, and one with business domain oriented boundaries, that demonstrate poor and good testing accordingly.
 
 Not surprisingly, I was unhappy with its first response. I have little tolerance for needless boilerplate code. And I didn't specify a language, so it chose Java, boilerplate + Java are long time bedfellows.

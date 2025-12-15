@@ -7,6 +7,7 @@ imageAlt: A tower computer, opened, with its motherboard exposed, showing a scre
 tags:
   - retro
   - hardware
+  - personal
 ---
 
 > stew·ard·ship

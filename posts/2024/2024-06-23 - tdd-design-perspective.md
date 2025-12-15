@@ -9,6 +9,8 @@ tags:
   - coaching
   - developer
   - coding
+	- software-development
+	- architecture
 ---
 
 # London and Chicago Style TDD, A Design Perspective
@@ -62,25 +64,25 @@ class CartTests(TestCase):
 	def test_cart_can_calculate_total:
 		# We use a test-double
 		multiplier = Mock()
-	
+
 		# Given we have a cart with 2x $5 items in it
 		cart = Cart(
 			[
 				CartItem(quantity: 2, price: 5.0)
 			]
 		)
-	
+
 		# When we ask the cart to total itself
 		# (notice at this time we don't really care about the specific answer)
 		_ = cart.calculate_total(multiplier)
-	
+
 		# Then the total should have been calculated from the quantity and price
 		multiplier.assert_called_once_with(2, 5.0)
 
 
 class Cart:
 	# Leaving out other implementation code above
-	
+
 	def calculate_total(self, multiplier):
 		total = 0
 		for item in self.items:

@@ -4,6 +4,8 @@ tags:
   - coaching
   - developer
   - coding
+  - ai
+  - software-development
 published: true
 date: 2025-02-13
 title: The Bionic Developer

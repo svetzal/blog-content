@@ -7,6 +7,9 @@ imageAlt: Photo by tobi on unsplash
 tags:
   - agile
   - coaching
+  - architecture
+  - software-development
+  - business
 ---
 Why do we continue to separate the design of a product from its implementation?
 
