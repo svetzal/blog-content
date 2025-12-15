@@ -3,8 +3,8 @@ title: "An American iPad in Canada"
 date: "2010-04-24"
 published: true
 tags:
-  - software-development
   - hardware
+  - human-experience
 ---
 My sister was so proud, she knew I wanted an iPad and she really did too, so on her recent trip to the US, she got one and texted me right away... So naturally I asked her to pick up 8 more for me and my friends but we settled on her just picking one up for me.
 

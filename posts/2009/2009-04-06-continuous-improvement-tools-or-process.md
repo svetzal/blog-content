@@ -4,12 +4,11 @@ date: "2009-04-06"
 published: true
 tags:
   - software-development
-  - coding
-  - developer
   - agile
   - coaching
   - team
   - collaboration
+  - culture
   - business
   - leadership
   - management

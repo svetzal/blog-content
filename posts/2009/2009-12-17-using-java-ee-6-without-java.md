@@ -5,7 +5,8 @@ published: true
 tags:
   - software-development
   - coding
-  - collaboration
+  - developer
+  - architecture
 ---
 So this month, Java EE 6 was released. So many new capabilities are now part of the baseline stack, it's very cool.
 

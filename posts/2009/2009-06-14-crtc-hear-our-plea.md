@@ -3,6 +3,7 @@ title: "CRTC, Hear Our Plea"
 date: "2009-06-14"
 published: true
 tags:
+  - advocacy
   - business
   - human-experience
 ---

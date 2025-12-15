@@ -6,6 +6,7 @@ tags:
   - architecture
   - software-development
   - coding
+  - developer
 ---
 OK, found another brick wall :)
 

@@ -3,8 +3,8 @@ title: "Securing Data on a USB Drive on Mac OS X"
 date: "2009-06-06"
 published: true
 tags:
-  - software-development
   - hardware
+  - human-experience
 ---
 I was looking for a good way to encrypt data on a portable disk on my Mac, and was surprised at the range of misleading information out on the Internet. So, it inspired me to write this post in hopes that I can save people the pain and aggravation of figuring it out for themselves, or getting turned off and deciding that it isn't possible without buying extra software.
 

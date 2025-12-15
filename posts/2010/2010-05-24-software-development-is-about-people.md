@@ -4,10 +4,11 @@ date: "2010-05-24"
 published: true
 tags:
   - software-development
-  - coding
   - developer
   - agile
   - collaboration
+  - culture
+  - human-experience
   - business
 ---
 We as an industry forgot this for a long time, and I am proud to be part of the movement to bring it back.

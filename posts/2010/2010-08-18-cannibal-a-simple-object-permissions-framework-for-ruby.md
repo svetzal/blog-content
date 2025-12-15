@@ -5,7 +5,8 @@ published: true
 tags:
   - software-development
   - coding
-  - business
+  - developer
+  - consulting
 ---
 I'm proud to announce that we're releasing one of our newer frameworks into the open-source community - specifically under the [Simplified BSD License](http://en.wikipedia.org/wiki/BSD_licenses#2-clause_license_.28.22Simplified_BSD_License.22_or_.22FreeBSD_License.22.29).
 

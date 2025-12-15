@@ -5,6 +5,8 @@ published: true
 tags:
   - software-development
   - coding
+  - developer
+  - architecture
 ---
 It's finally here, Java EE 6 represents another serious step forward in the core Java server technology stack.
 

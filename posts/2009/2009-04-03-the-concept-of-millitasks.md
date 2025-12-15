@@ -3,8 +3,7 @@ title: "The Concept of Millitasks"
 date: "2009-04-03"
 published: true
 tags:
-  - architecture
-  - engineering
+  - culture
   - software-development
   - coding
   - developer
