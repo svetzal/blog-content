@@ -5,7 +5,8 @@ published: true
 tags:
   - software-development
   - coding
-  - business
+  - developer
+  - culture
 ---
 Your project is lying to you.
 

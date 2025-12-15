@@ -7,6 +7,7 @@ tags:
   - coding
   - developer
   - team
+  - culture
 ---
 There is a particular class of problem, a [Wicked Problem](https://codingculture.io/wp-content/uploads/2015/03/Wicked_problem), that denies solution.
 

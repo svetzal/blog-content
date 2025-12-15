@@ -3,18 +3,13 @@ title: "Retrospective on 2015"
 date: "2015-12-28"
 published: true
 tags:
-  - software-development
-  - coding
-  - agile
-  - coaching
-  - team
-  - business
-  - consulting
-  - entrepreneurship
-  - humanity
-  - advocacy
-  - trans
   - personal
+  - trans
+  - advocacy
+  - humanity
+  - business
+  - entrepreneurship
+  - coaching
 ---
 The past year has been exhausting. I've never felt so much like a hamster on a wheel.
 

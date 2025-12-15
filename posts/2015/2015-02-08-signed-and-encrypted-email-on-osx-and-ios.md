@@ -4,9 +4,9 @@ date: "2015-02-08"
 coverImage: "img_0128.jpg"
 published: true
 tags:
-  - software-development
-  - humanity
   - hardware
+  - learning
+  - human-experience
 ---
 I'm writing this as much for me as I am for you, my fellow netizen.
 

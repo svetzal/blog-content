@@ -7,12 +7,9 @@ tags:
   - team
   - culture
   - learning
-  - mentoring
   - diversity
   - inclusion
-  - consulting
-  - leadership
-  - entrepreneurship
+  - human-experience
 ---
 I've seen some thoughts floating around today around what kind of mix of generalists or specialists should you have on an agile team. It started when I saw a tweet out from @GregerWikstrand on the topic and it got me thinking. I'm afraid of generalists. And specialists. Why?
 

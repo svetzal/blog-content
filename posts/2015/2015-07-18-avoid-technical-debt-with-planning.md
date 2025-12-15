@@ -4,8 +4,10 @@ date: "2015-07-18"
 published: true
 tags:
   - software-development
-  - coding
   - agile
+  - coaching
+  - team
+  - culture
 ---
 So, you get it. Technical debt is bad. So what do you do about it when you have it?
 

@@ -4,11 +4,10 @@ date: "2015-12-22"
 published: true
 tags:
   - software-development
-  - coding
+  - business
+  - management
   - team
   - culture
-  - business
-  - human-experience
 ---
 If you require project accountability to funders, for grants or tax refunds, you need lightweight processes that integrate with your development practices, not some weird offshoot extra step you'll never do or that duplicates efforts you've already made elsewhere.
 
