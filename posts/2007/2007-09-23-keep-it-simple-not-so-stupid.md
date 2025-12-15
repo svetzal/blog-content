@@ -6,7 +6,8 @@ tags:
   - software-development
   - developer
   - consulting
-  - humanity
+  - human-experience
+  - culture
 ---
 Have you tried this? I mean really, sat down, tried to make something simple. Not simple for you, simple for others.
 

@@ -5,9 +5,8 @@ published: true
 tags:
   - software-development
   - agile
-  - team
   - business
-  - humanity
+  - consulting
 ---
 Yes, that might be an odd headline for me to make, given that I actually run a software development company.
 

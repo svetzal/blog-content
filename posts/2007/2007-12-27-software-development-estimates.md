@@ -6,6 +6,7 @@ tags:
   - software-development
   - developer
   - business
+  - consulting
 ---
 I've blogged before on the fallacies of software development estimates. I found [this posting](http://a.khavr.com/2007/12/24/why-i-dont-give-fixed-price-software-developer-story/) particularly well thought-out and illustrative of the problem at hand.
 

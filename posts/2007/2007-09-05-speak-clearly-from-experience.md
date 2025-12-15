@@ -4,9 +4,10 @@ date: "2007-09-05"
 published: true
 tags:
   - software-development
-  - coding
-  - culture
   - business
+  - consulting
+  - human-experience
+  - culture
 ---
 So today I'm working through some more content management challenges - and hating JavaScript-based WYSIWYG editors. They really really suck.The main reason they do, are they all simply expose HTML editing capabilities from within the browser. Unfortunately, this is typically buggy and extremely clunky. If you don't believe me, try table editing. Ugh.
 

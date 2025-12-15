@@ -5,8 +5,8 @@ published: true
 tags:
   - software-development
   - coding
-  - consulting
-  - management
+  - developer
+  - architecture
 ---
 OK, so around 2005 we did some projects with WebServices.
 

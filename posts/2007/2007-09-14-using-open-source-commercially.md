@@ -3,13 +3,10 @@ title: "Using 'Open Source' Commercially"
 date: "2007-09-14"
 published: true
 tags:
-  - architecture
   - software-development
-  - coding
   - developer
-  - team
   - business
-  - humanity
+  - consulting
 ---
 I've been writing recently, mostly because our [ThreeWiseMen.ca](http://threewisemen.ca) website needs an overhaul for content.
 

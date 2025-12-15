@@ -6,7 +6,8 @@ tags:
   - software-development
   - coding
   - developer
-  - business
+  - learning
+  - architecture
 ---
 So, an associate of mine is really enjoying programmatic database query criteria, and now it's spilled over onto me :)
 

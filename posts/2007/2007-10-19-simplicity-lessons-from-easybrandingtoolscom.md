@@ -6,6 +6,7 @@ tags:
   - software-development
   - developer
   - business
+  - entrepreneurship
 ---
 Life is a learning exercise.
 

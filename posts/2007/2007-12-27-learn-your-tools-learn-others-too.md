@@ -3,12 +3,11 @@ title: "Learn Your Tools, Learn Others Too"
 date: "2007-12-27"
 published: true
 tags:
-  - architecture
   - software-development
-  - coding
-  - collaboration
-  - humanity
+  - developer
+  - learning
   - retro
+  - hardware
 ---
 I've always lived at the fringe of computing, with a foot in the popular and a foot in the obscure. When I was a kid, I had a Tandy TRS-80 when all my friends had the Vic-20 or Commodore 64 - and I attribute my open-mindedness to this early acceptance of the obscure.
 

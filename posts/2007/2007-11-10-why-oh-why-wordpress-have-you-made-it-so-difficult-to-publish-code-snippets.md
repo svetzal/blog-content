@@ -5,6 +5,7 @@ published: true
 tags:
   - software-development
   - coding
+  - developer
   - human-experience
 ---
 This started as a post about how Java EE 5 has improved my experience in writing webservices based applications.
