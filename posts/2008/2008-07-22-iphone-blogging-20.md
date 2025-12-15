@@ -4,6 +4,7 @@ date: "2008-07-22"
 published: true
 tags:
   - hardware
+  - human-experience
 ---
 I just got the native iPhone app for Wordpress.
 

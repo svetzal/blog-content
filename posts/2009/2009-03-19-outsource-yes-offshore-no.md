@@ -3,11 +3,11 @@ title: "Outsource? Yes! Offshore? NO!!!"
 date: "2009-03-19"
 published: true
 tags:
-  - architecture
   - software-development
-  - developer
   - team
   - business
+  - consulting
+  - culture
   - human-experience
   - humanity
 ---

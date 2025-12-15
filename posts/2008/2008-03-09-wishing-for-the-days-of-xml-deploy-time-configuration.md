@@ -5,6 +5,8 @@ published: true
 tags:
   - software-development
   - coding
+  - developer
+  - architecture
 ---
 Wow, so here's a short one for you.
 

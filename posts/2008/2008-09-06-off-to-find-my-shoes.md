@@ -3,9 +3,10 @@ title: "Off To Find My Shoes"
 date: "2008-09-06"
 published: true
 tags:
-  - software-development
   - business
-  - humanity
+  - consulting
+  - leadership
+  - entrepreneurship
 ---
 So, I recently blogged about my new "No Quotes" policy at Three Wise Men, and I've blogged in the past about the perils of software development quotes.
 

@@ -6,6 +6,7 @@ tags:
   - architecture
   - software-development
   - coding
+  - developer
 ---
 So, I decided I had had enough of looking at 400-600ms server prep times for Seam pages on a project we're working on. It just didn't seam right - could the Seam framework really have this much of an impact on performance?
 

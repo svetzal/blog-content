@@ -5,8 +5,9 @@ published: true
 tags:
   - software-development
   - coding
-  - coaching
   - business
+  - entrepreneurship
+  - consulting
 ---
 I say again, ?!
 

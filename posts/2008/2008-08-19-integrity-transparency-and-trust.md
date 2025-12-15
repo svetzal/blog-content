@@ -8,6 +8,7 @@ tags:
   - business
   - entrepreneurship
   - human-experience
+  - consulting
 ---
 At Three Wise Men we've just finished off a reasonably large project, and a few things really struck me in the end about the way we operated and how it turned out.
 

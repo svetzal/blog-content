@@ -4,6 +4,8 @@ date: "2008-07-23"
 published: true
 tags:
   - hardware
+  - architecture
+  - software-development
 ---
 Today we finally got our Dell VM server going again. We had lost 2 disks from our 4 disk RAID5 so we needed to reinstall.
 

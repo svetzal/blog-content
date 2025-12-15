@@ -6,7 +6,7 @@ tags:
   - software-development
   - coding
   - developer
-  - humanity
+  - learning
 ---
 I often see a lot of complaining about the [Apache Maven](http://maven.apache.org/) build tool. In fact, sometimes I do a lot of complaining about it myself.
 

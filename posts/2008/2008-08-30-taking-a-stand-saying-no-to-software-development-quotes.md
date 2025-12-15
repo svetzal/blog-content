@@ -3,13 +3,14 @@ title: "Taking a stand, saying NO to software development quotes"
 date: "2008-08-30"
 published: true
 tags:
-  - engineering
   - software-development
-  - developer
   - agile
   - team
   - business
   - human-experience
+  - consulting
+  - entrepreneurship
+  - leadership
 ---
 Starting Tuesday, I will no longer issue quotes for software development.
 

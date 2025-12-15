@@ -4,8 +4,10 @@ date: "2008-01-09"
 published: true
 tags:
   - software-development
-  - coding
   - developer
+  - culture
+  - humanity
+  - learning
 ---
 So I went to the TSOT Rails Project night last night, it was good to see some familiar faces and I enjoyed the presentations.
 

@@ -7,6 +7,7 @@ tags:
   - engineering
   - software-development
   - coding
+  - developer
 ---
 In this guide, I'm going to go through how I've configured high-performance web applications in the past using Squid and Apache to front-end the application server(s).
 

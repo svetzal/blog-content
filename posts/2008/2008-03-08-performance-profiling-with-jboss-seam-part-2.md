@@ -5,7 +5,8 @@ published: true
 tags:
   - software-development
   - coding
-  - human-experience
+  - developer
+  - architecture
 ---
 On my last post, I began dissecting what might be causing [JBoss Seam](http://labs.jboss.com/jbossseam/) to be "slow" on one of our projects. In this post, I'm going to show the results of some testing on another Seam based project which hasn't shown slow performance.
 
