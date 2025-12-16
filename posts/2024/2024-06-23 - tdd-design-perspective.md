@@ -9,8 +9,8 @@ tags:
   - coaching
   - developer
   - coding
-	- software-development
-	- architecture
+  - software-development
+  - architecture
 ---
 
 # London and Chicago Style TDD, A Design Perspective
