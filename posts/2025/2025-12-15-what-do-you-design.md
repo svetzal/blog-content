@@ -8,7 +8,8 @@ tags:
   - collaboration
   - human-experience
   - leadership
-imageAlt: A diverse team collaborating around a whiteboard with sticky notes
+image: images/light_designer.png
+imageAlt: A woman in a modern office uses a stylus to draw a glowing, arched line on a large, transparent screen filled with digital diagrams, while colleagues stand in the background.
 published: true
 date: 2025-12-15
 title: What Do You Design?
