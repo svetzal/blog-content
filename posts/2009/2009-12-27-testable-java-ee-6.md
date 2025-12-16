@@ -6,7 +6,7 @@ tags:
   - architecture
   - software-development
   - coding
-    - developer
+  - developer
 ---
 OK, so some progress has been made.
 

@@ -2,9 +2,9 @@
 tags:
   - developer
   - coding
-    - software-development
-    - architecture
-    - learning
+  - software-development
+  - architecture
+  - learning
 imageAlt: A woman at a computer, using her phone and keyboard
 image: images/boundaries.png
 published: true
