@@ -1,4 +1,113 @@
 Date,ShareLink,ShareCommentary,SharedUrl,MediaUrl,Visibility
+2025-12-09 12:32:04,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7404135747139829761,"GenAI doesn't have to be as reliable as your compiler, for the same reason you can hire 5 teams to solve the same problem and get 5 different approaches. GenAI is no different in that respect, because people are the OG non-deterministic.
+
+Now here's another interesting thing: do you hire your teams to solve problems, or to just follow your instructions? ""Programming by remote control"" is a thing, a costly and slop-building thing. Oh, you thought GenAI was the first approach to develop slop?
+
+There's different kinds of slop, of course. In order of decreasing cost and increased blast radius:
+
+- solving the wrong problem
+- solving the problem wrong
+ - misunderstanding the technology
+ - bad planning
+ - bad code
+
+The world runs on bad code that happens to work - eg it solves the right problem well enough. And solving the wrong problem with beautiful code is a special kind of purgatory.","","",MEMBER_NETWORK
+2025-12-08 12:31:25,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7403773197634138112,"Thinking about the whole sentiment that your more senior folks that engage with GenAI will seem to leverage it best.
+
+I think the difference isn't in how they're applying the ""AI"", the difference is in how they think about software engineering in general.
+
+So if you want an improvement in engineering, look to improve your engineering practices first, in your application of GenAI.","","",MEMBER_NETWORK
+2025-12-04 13:34:48,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7402339597147537408,"Yesterday I learned that people have discovered that you can build a conceptual model behind an image, represent it in JSON and Google's ""Nano Banana"" will do its best to render it for you. You can even give it an image, and it will do its best to generate JSON that is a conceptual representation of what it sees.
+
+This lets you tweak minute parameters while the model faithfully retains everything else you like about the image. Welcome to building design systems!
+
+Isn't it cool how different creative professions (eg visual design, photography, coding, architecture, data) keep intersecting on their underlying creative conceptual models 😀
+
+Folks have been doing something similar for a long time with Midjourney, Stable Diffusion, Sora - they intuited their prompts over time as they came to know and leverage the tools, so that their plain language prompts looked more and more structured.
+
+And now we've arrived at formalizing our design language grammars with JSON Schema for a model that is capable of synthesizing what many technologists like me feel like is a mystical realm in which I've never been able to excel.
+
+To be a visual designer now means you're more and more building design languages that make sense in your domain. This skill is more critical than ever. In commercial applications, pretty pictures must fulfil a purpose rather than exist for their own sake. Your role is conceptualizing, clarifying, and modelling to realize that purpose.
+
+Developers can do what they do and push for rigor in fuzzy models so that we can find consistency and digital clarity.
+
+GenAI is rapidly magnifying what we do within our professions, continues to prove it doesn't replace us, just gives us different and in many ways more powerful tools, but most importantly, it's pushing us to re-imagine how we do things. Something long overdue in a world so invested in industrialized thinking.
+
+What a time to be alive!","","",MEMBER_NETWORK
+2025-12-01 12:38:27,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7401238252621557761,"""If you think Generative AI is the new compiler, I've got news for you.""
+
+Of course if you mean literally, it's obviously wrong. But I know compilers. And CPU instruction sets. And there's always been a march towards non-determinism even within those technologies, long before generative AI. You don't know how your code is going to get pipelined on a CPU. You don't know how the optimizer is going to adjust the machine or intermediate code generated. This pushed us to higher order languages and even introduced the notion of a compiler.
+
+_What_ is deterministic is always shifting. Because life isn't deterministic.
+People demand determinism from IT constantly, and we try and build deterministic or idempotent systems on top of chaos.
+
+For me, what it is forcing me to reassess is the new lines between determinism and non-determinism. Frankly, this is a problem that developers have always had to solve for.
+
+A compiler wasn't just a fancy assembler. And the implications of generative AI aren't just a fancy compiler.","","",MEMBER_NETWORK
+2025-12-01 11:26:50,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7401220228992565248,"Odd, but I'm getting more use than ever out of the git ""submodules"" feature. This lets you enclose independent repositories inside a larger structure.
+
+For example, I have a library, mojentic, which provides simplified LLM and agentic plumbing for developers looking to add those features to their apps. Originally the library was built in Python, the language I typically use when exploring data-science technologies, plus it's a good general purpose language.
+
+The library currently spans Python, Rust, Elixir and Typescript.
+
+I have a multifaceted design philosophy with the library. I want the same use-cases supported across all libraries, but I want idiomatic structures that make each library ""comfortable"" to its own developer community. Functional, Object Oriented, Strongly typed, Weakly typed, these all have an impact on what the best ""code design"" to fit the use-cases might be, and leads to localized design decisions that differ between the libraries.
+
+They have the same high-level quality guidelines. Linting, testing, dependency security, documentation, and build automation.
+
+The monorepo-like approach with submodules lets me keep the individual libraries and their build automation independent, while providing higher-order policy, use-case, and intent guidelines common between all libraries.
+
+Experience opening agentic tools like Claude Code, Codex CLI, Github Copilot, Windsurf, etc is varied. Windsurf doesn't do particularly great because it tends to want a singular technology analysis for a ""project"". Copilot isn't as bad, but can't handle nested guidance (eg copilot instructions in individual repos scoped around those concerns, versus instructions in the higher order folders scoped around the broader concerns.)
+
+Agentic tools that respect nested AGENTS.md or Claude Code with its nestable CLAUDE.md seem to handle things best.
+
+This has let me explore some interesting things.
+
+- a daily process that runs claude automatically to perform a dependency security sweep, and coordinate new automated releases of impacted libraries
+- adding a use-case to the executive documentation and letting specialized sub-agents ripple the implications throughout each submodule
+- bringing technical capabilities and documentation standards in sync - eg each library, while using very different but locally standardized technologies (eg MkDocs for python, ExDoc for elixir, mdBook/rustdoc for Rust, VitePress for Typescript)
+- the ability to accommodate variability and commonality in different directions automatically is a brand new, very agentic approach to managing software projects
+- it has enabled me to avoid shoe-horning in awkward technology or policy mixes... eg:
+ - why use MkDocs for elixir when ExDoc is there and well known / recognizable by the elixir community, and better integrated with elixir code
+ - avoid leaking OO design concepts into functional code
+
+Interesting stuff, this new world.","","",MEMBER_NETWORK
+2025-11-25 12:46:11,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7399065868984283136,"Not enjoying how ""LLMs getting better at UI"" tends to mean it wrangling web UI. I've viewed web UI as a necessary evil simply because of the demand for it, but I do not believe it is or ever can be excellent UI. Desktop UI is tremendously rich and featured, and anything in a browser is significantly nerfed in comparison.
+
+Practical example, thought I'd give Gemini Pro 3 a chance at a Qt UI. It continues to produce horribly unstable user experiences, inconsistent adherence to good UI practices for visual design, and absolutely horrible handling of concurrency and event handling.","","",MEMBER_NETWORK
+2025-11-20 12:27:03,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7397249115824345088,"If your goal is to stay busy rather than have impact, sure, go ahead and measure productivity by Lines of Code. Why is this resurging out there? 😡","","",MEMBER_NETWORK
+2025-11-17 13:16:55,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7396174502898085890,"A weekend spent with the new custom agents abilities of VS Code. Not really by choice as I was out of this week's Claude Code credits LOL. Agent formations gorge on tokens, a bit because of the concentrated / concurrent (in the case of Claude Code) work, but mostly because armed with more capability it opens you up to exploring capabilities more boldly.
+
+I've had to let go my natural hesitance to engage in a big thing. The scale of what's ""big"" is not the same. I don't mean that big things are small now. I mean that our geometry is completely different. Time spent on ""big"" things can easily fall into fixing bad work by the agents, so just big but different when that happens. And it remains quite unpredictable for me.
+
+Bonus content, some technology specific agent prompts for you. Don't copy-paste, read them, apply to your context. https://lnkd.in/e8SPkRd8","https://lnkd.in/e8SPkRd8","",MEMBER_NETWORK
+2025-11-11 03:42:59,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7393855740081459200,"I like the way interaction can happen with an LLM during interesting maneuvers. I'm porting my mojentic library to Rust and Elixir, and pointed out that it needed to better frame the capabilities of Elixir. Here was its response:
+
+Perfect! I've reframed the ""Type System"" row as ""Data Modeling"" and added a comprehensive section explaining the philosophical differences between the three approaches. The key insights:
+
+Python (Pydantic): Runtime validation - ""trust but verify""
+- Rich validation logic at runtime
+- Flexible but with overhead
+
+Elixir (Pattern Matching): ""Thinking in data""
+- Data flows through transformations
+- Pattern matching IS the validation
+- Shape emerges from use, not declaration
+- ""Let it crash"" philosophy
+- Implicit contracts through function signatures
+
+Rust (Type System): Compile-time guarantees
+- ""Make invalid states unrepresentable""
+- Zero-cost abstractions
+- Caught at compile time
+
+The section emphasizes that Elixir's approach isn't about weak typing - it's about a fundamentally different philosophy where:
+
+- Data is separate from behavior
+- Pattern matching validates through usage
+- Pipelines transform data
+- Function signatures define implicit contracts
+
+This captures the essence of ""thinking in data"" - you don't validate against schemas, you match on the shapes you need and let unmatched patterns fail naturally. The structure of your data drives the control flow of your program.","","",MEMBER_NETWORK
 2025-11-08 14:56:47,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7392938139465723904,"If you do a lot of posting on LinkedIn that never seems to make it to your blog, like I do, try the following prompt in an AI enabled browser (eg Atlas, or any agent that you've given the Chrome-DevTools MCP).""
 """"
 ""**NOTE: I noticed LinkedIn mangled the link to your main feed page, just click the LinkedIn logo on the site and use _that_ url in the prompt.**""
