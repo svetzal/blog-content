@@ -1,0 +1,141 @@
+{
+  "Character": {
+    "Description": "A highly competent, focused woman coder",
+    "Age": "Middle-aged, mature, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": {
+      "Type": "Heavy set, sturdy",
+      "UpperBody": "Big arms, broad shoulders",
+      "LowerBody": "Slim hips"
+    },
+    "Face": {
+      "Eyes": "Blue-grey",
+      "Expression": "Thoughtful, analytical"
+    },
+    "Hair": {
+      "Color": "Grey/silver",
+      "Length": "Long",
+      "Style": "Wind-swept or naturally flowing"
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": ["Neon signs", "Screen glow", "Rim lighting", "Side lighting"],
+      "Shadows": "Sharp, emphasizing texture and form"
+    },
+    "ColorPalette": {
+      "Primary": ["Magenta", "Cyan", "Electric Blue", "Lime Green"],
+      "Accents": ["Silver", "White", "Cool Blues", "Metalic purples"],
+      "Treatment": "High saturation, strong contrast between warm neons and cool tech light"
+    },
+    "Atmosphere": {
+      "Effects": ["Bokeh", "Atmospheric haze", "Neon glow", "Reflections on surfaces"],
+      "Mood": "Mysterious, electric, high-stakes, gritty yet stylish"
+    },
+    "AspectRatio": "16:9"
+  },
+
+  "Situations": [
+    {
+      "Name": "Urban Vigilante Portrait",
+      "Setting": "City street at night",
+      "Camera": "Close-up, 3/4 profile, shallow depth of field",
+      "CharacterPose": {
+        "Expression": "Intense forward gaze, calm confidence",
+        "BodyPosition": "Static pose, standing tall, shoulders squared",
+        "Gesture": "Arms relaxed at sides or one hand near collar"
+      },
+      "Props": [
+        {
+          "Name": "Futuristic sunglasses",
+          "Description": "Sleek, angular frames with reflective or holographic lenses",
+          "Application": "Worn, neon reflections visible in lenses"
+        },
+        {
+          "Name": "Leather coat",
+          "Description": "Dark leather with high collar, tactical styling",
+          "Application": "Worn, collar turned up against wind"
+        }
+      ],
+      "KeyDetails": [
+        "Wind in hair",
+        "Atmospheric street elements"
+      ],
+      "LightingFocus": "Side/rim lighting, neon bokeh background"
+    },
+    {
+      "Name": "Corporate Tech Expert",
+      "Setting": "Clean server room or professional workspace with multi-monitor setup",
+      "Camera": "Mid-shot, eye-level, centered framing",
+      "CharacterPose": {
+        "Expression": "Focused concentration, slight analytical squint",
+        "BodyPosition": "Seated, leaning slightly forward toward screens",
+        "Gesture": "Actively typing, hands on keyboard"
+      },
+      "Props": [
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern rectangular frames, subtle tech integration",
+          "Application": "Worn, screen reflections visible in lenses"
+        },
+        {
+          "Name": "Multi-monitor array",
+          "Description": "Multiple displays showing code, data visualizations",
+          "Application": "Surrounding subject, primary light source"
+        },
+        {
+          "Name": "Mechanical keyboard",
+          "Description": "High-end keyboard with subtle backlighting",
+          "Application": "Hands actively typing"
+        }
+      ],
+      "KeyDetails": [
+        "Screen light illuminating face and hands",
+        "Clean, organized workspace aesthetic"
+      ],
+      "LightingFocus": "Soft screen glow as primary light, low ambient"
+    },
+    {
+      "Name": "Neon Cityscape Hacker",
+      "Setting": "High-rise interior with window view onto neon-lit city street",
+      "Camera": "Mid-shot, slightly low angle, showing cityscape scale",
+      "CharacterPose": {
+        "Expression": "Deep focus, determined intensity",
+        "BodyPosition": "Seated or perched, slight forward lean",
+        "Gesture": "Focused coding/hacking on dual monitors, fingers hovering over keys"
+      },
+      "Props": [
+        {
+          "Name": "Cyber implants",
+          "Description": "Subtle neural interface ports or glowing temple implants",
+          "Application": "Visible near temples, faint glow matching screen colors"
+        },
+        {
+          "Name": "Dual monitors",
+          "Description": "Displays showing green/yellow code streams",
+          "Application": "Positioned in front of subject, contrasting with neon background"
+        },
+        {
+          "Name": "Coffee mug",
+          "Description": "Dark mug with subtle tech company logo or glowing elements",
+          "Application": "Set aside on desk, steam rising"
+        }
+      ],
+      "KeyDetails": [
+        "Vertical city signs visible through window",
+        "Atmospheric haze effect",
+        "Contrast between warm neon exterior and cool screen light"
+      ],
+      "LightingFocus": "Strong saturated neon from background, contrasting screen light"
+    }
+  ],
+
+  "PromptKeywords": [
+    "highly detailed", "digital painting", "concept art",
+    "cyberpunk", "neon light", "cinematic lighting", "high contrast"
+  ]
+}

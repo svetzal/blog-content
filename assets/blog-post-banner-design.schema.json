@@ -1,0 +1,249 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "blog-post-banner-design.schema.json",
+  "title": "Blog Post Banner Design",
+  "description": "Style guide for generating consistent blog post banner images",
+  "type": "object",
+  "required": ["Character", "Style", "Situations", "PromptKeywords"],
+  "properties": {
+    "Character": {
+      "type": "object",
+      "description": "Physical traits of the recurring character",
+      "required": ["Description", "Age"],
+      "properties": {
+        "Description": {
+          "type": "string",
+          "description": "Brief overall description of the character"
+        },
+        "Age": {
+          "type": "string",
+          "description": "Age range and maturity descriptors"
+        },
+        "Ethnicity": {
+          "type": "string",
+          "description": "Ethnic background or build type"
+        },
+        "Build": {
+          "type": "object",
+          "description": "Body type and proportions",
+          "properties": {
+            "Type": {
+              "type": "string",
+              "description": "Overall body type descriptor"
+            },
+            "UpperBody": {
+              "type": "string",
+              "description": "Arms, shoulders, chest description"
+            },
+            "LowerBody": {
+              "type": "string",
+              "description": "Hips, legs description"
+            }
+          }
+        },
+        "Face": {
+          "type": "object",
+          "description": "Facial features",
+          "properties": {
+            "Eyes": {
+              "type": "string",
+              "description": "Eye color and shape"
+            },
+            "Expression": {
+              "type": "string",
+              "description": "Default/baseline facial expression"
+            }
+          }
+        },
+        "Hair": {
+          "type": "object",
+          "description": "Hair characteristics",
+          "properties": {
+            "Color": {
+              "type": "string",
+              "description": "Hair color"
+            },
+            "Length": {
+              "type": "string",
+              "description": "Hair length"
+            },
+            "Style": {
+              "type": "string",
+              "description": "Hair styling and movement"
+            }
+          }
+        }
+      }
+    },
+
+    "Style": {
+      "type": "object",
+      "description": "Visual style and rendering specifications",
+      "required": ["Genre", "Rendering"],
+      "properties": {
+        "Genre": {
+          "type": "string",
+          "description": "Overall artistic genre or aesthetic"
+        },
+        "Rendering": {
+          "type": "string",
+          "description": "Rendering style and quality level"
+        },
+        "Lighting": {
+          "type": "object",
+          "description": "Lighting characteristics",
+          "properties": {
+            "Type": {
+              "type": "string",
+              "description": "Overall lighting style"
+            },
+            "Sources": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Types of light sources used"
+            },
+            "Shadows": {
+              "type": "string",
+              "description": "Shadow characteristics"
+            }
+          }
+        },
+        "ColorPalette": {
+          "type": "object",
+          "description": "Color scheme specifications",
+          "properties": {
+            "Primary": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Primary colors in the palette"
+            },
+            "Accents": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Accent colors"
+            },
+            "Treatment": {
+              "type": "string",
+              "description": "How colors are applied and balanced"
+            }
+          }
+        },
+        "Atmosphere": {
+          "type": "object",
+          "description": "Atmospheric effects and mood",
+          "properties": {
+            "Effects": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Visual effects applied to the scene"
+            },
+            "Mood": {
+              "type": "string",
+              "description": "Overall emotional tone"
+            }
+          }
+        },
+        "AspectRatio": {
+          "type": "string",
+          "description": "Image aspect ratio (e.g., 16:9, 4:3)"
+        }
+      }
+    },
+
+    "Situations": {
+      "type": "array",
+      "description": "Scene configurations for different contexts",
+      "items": {
+        "$ref": "#/$defs/Situation"
+      },
+      "minItems": 1
+    },
+
+    "PromptKeywords": {
+      "type": "array",
+      "description": "Keywords to include in image generation prompts",
+      "items": { "type": "string" }
+    }
+  },
+
+  "$defs": {
+    "Situation": {
+      "type": "object",
+      "description": "A specific scene configuration",
+      "required": ["Name", "Setting", "Camera", "CharacterPose"],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Identifier for this situation"
+        },
+        "Setting": {
+          "type": "string",
+          "description": "Environment and location description"
+        },
+        "Camera": {
+          "type": "string",
+          "description": "Camera angle, distance, and framing"
+        },
+        "CharacterPose": {
+          "$ref": "#/$defs/CharacterPose"
+        },
+        "Props": {
+          "type": "array",
+          "description": "Objects and accessories in the scene",
+          "items": {
+            "$ref": "#/$defs/Prop"
+          }
+        },
+        "KeyDetails": {
+          "type": "array",
+          "description": "Important atmospheric or scene details",
+          "items": { "type": "string" }
+        },
+        "LightingFocus": {
+          "type": "string",
+          "description": "Specific lighting setup for this situation"
+        }
+      }
+    },
+
+    "CharacterPose": {
+      "type": "object",
+      "description": "Character positioning within a situation",
+      "required": ["Expression", "BodyPosition"],
+      "properties": {
+        "Expression": {
+          "type": "string",
+          "description": "Facial expression and gaze"
+        },
+        "BodyPosition": {
+          "type": "string",
+          "description": "Overall body stance and posture"
+        },
+        "Gesture": {
+          "type": "string",
+          "description": "Hand and arm positioning/action"
+        }
+      }
+    },
+
+    "Prop": {
+      "type": "object",
+      "description": "An object or accessory in the scene",
+      "required": ["Name", "Description", "Application"],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "What the prop is"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Visual details and style of the prop"
+        },
+        "Application": {
+          "type": "string",
+          "description": "How the prop is positioned or used in the scene"
+        }
+      }
+    }
+  }
+}

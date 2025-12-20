@@ -1,0 +1,89 @@
+{
+  "Character": {
+    "Description": "A highly competent, focused woman coder",
+    "Age": "Middle-aged, mature, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": {
+      "Type": "Heavy set, sturdy",
+      "UpperBody": "Big arms, broad shoulders",
+      "LowerBody": "Slim hips"
+    },
+    "Face": {
+      "Eyes": "Blue-grey",
+      "Expression": "Thoughtful, analytical"
+    },
+    "Hair": {
+      "Color": "Grey/silver",
+      "Length": "Long",
+      "Style": "Wind-swept or naturally flowing"
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": ["Neon signs", "Screen glow", "Rim lighting", "Side lighting"],
+      "Shadows": "Sharp, emphasizing texture and form"
+    },
+    "ColorPalette": {
+      "Primary": ["Magenta", "Cyan", "Electric Blue", "Lime Green"],
+      "Accents": ["Silver", "White", "Cool Blues", "Metalic purples"],
+      "Treatment": "High saturation, strong contrast between warm neons and cool tech light"
+    },
+    "Atmosphere": {
+      "Effects": ["Bokeh", "Atmospheric haze", "Neon glow", "Reflections on surfaces"],
+      "Mood": "Mysterious, electric, high-stakes, gritty yet stylish"
+    },
+    "AspectRatio": "16:9"
+  },
+
+  "Situations": [
+    {
+      "Name": "Systems Thinker at the Whiteboard",
+      "Setting": "Dim office space with cluttered cubicles visible in background, corporate fluorescent lighting mixed with screen glow, hints of forgotten personal items on empty desks",
+      "Camera": "Mid-shot, slightly wide angle to show environment context, subject off-center with negative space toward the organizational chaos",
+      "CharacterPose": {
+        "Expression": "Knowing half-smile, eyes conveying both exasperation and compassion, the look of someone who has seen this pattern before",
+        "BodyPosition": "Standing, weight shifted to one hip, arms crossed or one hand gesturing toward a diagram",
+        "Gesture": "Pointing at or annotating a systems diagram on a whiteboard or holographic display"
+      },
+      "Props": [
+        {
+          "Name": "Holographic whiteboard",
+          "Description": "Translucent display showing interconnected nodes, feedback loops, org chart fragments dissolving into chaos",
+          "Application": "Floating beside subject, hand interacting with diagram elements"
+        },
+        {
+          "Name": "Red stapler",
+          "Description": "Iconic Swingline stapler with subtle red glow, worn and slightly battered",
+          "Application": "Sitting forgotten on a desk in the background, small spotlight effect"
+        },
+        {
+          "Name": "Professional blazer",
+          "Description": "Dark blazer over tech-casual attire, sleeves slightly pushed up",
+          "Application": "Worn, suggesting someone who bridges corporate and technical worlds"
+        },
+        {
+          "Name": "Coffee mug",
+          "Description": "Plain corporate mug, half-empty, slightly stained",
+          "Application": "Held loosely in non-gesturing hand or set on nearby surface"
+        }
+      ],
+      "KeyDetails": [
+        "Cubicle farm stretching into hazy background",
+        "Mix of harsh fluorescent and warm screen glow lighting",
+        "Subtle visual metaphor of entropy - papers slightly scattered, chairs askew",
+        "Systems diagram showing nodes labeled with abstract organizational concepts"
+      ],
+      "LightingFocus": "Cool overhead fluorescents contrasted with warm holographic diagram glow on face, creating tension between corporate sterility and human insight",
+      "ThematicTags": ["systems-thinking", "leadership", "organizational-design"]
+    }
+  ],
+
+  "PromptKeywords": [
+    "highly detailed", "digital painting", "concept art",
+    "cyberpunk", "neon light", "cinematic lighting", "high contrast"
+  ]
+}
