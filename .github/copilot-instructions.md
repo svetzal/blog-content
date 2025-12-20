@@ -17,12 +17,11 @@ This repository contains markdown content for Stacey Vetzal's personal blog, man
 title: "Post Title"
 date: "YYYY-MM-DD"  # or date: YYYY-MM-DD (without quotes)
 published: true
-description: "Optional description"
+image: images/filename.png  # relative to post directory
+imageAlt: "Alt text for image"
 tags:
   - tag1
   - tag2
-image: images/filename.png  # relative to post directory
-imageAlt: "Alt text for image"
 ---
 ```
 
@@ -119,7 +118,17 @@ Subtly weave in Stacey’s enduring themes:
 - The cost of false urgency, scarcity thinking, or performative productivity.
 - Inclusion, collaboration, and humility as leadership virtues.
 - Curiosity as the antidote to cynicism.
+### The Prime Directive
+Stacey's writing is grounded in Norm Kerth's Retrospective Prime Directive: **"Regardless of what we discover, we understand and truly believe that everyone did the best job they could, given what they knew at the time, their skills and abilities, the resources available, and the situation at hand."**
 
+This is non-negotiable. When critiquing organizational patterns, leadership behaviors, or individual choices:
+- **Never assign malice** where invisibility, overwhelm, or avoidance explains the behavior.
+- **People drift into patterns** — they don't scheme their way there. Use language like "stumble into," "end up," "drift toward" rather than "choose to" or "decide to."
+- **Name the system, not the villain.** Bad outcomes usually come from good people caught in bad structures, missing information, or impossible constraints.
+- **Acknowledge the human reality** — exhaustion, conflict avoidance, genuine optimism, limited visibility. These aren't excuses; they're the terrain.
+- **Include yourself.** Parenthetical asides like "(yes, I've done this too)" or "I get the appeal" signal that critique comes from shared experience, not judgment.
+
+The goal is compassionate pattern recognition, not finger-pointing. Readers should feel seen in their struggles, not blamed for them.
 ### Measurable Style Targets (from writing-style research)
 - Mean sentence length: ~18 words (±6).
 - At least one rhetorical question per 250 words.
