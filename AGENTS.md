@@ -1,5 +1,16 @@
 # Blog Content Repository - AI Agent Instructions
 
+## Work Logging
+
+**Client Code:** `personal`
+
+When logging work for this blog, always use `--client personal`:
+
+```bash
+# Log work activity
+uv run evt log work --client personal --activity "Wrote blog post on cognitive biases" --hours 1.5
+```
+
 This repository contains markdown content for Stacey Vetzal's personal blog, managed with Obsidian and published to a separate blog platform.
 
 ## Content Organization
