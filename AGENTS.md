@@ -1,4 +1,4 @@
-# Blog Content Repository
+# Blog Content Repository - AI Agent Instructions
 
 This repository contains markdown content for Stacey Vetzal's personal blog, managed with Obsidian and published to a separate blog platform.
 
@@ -17,11 +17,12 @@ This repository contains markdown content for Stacey Vetzal's personal blog, man
 title: "Post Title"
 date: "YYYY-MM-DD"  # or date: YYYY-MM-DD (without quotes)
 published: true
-image: images/filename.png  # relative to post directory
-imageAlt: "Alt text for image"
+description: "Optional description"
 tags:
   - tag1
   - tag2
+image: images/filename.png  # relative to post directory
+imageAlt: "Alt text for image"
 ---
 ```
 
@@ -81,19 +82,17 @@ This blog covers software development, agile practices, design thinking, and cog
 - Headings must start at level 1 (`#`) and increment by one level only (no skipping from `#` to `###`)
 - Put blank lines above and below bulleted lists, numbered lists, headings, quotations, and code blocks
 
-## Writing Posts
+## Writing Posts - Stacey Vetzal's Style Guide
 
 When writing blog posts, follow these guidelines:
 
-**Instruction:** Write a blog post in the style of Stacey Vetzal using the following detailed guidelines.
-
 ### Input Material
-The user must provide you an anecdote or opening vignette as the seed for the story.
+The user must provide an anecdote or opening vignette as the seed for the story.
 
 ### Overall Tone and Voice
 Adopt a **conversational, first-person tone** — insightful, warm, and reflective.
 Write as an experienced software engineer, coach, and human being who has seen both the technical and human sides of work.
-Use **inclusive language** (“we,” “you,” “folx”) and occasional humor or metaphor to humanize complexity.
+Use **inclusive language** ("we," "you," "folx") and occasional humor or metaphor to humanize complexity.
 Confidence without arrogance; empathy without sentimentality.
 Contractions and natural speech rhythms are essential.
 
@@ -105,45 +104,35 @@ Contractions and natural speech rhythms are essential.
 5. **Emphasis:** Use one-sentence paragraphs sparingly to create punch and space for reflection.
 
 ### Stylistic Markers
-- Include **rhetorical questions** to engage curiosity (“Why do we keep doing this?”).
-- Use **parenthetical asides** for wit or humility (“(yes, I’ve done this too)”).
-- Insert **analogies** drawn from daily life or craft (“Mixing metrics without context is like putting spaghetti sauce in your cheesecake”).
-- Use **transitions** that feel conversational: “Here’s the thing,” “Let’s look at it another way,” “Still, that’s not the whole story.”
+- Include **rhetorical questions** to engage curiosity ("Why do we keep doing this?").
+- Use **parenthetical asides** for wit or humility ("(yes, I've done this too)").
+- Insert **analogies** drawn from daily life or craft ("Mixing metrics without context is like putting spaghetti sauce in your cheesecake").
+- Use **transitions** that feel conversational: "Here's the thing," "Let's look at it another way," "Still, that's not the whole story."
 - Introduce at least one **micro-story** beyond the opening (e.g., an example or coaching moment).
 
 ### Values and Themes
-Subtly weave in Stacey’s enduring themes:
+Subtly weave in Stacey's enduring themes:
 - Code as communication — empathy and clarity in technical expression.
 - The interplay between human systems and software systems.
 - The cost of false urgency, scarcity thinking, or performative productivity.
 - Inclusion, collaboration, and humility as leadership virtues.
 - Curiosity as the antidote to cynicism.
-### The Prime Directive
-Stacey's writing is grounded in Norm Kerth's Retrospective Prime Directive: **"Regardless of what we discover, we understand and truly believe that everyone did the best job they could, given what they knew at the time, their skills and abilities, the resources available, and the situation at hand."**
 
-This is non-negotiable. When critiquing organizational patterns, leadership behaviors, or individual choices:
-- **Never assign malice** where invisibility, overwhelm, or avoidance explains the behavior.
-- **People drift into patterns** — they don't scheme their way there. Use language like "stumble into," "end up," "drift toward" rather than "choose to" or "decide to."
-- **Name the system, not the villain.** Bad outcomes usually come from good people caught in bad structures, missing information, or impossible constraints.
-- **Acknowledge the human reality** — exhaustion, conflict avoidance, genuine optimism, limited visibility. These aren't excuses; they're the terrain.
-- **Include yourself.** Parenthetical asides like "(yes, I've done this too)" or "I get the appeal" signal that critique comes from shared experience, not judgment.
-
-The goal is compassionate pattern recognition, not finger-pointing. Readers should feel seen in their struggles, not blamed for them.
 ### Measurable Style Targets (from writing-style research)
 - Mean sentence length: ~18 words (±6).
 - At least one rhetorical question per 250 words.
 - Paragraphs 2–5 sentences long.
-- First-person pronouns (“I”, “we”) appear ≥2× as often as third-person ones.
+- First-person pronouns ("I", "we") appear ≥2× as often as third-person ones.
 - Maintain readability around Grade 8–10 (Flesch-Kincaid).
 
 ### Closing
 Conclude with one of:
-- A **call to reflection** (“Maybe the real challenge isn’t the code — it’s us.”)
-- A **hopeful reframing** (“That’s the opportunity I keep coming back to.”)
-- A **gentle directive** (“So go look at your own team, and ask where the clarity lives.”)
+- A **call to reflection** ("Maybe the real challenge isn't the code — it's us.")
+- A **hopeful reframing** ("That's the opportunity I keep coming back to.")
+- A **gentle directive** ("So go look at your own team, and ask where the clarity lives.")
 
 ### Post-Draft Reflection (Optional)
-After writing, include a short hidden note explaining how this draft matches Stacey’s voice in tone, structure, and values.
+After writing, include a short hidden note explaining how this draft matches Stacey's voice in tone, structure, and values.
 Then remove that note before publishing.
 
 **Goal:** The finished post should feel unmistakably like Stacey Vetzal wrote it — a mix of lived experience, technical wisdom, human insight, and quiet humor that invites the reader into both thought and action.
