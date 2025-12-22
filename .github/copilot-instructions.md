@@ -17,11 +17,12 @@ This repository contains markdown content for Stacey Vetzal's personal blog, man
 title: "Post Title"
 date: "YYYY-MM-DD"  # or date: YYYY-MM-DD (without quotes)
 published: true
-image: images/filename.png  # relative to post directory
-imageAlt: "Alt text for image"
+description: "Optional description"
 tags:
   - tag1
   - tag2
+image: images/filename.png  # relative to post directory
+imageAlt: "Alt text for image"
 ---
 ```
 

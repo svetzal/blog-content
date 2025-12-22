@@ -4,6 +4,7 @@ date: 2025-12-20
 published: true
 image: "images/the-glitch-absolution.png"
 imageAlt: "A silver-haired woman in a cyberpunk office environment gestures toward a holographic systems diagram, surrounded by the quiet entropy of an abandoned cubicle farm"
+description: "Part one of four on Russell Ackoff's problem treatments. Today: absolution, or the fine art of hoping problems wander off on their own."
 tags:
   - systems-thinking
   - leadership
