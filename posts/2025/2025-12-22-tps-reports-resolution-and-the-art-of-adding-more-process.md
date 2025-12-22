@@ -2,6 +2,8 @@
 title: "Did You Get the Memo?"
 date: 2025-12-22
 published: false
+image: "images/systems-thinker-gate-maze.png"
+imageAlt: "A silver-haired woman in a cyberpunk corporate corridor leans forward in frustration against a holographic approval gate, surrounded by a labyrinth of numbered checkpoints stretching into the haze"
 description: "Part two of four on Russell Ackoff's problem treatments. Today: resolution, or why your organization keeps adding process instead of fixing problems."
 tags:
   - systems-thinking

@@ -1,0 +1,90 @@
+{
+  "Character": {
+    "Description": "A highly competent, focused woman coder",
+    "Age": "Middle-aged, mature, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": {
+      "Type": "Heavy set, sturdy",
+      "UpperBody": "Big arms, broad shoulders",
+      "LowerBody": "Slim hips"
+    },
+    "Face": {
+      "Eyes": "Blue-grey",
+      "Expression": "Wry amusement, slight exasperation"
+    },
+    "Hair": {
+      "Color": "Grey/silver",
+      "Length": "Long",
+      "Style": "Wind-swept or naturally flowing"
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": ["Neon signs", "Screen glow", "Rim lighting", "Side lighting"],
+      "Shadows": "Sharp, emphasizing texture and form"
+    },
+    "ColorPalette": {
+      "Primary": ["Magenta", "Cyan", "Electric Blue", "Lime Green"],
+      "Accents": ["Silver", "White", "Cool Blues", "Metalic purples"],
+      "Treatment": "High saturation, strong contrast between warm neons and cool tech light"
+    },
+    "Atmosphere": {
+      "Effects": ["Bokeh", "Atmospheric haze", "Neon glow", "Reflections on surfaces"],
+      "Mood": "Mysterious, electric, high-stakes, gritty yet stylish"
+    },
+    "AspectRatio": "16:9"
+  },
+
+  "Situations": [
+    {
+      "Name": "Navigating the Gate Maze",
+      "Setting": "Surreal corporate corridor transformed into a labyrinth of translucent holographic gates and checkpoints, each gate displaying approval stamps, sign-off checkboxes, and status indicators",
+      "Camera": "Mid-shot, slightly wide angle, subject positioned at a junction where multiple gate-paths converge, depth showing gates receding into foggy distance",
+      "CharacterPose": {
+        "Expression": "Frustrated exhale, eyes rolled slightly upward, jaw set with impatience",
+        "BodyPosition": "Leaning forward with both hands planted on a waist-high gate barrier, shoulders hunched, head slightly bowed in exasperation",
+        "Gesture": "Fingers drumming on the gate surface, or one hand pressing against forehead in a face-palm gesture"
+      },
+      "Props": [
+        {
+          "Name": "Holographic approval gates",
+          "Description": "Semi-transparent barriers displaying checkboxes, stamps reading 'APPROVED', 'PENDING', 'CAB SLOT REQUIRED', numbered 1 through 14",
+          "Application": "Arranged in a maze pattern around and behind subject, some stacked impossibly"
+        },
+        {
+          "Name": "Floating TPS report",
+          "Description": "Translucent document with visible cover sheet, slightly crumpled, glowing with bureaucratic importance",
+          "Application": "Drifting past at shoulder height, or pinned to a gate"
+        },
+        {
+          "Name": "Professional blazer",
+          "Description": "Dark blazer over tech-casual attire, sleeves pushed up ready for work",
+          "Application": "Worn, suggesting someone who navigates both corporate and technical worlds"
+        },
+        {
+          "Name": "Red 'EXPEDITE' stamp",
+          "Description": "Oversized rubber stamp floating nearby, glowing red, worn from overuse",
+          "Application": "Hovering near one of the gates as if recently used and discarded"
+        }
+      ],
+      "KeyDetails": [
+        "Gates numbered sequentially, visible 1-14 in various states of passage",
+        "Some gates show green 'PASSED' indicators, others amber 'WAITING', a few red 'BLOCKED'",
+        "Subtle visual of gates multiplying or spawning new gates in the background",
+        "Floor tiles showing worn path where people have walked the same route repeatedly",
+        "Distant silhouettes of other workers queued at various checkpoints"
+      ],
+      "LightingFocus": "Cool blue gate-glow contrasted with warm amber 'pending' indicators, subject lit from the side by a gate she's about to pass through",
+      "ThematicTags": ["systems-thinking", "leadership", "organizational-design"]
+    }
+  ],
+
+  "PromptKeywords": [
+    "highly detailed", "digital painting", "concept art",
+    "cyberpunk", "neon light", "cinematic lighting", "high contrast"
+  ]
+}
