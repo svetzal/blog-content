@@ -1,0 +1,85 @@
+{
+  "ImageType": "banner",
+  "Character": {
+    "Description": "A poised, distinctly gothic middle-aged woman with a dramatic presence; elegant, darkly romantic, and magnetically intense.",
+    "Age": "Middle-aged, mature, introspective",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Soft, solid, feminine",
+      "UpperBody": "Broad shoulders, graceful arms",
+      "LowerBody": "Full hips and thighs, grounded stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, reflective, slightly hooded",
+      "Expression": "Calm, enigmatic, faintly amused",
+      "Makeup": "Bold dark smoky eyes with black eyeshadow extending to temples, dramatic winged black eyeliner, dark burgundy or black lipstick, pale foundation with dramatic contour",
+      "Complexion": "Pale porcelain skin with cool undertones, dramatic contrast"
+    },
+    "Hair": {
+      "Color": "Silver-grey",
+      "Length": "Long",
+      "Style": "Flowing waves; slightly wild, romantic movement"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Victorian-inspired black lace blouse with high collar",
+          "Fit": "Fitted bodice, flowing sleeves with lace cuffs",
+          "ColorPalette": "Deep black with burgundy accents",
+          "Material": "Black lace over dark fabric, velvet trim"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Gothic accessories",
+          "Accessories": "Silver choker with dark gemstone, multiple silver rings, ornate silver earrings, black nail polish"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Canadian Winter Landscape / Nordic Naturalism",
+    "Rendering": "High-detail digital painting, photorealistic, nature photography quality",
+    "Lighting": {
+      "Type": "Cold, crisp, ethereal",
+      "Sources": ["Overcast winter sky", "Snow reflection", "Pale sun through bare branches", "Blue hour twilight"],
+      "Shadows": "Long and blue-tinted, soft edges from diffused winter light"
+    },
+    "ColorPalette": {
+      "Primary": ["Ice Blue", "Snow White", "Charcoal Grey", "Deep Evergreen"],
+      "Accents": ["Pale Gold", "Birch Bark White", "Frosted Silver", "Muted Berry Red"],
+      "Treatment": "Cool and desaturated, high contrast between snow and dark trees, subtle warmth in skin tones"
+    },
+    "Atmosphere": {
+      "Effects": ["Visible breath", "Falling snow", "Frost on surfaces", "Mist between trees", "Snow sparkle"],
+      "Mood": "Quiet, reflective, resilient, stark beauty"
+    }
+  },
+  "Situation": {
+    "Name": "Portrait",
+    "Setting": "Snow-covered Canadian forest with birch and evergreen trees",
+    "Camera": "Medium close-up, three-quarter view, shallow depth of field",
+    "CharacterPose": {
+      "Expression": "Enigmatic, faintly amused",
+      "BodyPosition": "Standing among bare birch trees, dark cloak over outfit",
+      "Gesture": "Arms wrapped in cloak or touching a frost-covered branch"
+    },
+    "Props": {
+      "Environment": [
+        {
+          "Name": "Snow-laden branches",
+          "Description": "Evergreen branches heavy with fresh snow",
+          "Application": "Background and framing"
+        },
+        {
+          "Name": "Falling snowflakes",
+          "Description": "Gentle snow falling",
+          "Application": "Atmospheric effect"
+        }
+      ]
+    },
+    "KeyDetails": ["Visible breath in cold air", "Snow in hair", "Dark figure against white landscape"],
+    "LightingFocus": "Diffused overcast light with blue shadows and warm highlights on face"
+  },
+  "PromptKeywords": ["highly detailed", "digital painting", "winter landscape", "canadian forest", "snow", "cold light", "nature photography", "atmospheric"]
+}

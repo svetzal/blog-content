@@ -1,0 +1,85 @@
+{
+  "ImageType": "banner",
+  "Character": {
+    "Description": "A poised, distinctly gothic middle-aged woman with a dramatic presence; elegant, darkly romantic, and magnetically intense.",
+    "Age": "Middle-aged, mature, introspective",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Soft, solid, feminine",
+      "UpperBody": "Broad shoulders, graceful arms",
+      "LowerBody": "Full hips and thighs, grounded stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, reflective, slightly hooded",
+      "Expression": "Calm, enigmatic, faintly amused",
+      "Makeup": "Bold dark smoky eyes with black eyeshadow extending to temples, dramatic winged black eyeliner, dark burgundy or black lipstick, pale foundation with dramatic contour",
+      "Complexion": "Pale porcelain skin with cool undertones, dramatic contrast"
+    },
+    "Hair": {
+      "Color": "Silver-grey",
+      "Length": "Long",
+      "Style": "Flowing waves; slightly wild, romantic movement"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Victorian-inspired black lace blouse with high collar",
+          "Fit": "Fitted bodice, flowing sleeves with lace cuffs",
+          "ColorPalette": "Deep black with burgundy accents",
+          "Material": "Black lace over dark fabric, velvet trim"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Gothic accessories",
+          "Accessories": "Silver choker with dark gemstone, multiple silver rings, ornate silver earrings, black nail polish"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Urban Cozy / Indie Coffee Culture",
+    "Rendering": "High-detail digital painting, photorealistic, warm illustration quality",
+    "Lighting": {
+      "Type": "Warm, natural, inviting",
+      "Sources": ["Large windows with diffused daylight", "Edison bulb pendant lights", "Laptop screen glow", "Candle flicker"],
+      "Shadows": "Soft, layered, creating depth without harshness"
+    },
+    "ColorPalette": {
+      "Primary": ["Warm Brown", "Cream", "Burnt Orange", "Forest Green"],
+      "Accents": ["Copper", "Brass", "Soft White", "Terracotta"],
+      "Treatment": "Warm and muted, natural tones with pops of warmth from lighting"
+    },
+    "Atmosphere": {
+      "Effects": ["Steam from coffee", "Dust motes in sunlight", "Soft window glow", "Bokeh from string lights"],
+      "Mood": "Contemplative, creative, intimate, unhurried"
+    }
+  },
+  "Situation": {
+    "Name": "Portrait",
+    "Setting": "Cozy corner coffee shop with exposed brick and wooden tables",
+    "Camera": "Medium close-up, three-quarter view, shallow depth of field",
+    "CharacterPose": {
+      "Expression": "Enigmatic, faintly amused",
+      "BodyPosition": "Seated in corner booth, elegant posture",
+      "Gesture": "Hands wrapped around a dark ceramic mug"
+    },
+    "Props": {
+      "Environment": [
+        {
+          "Name": "Coffee mug",
+          "Description": "Dark ceramic mug with steam rising",
+          "Application": "Held in hands"
+        },
+        {
+          "Name": "Window light",
+          "Description": "Soft daylight streaming through large window",
+          "Application": "Background atmosphere"
+        }
+      ]
+    },
+    "KeyDetails": ["Warm window light on face", "Steam from coffee", "Cozy atmosphere"],
+    "LightingFocus": "Soft natural window light with warm interior accents"
+  },
+  "PromptKeywords": ["highly detailed", "digital painting", "warm lighting", "cozy atmosphere", "coffee shop", "natural light", "indie aesthetic"]
+}

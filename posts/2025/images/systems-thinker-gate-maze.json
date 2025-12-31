@@ -1,0 +1,166 @@
+{
+  "ImageType": "banner",
+
+  "Character": {
+    "Description": "A striking, confident middle-aged woman with a cyberpunk edge; intelligent and unapologetically powerful.",
+    "Age": "Middle-aged, confident, formidable",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Curvy, powerful, feminine",
+      "UpperBody": "Broad shoulders, strong arms, pronounced curves",
+      "LowerBody": "Full hips and thighs, assertive stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, intense, sharp focus",
+      "Expression": "Frustrated exasperation, leaning forward against an obstacle, determined but exhausted",
+      "Makeup": "High-contrast makeup; sharp eyeliner, metallic accents, bold magenta or neon lips",
+      "Complexion": "Fair-light skin with cool highlights and cinematic contrast"
+    },
+    "Hair": {
+      "Color": "Silver-grey with subtle neon reflections",
+      "Length": "Long",
+      "Style": "Loose waves, slightly disheveled from frustration"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Futuristic fitted jacket",
+          "Fit": "Body-contouring",
+          "ColorPalette": "Black with magenta and cyan accents",
+          "Material": "Leather with reflective elements"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Cyberpunk accessories",
+          "Accessories": "LED accents, metallic jewelry, smart wearables"
+        }
+      ]
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, oppressive",
+      "Sources": [
+        "Holographic gate displays",
+        "Overhead corporate lighting",
+        "Neon checkpoint markers",
+        "Screen glare"
+      ],
+      "Shadows": "Sharp, creating a maze-like sense of confusion"
+    },
+    "ColorPalette": {
+      "Primary": ["Warning Orange", "Corporate Blue", "Magenta", "Cyan"],
+      "Accents": [
+        "Red approval lights",
+        "Green denied lights",
+        "Silver",
+        "White"
+      ],
+      "Treatment": "High saturation on gates and checkpoints, creating visual noise and overwhelm"
+    },
+    "Atmosphere": {
+      "Effects": [
+        "Holographic barriers",
+        "Floating approval stamps",
+        "Numbered checkpoints stretching into haze",
+        "Digital paperwork floating in air"
+      ],
+      "Mood": "Frustrated, bureaucratic, trapped in process"
+    }
+  },
+
+  "Situation": {
+    "Name": "The Process Labyrinth",
+    "Setting": "Cyberpunk corporate corridor transformed into a bureaucratic maze, endless holographic approval gates numbered 1 through 14+, each gate displaying different approval requirements, the path stretching into foggy distance with no end visible",
+    "Camera": "Mid-shot, perspective emphasizing the endless corridor of gates, subject positioned against one gate in foreground",
+    "CharacterPose": {
+      "Expression": "Exasperated frustration, the look of someone who has been through this too many times",
+      "BodyPosition": "Leaning forward against a holographic approval gate, weight pressed into it",
+      "Gesture": "Both hands pressed against the translucent gate barrier, head slightly bowed in frustration"
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Futuristic leather jacket",
+          "Description": "Body-contouring jacket with LED accents",
+          "Application": "Worn, looking slightly rumpled from the journey"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "Holographic approval gate",
+          "Description": "Translucent barrier with 'GATE 7: CAB APPROVAL REQUIRED' displayed",
+          "Application": "Blocking the character's path in foreground",
+          "SymbolicMeaning": "The endless process gates blocking real work"
+        },
+        {
+          "Name": "Floating TPS report",
+          "Description": "Holographic document with cover sheet visible",
+          "Application": "Drifting past in the air",
+          "SymbolicMeaning": "Bureaucratic paperwork, Office Space reference"
+        },
+        {
+          "Name": "Numbered checkpoint markers",
+          "Description": "Gates numbered 1-14 visible stretching into distance",
+          "Application": "Creating the maze-like corridor",
+          "SymbolicMeaning": "The 14 gates from the article"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Endless gate corridor",
+          "Description": "Holographic approval gates stretching into foggy distance",
+          "Application": "Background showing the scale of bureaucracy"
+        },
+        {
+          "Name": "Floating approval stamps",
+          "Description": "Red DENIED and green APPROVED stamps drifting in air",
+          "Application": "Scattered throughout the scene"
+        },
+        {
+          "Name": "Waiting queue holograms",
+          "Description": "Ghostly figures of others waiting at distant gates",
+          "Application": "Deep background, suggesting others trapped in the same system"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "Gates numbered clearly visible (especially 7, 10, 14)",
+      "Each gate has different requirements displayed",
+      "Corridor stretches endlessly into haze",
+      "Character's posture shows accumulated frustration",
+      "Floating paperwork and approval stamps add to chaos"
+    ],
+    "LightingFocus": "Harsh overhead corporate lighting mixed with gate glow, creating an oppressive institutional feel with neon accents",
+    "ThematicTags": ["systems-thinking", "leadership", "organizational-design"]
+  },
+
+  "ArticleContext": {
+    "Title": "Did You Get the Memo?",
+    "Tags": ["systems-thinking", "leadership", "organizational-design"],
+    "Themes": [
+      "resolution",
+      "adding process",
+      "bureaucracy",
+      "gates and checkpoints",
+      "TPS reports"
+    ],
+    "Mood": "frustrated"
+  },
+
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "corporate bureaucracy",
+    "cinematic lighting",
+    "high contrast",
+    "maze",
+    "gates"
+  ]
+}

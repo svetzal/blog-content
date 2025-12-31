@@ -1,0 +1,86 @@
+{
+  "ImageType": "banner",
+  "Character": {
+    "Description": "A composed, intelligent middle-aged woman with a calm authority and understated confidence; articulate, grounded, and observant.",
+    "Age": "Middle-aged, mature, experienced",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Soft, sturdy, feminine",
+      "UpperBody": "Broad shoulders, strong arms, full bust",
+      "LowerBody": "Full hips and thighs, balanced proportions"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, alert, steady gaze",
+      "Expression": "Focused, composed, lightly engaged",
+      "Makeup": "Clean, professional makeup; neutral eyes, soft contour, muted lipstick",
+      "Complexion": "Fair-light skin with natural texture"
+    },
+    "Hair": {
+      "Color": "Silver-grey",
+      "Length": "Long",
+      "Style": "Neatly styled, soft waves or smooth blowout, controlled movement"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Tailored tops, blouses, or knit sweaters",
+          "Fit": "Structured but comfortable",
+          "ColorPalette": "Charcoal, navy, plum, soft white",
+          "Material": "Wool blends, fine knits, matte fabrics"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Professional presentation wear",
+          "Fit": "Casual-executive",
+          "Accessories": "Minimal jewelry, smartwatch, subtle necklace"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Urban Cozy / Indie Coffee Culture",
+    "Rendering": "High-detail digital painting, photorealistic, warm illustration quality",
+    "Lighting": {
+      "Type": "Warm, natural, inviting",
+      "Sources": ["Large windows with diffused daylight", "Edison bulb pendant lights", "Laptop screen glow", "Candle flicker"],
+      "Shadows": "Soft, layered, creating depth without harshness"
+    },
+    "ColorPalette": {
+      "Primary": ["Warm Brown", "Cream", "Burnt Orange", "Forest Green"],
+      "Accents": ["Copper", "Brass", "Soft White", "Terracotta"],
+      "Treatment": "Warm and muted, natural tones with pops of warmth from lighting"
+    },
+    "Atmosphere": {
+      "Effects": ["Steam from coffee", "Dust motes in sunlight", "Soft window glow", "Bokeh from string lights"],
+      "Mood": "Contemplative, creative, intimate, unhurried"
+    }
+  },
+  "Situation": {
+    "Name": "Portrait",
+    "Setting": "Cozy corner coffee shop with exposed brick and wooden tables",
+    "Camera": "Medium close-up, three-quarter view, shallow depth of field",
+    "CharacterPose": {
+      "Expression": "Composed, professionally confident",
+      "BodyPosition": "Seated at table, good posture",
+      "Gesture": "Hands wrapped around a coffee mug"
+    },
+    "Props": {
+      "Environment": [
+        {
+          "Name": "Coffee mug",
+          "Description": "Ceramic mug with steam rising",
+          "Application": "Held in hands"
+        },
+        {
+          "Name": "Window light",
+          "Description": "Soft daylight streaming through large window",
+          "Application": "Background atmosphere"
+        }
+      ]
+    },
+    "KeyDetails": ["Warm window light on face", "Steam from coffee", "Cozy atmosphere"],
+    "LightingFocus": "Soft natural window light with warm interior accents"
+  },
+  "PromptKeywords": ["highly detailed", "digital painting", "warm lighting", "cozy atmosphere", "coffee shop", "natural light", "indie aesthetic"]
+}

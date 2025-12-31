@@ -81,6 +81,80 @@ This blog covers software development, agile practices, design thinking, and cog
 5. **Images for posts**: Store in corresponding `posts/YYYY/images/` directory
 6. **Publishing**: Set `published: true` and ensure all required frontmatter fields are present
 
+## Image Generation
+
+Blog posts use a consistent visual system featuring a silver-haired woman systems thinker in a cyberpunk style. A Claude Code Skill at `.claude/skills/blog-image-generator/` handles image generation.
+
+**Character Variant:** This blog exclusively uses the `cyberpunk` character variant from `.claude/skills/blog-image-generator/character-variants/cyberpunk.json`. Do not use other character variants.
+
+**Scene Variants:** Scene style variants are available in `.claude/skills/blog-image-generator/scene-variants/`. The default is `cyberpunk.json`.
+
+### Image Types
+
+| Type | Aspect Ratio | Size | Purpose |
+|------|--------------|------|---------|
+| `banner` | 16:9 | 1536x1024 | Hero image at top of article |
+| `callout` | 1:1 | 1024x1024 | Inline illustration within article |
+| `diagram` | 9:16 | 1024x1536 | Tall infographic or process diagram |
+
+### Procedure for New Articles
+
+1. **Read baseline specs** in `.claude/skills/blog-image-generator/baselines/`:
+   - `banner.json`, `callout.json`, `diagram.json` — image type templates
+   - `scene.schema.json` — full schema reference
+
+2. **Create scene JSON** in `posts/YYYY/images/` with same base filename as image:
+   - Article: `posts/2025/2025-12-29-my-article.md`
+   - Banner spec: `posts/2025/images/my-banner.json`
+   - Banner image: `posts/2025/images/my-banner.png`
+
+3. **Design props by category**:
+   - **Character props**: Wardrobe items (blazer, glasses, leather coat)
+   - **Article props**: Objects from article content with symbolic meaning
+   - **Environment props**: Setting elements (furniture, architecture)
+
+4. **Match mood to content**:
+   - Optimistic: warm lighting, collaborative scenes, slight smile
+   - Analytical: cool blue tones, focused expression, clean environment
+   - Frustrated: harsh contrasts, exasperated expression, chaotic elements
+   - Contemplative: soft diffused lighting, distant gaze, quiet setting
+
+5. **Generate image**:
+
+```bash
+# First time setup
+cd .claude/skills/blog-image-generator/scripts
+npm install
+cd ../../../..
+
+# Generate image
+node .claude/skills/blog-image-generator/scripts/generate-image.mjs \
+  posts/YYYY/images/scene-name.json \
+  posts/YYYY/images/scene-name.png
+```
+
+Requires `OPENAI_API_KEY` environment variable.
+
+6. **Update article frontmatter**:
+
+```yaml
+image: images/scene-name.png
+imageAlt: "Description of the scene for accessibility"
+```
+
+### File Organization
+
+```
+posts/2025/images/
+├── article-banner.png        # Generated banner
+├── article-banner.json       # Banner specification
+├── article-callout-1.png     # Inline callout
+├── article-callout-1.json    # Callout specification
+└── article-diagram.png       # Process diagram
+```
+
+The skill documentation (`.claude/skills/blog-image-generator/SKILL.md`) contains full examples and detailed instructions.
+
 ## Files to Ignore
 
 - `.obsidian/` directory (Obsidian configuration)

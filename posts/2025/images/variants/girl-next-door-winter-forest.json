@@ -1,0 +1,86 @@
+{
+  "ImageType": "banner",
+  "Character": {
+    "Description": "A warm, attractive middle-aged woman with an approachable charm and effortless femininity; relaxed, friendly, and quietly alluring.",
+    "Age": "Middle-aged, confident, naturally feminine",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Soft, curvy, feminine",
+      "UpperBody": "Broad shoulders, gentle curves, relaxed posture",
+      "LowerBody": "Curvy hips and thighs, natural stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, kind, inviting",
+      "Expression": "Soft smile, relaxed confidence",
+      "Makeup": "Light, natural makeup with subtle mascara and glossy pink lips",
+      "Complexion": "Fair-light skin with visible natural texture"
+    },
+    "Hair": {
+      "Color": "Silver-grey",
+      "Length": "Long",
+      "Style": "Loose, touchable waves; casual, slightly tousled"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Fitted t-shirts, soft sweaters",
+          "Fit": "Figure-skimming but casual",
+          "ColorPalette": "White, blush, soft pink, lavender",
+          "Material": "Cotton, jersey, soft knits"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Casual skirts or jeans",
+          "Fit": "Comfortable, feminine",
+          "Accessories": "Minimal jewelry, smartwatch"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Canadian Winter Landscape / Nordic Naturalism",
+    "Rendering": "High-detail digital painting, photorealistic, nature photography quality",
+    "Lighting": {
+      "Type": "Cold, crisp, ethereal",
+      "Sources": ["Overcast winter sky", "Snow reflection", "Pale sun through bare branches", "Blue hour twilight"],
+      "Shadows": "Long and blue-tinted, soft edges from diffused winter light"
+    },
+    "ColorPalette": {
+      "Primary": ["Ice Blue", "Snow White", "Charcoal Grey", "Deep Evergreen"],
+      "Accents": ["Pale Gold", "Birch Bark White", "Frosted Silver", "Muted Berry Red"],
+      "Treatment": "Cool and desaturated, high contrast between snow and dark trees, subtle warmth in skin tones"
+    },
+    "Atmosphere": {
+      "Effects": ["Visible breath", "Falling snow", "Frost on surfaces", "Mist between trees", "Snow sparkle"],
+      "Mood": "Quiet, reflective, resilient, stark beauty"
+    }
+  },
+  "Situation": {
+    "Name": "Portrait",
+    "Setting": "Snow-covered Canadian forest with birch and evergreen trees",
+    "Camera": "Medium close-up, three-quarter view, shallow depth of field",
+    "CharacterPose": {
+      "Expression": "Warm, approachable smile",
+      "BodyPosition": "Standing among trees, cozy winter coat",
+      "Gesture": "Arms crossed for warmth or hands in pockets"
+    },
+    "Props": {
+      "Environment": [
+        {
+          "Name": "Snow-laden branches",
+          "Description": "Evergreen branches heavy with fresh snow",
+          "Application": "Background and framing"
+        },
+        {
+          "Name": "Falling snowflakes",
+          "Description": "Gentle snow falling",
+          "Application": "Atmospheric effect"
+        }
+      ]
+    },
+    "KeyDetails": ["Visible breath in cold air", "Snow in hair", "Warm skin tones against cold environment"],
+    "LightingFocus": "Diffused overcast light with blue shadows and warm highlights on face"
+  },
+  "PromptKeywords": ["highly detailed", "digital painting", "winter landscape", "canadian forest", "snow", "cold light", "nature photography", "atmospheric"]
+}

@@ -1,0 +1,86 @@
+{
+  "ImageType": "banner",
+  "Character": {
+    "Description": "A composed, intelligent middle-aged woman with a calm authority and understated confidence; articulate, grounded, and observant.",
+    "Age": "Middle-aged, mature, experienced",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Soft, sturdy, feminine",
+      "UpperBody": "Broad shoulders, strong arms, full bust",
+      "LowerBody": "Full hips and thighs, balanced proportions"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, alert, steady gaze",
+      "Expression": "Focused, composed, lightly engaged",
+      "Makeup": "Clean, professional makeup; neutral eyes, soft contour, muted lipstick",
+      "Complexion": "Fair-light skin with natural texture"
+    },
+    "Hair": {
+      "Color": "Silver-grey",
+      "Length": "Long",
+      "Style": "Neatly styled, soft waves or smooth blowout, controlled movement"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Tailored tops, blouses, or knit sweaters",
+          "Fit": "Structured but comfortable",
+          "ColorPalette": "Charcoal, navy, plum, soft white",
+          "Material": "Wool blends, fine knits, matte fabrics"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Professional presentation wear",
+          "Fit": "Casual-executive",
+          "Accessories": "Minimal jewelry, smartwatch, subtle necklace"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Corporate Executive / Modern Professional",
+    "Rendering": "High-detail digital painting, photorealistic, architectural visualization quality",
+    "Lighting": {
+      "Type": "Clean, professional, controlled",
+      "Sources": ["Recessed ceiling lights", "Large floor-to-ceiling windows", "Presentation screen glow", "Under-cabinet accent lighting"],
+      "Shadows": "Crisp and defined, minimal but purposeful"
+    },
+    "ColorPalette": {
+      "Primary": ["Charcoal Grey", "Navy Blue", "Pure White", "Warm Wood Tones"],
+      "Accents": ["Brushed Steel", "Glass Reflections", "Leather Brown", "Corporate Blue"],
+      "Treatment": "Clean and balanced, neutral base with subtle warmth from wood and leather, professional restraint"
+    },
+    "Atmosphere": {
+      "Effects": ["City skyline through windows", "Reflections on polished surfaces", "Subtle lens flare from windows", "Clean geometric lines"],
+      "Mood": "Authoritative, strategic, high-stakes, polished"
+    }
+  },
+  "Situation": {
+    "Name": "Portrait",
+    "Setting": "Executive boardroom with floor-to-ceiling windows and city skyline view",
+    "Camera": "Medium close-up, three-quarter view, shallow depth of field",
+    "CharacterPose": {
+      "Expression": "Composed, professionally confident",
+      "BodyPosition": "Standing at head of table, natural authority",
+      "Gesture": "Arms at sides or gesturing while speaking"
+    },
+    "Props": {
+      "Environment": [
+        {
+          "Name": "City skyline",
+          "Description": "Modern city visible through large windows",
+          "Application": "Background through windows"
+        },
+        {
+          "Name": "Conference table",
+          "Description": "Polished wood executive table",
+          "Application": "Foreground element"
+        }
+      ]
+    },
+    "KeyDetails": ["Professional lighting", "City view through windows", "Polished surfaces"],
+    "LightingFocus": "Clean professional lighting with soft window backlight"
+  },
+  "PromptKeywords": ["highly detailed", "digital painting", "corporate interior", "executive boardroom", "professional", "modern architecture", "clean lines"]
+}

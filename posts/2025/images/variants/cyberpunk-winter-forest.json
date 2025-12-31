@@ -1,0 +1,85 @@
+{
+  "ImageType": "banner",
+  "Character": {
+    "Description": "A striking, confident middle-aged woman with a cyberpunk edge; intelligent, seductive, and unapologetically powerful.",
+    "Age": "Middle-aged, confident, formidable",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Curvy, powerful, feminine",
+      "UpperBody": "Broad shoulders, strong arms, pronounced curves",
+      "LowerBody": "Full hips and thighs, assertive stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, intense, sharp focus",
+      "Expression": "Self-assured, knowing, slightly dangerous",
+      "Makeup": "High-contrast makeup; sharp eyeliner, metallic accents, bold magenta or neon lips",
+      "Complexion": "Fair-light skin with cool highlights and cinematic contrast"
+    },
+    "Hair": {
+      "Color": "Silver-grey with subtle neon reflections",
+      "Length": "Long",
+      "Style": "Loose waves or wind-swept, dramatic movement"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Futuristic fitted tops or jackets",
+          "Fit": "Body-contouring",
+          "ColorPalette": "Black, magenta, electric purple, cyan accents",
+          "Material": "Leather, synthetic tech fabrics, reflective elements"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Cyberpunk accessories",
+          "Accessories": "LED accents, metallic jewelry, smart wearables"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Canadian Winter Landscape / Nordic Naturalism",
+    "Rendering": "High-detail digital painting, photorealistic, nature photography quality",
+    "Lighting": {
+      "Type": "Cold, crisp, ethereal",
+      "Sources": ["Overcast winter sky", "Snow reflection", "Pale sun through bare branches", "Blue hour twilight"],
+      "Shadows": "Long and blue-tinted, soft edges from diffused winter light"
+    },
+    "ColorPalette": {
+      "Primary": ["Ice Blue", "Snow White", "Charcoal Grey", "Deep Evergreen"],
+      "Accents": ["Pale Gold", "Birch Bark White", "Frosted Silver", "Muted Berry Red"],
+      "Treatment": "Cool and desaturated, high contrast between snow and dark trees, subtle warmth in skin tones"
+    },
+    "Atmosphere": {
+      "Effects": ["Visible breath", "Falling snow", "Frost on surfaces", "Mist between trees", "Snow sparkle"],
+      "Mood": "Quiet, reflective, resilient, stark beauty"
+    }
+  },
+  "Situation": {
+    "Name": "Portrait",
+    "Setting": "Snow-covered Canadian forest with birch and evergreen trees",
+    "Camera": "Medium close-up, three-quarter view, shallow depth of field",
+    "CharacterPose": {
+      "Expression": "Confident, slight knowing smile",
+      "BodyPosition": "Standing among trees, winter coat over outfit",
+      "Gesture": "Arms crossed for warmth or hands in pockets"
+    },
+    "Props": {
+      "Environment": [
+        {
+          "Name": "Snow-laden branches",
+          "Description": "Evergreen branches heavy with fresh snow",
+          "Application": "Background and framing"
+        },
+        {
+          "Name": "Falling snowflakes",
+          "Description": "Gentle snow falling",
+          "Application": "Atmospheric effect"
+        }
+      ]
+    },
+    "KeyDetails": ["Visible breath in cold air", "Snow in hair", "Warm skin tones against cold environment"],
+    "LightingFocus": "Diffused overcast light with blue shadows and warm highlights on face"
+  },
+  "PromptKeywords": ["highly detailed", "digital painting", "winter landscape", "canadian forest", "snow", "cold light", "nature photography", "atmospheric"]
+}

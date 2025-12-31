@@ -1,0 +1,85 @@
+{
+  "ImageType": "banner",
+  "Character": {
+    "Description": "A poised, distinctly gothic middle-aged woman with a dramatic presence; elegant, darkly romantic, and magnetically intense.",
+    "Age": "Middle-aged, mature, introspective",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Soft, solid, feminine",
+      "UpperBody": "Broad shoulders, graceful arms",
+      "LowerBody": "Full hips and thighs, grounded stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, reflective, slightly hooded",
+      "Expression": "Calm, enigmatic, faintly amused",
+      "Makeup": "Bold dark smoky eyes with black eyeshadow extending to temples, dramatic winged black eyeliner, dark burgundy or black lipstick, pale foundation with dramatic contour",
+      "Complexion": "Pale porcelain skin with cool undertones, dramatic contrast"
+    },
+    "Hair": {
+      "Color": "Silver-grey",
+      "Length": "Long",
+      "Style": "Flowing waves; slightly wild, romantic movement"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Victorian-inspired black lace blouse with high collar",
+          "Fit": "Fitted bodice, flowing sleeves with lace cuffs",
+          "ColorPalette": "Deep black with burgundy accents",
+          "Material": "Black lace over dark fabric, velvet trim"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Gothic accessories",
+          "Accessories": "Silver choker with dark gemstone, multiple silver rings, ornate silver earrings, black nail polish"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Corporate Executive / Modern Professional",
+    "Rendering": "High-detail digital painting, photorealistic, architectural visualization quality",
+    "Lighting": {
+      "Type": "Clean, professional, controlled",
+      "Sources": ["Recessed ceiling lights", "Large floor-to-ceiling windows", "Presentation screen glow", "Under-cabinet accent lighting"],
+      "Shadows": "Crisp and defined, minimal but purposeful"
+    },
+    "ColorPalette": {
+      "Primary": ["Charcoal Grey", "Navy Blue", "Pure White", "Warm Wood Tones"],
+      "Accents": ["Brushed Steel", "Glass Reflections", "Leather Brown", "Corporate Blue"],
+      "Treatment": "Clean and balanced, neutral base with subtle warmth from wood and leather, professional restraint"
+    },
+    "Atmosphere": {
+      "Effects": ["City skyline through windows", "Reflections on polished surfaces", "Subtle lens flare from windows", "Clean geometric lines"],
+      "Mood": "Authoritative, strategic, high-stakes, polished"
+    }
+  },
+  "Situation": {
+    "Name": "Portrait",
+    "Setting": "Executive boardroom with floor-to-ceiling windows and city skyline view",
+    "Camera": "Medium close-up, three-quarter view, shallow depth of field",
+    "CharacterPose": {
+      "Expression": "Enigmatic, faintly amused",
+      "BodyPosition": "Standing at head of table, commanding presence",
+      "Gesture": "Hands resting on leather chair back"
+    },
+    "Props": {
+      "Environment": [
+        {
+          "Name": "City skyline",
+          "Description": "Modern city visible through large windows",
+          "Application": "Background through windows"
+        },
+        {
+          "Name": "Conference table",
+          "Description": "Polished wood executive table",
+          "Application": "Foreground element"
+        }
+      ]
+    },
+    "KeyDetails": ["Professional lighting", "City view through windows", "Polished surfaces"],
+    "LightingFocus": "Clean professional lighting with soft window backlight"
+  },
+  "PromptKeywords": ["highly detailed", "digital painting", "corporate interior", "executive boardroom", "professional", "modern architecture", "clean lines"]
+}
