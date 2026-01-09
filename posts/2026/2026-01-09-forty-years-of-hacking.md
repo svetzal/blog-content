@@ -46,7 +46,7 @@ And now here we are, in early 2026, watching something fascinating unfold.
 
 GenAI has become the new playground. Claude, GPT, Copilot, local models, agent frameworks — there's a whole ecosystem of systems to explore. And the hackers are out there, delighting in intimate understanding. Poking at the seams. Asking "what happens if I do *this*?"
 
-Over the past few months, I've watched people build what they're calling "life operating systems" and "business operating systems" — agent-based architectures that help manage the cognitive load of modern existence. Personal knowledge graphs that learn your preferences. Automated workflows that handle the administrivia so you can focus on the interesting parts.
+Over the past few months, I've watched people build (and built myself) what they're calling "life operating systems" and "business operating systems" — agent-based architectures that help manage the cognitive load of modern existence. Personal knowledge graphs that learn your preferences. Automated workflows that handle the administrivia so you can focus on the interesting parts.
 
 Some of these ideas are wild. Some are genuinely brilliant. Many are both.
 
