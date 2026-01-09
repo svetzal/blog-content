@@ -1,10 +1,10 @@
 ---
-title: "Forty Years of Hacking"
+title: "The Hacker Manifesto at Forty"
 date: 2026-01-09
 published: false
 image: "images/forty-years-of-hacking-banner.png"
 imageAlt: "A silver-haired woman in cyberpunk attire stands at the intersection of eras - a vintage TRS-80 Color Computer glowing on one side, holographic AI interfaces floating on the other, her expression one of nostalgic joy"
-description: "On the 40th anniversary of the Hacker Manifesto, reflecting on what it means to be a hacker — then, now, and in the age of AI."
+description: "Forty years ago, a frustrated teenager wrote a manifesto from jail. It still resonates — and still defines what it means to be a hacker."
 tags:
   - hacking
   - ai
