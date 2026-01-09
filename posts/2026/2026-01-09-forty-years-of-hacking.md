@@ -16,7 +16,7 @@ Yesterday marked the 40th anniversary of the Hacker Manifesto.
 
 I was seventeen when I first read it. A kid in Ontario with a CoCo 1 and a 1200-baud modem, spending most of my teenage years holed up in my bedroom, desperate to understand *something* since I couldn't yet understand myself.
 
-The criminal stuff in the Manifesto wasn't really my scene — I never broke into systems that weren't mine. But the *frustration*? That landed. "We've been spoon-fed baby food at school when we hungered for steak." Yes. Exactly.
+The digital trespassing in the Manifesto wasn't really my scene — I never broke into systems that weren't mine. But the *frustration*? That landed. "We've been spoon-fed baby food at school when we hungered for steak." Yes. Exactly.
 
 And the dismissiveness. Oh, the dismissiveness. "You're wasting your time on that thing." "Get off the phone line." "You're always playing games." (They couldn't tell the difference between a game and me learning 6809 assembly to make the machine do what I wanted.) Every curious kid with a computer heard some version of this. The adults couldn't see what we saw. To them, it looked like a toy. To us, it was a place where things finally made sense.
 
