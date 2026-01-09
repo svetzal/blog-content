@@ -119,17 +119,29 @@ const IMAGE_TYPES = {
  * Passes the JSON structure directly as the prompt, with optional character reference instruction
  * @param {Object} spec - The scene specification
  * @param {boolean} useCharacter - Whether character reference image is being used
+ * @param {Array} propRefs - Array of prop reference objects with propName and path
  */
-function buildPrompt(spec, useCharacter = true) {
+function buildPrompt(spec, useCharacter = true, propRefs = []) {
+  let instructions = "";
+
   // Character reference instruction (only for image edit mode)
-  const characterInstruction = useCharacter
-    ? "Use the provided reference image as the character. Maintain the character's appearance, face, and build exactly as shown in the reference image.\n\n"
-    : "";
+  if (useCharacter) {
+    instructions += "Use the provided reference images for the character. Maintain the character's appearance, face, and build exactly as shown in the character reference images.\n\n";
+  }
+
+  // Prop reference instructions
+  if (propRefs.length > 0) {
+    instructions += "PROP REFERENCE IMAGES: The following props have reference images provided. Render these props accurately based on their reference images:\n";
+    propRefs.forEach(ref => {
+      instructions += `  - ${ref.propName}: Use the provided reference image to render this prop accurately\n`;
+    });
+    instructions += "\n";
+  }
 
   // Pass the JSON structure directly as the prompt
   const jsonPrompt = JSON.stringify(spec, null, 2);
 
-  return characterInstruction + jsonPrompt;
+  return instructions + jsonPrompt;
 }
 
 /**
@@ -170,6 +182,70 @@ function findCharacterRefPaths() {
   }
 
   return foundPaths;
+}
+
+/**
+ * Find all prop reference images from the scene specification
+ * Searches in Props arrays within Scene.Environment or Situation.Props
+ * Returns array of { propName, path } objects for found images
+ */
+function findPropRefPaths(spec, sceneJsonDir) {
+  const propRefs = [];
+  const repoRoot = path.resolve(__dirname, "../../../../");
+
+  // Helper to check a single prop for ReferenceImage
+  const checkProp = (prop) => {
+    if (!prop.ReferenceImage) return;
+
+    const refPath = prop.ReferenceImage;
+    let resolvedPath = null;
+
+    // Try relative to scene JSON directory first
+    const relativeToScene = path.join(sceneJsonDir, refPath);
+    if (existsSync(relativeToScene)) {
+      resolvedPath = relativeToScene;
+    }
+    // Try relative to current working directory
+    else if (existsSync(refPath)) {
+      resolvedPath = refPath;
+    }
+    // Try relative to repo root
+    else {
+      const repoRefPath = path.join(repoRoot, refPath);
+      if (existsSync(repoRefPath)) {
+        resolvedPath = repoRefPath;
+      }
+    }
+
+    if (resolvedPath) {
+      propRefs.push({
+        propName: prop.Item || prop.Name || 'unknown prop',
+        path: resolvedPath
+      });
+    } else {
+      console.warn(`Warning: Prop reference image not found: ${refPath}`);
+    }
+  };
+
+  // Check Scene.Environment.Props (array format used in current banner)
+  if (spec.Scene?.Environment?.Props) {
+    const props = spec.Scene.Environment.Props;
+    if (Array.isArray(props)) {
+      props.forEach(checkProp);
+    }
+  }
+
+  // Check Situation.Props (object with Character, Article, Environment arrays)
+  if (spec.Situation?.Props) {
+    const situationProps = spec.Situation.Props;
+    ['Character', 'Article', 'Environment'].forEach(category => {
+      if (Array.isArray(situationProps[category])) {
+        situationProps[category].forEach(checkProp);
+      }
+    });
+  }
+
+  return propRefs;
 }
 
 /**
@@ -240,8 +316,19 @@ async function main() {
     console.log("Generating without character reference");
   }
 
+  // Find prop reference images
+  const sceneJsonDir = path.dirname(path.resolve(scenePath));
+  const propRefs = findPropRefPaths(spec, sceneJsonDir);
+  if (propRefs.length > 0) {
+    console.log(`Using ${propRefs.length} prop reference images:`);
+    propRefs.forEach((ref) => console.log(`  - ${ref.propName}: ${ref.path}`));
+  }
+
+  // Determine if we need to use the edit API (have any reference images)
+  const hasReferenceImages = useCharacter || propRefs.length > 0;
+
   // Build the prompt (pass useCharacter to adjust prompt accordingly)
-  const prompt = buildPrompt(spec, useCharacter);
+  const prompt = buildPrompt(spec, useCharacter, propRefs);
   console.log("\n--- Generated Prompt ---");
   console.log(prompt);
   console.log("--- End Prompt ---\n");
@@ -256,25 +343,33 @@ async function main() {
   let response;
 
   try {
-    if (useCharacter) {
-      console.log("Loading character reference images...");
+    if (hasReferenceImages) {
+      console.log("Loading reference images...");
 
-      // Load all character reference images for the edit API
-      const characterRefFiles = await Promise.all(
-        characterRefPaths.map(async (refPath, index) => {
+      // Collect all reference image paths
+      const allRefPaths = [
+        ...characterRefPaths,
+        ...propRefs.map(ref => ref.path)
+      ];
+
+      // Load all reference images for the edit API
+      const refFiles = await Promise.all(
+        allRefPaths.map(async (refPath) => {
           const filename = path.basename(refPath);
+          const ext = path.extname(refPath).toLowerCase();
+          const mimeType = ext === '.png' ? 'image/png' : 'image/jpeg';
           return toFile(createReadStream(refPath), filename, {
-            type: "image/jpeg",
+            type: mimeType,
           });
         }),
       );
 
-      console.log(`Loaded ${characterRefFiles.length} reference images`);
+      console.log(`Loaded ${refFiles.length} reference images (${characterRefPaths.length} character, ${propRefs.length} prop)`);
       console.log("Generating image via OpenAI Image Edit API...");
 
       response = await client.images.edit({
         model: "gpt-image-1.5",
-        image: characterRefFiles,
+        image: refFiles,
         prompt: prompt,
         n: 1,
         size: size,

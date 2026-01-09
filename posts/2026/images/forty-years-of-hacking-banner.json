@@ -1,0 +1,118 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Hero image celebrating the 40th anniversary of the Hacker Manifesto - bridging 1980s computing nostalgia with modern AI exploration",
+
+  "Character": {
+    "Description": "A striking, confident middle-aged woman with a cyberpunk edge; intelligent, nostalgic yet forward-looking, embodying the hacker spirit across decades",
+    "Age": "Middle-aged, confident, formidable",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Curvy, powerful, feminine",
+      "UpperBody": "Broad shoulders, strong arms, pronounced curves",
+      "LowerBody": "Full hips and thighs, assertive stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, intense, delighted",
+      "Expression": "Nostalgic joy, a knowing smile of someone remembering their origin story",
+      "Makeup": "High-contrast makeup; sharp eyeliner, metallic accents, bold magenta lips",
+      "Complexion": "Fair-light skin with cool highlights and cinematic contrast"
+    },
+    "Hair": {
+      "Color": "Silver-grey with subtle neon reflections",
+      "Length": "Long",
+      "Style": "Loose waves, dramatic movement"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Cyberpunk leather jacket with retro-futuristic styling",
+          "Fit": "Body-contouring",
+          "ColorPalette": "Black with magenta and cyan accents",
+          "Material": "Leather with LED strip accents along collar"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Vintage-style headphones around neck",
+          "Description": "Chunky 80s-inspired headphones, modernized with glowing elements"
+        }
+      ]
+    }
+  },
+
+  "Scene": {
+    "Setting": "A liminal space bridging eras - part teenage bedroom with vintage computer equipment, part futuristic hacker den with holographic displays",
+    "Environment": {
+      "Background": "Layered depth showing a TRS-80 Color Computer (CoCo) with green phosphor monitor on one side, transitioning to floating holographic code and AI agent interfaces on the other",
+      "Props": [
+        {
+          "Item": "TRS-80 Color Computer (CoCo 1)",
+          "Placement": "Left side of frame, slightly behind character",
+          "Description": "Distinctive silver/grey rectangular case with black keyboard, chicklet-style keys with white legends, rainbow stripe decoration across the front edge in red/orange/yellow/green, 'TRS-80 Color Computer' branding on top left, cartridge slot on right side of case",
+          "Condition": "Connected to a small CRT TV monitor showing green text on black - assembly code or BBS text",
+          "Symbolism": "Origin of the hacker journey, the machine that made sense when nothing else did",
+          "ReferenceImage": "coco1.jpg"
+        },
+        {
+          "Item": "1200-baud modem",
+          "Placement": "Connected to the CoCo via serial cable, sitting beside it",
+          "Description": "Beige/cream rectangular external modem with row of LED status lights",
+          "Symbolism": "The portal to the wider world of knowledge"
+        },
+        {
+          "Item": "Holographic AI agent interfaces",
+          "Placement": "Right side of frame, floating in air",
+          "Description": "Claude-like chat interfaces, code snippets, agent workflows rendered as glowing diagrams",
+          "Symbolism": "The new frontier, the current window of exploration"
+        },
+        {
+          "Item": "Floating text fragments",
+          "Content": "Subtle references - '6809' assembly mnemonics on the retro side, 'LLM' and agent terminology on the modern side",
+          "Treatment": "Ghostly, atmospheric, not dominant"
+        }
+      ],
+      "Furniture": "Suggestion of bedroom desk on vintage side, standing workstation on modern side"
+    },
+    "TimeOfDay": "Night - the hacker's hour",
+    "Weather": "Interior scene, but window visible showing city lights"
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir with retro-computing nostalgia",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic split lighting - warm amber from vintage CRT, cool neon from holographic displays",
+      "Sources": ["Green CRT phosphor glow", "Holographic cyan/magenta light", "Window city lights bokeh"],
+      "Shadows": "Sharp, creating visual bridge between eras"
+    },
+    "ColorPalette": {
+      "Primary": ["Amber/green (retro)", "Magenta/Cyan (modern)"],
+      "Accents": ["Silver hair as visual anchor", "LED indicator lights"],
+      "Treatment": "Gradient transition from warm vintage tones to cool cyberpunk neons across frame"
+    },
+    "Atmosphere": {
+      "Effects": ["Dust motes in CRT light", "Holographic particle effects", "Subtle scan lines in retro area"],
+      "Mood": "Nostalgic joy meeting present-day excitement - the hacker spirit unchanged across forty years"
+    }
+  },
+
+  "CompositionNotes": {
+    "Framing": "Wide shot showing the temporal transition across the frame",
+    "SubjectPlacement": "Character center-left, positioned at the intersection of both eras, looking toward the modern side with fondness for both",
+    "DepthOfField": "Medium - both eras readable but character sharp",
+    "VisualFlow": "Eye travels from vintage equipment through character to AI interfaces - a journey through time"
+  },
+
+  "Mood": "optimistic",
+  "MoodNotes": "This is a celebration, not a lament. The window is open. The delight remains.",
+
+  "PromptKeywords": [
+    "highly detailed", "digital painting", "concept art",
+    "cyberpunk", "retro computing", "1980s computer", "TRS-80",
+    "holographic interface", "AI agent", "neon light", "CRT glow",
+    "cinematic lighting", "high contrast", "nostalgic", "hopeful",
+    "hacker aesthetic", "explorer", "16:9 aspect ratio", "banner composition"
+  ]
+}

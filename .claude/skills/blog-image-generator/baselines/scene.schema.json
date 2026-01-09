@@ -326,6 +326,10 @@
         "SymbolicMeaning": {
           "type": "string",
           "description": "What this prop represents thematically (optional)"
+        },
+        "ReferenceImage": {
+          "type": "string",
+          "description": "Path to a reference image for this prop (relative to scene JSON or repo root). The image will be included as a reference for accurate rendering."
         }
       }
     },
