@@ -38,9 +38,9 @@ Everyone defects. The code gets worse. The cruft accumulates. And then we call i
 
 Here's where my pessimism flips.
 
-An agent doesn't feel social pressure. It doesn't worry about looking slow. It doesn't have a performance review next quarter.
+An agent doesn't feel social pressure. It doesn't worry about looking slow. It doesn't have a performance review next quarter. Well, maybe it does, but it can't know it.
 
-An agent can be prompted — instructed, really — to always cooperate. To treat every piece of code as if it's going to be read and modified by someone else. To refuse the quick hack when a clean solution exists. To leave the campsite better than it found it, every single time.
+An agent can be prompted — instructed, really — to always cooperate. To treat every piece of code as if it's going to be read and modified by someone else. To refuse the quick hack when a clean solution exists. To write the automated tests. To leave the campsite better than it found it, every single time.
 
 Think about that for a moment. What happens when one player in a prisoner's dilemma *always* cooperates, reliably, predictably?
 
