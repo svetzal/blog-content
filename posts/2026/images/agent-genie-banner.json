@@ -1,0 +1,102 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+
+  "Character": {
+    "Description": "A striking, confident middle-aged woman with a cyberpunk edge; intelligent and powerful",
+    "Age": "Middle-aged, confident, formidable",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Curvy, powerful, feminine",
+      "UpperBody": "Broad shoulders, strong arms, pronounced curves",
+      "LowerBody": "Full hips and thighs"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, intense, focused on the genie",
+      "Expression": "Hopeful yet cautious, making a considered wish",
+      "Makeup": "High-contrast makeup; sharp eyeliner, metallic accents, bold magenta lips",
+      "Complexion": "Fair-light skin with cool highlights and neon reflections"
+    },
+    "Hair": {
+      "Color": "Silver-grey with cyan and magenta neon reflections",
+      "Length": "Long",
+      "Style": "Loose waves, dramatic movement from the genie's ethereal energy"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Dark fitted blazer over tech-casual attire",
+          "Fit": "Professional but relaxed, sleeves pushed up",
+          "ColorPalette": "Black with subtle cyan piping",
+          "Material": "Modern synthetic fabric with subtle tech texture"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Smart wearable on wrist",
+          "Description": "Glowing softly, suggesting tech integration"
+        }
+      ]
+    },
+    "Pose": "Seated or kneeling, holding a futuristic lamp in both hands, looking up at the digital genie with a mixture of hope and wariness"
+  },
+
+  "ArticleProps": [
+    {
+      "Name": "Cyberpunk lamp",
+      "Description": "A sleek, futuristic oil lamp with circuit-board patterns and glowing cyan accents, being held by the character",
+      "Symbolism": "The 'wishcraft' of agentic coding - making wishes to AI"
+    },
+    {
+      "Name": "Digital genie",
+      "Description": "A semi-transparent holographic figure floating above the lamp, made of flowing code, data streams, and glowing particles. Gender-ambiguous, ethereal, composed of scrolling terminal text, neural network visualizations, and softly pulsing light. Expression is neutral, inscrutable - neither malevolent nor benevolent",
+      "Symbolism": "The AI agent - powerful but requiring careful instruction"
+    },
+    {
+      "Name": "Floating code fragments",
+      "Description": "Snippets of code and terminal commands swirling in the genie's form and drifting around the scene",
+      "Symbolism": "The technical nature of the wishes being made"
+    }
+  ],
+
+  "EnvironmentProps": [
+    {
+      "Name": "Developer workspace",
+      "Description": "Blurred background suggesting a modern tech office or home workspace with multiple monitors showing code",
+      "Context": "Grounds the fantasy element in a real development context"
+    }
+  ],
+
+  "Situation": {
+    "Setting": "Indoor workspace with dramatic lighting",
+    "TimeOfDay": "Night, lit by screens and the genie's glow",
+    "Action": "The character has just rubbed the lamp and is looking up at the materializing digital genie, about to make a wish. Her expression shows she knows to be careful what she wishes for.",
+    "Mood": "Hopeful but cautious, magical yet technological"
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir with fantasy elements",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": ["Genie's ethereal glow (cyan/magenta)", "Screen glow from background", "Lamp's circuit patterns", "Rim lighting on character"],
+      "Shadows": "Deep shadows contrasting with the supernatural glow"
+    },
+    "ColorPalette": {
+      "Primary": ["Cyan", "Magenta", "Electric Blue"],
+      "Accents": ["Silver", "White", "Soft gold from lamp"],
+      "Treatment": "The genie is the primary light source, casting ethereal light across the scene"
+    },
+    "Atmosphere": {
+      "Effects": ["Holographic particles", "Data stream wisps", "Soft bokeh from background screens", "Ethereal mist around genie"],
+      "Mood": "Magical technology, the fusion of ancient wish-granting with modern AI"
+    }
+  },
+
+  "PromptKeywords": [
+    "highly detailed", "digital painting", "concept art",
+    "cyberpunk", "holographic", "ethereal glow", "cinematic lighting",
+    "genie", "magical realism", "tech noir", "neon light"
+  ]
+}
