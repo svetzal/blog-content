@@ -18,7 +18,7 @@ We're all making wishes now. "Build me a feature." "Refactor this module." "Fix 
 
 ## The Slot Machine in Your Editor
 
-Here's the thing about agentic coding right now: it's addictive by design.
+Here's the thing about agentic coding right now: it's addictive by design. Not the math and technology, that's just non-deterministic, but the products built around it.
 
 Variable rewards. B.F. Skinner figured this out decades ago with pigeons and pellets. Unpredictable payoffs create compulsive behavior far more effectively than consistent ones. Sometimes the agent nails it on the first try and you feel like a wizard. Sometimes it hallucinates an API that doesn't exist. Sometimes it produces something almost right that takes you an hour to debug.
 
