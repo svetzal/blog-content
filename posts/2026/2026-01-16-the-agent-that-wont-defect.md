@@ -12,8 +12,6 @@ image: images/agent-genie-banner.png
 imageAlt: "A silver-haired woman in cyberpunk attire holds a glowing futuristic lamp, looking up at a digital genie made of flowing code and holographic light floating above her in a developer workspace"
 ---
 
-# The Agent That Won't Defect
-
 Kent Beck called it "wishcraft" today. I laughed, then winced. It's too accurate.
 
 We're all making wishes now. "Build me a feature." "Refactor this module." "Fix the tests." And like every genie story ever written, the results are... complicated. The genie grants your wish, technically. But genies in folklore aren't benevolent helpers — they're lawyers looking for loopholes, insurance adjusters dodging a payout. You asked for a working function? Here's one. You didn't specify it should be maintainable.
