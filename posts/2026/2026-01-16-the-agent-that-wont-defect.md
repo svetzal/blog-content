@@ -26,15 +26,13 @@ That intermittent reinforcement? That's not a bug. (Well, it is, but not just th
 
 ## The Prisoner's Dilemma, Committed to Main
 
-But let's set aside the dopamine hits for a moment. There's a deeper pattern here, one I keep seeing in every team I've ever worked with.
+But let's set aside the dopamine hits for a moment. There's a deeper pattern here, one I keep seeing in nearly every enterprise team I've ever worked with.
 
 Code rots. Not because code is fragile, but because people are human.
 
-The prisoner's dilemma plays out in every standup, every PR, every "I'll clean this up later." Individual performance metrics encourage defection: ship fast, look productive, leave the cleanup for someone else. The social dynamics of most teams make cooperation feel risky. If I spend an extra day refactoring while you're shipping features, who looks better in the next review cycle?
+The prisoner's dilemma plays out in every standup, every PR, every "I'll clean this up later" and "I'll write the tests later." Individual performance metrics encourage defection: ship fast, look productive, leave the cleanup for someone else. The social dynamics of most teams make cooperation feel risky. If I spend an extra day refactoring while you're shipping features, who looks better in the next review cycle?
 
-Everyone defects. Everyone's code gets worse. The cruft accumulates. And then we call it "tech debt" as if it were some inevitable force of nature rather than the predictable outcome of misaligned incentives.
-
-(Yes, I've done this too. We all have.)
+Everyone defects. The code gets worse. The cruft accumulates. And then we call it "tech debt" as if it were some inevitable force of nature rather than the predictable outcome of misaligned incentives.
 
 ## What If the Agent Always Cooperates?
 
