@@ -12,8 +12,6 @@ image: images/finding-your-true-worth-banner.png
 imageAlt: "Silver-haired woman in cyberpunk workshop setting, gesturing toward holographic knowledge visualization while teaching others to see their hidden value"
 ---
 
-# Finding Your True Worth
-
 I was running workshops this week on building AGENTS.md files—those plain-text instruction files that tell AI coding agents how to navigate and contribute to your codebase. Think of them as onboarding documents for robots: here's where we put things, here's how we name things, here's what matters and why.
 
 In each I asked for volunteers to share what they'd written. And beautiful things happened.
