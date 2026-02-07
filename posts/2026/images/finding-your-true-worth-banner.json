@@ -1,0 +1,136 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Hero image for 'Finding Your True Worth' - discovering the value of tacit knowledge",
+
+  "Character": {
+    "Description": "A striking, confident middle-aged woman with a cyberpunk edge; intelligent, insightful, and warmly encouraging",
+    "Age": "Middle-aged, experienced, formidable",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Curvy, powerful, feminine",
+      "UpperBody": "Broad shoulders, strong arms",
+      "LowerBody": "Full hips, confident stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, warm but knowing",
+      "Expression": "Encouraging, wise, slight knowing smile - the look of someone helping others see their own value",
+      "Makeup": "Bold makeup with magenta accents, subtle metallic highlights",
+      "Complexion": "Fair skin with warm cinematic lighting"
+    },
+    "Hair": {
+      "Color": "Silver-grey with subtle cyan and magenta reflections from ambient light",
+      "Length": "Long",
+      "Style": "Flowing waves, professional yet dynamic"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Dark fitted blazer with subtle tech-fabric sheen",
+          "Fit": "Professional, sleeves pushed up",
+          "ColorPalette": "Deep charcoal with cyan piping accents",
+          "Material": "Modern technical fabric with matte finish"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Professional glasses",
+          "Description": "Modern rectangular frames catching neon reflections"
+        }
+      ]
+    }
+  },
+
+  "Scene": {
+    "Setting": "A cyberpunk workshop or collaborative space - part classroom, part tech lab",
+    "TimeOfDay": "Evening, artificial lighting dominates",
+    "Weather": null,
+    "Environment": {
+      "Primary": "Modern collaborative workspace with holographic displays",
+      "Secondary": "Soft bokeh of other participants in background, suggesting workshop setting",
+      "Atmosphere": "Intimate yet professional, a moment of teaching and revelation"
+    }
+  },
+
+  "Props": {
+    "CharacterProps": [
+      {
+        "Name": "Gesturing hands",
+        "Description": "Hands mid-gesture, as if revealing or presenting something important",
+        "Placement": "Character actively engaged in explanation"
+      }
+    ],
+    "ArticleProps": [
+      {
+        "Name": "Holographic knowledge visualization",
+        "Description": "Abstract holographic display showing interconnected nodes, networks, flowing data - representing tacit knowledge becoming visible",
+        "Placement": "Floating near the character, being gestured toward",
+        "Symbolism": "The invisible knowledge inside us made tangible and visible"
+      },
+      {
+        "Name": "Glowing text fragments",
+        "Description": "Floating fragments of documentation or instruction text (like AGENTS.md), some fading in from transparent to solid",
+        "Placement": "Scattered in the space around the character",
+        "Symbolism": "Hidden knowledge being externalized, made real"
+      }
+    ],
+    "EnvironmentProps": [
+      {
+        "Name": "Workshop participants (silhouettes)",
+        "Description": "Soft-focus silhouettes of seated listeners in bokeh background",
+        "Placement": "Background, suggesting workshop context"
+      },
+      {
+        "Name": "Ambient holographic interfaces",
+        "Description": "Background screens and holographic panels with soft blue-cyan glow",
+        "Placement": "Walls and floating displays around the space"
+      }
+    ]
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Warm dramatic with cool tech accents",
+      "Sources": ["Holographic display glow (cyan/magenta)", "Soft overhead warm light on character", "Rim lighting from background screens"],
+      "Shadows": "Soft but defined, emphasizing the warmth of the teaching moment"
+    },
+    "ColorPalette": {
+      "Primary": ["Warm amber", "Soft cyan", "Magenta accents"],
+      "Accents": ["Electric blue from holograms", "Silver reflections", "Gold highlights"],
+      "Treatment": "Balance of warm (human connection, value) and cool (technology, knowledge visualization)"
+    },
+    "Atmosphere": {
+      "Effects": ["Bokeh from background figures", "Holographic glow", "Subtle atmospheric haze", "Light particles suggesting data/knowledge"],
+      "Mood": "Empowering, revelatory, warm yet technological - the moment of realizing hidden worth"
+    }
+  },
+
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "holographic display",
+    "workshop setting",
+    "teaching moment",
+    "knowledge visualization",
+    "warm cinematic lighting",
+    "16:9 aspect ratio",
+    "wide shot",
+    "empowering atmosphere"
+  ],
+
+  "CompositionNotes": {
+    "Framing": "Mid-shot, character prominent but with space for holographic elements",
+    "SubjectPlacement": "Character left of center, holographic knowledge visualization to the right",
+    "DepthOfField": "Shallow - background workshop participants softly blurred",
+    "TextSafeArea": "Upper right corner relatively clear for potential title overlay",
+    "Narrative": "Capture the moment of revelation - helping others see the value they didn't know they had"
+  },
+
+  "MoodVariation": "empowering-contemplative",
+  "ArticleTheme": "Discovering that your true worth lies in tacit knowledge, not just typing code"
+}
