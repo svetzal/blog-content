@@ -22,7 +22,7 @@ Here's the thing: many of them didn't realize how much they knew until they trie
 
 ## The Booch Interview and the Panic Cycle
 
-I'd been thinking about this all week, since watching Gergely Orosz's interview with Grady Booch. Booch has been around long enough to see these panic cycles before. Compilers. High-level languages. Frameworks. Each wave makes some skills less valuable, but expands what gets built and shifts demand upward.
+I'd been thinking about this all week, since watching [Gergely Orosz's interview with Grady Booch](https://youtu.be/OfMAtaocvJw). Booch has been around long enough to see these panic cycles before. Compilers. High-level languages. Frameworks. Each wave makes some skills less valuable, but expands what gets built and shifts demand upward.
 
 His framing stuck with me: software engineering is mostly decision-making under constraints, not typing code. We balance forces—physics and computation limits, economics, team dynamics, legal boundaries, and especially ethics. Code is just one instrument in that broader practice.
 
