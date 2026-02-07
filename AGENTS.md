@@ -164,7 +164,8 @@ The skill documentation (`.claude/skills/blog-image-generator/SKILL.md`) contain
 ## Markdown Conventions
 
 - Use standard markdown syntax for headings, lists, code blocks, etc.
-- Headings must start at level 1 (`#`) and increment by one level only (no skipping from `#` to `###`)
+- **Do not include H1 (`#`) titles in blog post content** — the publishing platform generates the H1 from the frontmatter `title` field
+- Blog post body headings should start at H2 (`##`) and increment by one level only (no skipping from `##` to `####`)
 - Put blank lines above and below bulleted lists, numbered lists, headings, quotations, and code blocks
 
 ## Writing Posts - Stacey Vetzal's Style Guide
