@@ -372,10 +372,12 @@ After the basic conversion:
 
 ## Output File Structure
 
-All presentations live in the blog-content repository:
+All presentations live in the blog-content repository. The `presentations/` directory has a shared `package.json` with Slidev dependencies installed once for all presentations.
 
 ```
 presentations/
+├── package.json             # Shared Slidev deps + npm scripts
+├── node_modules/            # Shared dependencies (gitignored)
 └── talk-slug/
     ├── slides.md            # Main presentation file
     ├── public/              # Static assets
@@ -384,20 +386,31 @@ presentations/
     └── snippets/            # External code snippets (optional)
 ```
 
-To run a presentation locally:
+### First-Time Setup
+
+```bash
+cd presentations
+npm install
+```
+
+### Running a Presentation
+
+**Important:** Do NOT use `npx slidev` — it fails to install the theme non-interactively. Always use the npm scripts.
+
+From within a presentation folder:
 
 ```bash
 cd presentations/talk-slug
-npx slidev slides.md
+npm run dev -- slides.md              # Development server (opens browser)
 ```
 
 To export:
 
 ```bash
 cd presentations/talk-slug
-npx slidev export slides.md              # PDF
-npx slidev export slides.md --format png  # PNG per slide
-npx slidev export slides.md --format pptx # PowerPoint
+npm run export -- slides.md              # PDF
+npm run export -- slides.md --format png  # PNG per slide
+npm run export -- slides.md --format pptx # PowerPoint
 ```
 
 ## Supporting Files
@@ -486,6 +499,7 @@ Start testing today.
 
 ## Troubleshooting
 
+- **`npx slidev` fails with theme not found**: Do not use `npx slidev`. Use `npm run dev -- slides.md` from within a presentation folder — the shared `presentations/package.json` provides the dependencies. Run `npm install` in `presentations/` if `node_modules` is missing.
 - **Slides not rendering**: Ensure `---` separators have blank lines above and below
 - **Layout not applying**: Check that `layout:` is in the slide's frontmatter block, not the content
 - **v-clicks not working**: Ensure blank lines around `<v-clicks>` component and list items
