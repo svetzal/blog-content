@@ -155,11 +155,48 @@ posts/2025/images/
 
 The skill documentation (`.claude/skills/blog-image-generator/SKILL.md`) contains full examples and detailed instructions.
 
+## Presentation Generation
+
+Blog content can be converted to Slidev markdown presentations, or talks can be created from scratch. A Claude Code Skill at `.claude/skills/slidev-presentation/` handles presentation creation.
+
+### Presentation Types
+
+| Type | Slides | Template | Best For |
+|------|--------|----------|----------|
+| Conference talk | 20-40 | `talk-from-scratch.md` | Full-length presentations |
+| Blog conversion | 10-25 | `blog-post-conversion.md` | Turning articles into talks |
+| Technical demo | 10-20 | `technical-demo.md` | Code-heavy walkthroughs |
+| Lightning talk | 7-10 | `lightning-talk.md` | 5-minute rapid talks |
+
+### Procedure for New Presentations
+
+1. **Determine type** — conference talk, blog conversion, technical demo, or lightning talk
+2. **Read SKILL.md** at `.claude/skills/slidev-presentation/SKILL.md` for the full procedure
+3. **Select template** from `.claude/skills/slidev-presentation/templates/`
+4. **Create output** in `presentations/<talk-slug>/slides.md`
+
+### Procedure for Blog Post Conversion
+
+1. **Read the source post** and identify sections, quotes, code blocks, and key insights
+2. **Read the blog conversion template** at `.claude/skills/slidev-presentation/templates/blog-post-conversion.md`
+3. **Map post structure to slides** — one concept per slide, distill paragraphs to bullets
+4. **Write slides** with speaker notes containing the deeper context from the original post
+5. **Output** to `presentations/<talk-slug>/slides.md`
+
+### Running Presentations
+
+```bash
+cd presentations/talk-slug
+npx slidev slides.md          # Development server
+npx slidev export slides.md   # Export to PDF
+```
+
+The skill documentation (`.claude/skills/slidev-presentation/SKILL.md`) contains full syntax reference, design principles, and detailed instructions.
+
 ## Files to Ignore
 
 - `.obsidian/` directory (Obsidian configuration)
 - `.DS_Store` (macOS system files)
-- `.UlyssesRoot`, `.Ulysses-Group.plist` (legacy writing tool artifacts)
 
 ## Markdown Conventions
 
