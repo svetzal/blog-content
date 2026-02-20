@@ -1,0 +1,71 @@
+{
+  "ImageRole": "background",
+  "ContentDescription": "A mostly dark, near-black image. In the bottom-right corner, a small cluster of the golden constellation network peeks into frame — a few warm amber-gold nodes connected by fine luminous threads, fading quickly into darkness. The network occupies roughly the bottom-right 20% of the frame. The rest of the image is deep midnight blue-black with perhaps the faintest hint of scattered gold dust trailing away from the cluster. Extremely subdued — this is a background, not a focal image.",
+
+  "Layout": {
+    "SlidevLayout": "default",
+    "AspectRatio": "16:9",
+    "TextSafeZone": "center",
+    "FocalPoint": "rule-of-thirds-bottom-right",
+    "NegativeSpace": "generous"
+  },
+
+  "PresentationContext": {
+    "TalkTitle": "Finding Your True Worth",
+    "NarrativeRole": "evidence",
+    "Mood": "contemplative",
+    "Themes": ["hidden knowledge", "interconnected expertise"],
+    "VisualContinuity": "Carries the golden constellation network motif from the cover slide — same nodes and threads, just a small corner fragment as a subtle reminder"
+  },
+
+  "Style": {
+    "Genre": "Celestial / Data Visualization Art",
+    "Rendering": "Detailed digital illustration with fine luminous linework against deep darkness",
+    "Lighting": {
+      "Type": "Self-luminous nodes and threads against near-total darkness",
+      "Sources": ["Warm amber glow from nodes in bottom-right corner only"],
+      "Shadows": "None — dark background with additive light only"
+    },
+    "ColorPalette": {
+      "Primary": ["Near Black", "Deep Midnight Blue", "Dark Indigo"],
+      "Accents": ["Warm Gold", "Soft Amber"],
+      "Treatment": "95% dark void. The small corner network uses the same warm gold-amber palette as the cover image. Very restrained — the gold should feel like a whisper, not a shout."
+    },
+    "Atmosphere": {
+      "Effects": ["Faint gold dust particles trailing from the corner cluster", "Soft glow halos on nodes", "Rapid fade to darkness"],
+      "Mood": "Quiet, grounding — a subtle thread of continuity"
+    }
+  },
+
+  "Situation": {
+    "Name": "Corner Fragment - Sparse",
+    "Setting": "Deep dark void with a small constellation fragment visible in the bottom-right corner",
+    "Camera": "Wide, the network is far away, just barely entering the frame",
+    "Props": {
+      "Conceptual": [
+        {
+          "Name": "Corner network fragment",
+          "Description": "5-8 glowing amber-gold nodes of varying sizes connected by fine luminous threads, clustered in the bottom-right corner and fading into darkness",
+          "Application": "Bottom-right 20% of frame only, fading rapidly toward center",
+          "SymbolicMeaning": "The ever-present knowledge network, glimpsed at the edge"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "The vast majority of the image must be dark — this is a text background",
+      "The network fragment should feel like part of the larger cover network, just a corner glimpse",
+      "Nodes must be connected by threads — no isolated elements",
+      "The gold glow should fade gently into the darkness, not cut off sharply"
+    ]
+  },
+
+  "PromptKeywords": [
+    "mostly dark", "subtle background", "corner element",
+    "golden constellation", "bottom-right corner only",
+    "minimal", "subdued", "near black",
+    "16:9 aspect ratio", "slide background",
+    "faint glow", "ambient darkness"
+  ],
+
+  "CompositionNotes": "This must be extremely subdued. The image is 80%+ pure dark void. The golden network fragment in the bottom-right corner is the only visual element, and it should be modest — a few connected nodes with warm glow that fades into nothing. White text must be perfectly readable over most of this image."
+}

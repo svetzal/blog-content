@@ -3,6 +3,7 @@ theme: default
 title: "Finding Your True Worth"
 author: "Stacey Vetzal"
 transition: fade
+background: /images/cover.png
 ---
 
 # Finding Your True Worth
@@ -15,6 +16,7 @@ Fair warning: I'm going to ask you to think about something uncomfortable today.
 
 ---
 layout: quote
+class: bg-network-1
 ---
 
 # "From far enough away, all a developer does is type code."
@@ -23,6 +25,8 @@ layout: quote
 I say this a lot. From far enough away, all a developer does is type code. And here's the thing — it's not just developers. From far enough away, all a surgeon does is cut people. All a lawyer does is argue. All a teacher does is talk. When you zoom out far enough, every profession looks like its most visible, most mechanical activity. And that's exactly the lens that gets applied when someone's deciding what to automate — or who to replace.
 -->
 
+---
+class: bg-network-2
 ---
 
 ## The Workshop Moment
@@ -43,6 +47,7 @@ This week I was running workshops where people wrote instruction files for AI ag
 
 ---
 layout: statement
+class: bg-network-1
 ---
 
 # What the machines can't generate is what lives in *you*.
@@ -51,6 +56,8 @@ layout: statement
 This is the core of it. LLMs are brilliant at pipeline glue — CI/CD scaffolding, CRUD apps, infrastructure templates. The distance between intent and output is short and predictable. But they can't know that your team tried microservices in 2019 and it was a disaster because of the org structure. They can't know Janet in accounting depends on that weird billing edge case. That's not in the code. That's in you.
 -->
 
+---
+class: bg-network-2
 ---
 
 ## The Real Risk
@@ -67,6 +74,8 @@ This is the core of it. LLMs are brilliant at pipeline glue — CI/CD scaffoldin
 The danger isn't the machine. The danger is that we buy into the far-away view. That we accept "all a developer does is type code" as the whole story. Because if you believe that, you'll act accordingly. You'll outsource everything to the model and wonder why your systems grow brittle. I've watched this happen before — every time we treat knowledge workers as interchangeable units of output, we pay for it later. The cost just shows up somewhere else.
 -->
 
+---
+class: bg-network-1
 ---
 
 ## The Durable Advantage
@@ -85,7 +94,7 @@ Grady Booch talks about the winners in this transition — the ones who move up 
 
 ---
 layout: center
-class: text-2xl
+class: text-2xl bg-network-2
 ---
 
 # Write it down. Prove it to yourself.
@@ -98,6 +107,7 @@ So here's what I want you to do. Write an AGENTS.md. Or an onboarding document. 
 
 ---
 layout: end
+class: bg-network-1
 ---
 
 # Thank You

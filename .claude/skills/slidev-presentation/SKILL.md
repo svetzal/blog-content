@@ -497,6 +497,10 @@ layout: end
 Start testing today.
 ```
 
+## Custom Imagery
+
+For generating custom images (cover art, concept illustrations, backgrounds, section breaks), use the **presentation-image-generator** skill at `.claude/skills/presentation-image-generator/`. It produces images designed to integrate with Slidev's layout system and supports multiple visual styles.
+
 ## Troubleshooting
 
 - **`npx slidev` fails with theme not found**: Do not use `npx slidev`. Use `npm run dev -- slides.md` from within a presentation folder — the shared `presentations/package.json` provides the dependencies. Run `npm install` in `presentations/` if `node_modules` is missing.

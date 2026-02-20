@@ -1,0 +1,72 @@
+{
+  "ImageRole": "background",
+  "ContentDescription": "A mostly dark, near-black image. In the bottom-right corner, a slightly larger fragment of the golden constellation network extends into frame — perhaps 10-15 connected nodes with luminous threads, reaching a bit further toward the center than variant 1 but still confined to the bottom-right quadrant. A few very faint, almost ghostly thread lines trail further into the darkness. The rest is deep midnight void.",
+
+  "Layout": {
+    "SlidevLayout": "default",
+    "AspectRatio": "16:9",
+    "TextSafeZone": "center",
+    "FocalPoint": "rule-of-thirds-bottom-right",
+    "NegativeSpace": "generous"
+  },
+
+  "PresentationContext": {
+    "TalkTitle": "Finding Your True Worth",
+    "NarrativeRole": "tension",
+    "Mood": "contemplative",
+    "Themes": ["hidden knowledge", "interconnected expertise", "growing awareness"],
+    "VisualContinuity": "Same golden network motif as cover — this variant shows slightly more of the network, as if the audience's awareness of the hidden knowledge is growing"
+  },
+
+  "Style": {
+    "Genre": "Celestial / Data Visualization Art",
+    "Rendering": "Detailed digital illustration with fine luminous linework against deep darkness",
+    "Lighting": {
+      "Type": "Self-luminous nodes and threads against near-total darkness",
+      "Sources": ["Warm amber glow from nodes in bottom-right region"],
+      "Shadows": "None — dark background with additive light only"
+    },
+    "ColorPalette": {
+      "Primary": ["Near Black", "Deep Midnight Blue", "Dark Indigo"],
+      "Accents": ["Warm Gold", "Soft Amber", "Faint Teal"],
+      "Treatment": "90% dark void. Slightly more gold visible than variant 1 — the network fragment is a touch larger and brighter, with one or two faint teal nodes among the gold."
+    },
+    "Atmosphere": {
+      "Effects": ["Soft glow halos on nodes", "Faint trailing threads reaching into darkness", "Very subtle gold dust"],
+      "Mood": "Quietly building — the knowledge is becoming more visible"
+    }
+  },
+
+  "Situation": {
+    "Name": "Corner Fragment - Medium",
+    "Setting": "Deep dark void with a moderate constellation fragment visible in the bottom-right area",
+    "Camera": "Wide, the network reaches slightly further into frame than variant 1",
+    "Props": {
+      "Conceptual": [
+        {
+          "Name": "Corner network fragment",
+          "Description": "10-15 glowing amber-gold nodes connected by fine luminous threads, extending from the bottom-right corner toward the center but still confined to the lower-right quadrant. A few very dim, almost invisible thread lines trail further into the void.",
+          "Application": "Bottom-right 25-30% of frame, with faint tendrils reaching slightly further",
+          "SymbolicMeaning": "The knowledge network becoming more apparent — there's more here than first appears"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "Still mostly dark — this is a text background, not a feature image",
+      "More network visible than variant 1, but still restrained",
+      "All nodes connected — no isolated elements",
+      "Faint thread lines trailing into darkness suggest the network continues far beyond what's visible",
+      "The gold glow fades gently, no hard edges"
+    ]
+  },
+
+  "PromptKeywords": [
+    "mostly dark", "subtle background", "corner element",
+    "golden constellation", "bottom-right quadrant",
+    "minimal", "subdued", "near black",
+    "16:9 aspect ratio", "slide background",
+    "warm glow", "fading into darkness"
+  ],
+
+  "CompositionNotes": "Similar to variant 1 but with a bit more network visible — the golden cluster extends further from the corner and has more nodes. Still very much a background image. The trailing ghost threads into darkness are key — they hint at the vast network beyond the visible portion. White text must remain readable over the majority of the frame."
+}

@@ -1,0 +1,11 @@
+.bg-network-1 {
+  background-image: url(/images/bg-network-1.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.bg-network-2 {
+  background-image: url(/images/bg-network-2.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+}

@@ -1,0 +1,139 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+
+  "Character": {
+    "Description": "A striking, confident middle-aged woman with a cyberpunk edge; intelligent, seductive, and unapologetically powerful.",
+    "Age": "Middle-aged, confident, formidable",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Curvy, powerful, feminine",
+      "UpperBody": "Broad shoulders, strong arms, pronounced curves",
+      "LowerBody": "Full hips and thighs, assertive stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, intense, sharp focus",
+      "Expression": "Knowing, quietly confident, slight half-smile of someone who knows exactly where things belong",
+      "Makeup": "High-contrast makeup; sharp eyeliner, metallic accents, bold magenta lips",
+      "Complexion": "Fair-light skin with cool highlights and cinematic contrast"
+    },
+    "Hair": {
+      "Color": "Silver-grey with subtle neon reflections",
+      "Length": "Long",
+      "Style": "Loose waves, dramatic movement"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Dark fitted blazer with subtle tech-fabric sheen",
+          "Fit": "Body-contouring, sleeves pushed up",
+          "ColorPalette": "Black with cyan thread accents",
+          "Material": "Synthetic tech fabric with matte leather trim"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Professional glasses",
+          "Accessories": "Modern rectangular frames with faint holographic lens reflections"
+        }
+      ]
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": ["Neon signs", "Warm desk lamp glow", "Rim lighting from behind"],
+      "Shadows": "Sharp, emphasizing texture and form"
+    },
+    "ColorPalette": {
+      "Primary": ["Magenta", "Cyan", "Electric Blue", "Warm Amber"],
+      "Accents": ["Silver", "White", "Cool Blues", "Metallic purples"],
+      "Treatment": "High saturation, strong contrast between warm map-light and cool tech environment"
+    },
+    "Atmosphere": {
+      "Effects": ["Bokeh", "Atmospheric haze", "Neon glow", "Reflections on surfaces"],
+      "Mood": "Contemplative but assured, a navigator who knows the territory"
+    }
+  },
+
+  "Situation": {
+    "Name": "The Map and the Rulebook",
+    "Setting": "A cyberpunk workshop-study — part dev workspace, part cartographer's den. A large holographic map of a software system floats above a heavy wooden desk, its nodes and pathways glowing in cyan and magenta. The map is stylized like an old nautical chart but rendered in holographic light — routes, landmarks, and annotations visible. Beside the map on the desk sits an open leather-bound rulebook with glowing text on its pages, its margins annotated in handwriting. The book is thick, well-worn, clearly personal — not a corporate manual but a practitioner's journal of principles.",
+    "Camera": "Mid-shot, slightly wide, character off-center left with map and rulebook filling the right half of frame",
+    "CharacterPose": {
+      "Expression": "Knowing half-smile, eyes sharp and confident — the look of someone who can predict where things are",
+      "BodyPosition": "Standing at the desk, one hand resting on the open rulebook, weight shifted forward with engagement",
+      "Gesture": "Other hand gesturing toward a specific node on the holographic map, as if saying 'it should be right here'"
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern rectangular frames with holographic map reflections visible in lenses",
+          "Application": "Worn, map light reflecting in lenses"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "Holographic system map",
+          "Description": "A large floating map rendered like an old nautical chart but in holographic light — nodes represent modules, glowing pathways show connections, handwritten annotations mark design decisions. Some routes are well-worn and bright, others faded.",
+          "Application": "Floating above desk, primary visual element on right side of frame",
+          "SymbolicMeaning": "The mental model — principles made visible as navigation"
+        },
+        {
+          "Name": "Leather-bound principles journal",
+          "Description": "A thick, well-worn leather book open to pages with glowing text — short rules and principles visible. Margins are full of handwritten notes, cross-outs, and revisions. Some pages have dog-ears. This is not a pristine reference — it's a living document.",
+          "Application": "Open on desk beneath the map, one hand resting on it",
+          "SymbolicMeaning": "Articulated principles — the rulebook you write yourself over a career"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Cyberpunk workshop desk",
+          "Description": "Heavy wooden desk with tech embedded in its surface, scattered with a coffee mug and a few data chips",
+          "Application": "Primary surface, grounds the scene"
+        },
+        {
+          "Name": "Background shelving",
+          "Description": "Shelves with mix of old books and holographic storage cubes, suggesting accumulated knowledge",
+          "Application": "Soft-focus background, adds depth and history"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "The holographic map should feel like a navigable mental model — not a generic tech diagram but something personal and annotated",
+      "The rulebook should look lived-in: dog-eared, annotated, revised — principles that evolved over time",
+      "The gesture toward the map conveys 'I know where this is because I know how I think'",
+      "Warm amber light from the desk contrasts cool cyan/magenta of the holographic map"
+    ],
+    "LightingFocus": "Warm amber glow from the desk and rulebook pages, cool cyan-magenta glow from the holographic map above, creating a split warm/cool lighting on the character's face that suggests the bridge between personal knowledge and system understanding",
+    "ThematicTags": ["principles", "mental-models", "navigation", "craft", "theory-building"]
+  },
+
+  "ArticleContext": {
+    "Title": "Know Your Principles",
+    "Tags": ["GenAI", "Software Engineering", "Principles", "Craft"],
+    "Themes": ["articulating principles at every career stage", "comprehension debt", "theory of the program", "tacit knowledge made explicit"],
+    "Mood": "contemplative"
+  },
+
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "neon light",
+    "cinematic lighting",
+    "high contrast",
+    "16:9 aspect ratio",
+    "wide shot",
+    "banner composition",
+    "holographic map",
+    "leather-bound journal",
+    "warm and cool split lighting"
+  ]
+}

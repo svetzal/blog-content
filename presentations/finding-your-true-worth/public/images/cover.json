@@ -1,0 +1,81 @@
+{
+  "ImageRole": "cover",
+  "ContentDescription": "An abstract celestial map of interconnected knowledge — hundreds of glowing amber and gold nodes connected by delicate luminous threads against a deep midnight blue-black void. The network is dense and intricate at the edges of the frame, thinning toward the center to leave breathing room. The pattern suggests both a star atlas and a neural network — something vast, beautiful, and deeply interconnected. The threads pulse with warm light, as if alive with thought. The overall feeling is of gazing into something immense and quietly magnificent.",
+
+  "Layout": {
+    "SlidevLayout": "cover",
+    "AspectRatio": "16:9",
+    "TextSafeZone": "center",
+    "FocalPoint": "center",
+    "NegativeSpace": "generous"
+  },
+
+  "PresentationContext": {
+    "TalkTitle": "Finding Your True Worth",
+    "SlideNumber": 1,
+    "SectionName": "Opening",
+    "SlideTitle": "Finding Your True Worth",
+    "NarrativeRole": "hook",
+    "Mood": "contemplative",
+    "Themes": ["hidden knowledge", "human worth", "interconnected expertise", "institutional memory"],
+    "VisualContinuity": "The constellation-network motif represents the invisible web of knowledge that experienced practitioners carry"
+  },
+
+  "Style": {
+    "Genre": "Celestial / Data Visualization Art",
+    "Rendering": "Detailed digital illustration with fine luminous linework, atmospheric depth, editorial quality",
+    "Lighting": {
+      "Type": "Self-luminous elements against deep darkness — nodes and threads emit their own warm glow",
+      "Sources": ["Bioluminescent node glow", "Ambient thread luminescence", "Soft diffused halo around dense clusters"],
+      "Shadows": "None — dark background with additive light only"
+    },
+    "ColorPalette": {
+      "Primary": ["Deep Midnight Blue", "Near Black", "Dark Indigo"],
+      "Accents": ["Warm Gold", "Soft Amber", "Pale Champagne", "Faint Teal"],
+      "Treatment": "Dark void background with warm gold-amber luminous network. Occasional faint teal node for variety. The warmth of the gold conveys human knowledge versus cold digital blue."
+    },
+    "Atmosphere": {
+      "Effects": ["Soft glow halos around nodes", "Fine luminous connecting threads", "Subtle depth-of-field blur on distant nodes", "Faint particle dust between clusters"],
+      "Mood": "Quiet awe — like looking at a map of everything someone knows"
+    }
+  },
+
+  "Situation": {
+    "Name": "The Knowledge Constellation",
+    "Setting": "Abstract void — no ground, no horizon, just deep space filled with an intricate luminous network",
+    "Camera": "Wide, slightly pulled back, gazing into the network from a comfortable distance",
+    "Props": {
+      "Conceptual": [
+        {
+          "Name": "Knowledge nodes",
+          "Description": "Glowing amber-gold orbs of varying sizes — larger nodes represent deep expertise, smaller ones represent supporting details and connections",
+          "Application": "Distributed across the frame, denser at edges, sparser in center",
+          "SymbolicMeaning": "Individual pieces of knowledge and experience accumulated over a career"
+        },
+        {
+          "Name": "Connection threads",
+          "Description": "Fine luminous golden lines connecting every node to its neighbors, forming an organic web pattern — not a rigid grid but a natural, grown topology",
+          "Application": "Linking all nodes together into a continuous living network",
+          "SymbolicMeaning": "The relationships between ideas, the way experience connects disparate knowledge into wisdom"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "Every node must be connected — no isolated elements, the network is one continuous whole",
+      "The threads should feel organic and slightly curved, not straight mechanical lines",
+      "The center should be relatively open with sparser, more distant nodes visible through subtle depth blur",
+      "The overall pattern should feel like it extends far beyond the frame edges — this is just a window into something immense"
+    ]
+  },
+
+  "PromptKeywords": [
+    "constellation map", "neural network", "luminous threads",
+    "knowledge visualization", "warm gold on dark", "celestial",
+    "interconnected", "contemplative", "vast network",
+    "16:9 aspect ratio", "wide composition",
+    "generous negative space in center", "title slide background",
+    "abstract data art", "fine linework"
+  ],
+
+  "CompositionNotes": "This is NOT a literal scene — it's pure abstract visualization. Think of it as a beautiful data portrait of everything a practitioner knows. The center must stay open enough for white title text. The network should feel warm, alive, and awe-inspiring — not cold or clinical. The organic curve of the connection lines is critical: this is grown knowledge, not engineered data."
+}
