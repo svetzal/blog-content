@@ -11,7 +11,45 @@ When logging work for this blog, always use `--client personal`:
 uv run evt log work --client personal --activity "Wrote blog post on cognitive biases" --hours 1.5
 ```
 
-This repository contains markdown content for Stacey Vetzal's personal blog, managed with Obsidian and published to a separate blog platform.
+This repository contains markdown content for Stacey Vetzal's personal blog ("Stacey on Software"), managed with Obsidian and published via Gatsby to [stacey.vetzal.com](https://stacey.vetzal.com).
+
+## Folder Structure and Deployment Architecture
+
+This content repo is embedded as a **git submodule** inside the site repo:
+
+```
+~/Work/Projects/Personal/stacey-blog/     # Parent: git@github.com:svetzal/stacey.vetzal.com.git
+├── content/                               # THIS REPO (submodule → https://github.com/svetzal/blog-content.git)
+│   ├── posts/YYYY/                        # Blog posts by year
+│   ├── assets/                            # Shared assets
+│   ├── presentations/                     # Slidev presentations
+│   ├── .claude/skills/                    # Claude Code skills (image generation, presentations, etc.)
+│   └── AGENTS.md                          # This file
+├── src/                                   # Gatsby theme customizations
+├── gatsby-config.js                       # Site config
+├── amplify.yml                            # AWS Amplify build spec
+└── publish.sh                             # Publish script
+```
+
+**Claude Code should be launched in the `content/` directory** for content authoring work. This ensures CLAUDE.md, AGENTS.md, skills, and all content conventions are picked up correctly.
+
+## Publishing
+
+After content work is complete, publishing is done from the **parent repo** (`stacey-blog/`):
+
+```bash
+cd ~/Work/Projects/Personal/stacey-blog
+./publish.sh                          # Default commit message
+./publish.sh "New post on TDD"        # Custom commit message
+```
+
+The publish script:
+
+1. Commits and pushes any pending changes in this content repo
+2. Updates the submodule ref in the parent repo
+3. Commits and pushes the parent repo, triggering an AWS Amplify deploy
+
+**Do not push the parent repo manually** — always use `publish.sh` to ensure the submodule ref stays in sync.
 
 ## Content Organization
 
