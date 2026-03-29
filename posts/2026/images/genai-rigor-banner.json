@@ -1,0 +1,156 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Hero image for 'GenAI Didn't Kill Rigor — It Moved It'",
+
+  "Character": {
+    "Description": "A highly competent, focused woman coder and systems thinker",
+    "Age": "Middle-aged, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": {
+      "Type": "Size 16, feminine",
+      "UpperBody": "Broad shoulders",
+      "LowerBody": "Slim hips"
+    },
+    "Face": {
+      "Complexion": "Light",
+      "Eyes": "Blue-grey",
+      "Expression": "Resolved, clear-eyed, looking forward with quiet determination",
+      "Makeup": "Bold, pinks or purples, with a touch of shimmer"
+    },
+    "Hair": {
+      "Color": "Grey/silver",
+      "Length": "Long",
+      "Style": "Flowing, big wavy curls"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Professional dark blazer over tech-casual attire, sleeves pushed up",
+          "Context": "Always present, bridges corporate and technical worlds"
+        }
+      ],
+      "Situational": [
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern rectangular frames, subtle tech integration",
+          "Context": "Pushed up onto forehead, transitioning from old work to new"
+        }
+      ]
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic transition lighting — cool blue on the left fading to warm amber on the right",
+      "Sources": ["Neon signs", "Screen glow", "Rim lighting from the right"],
+      "Shadows": "Sharp, emphasizing the boundary between old and new"
+    },
+    "ColorPalette": {
+      "Primary": ["Magenta", "Cyan", "Electric Blue", "Lime Green"],
+      "Accents": ["Silver", "White", "Cool Blues", "Metallic purples"],
+      "Treatment": "High saturation, strong contrast between warm neons and cool tech light"
+    },
+    "Atmosphere": {
+      "Effects": ["Bokeh", "Atmospheric haze", "Neon glow", "Reflections on surfaces"],
+      "Mood": "Transitional — leaving something behind, moving toward clarity"
+    }
+  },
+
+  "Situation": {
+    "Name": "The Migration of Rigor",
+    "Setting": "She stands at a threshold between two spaces. Behind her (left), a cluttered coordination war room — holographic Kanban boards, floating ticket stubs, tangled dependency threads, stacked PRDs glowing faintly. Ahead of her (right), a clean, luminous workspace with a single focused holographic display showing a crisp behavioral specification — clean structured text, clear and readable.",
+    "Camera": "Mid-shot, wide angle, subject at the threshold between the two spaces, body angled toward the clean side",
+    "CharacterPose": {
+      "Expression": "Resolved, clear-eyed, looking toward the clean workspace with quiet determination — not smiling, not frowning, just ready",
+      "BodyPosition": "Standing at the boundary, weight shifting forward toward the specification side",
+      "Gesture": "One hand resting on the doorframe of the threshold, the other relaxed at her side"
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Sleeves pushed up, professional but ready for work",
+          "Application": "Worn"
+        },
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern frames pushed up on forehead",
+          "Application": "Transitional gesture — done reading the old, ready to see the new"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "Holographic Kanban boards",
+          "Description": "Semi-transparent boards crowded with cards, swim lanes, dependency arrows — visually dense and tangled",
+          "Application": "Behind her, filling the left side of the frame, slightly dim and fading",
+          "SymbolicMeaning": "The coordination machinery that used to be necessary"
+        },
+        {
+          "Name": "Floating ticket stubs",
+          "Description": "Small translucent cards drifting in the air like leaves, some with APPROVED stamps",
+          "Application": "Scattered in the air behind her, some falling to the ground",
+          "SymbolicMeaning": "Process artifacts losing their relevance"
+        },
+        {
+          "Name": "Behavioral specification display",
+          "Description": "A single clean holographic panel showing structured text — clear headings, acceptance criteria, clean formatting",
+          "Application": "Ahead of her on the right, glowing with warm amber light, readable and focused",
+          "SymbolicMeaning": "The new rigor — specification, context, evaluation"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Threshold / doorframe",
+          "Description": "An architectural boundary between the two spaces — could be industrial cyberpunk framing",
+          "Application": "Center of frame, she stands in it"
+        },
+        {
+          "Name": "Cluttered war room",
+          "Description": "Left side — dense, layered, holographic clutter of coordination artifacts",
+          "Application": "Background left, cool blue lighting, slightly chaotic"
+        },
+        {
+          "Name": "Clean workspace",
+          "Description": "Right side — minimal, focused, a single workstation with the specification display",
+          "Application": "Background right, warm amber lighting, calm and clear"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "The visual story is a migration — she is physically crossing from coordination clutter to specification clarity",
+      "The lighting transition from cool-chaotic (left) to warm-focused (right) reinforces the thesis",
+      "The Kanban boards and tickets behind her are not destroyed — they're just fading, becoming irrelevant",
+      "The specification ahead is not a wall of text — it's clean, structured, readable, inviting"
+    ],
+    "LightingFocus": "Cool blue neon on the left (old coordination world), warm amber on the right (new specification world), rim light catching her silver hair at the boundary",
+    "ThematicTags": ["rigor", "migration", "specification", "coordination", "threshold", "transition"]
+  },
+
+  "ArticleContext": {
+    "Title": "GenAI Didn't Kill Rigor — It Moved It",
+    "Tags": ["GenAI", "Software Engineering", "Agile", "Craft", "Leadership"],
+    "Themes": ["rigor migrating from coordination to specification", "old process becoming friction", "new skills in specification context and evaluation"],
+    "Mood": "contemplative-to-resolved"
+  },
+
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "neon light",
+    "cinematic lighting",
+    "high contrast",
+    "16:9 aspect ratio",
+    "wide shot",
+    "banner composition",
+    "threshold",
+    "transition",
+    "two-tone lighting"
+  ]
+}
