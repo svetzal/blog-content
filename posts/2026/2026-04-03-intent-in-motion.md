@@ -34,11 +34,11 @@ DMCA takedowns — broad, aggressive, indiscriminate. Everything and anything th
 
 Anthropic has been talking to its community through lawyers for long enough now that it's no longer a temporary posture. It *is* the posture. When your reflex after an internal mistake is to send attorneys instead of humans, you're revealing something. You're saying the artifact matters more than the relationship. The source code matters more than the people who use it, extend it, and build their livelihoods around it.
 
-I've coached organizations through moments like these — a security incident, a public stumble, a product failure. The ones that survive with their culture intact reach for transparency first. Not because it's easy (it's terrifying) but because the community's trust is harder to rebuild than code. The ones that reach for control? They usually get exactly what they're asking for: compliance without loyalty. Users without advocates.
+Organizations that survive moments like these with their culture intact reach for transparency first. Not because it's easy (it's terrifying) but because the community's trust is harder to rebuild than code. The ones that reach for control? They usually get exactly what they're asking for: compliance without loyalty. Users without advocates.
 
 ## The Dissonance That Hurts
 
-Anthropic positioned itself as a company building toward a world where generating code is easy, accessible, nearly free. Where the bottleneck moves from production to intent. Where the real value lives in the humans who know what to build and why. I believed them. I've written about this transition. I've coached people through it. I built my recent work on the assumption that this vision was genuine.
+Anthropic positioned itself as a company building toward a world where generating code is easy, accessible, nearly free. Where the bottleneck moves from production to intent. Where the real value lives in the humans who know what to build and why. I believed them. I built my recent work on the assumption that this vision was genuine.
 
 And then they demonstrated, through their own actions, that they don't believe it about their own code.
 
@@ -50,7 +50,7 @@ Do you believe what you say you believe?
 
 ## What Stress Reveals
 
-I've spent decades watching what organizations protect when things go wrong. Not what they say in keynotes or blog posts — what they actually reach for when the pressure hits. What do you grab first, your community or your lawyers?
+What organizations protect when things go wrong tells you more than any keynote or blog post. Not what they say they value — what they actually reach for when the pressure hits. What do you grab first, your community or your lawyers?
 
 Anthropic reached for the artifact. They protected the code. Not the community, not the relationship, not the trust of the people who have been building on and evangelizing their platform. The code.
 
