@@ -14,7 +14,7 @@ imageAlt: "Silver-haired woman hunched over a desk with her head in her hands, a
 
 A product — especially its source code — is a point-in-time snapshot of intent in motion. It's not the thing. It's the residue of decisions already drifting from where the organization is heading next week.
 
-For everyone who thinks they've got something special because they replicated it: you've caught a glimpse of an artifact that's already stale. Your tomorrow has already diverged from theirs, if you hoped to usurp or leverage it. The value was never in the artifact. It was in the people, the culture, and the momentum that produced it.
+For everyone who thinks they've got something special because they replicated it: you've caught a glimpse of an artifact that's already stale. Your tomorrow has already diverged from theirs, if you hoped to usurp or leverage it. The value was never in the artifact. It was in the people, the culture, and the momentum that produced it. I shipped dozens of products over nearly two decades running a consultancy. The code from most of them is long gone. What mattered was what we understood about the problem and how we worked together to solve it.
 
 I've been thinking about this distinction a lot lately. Because Anthropic — a company I've admired, invested in, and built significant parts of my practice around — just showed me which side of it they actually stand on.
 
@@ -34,11 +34,11 @@ DMCA takedowns — broad, aggressive, indiscriminate. Everything and anything th
 
 Anthropic has been talking to its community through lawyers for long enough now that it's no longer a temporary posture. It *is* the posture. When your reflex after an internal mistake is to send attorneys instead of humans, you're revealing something. You're saying the artifact matters more than the relationship. The source code matters more than the people who use it, extend it, and build their livelihoods around it.
 
-Organizations that survive moments like these with their culture intact reach for transparency first. Not because it's easy (it's terrifying) but because the community's trust is harder to rebuild than code. The ones that reach for control? They usually get exactly what they're asking for: compliance without loyalty. Users without advocates.
+I've seen what the other choice looks like. When a local newspaper published hateful propaganda against our LGBTQ community, our team at PFLAG didn't send lawyers. We organized. We showed up — 150 people packed a city council meeting that normally draws 30. We responded with openness, not control. It was terrifying, and it worked, because the community's trust is harder to rebuild than any artifact. Organizations that reach for control instead? They usually get exactly what they're asking for: compliance without loyalty. Users without advocates.
 
 ## The Dissonance That Hurts
 
-Anthropic positioned itself as a company building toward a world where generating code is easy, accessible, nearly free. Where the bottleneck moves from production to intent. Where the real value lives in the humans who know what to build and why. I believed them. I built my recent work on the assumption that this vision was genuine.
+Anthropic positioned itself as a company building toward a world where generating code is easy, accessible, nearly free. Where the bottleneck moves from production to intent. Where the real value lives in the humans who know what to build and why. I believed them. I've been developing training materials on agentic development practices, helping teams understand how to work in this new paradigm. I built my recent work on the assumption that this vision was genuine.
 
 And then they demonstrated, through their own actions, that they don't believe it about their own code.
 
