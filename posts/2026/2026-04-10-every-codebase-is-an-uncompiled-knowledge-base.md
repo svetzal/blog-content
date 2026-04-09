@@ -59,3 +59,30 @@ What it extracts will tell you things about your organization that no amount of 
 And where the extraction is uncertain — where the agent can read the code but can't confidently infer the intent — that uncertainty is itself a signal. It's pointing at the places where knowledge has been lost, where the domain has shifted underneath the code, or where organizational distance has introduced drift between what developers built and what customers need.
 
 The largest uncompiled knowledge base in most organizations is already sitting in version control. Karpathy gave us the architecture for what to do with knowledge once we have it. The missing step is recognizing that the richest `raw/` directory most companies will ever have is the one they've been committing to every day for years.
+
+## Try It Yourself
+
+If you want to see what this looks like in practice, I've published a [Screenplay Pattern Extraction prompt](https://gist.github.com/svetzal/716b963c631a3af1c0ebbe60b14cb32a) as a GitHub gist. It's a Claude Code agent prompt that reads one or more codebases and produces a navigable wiki of interlinked markdown documents — actors, goals, interactions, and journeys — using the Screenplay Pattern.
+
+To try it against one of your own codebases:
+
+1. Create a working directory and drop the prompt into a `CLAUDE.md` file:
+
+```bash
+mkdir -p my-extraction/sources
+mkdir -p my-extraction/extraction/{actors,goals,interactions,journeys}
+```
+
+2. Copy the prompt from the gist into `my-extraction/CLAUDE.md`.
+
+3. Open the directory in [Claude Code](https://claude.ai/claude-code) and tell the agent where your codebase lives:
+
+```
+Extract the screenplay pattern from /path/to/my/codebase
+```
+
+The agent will read your code — routes, models, permissions, test descriptions, error messages, naming conventions — and produce entity documents with confidence ratings and cross-links. It won't modify your codebase or copy code into the extraction project.
+
+If you have supplementary sources — support ticket exports, persona documents, analytics reports, customer research — drop them into the `sources/` subdirectories. The agent will cross-reference them against what it finds in the code, and the places where they disagree will show up in a drift report. Those disagreements are often the most interesting findings.
+
+Start with a codebase you know well. You'll be surprised by what the extraction surfaces — not because the agent knows something you don't, but because it reads everything at once and holds the connections that no single person walks manually. The places where it's uncertain are usually the places where knowledge has been lost. And the drift between what the code says and what the support tickets say? That's the map you didn't know you needed.
