@@ -75,7 +75,7 @@ mkdir -p my-extraction/extraction/{actors,goals,interactions,journeys}
 
 2. Copy the prompt from the gist into `my-extraction/CLAUDE.md`.
 
-3. Open the directory in your preferred coding agent — Claude Code, OpenCode, GitHub Copilot, or any agent that can read files and follow a system prompt — and tell it where your codebase lives:
+3. Open the directory in your preferred coding agent — Claude Code, OpenCode, GitHub Copilot, or any agent that can read files and follow a prompt — and tell it where your codebase lives:
 
 ```
 Extract the screenplay pattern from /path/to/my/codebase
