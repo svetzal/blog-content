@@ -73,7 +73,7 @@ mkdir -p my-extraction/sources
 mkdir -p my-extraction/extraction/{actors,goals,interactions,journeys}
 ```
 
-2. Copy the prompt from the gist into `my-extraction/AGENTS.md` (or `CLAUDE.md` — most coding agents will pick up either).
+2. Copy the prompt from the gist into `my-extraction/AGENTS.md` (or `CLAUDE.md` — many coding agents will pick up either).
 
 3. Open the directory in your preferred coding agent — Claude Code, OpenCode, GitHub Copilot, or any agent that can read files and follow a prompt — and tell it where your codebase lives:
 
