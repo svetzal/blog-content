@@ -1,0 +1,126 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Hero image for 'Every Codebase Is an Uncompiled Knowledge Base' — hopeful discovery, unlocking knowledge that was always embedded in the code",
+
+  "Character": {
+    "Description": "A striking, confident middle-aged woman with a cyberpunk edge; intelligent, seductive, and unapologetically powerful.",
+    "Age": "Middle-aged, confident, formidable",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Curvy, powerful, feminine",
+      "UpperBody": "Broad shoulders, strong arms, pronounced curves",
+      "LowerBody": "Full hips and thighs, assertive stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, bright, engaged",
+      "Expression": "A slight knowing smile — the recognition of seeing something no one else has noticed yet. Hopeful, not triumphant.",
+      "Makeup": "High-contrast makeup; sharp eyeliner, metallic accents, bold magenta or neon lips",
+      "Complexion": "Fair-light skin with warm highlights from the ambient glow"
+    },
+    "Hair": {
+      "Color": "Silver-grey catching warm amber and gold reflections",
+      "Length": "Long",
+      "Style": "Loose waves, slightly wind-swept by the energy rising from the system"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Dark blazer over tech-casual attire",
+          "Fit": "Body-contouring, sleeves pushed up — working posture",
+          "ColorPalette": "Black with warm amber reflections from the scene",
+          "Material": "Professional fabric catching the holographic light"
+        }
+      ]
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Warm-dominant, hopeful — the cyberpunk palette shifted toward amber and gold",
+      "Sources": ["Warm golden glow rising from the legacy system", "Holographic knowledge structures casting amber and soft cyan", "Diffuse overhead light"],
+      "Shadows": "Soft, minimal — the scene is opening up, not closing in"
+    },
+    "ColorPalette": {
+      "Primary": ["Warm Amber", "Soft Gold", "Muted Cyan"],
+      "Accents": ["Silver", "Warm White", "Faint Magenta in the knowledge structure connections"],
+      "Treatment": "Warmer than typical cyberpunk — amber and gold dominate with cool cyan as counterpoint. The palette says possibility, not threat."
+    },
+    "Atmosphere": {
+      "Effects": ["Warm particles rising like embers or fireflies from the old system", "Soft glow", "Light volumetric haze catching the golden light"],
+      "Mood": "Hopeful, dawning recognition, the quiet excitement of unlocking something that was always there"
+    }
+  },
+
+  "Situation": {
+    "Name": "Knowledge Rising",
+    "Setting": "A workspace where old and new technology coexist. On one side, an aged server rack or legacy terminal — weathered, industrial, clearly old — but alive, humming, with warm light glowing from within. Rising from it, holographic knowledge structures are forming in the air: interconnected wiki-like pages, entity relationship diagrams, prose fragments, all linked by glowing threads. The structures are translucent, layered, and expanding — knowledge compiling itself from raw material. The room beyond is open, suggesting space and possibility.",
+    "Camera": "Mid-shot, slightly low angle, showing her from the waist up with the legacy system to her right and the rising knowledge structures filling the space above and to the left. She's positioned at the boundary between the old system and the new knowledge it's producing.",
+    "CharacterPose": {
+      "Expression": "Slight smile of recognition. Eyes bright and engaged, looking up at the forming knowledge structures. Not awe — quiet confidence. She expected this would work, and it did.",
+      "BodyPosition": "Standing, upright, one hand resting on the aged server rack — physically connecting old and new. Weight centered, grounded.",
+      "Gesture": "Right hand resting on the legacy system's surface, left hand slightly raised with palm up as if receiving what's emerging. Not commanding it — welcoming it."
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Dark blazer with pushed-up sleeves",
+          "Description": "Professional but ready to work, catching warm reflections from the rising structures",
+          "Application": "Worn, bridging the physical legacy system and the emerging knowledge"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "Legacy system terminal",
+          "Description": "An aged, weathered server rack or industrial terminal — dented metal, old indicator lights, clearly from a previous era. But it's alive: warm amber light glows from its seams and vents, and holographic structures are rising from its surface like heat shimmer made visible.",
+          "Application": "To her right, she's resting one hand on it. It's the raw/ directory — the uncompiled knowledge base.",
+          "SymbolicMeaning": "Every legacy codebase contains knowledge that has never been extracted — old systems are not just technical debt, they're unread libraries"
+        },
+        {
+          "Name": "Rising knowledge structures",
+          "Description": "Translucent holographic pages, entity diagrams, and interconnected prose fragments forming in layers above the legacy system. Some are wiki-like pages with visible headings. Others are relationship maps with glowing node connections. Threads link them back down to the old system. They're still forming — some edges are incomplete, some pages are partially rendered.",
+          "Application": "Rising and expanding from the legacy terminal into the open space above, filling the left side of the frame",
+          "SymbolicMeaning": "The extraction-synthesis-application cycle — raw knowledge compiling into structured understanding"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Open workspace beyond",
+          "Description": "The space behind and above is open — high ceiling, ambient light, room to grow. Not a cramped server closet but a space that invites expansion.",
+          "Application": "Background, suggesting that what's emerging has room to develop"
+        },
+        {
+          "Name": "Warm particles",
+          "Description": "Small golden motes rising from the legacy system, like embers or pollen or data made visible — the raw material in transit between old form and new",
+          "Application": "Scattered throughout the space between the system and the knowledge structures"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "The contrast between the old physical system and the emerging holographic knowledge is the core visual metaphor",
+      "Her hand on the old system is important — she's not discarding it, she's reading it",
+      "The knowledge structures should feel organic and alive, not sterile — they're growing, not manufactured",
+      "The warm amber palette conveys hope without being saccharine — this is professional optimism, not fantasy",
+      "The incomplete edges of some knowledge structures suggest that extraction is a process, not a finished product"
+    ],
+    "LightingFocus": "Warm golden light emanating from within the legacy system, casting amber glow on her face and hand. The rising knowledge structures add soft cyan and magenta highlights. The overall effect is sunrise — warmth emerging from something old and overlooked.",
+    "ThematicTags": ["knowledge-extraction", "legacy-systems", "possibility", "archaeology", "synthesis", "hope"]
+  },
+
+  "ArticleContext": {
+    "Title": "Every Codebase Is an Uncompiled Knowledge Base",
+    "Tags": ["GenAI", "Software Engineering", "Knowledge Work", "ai"],
+    "Themes": ["codebases as knowledge bases", "Karpathy LLM wiki", "extraction archaeology", "compounding knowledge cycle", "legacy systems as raw material"],
+    "Mood": "optimistic"
+  },
+
+  "PromptKeywords": [
+    "highly detailed", "digital painting", "concept art",
+    "cyberpunk", "neon light", "cinematic lighting", "high contrast",
+    "16:9 aspect ratio", "wide shot", "banner composition",
+    "hopeful", "warm amber", "golden light", "knowledge emergence", "legacy technology"
+  ]
+}

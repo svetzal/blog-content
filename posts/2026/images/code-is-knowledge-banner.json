@@ -1,0 +1,132 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Hero image for 'Code Is Knowledge' — contemplative study of a complex socio-technical system made visible",
+
+  "Character": {
+    "Description": "A striking, confident middle-aged woman with a cyberpunk edge; intelligent, seductive, and unapologetically powerful.",
+    "Age": "Middle-aged, confident, formidable",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Curvy, powerful, feminine",
+      "UpperBody": "Broad shoulders, strong arms, pronounced curves",
+      "LowerBody": "Full hips and thighs, assertive stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, intense, sharp focus",
+      "Expression": "Deeply thoughtful, absorbed — the quiet focus of someone reading a pattern nobody else has seen yet",
+      "Makeup": "High-contrast makeup; sharp eyeliner, metallic accents, bold magenta or neon lips",
+      "Complexion": "Fair-light skin with cool highlights and cinematic contrast"
+    },
+    "Hair": {
+      "Color": "Silver-grey with subtle neon reflections",
+      "Length": "Long",
+      "Style": "Loose waves, tucked behind one ear on the side facing camera"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Item": "Dark blazer over tech-casual attire",
+          "Fit": "Body-contouring, sleeves pushed up to elbows",
+          "ColorPalette": "Black, dark charcoal",
+          "Material": "Professional fabric with subtle tech weave"
+        }
+      ],
+      "Situational": [
+        {
+          "Item": "Professional glasses",
+          "Description": "Modern rectangular frames with subtle tech integration, perched slightly down her nose",
+          "Context": "Reading the graph wall, analytical posture"
+        }
+      ]
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Soft, diffused, single dominant source from the graph wall, with analytical cool tones",
+      "Sources": ["Holographic graph glow casting soft cyan and amber light", "Faint rim lighting from behind", "Warm reading lamp on the desk surface"],
+      "Shadows": "Long and soft, contemplative rather than harsh"
+    },
+    "ColorPalette": {
+      "Primary": ["Cool Cyan", "Soft Amber", "Muted Electric Blue"],
+      "Accents": ["Silver", "Warm Gold from the desk lamp", "Faint Magenta in graph node highlights"],
+      "Treatment": "Cooler than typical cyberpunk, more blue-grey with selective warm accents — analytical, not frenetic"
+    },
+    "Atmosphere": {
+      "Effects": ["Soft glow from holographic elements", "Light atmospheric haze", "Subtle reflections on desk surface"],
+      "Mood": "Contemplative, focused, the quiet intensity of pattern recognition"
+    }
+  },
+
+  "Situation": {
+    "Name": "Reading the Graph Wall",
+    "Setting": "A dimly lit analysis room — part war room, part archaeological workspace. One wall is dominated by a massive holographic graph visualization showing interconnected nodes (work items, code repositories, team names, pull requests) with edges between them. Some clusters are tangled hairballs, others are clean and sparse. A standing desk nearby has a well-worn leather journal and a secondary screen showing scrolling code.",
+    "Camera": "Mid-wide shot from slightly behind and to her left, showing her in three-quarter profile studying the wall. The graph fills the right two-thirds of the frame, she occupies the left third. Depth of field keeps her sharp while the far edges of the graph soften.",
+    "CharacterPose": {
+      "Expression": "Thoughtful, absorbed. One eyebrow slightly raised — she's just noticed a connection. Lips slightly parted. This is the face of someone seeing something that was always there.",
+      "BodyPosition": "Standing, weight on one hip, slightly angled toward the wall. Not rigid — relaxed authority.",
+      "Gesture": "One hand raised near the graph, fingertips almost touching a cluster of nodes as if about to trace a connection. Other hand resting on the desk surface beside the journal."
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern rectangular frames, pushed slightly down her nose so she's looking over them at the big picture",
+          "Application": "Worn, lending an analytical, professorial quality"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "Holographic graph wall",
+          "Description": "A massive interconnected graph visualization covering the wall — nodes in different colors representing work items (cyan), code repositories (green ovals), teams (amber), and pull requests (red rectangles). Edges glow faintly between them. One cluster is a dense tangled hairball (the omnibus pattern), another nearby is clean with just a few nodes (the two-birds pattern). Some nodes pulse brighter than others.",
+          "Application": "Dominates the right side of the frame, casting soft light across the room",
+          "SymbolicMeaning": "The socio-technical system made visible — code, people, and work rendered as a readable structure"
+        },
+        {
+          "Name": "Leather-bound notebook",
+          "Description": "Well-worn journal, open to a page with hand-drawn pattern sketches and annotations — small graph diagrams with labels like names written beside them",
+          "Application": "Open on the standing desk beside her, a pen resting in the spine",
+          "SymbolicMeaning": "The human act of cataloguing patterns — knowledge extraction as craft, not just computation"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Standing desk",
+          "Description": "Minimal, dark surface with a secondary screen showing scrolling source code in muted green text",
+          "Application": "To her left, grounding the scene in technical work"
+        },
+        {
+          "Name": "Old coffee mug",
+          "Description": "Half-full, still warm — she's been here a while but she's not tired",
+          "Application": "On the desk edge, steam faintly visible"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "The contrast between the tangled graph cluster and the clean one should be visible — the viewer should feel the difference even without reading labels",
+      "Her posture is relaxed authority, not hunched effort — she's reading this system, not wrestling with it",
+      "The journal grounds the scene in craft — this isn't just screen work, it's thinking work",
+      "The overall feeling should be quiet intellectual intensity, not urgency"
+    ],
+    "LightingFocus": "Primary light from the holographic graph wall casting cool cyan across her face and blazer. Warm amber from the desk lamp creating a small pool of warmth around the journal. The contrast between cool analytical light and warm craft light is deliberate.",
+    "ThematicTags": ["knowledge-extraction", "socio-technical-system", "pattern-recognition", "archaeology", "contemplation"]
+  },
+
+  "ArticleContext": {
+    "Title": "Code Is Knowledge",
+    "Tags": ["GenAI", "Software Engineering", "Knowledge Work", "Craft"],
+    "Themes": ["code as knowledge", "tacit knowledge made explicit", "socio-technical analysis", "organizational patterns", "graph analysis"],
+    "Mood": "contemplative"
+  },
+
+  "PromptKeywords": [
+    "highly detailed", "digital painting", "concept art",
+    "cyberpunk", "neon light", "cinematic lighting", "high contrast",
+    "16:9 aspect ratio", "wide shot", "banner composition",
+    "contemplative", "analytical", "knowledge visualization", "graph network"
+  ]
+}
