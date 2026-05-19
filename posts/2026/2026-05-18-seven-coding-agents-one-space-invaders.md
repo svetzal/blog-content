@@ -45,29 +45,33 @@ What I really wanted to know:
 - Does "validate passed" actually mean the artefact works, or does it mean "the gates the agent chose to run said yes"?
 - Where does the model fall down — at the planning layer, the execution layer, or the protocol layer between the model and the harness?
 
-Those are different questions, and the bake-off pulled them apart in ways I wasn't expecting.
+Modern frontier models have received tremendous amounts of fine-tuning towards accurate and long chains of tool use. Towards engineering practices. What do I need to add to the harnessing to compensate to models that haven't had the same degree of this? Is it even possible?
 
 ## Compile-Green Is Not Done
 
-Three of the seven profiles produced authentic, playable Space Invaders: anthropic (Claude Opus 4.7 / Sonnet 4.6), glm (Z.AI GLM-5.1 via opencode), and openai (GPT-5.4/5.5 via opencode). I hand-played each one. Marching aliens, speed-up, bunkers eroding cell by cell, the UFO mystery ship, lives and high score, R to restart. Gameplay-indistinguishable across the three.
+All profiles but one produced compilable code. Real Rust code, syntactically and seemingly structurally correct.
+
+Three of the seven profiles produced authentic, playable Space Invaders: anthropic (Claude Opus 4.7 / Sonnet 4.6), glm (Z.AI GLM-5.1 via opencode), and openai (GPT-5.4/5.5 via opencode). I hand-played each one. Marching aliens, speed-up, bunkers eroding cell by cell, the UFO mystery ship, lives and high score, R to restart. Gameplay virtually indistinguishable across the three.
 
 Four profiles produced binaries that crash on launch. Both qwen runs through OpenRouter, both ollama runs locally — every member of the Qwen3.6 family, across the full size range from the 27B coding tune to the ~1T frontier Max Preview, across two completely different hosting setups. All of them passed `cargo build --release`. None of them ran.
 
 The crashes group into two well-known Bevy gotchas, both runtime-only. B0001, where two ECS systems want overlapping mutable access to the same component and Bevy panics at schedule start. And the missing-`StatesPlugin` trap, where you call `init_state` before `DefaultPlugins` and the state-transition schedule isn't registered yet. Both are catchable in under five seconds with a smoke launch — start the binary, sleep three, kill it, check the exit. The only profile that did this as part of validate was anthropic. Everyone else trusted compile-success as a proxy for "it works."
 
-Which is the actual finding hiding in this experiment. The model matters, but so does the validate contract you wrap around it. A willing model with a weak contract ships broken work that *passes its own gates*. A more careful contract — even paired with a cheaper model — catches it.
+It's not just about the validation contract, though. The contract helps — but the gates you wire into it, and the codebase that has to clear them, are two halves of the same question. The other half is whether what comes out is maintainable: by a human, or by the next Gen AI session that has to live in it.
+
+And ultimately, success is the qualitative experience of playing Space Invaders. Any game designer will tell you the same thing: the game works — but is it fun?
 
 ## The Cost Spread, and What It Doesn't Buy
 
-Among the three working profiles, the cost spread is roughly six-to-one. Anthropic ran $5.91 for the full plan-execute-validate cycle. GLM ran $2.36 (after fixing a hopper bug that was silently dropping the execute-phase cost — turned out to be an unrelated win the bake-off shook loose). OpenAI ran on flat-rate subscription so my marginal cost was zero, though the real token consumption was substantial.
+Among the three working profiles, the cost spread is roughly six-to-one. Anthropic ran $5.91 for the full plan-execute-validate cycle. GLM ran $2.36 (after fixing a hopper bug that was silently dropping the execute-phase cost — an unrelated win the bake-off shook loose). OpenAI ran on a flat-rate subscription, so my marginal cost was zero, though the real token consumption was substantial.
 
 Here's what "the full plan-execute-validate cycle" actually looks like for the anthropic profile — which model gets invoked at which phase, and which step is the harness doing on its own:
 
 ![Vertical diagram of hopper's four-phase pipeline — Plan, Execute, Validate, Commit — stacked top to bottom with the anthropic profile's model assignments labeled in amber: Claude Opus 4.7 on Plan and Validate, Claude Sonnet 4.6 on Execute, and Commit as a harness-only step with no model invocation. A dashed loop on the right edge returns to Plan for the next queued item.](images/seven-agents-hopper-phases.png)
 
-The cost premium on anthropic doesn't buy a better game. It buys defence-in-depth at the validate layer — the fmt-plus-clippy-plus-smoke-launch suite that would have caught the four qwen-family runtime crashes if they'd been wired up the same way. It also buys more, smaller modules — twelve files versus nine versus one — which matters for legibility but doesn't change what the player sees.
+The cost premium on anthropic didn't buy a more compelling game. It bought two things that don't show up on the title screen. The first is defence-in-depth at the validate layer — the fmt-plus-clippy-plus-smoke-launch suite that would have caught the four qwen-family runtime crashes if the other profiles had wired it in. The second is module structure — twelve files versus nine versus one. That doesn't change what the player sees. It changes what the *next* session sees when it picks the codebase up: named responsibilities, clear seams, somewhere to add the next feature without unwinding the last one.
 
-So when I look at this purely as a "replace my unattended worker" decision, GLM at $2.36 a run becomes interesting in a way I wasn't expecting. The deliverable is just as good. The validate suite is thinner, but that's something I can fix in the harness, not something I have to pay the model premium to get.
+So "GLM at $2.36 is just as good" is true on a narrow read. On this task, played once, the three working deliverables are indistinguishable in my hands. On the next task — extending the game, fixing a bug, handing the code to a different agent — the single-file shipper costs more to live with than it cost to produce. And on the axis I haven't really measured at all — is the game *fun*, the way Space Invaders is supposed to be fun — I have an afternoon of hand-playing and no structured comparison. The price tag is the easiest number to put in a table. It isn't the only one that matters.
 
 ## The Layer Where Things Actually Broke
 
@@ -81,10 +85,10 @@ Two findings stacked there. The qwen3.6 family appears to have a real ceiling on
 
 This is the first post in what'll be a series, so I'm not making a final call yet. But the direction is clearer than I expected going in.
 
-For my unattended workload after June 15, GLM via opencode is the candidate I'm taking seriously next. The cost-and-capability fit was the bake-off's most pleasant surprise, and I want to push it harder — find where it actually struggles, not just where it happened to succeed on a fresh-repo Bevy build. The first move there is wiring a smoke-launch gate into hopper's default validate scaffold, because the bake-off told me the validate contract matters at least as much as the model.
+For my unattended workload after June 15, GLM via opencode is the candidate I'm taking seriously next. The cost-and-capability fit was the bake-off's most pleasant surprise, and I want to push it harder — find where it actually struggles, not just where it happened to succeed on a fresh-repo Bevy build. The first move there is wiring a smoke-launch gate into hopper's default validate scaffold, because the bake-off told me the validate contract matters at least as much as the model. But that gate is the floor, not the ceiling. The harder questions are whether the codebase GLM ships at $2.36 a run is the codebase I want to live in next week, and whether the games it produces are ones I'd actually want to play. Neither of those answers comes out of the bake-off as it stands.
 
 The local-model thread is the other one I'm not letting drop. The qwen3.6 ceiling on greenfield framework code is real, but greenfield framework code isn't the only shape of work I do. A local model that runs cleanly through plan-execute-validate is itself useful infrastructure — the question is which workflows actually fit inside the ceiling I observed. Code review against an existing codebase. Doc generation. Refactor proposals a human verifies. Anywhere the model isn't being asked to hold an entire architecture in its head at once. That's a separate experiment I want to run, and I'd rather find out where local can carry real load than write it off because it stumbled on the hardest possible task I could hand it.
 
 What I'm not going to do is treat one bake-off as the answer. Seven profiles, one task, one afternoon of hand-playing the deliverables — that's a beginning. The interesting numbers come from running this shape of experiment enough times that the patterns start to repeat or break. I'll keep writing them up as I go.
 
-Compile-green is not done. The four qwen-family runs all cleared the bar that most teams would call "ready to ship." None of them actually were. The next time I size up an agent — or a model, or a runner — the first question I'm going to ask isn't *can it pass the gates*. It's *what's missing from the gates themselves*.
+Compile-green is not done. Neither is gate-green. The four qwen-family runs all cleared the bar most teams would call "ready to ship," and none of them actually were. But even among the three that played, the questions of whether the codebases were *maintainable*, and whether the games were *fun* the way Space Invaders is supposed to be fun, never made it onto the dashboard. The next time I size up an agent — or a model, or a runner — the first question I'm going to ask isn't *can it pass the gates*. It's *what are the gates not measuring*.
