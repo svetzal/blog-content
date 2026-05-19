@@ -61,6 +61,10 @@ Which is the actual finding hiding in this experiment. The model matters, but so
 
 Among the three working profiles, the cost spread is roughly six-to-one. Anthropic ran $5.91 for the full plan-execute-validate cycle. GLM ran $2.36 (after fixing a hopper bug that was silently dropping the execute-phase cost — turned out to be an unrelated win the bake-off shook loose). OpenAI ran on flat-rate subscription so my marginal cost was zero, though the real token consumption was substantial.
 
+Here's what "the full plan-execute-validate cycle" actually looks like for the anthropic profile — which model gets invoked at which phase, and which step is the harness doing on its own:
+
+![Vertical diagram of hopper's four-phase pipeline — Plan, Execute, Validate, Commit — stacked top to bottom with the anthropic profile's model assignments labeled in amber: Claude Opus 4.7 on Plan and Validate, Claude Sonnet 4.6 on Execute, and Commit as a harness-only step with no model invocation. A dashed loop on the right edge returns to Plan for the next queued item.](images/seven-agents-hopper-phases.png)
+
 The cost premium on anthropic doesn't buy a better game. It buys defence-in-depth at the validate layer — the fmt-plus-clippy-plus-smoke-launch suite that would have caught the four qwen-family runtime crashes if they'd been wired up the same way. It also buys more, smaller modules — twelve files versus nine versus one — which matters for legibility but doesn't change what the player sees.
 
 So when I look at this purely as a "replace my unattended worker" decision, GLM at $2.36 a run becomes interesting in a way I wasn't expecting. The deliverable is just as good. The validate suite is thinner, but that's something I can fix in the harness, not something I have to pay the model premium to get.

@@ -1,0 +1,123 @@
+{
+  "ImageType": "diagram",
+  "AspectRatio": "9:16",
+  "Size": "1024x1536",
+  "Purpose": "Vertical infographic showing hopper's plan-execute-validate-commit phase sequence, with the Anthropic profile's model assignments labeled at each phase",
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir with Infographic Elements",
+    "Rendering": "High-detail digital painting with clean graphic overlays, concept art quality, sharp readable type on holographic panels",
+    "Lighting": {
+      "Type": "Even, instructional, clear visibility prioritized",
+      "Sources": ["Ambient cyan tech glow", "Even fill lighting", "Subtle magenta rim on connector arrows"],
+      "Shadows": "Minimal, clarity over drama"
+    },
+    "ColorPalette": {
+      "Primary": ["Electric Cyan", "Cool Blue", "Soft Magenta accents"],
+      "Accents": ["Silver", "White", "Anthropic-warm-tan for model badges"],
+      "Treatment": "Cool blue/cyan dominant for the pipeline frame, warm amber-tan accents reserved exclusively for the two Anthropic model badges so they read instantly as 'the spotlight'"
+    },
+    "Atmosphere": {
+      "Effects": ["Clean dark navy background", "Holographic UI panels", "Floating arrows", "Subtle scanlines"],
+      "Mood": "Instructive, clear, technical poster"
+    }
+  },
+
+  "PromptKeywords": [
+    "highly detailed", "digital painting", "concept art",
+    "cyberpunk infographic", "educational illustration",
+    "9:16 aspect ratio", "vertical format", "process flow diagram",
+    "clean visual hierarchy", "holographic UI elements",
+    "sharp readable typography on labels", "no character",
+    "dark navy background", "cyan and magenta accents",
+    "warm amber spotlight on highlighted nodes",
+    "CRITICAL: every text label must be spelled exactly, no letter substitutions, no missing or doubled letters",
+    "exact required spellings: PLAN, EXECUTE, VALIDATE, COMMIT, Claude Opus 4.7, Claude Sonnet 4.6, Anthropic, next item, harness action, Model Invocation, Harness Action, HOPPER, ENGINEERING SEQUENCE"
+  ],
+
+  "CompositionNotes": {
+    "Framing": "Pure infographic, no human figure, full 9:16 frame used by the pipeline",
+    "Layout": "Four large stacked holographic node-panels running top-to-bottom, connected by glowing downward arrows. Title bar at top, phase nodes filling the middle, a small footnote bar at the bottom.",
+    "DepthOfField": "Deep, every label crisp and readable",
+    "TypographyTreatment": "Sans-serif, all-caps for phase names; mixed case for model badges; high contrast on panels"
+  },
+
+  "Situation": {
+    "Name": "Hopper Phase Sequence — Anthropic Profile",
+    "Setting": "Abstract dark navy/black background suggesting a CRT or terminal field, with faint grid lines and a soft cyan vignette. No physical environment, no character.",
+    "Camera": "Flat-on, poster-style, vertical composition",
+    "CharacterPose": {
+      "Expression": "N/A — no character in frame",
+      "BodyPosition": "N/A",
+      "Gesture": "N/A"
+    },
+    "Props": {
+      "Article": [
+        {
+          "Name": "Title bar",
+          "Description": "Slim panel at top reading 'HOPPER — ENGINEERING SEQUENCE' with a smaller subtitle 'Anthropic profile model assignments'",
+          "Application": "Top of frame, full width, cyan outline",
+          "SymbolicMeaning": "Sets the diagram as a hopper-specific pipeline view"
+        },
+        {
+          "Name": "Phase 1 node — PLAN",
+          "Description": "Large rounded rectangular holographic panel containing the word 'PLAN' in bold caps, with a small clipboard/outline icon. A warm amber badge attached to the right side reads 'Claude Opus 4.7'.",
+          "Application": "Top of the four stacked nodes; cyan panel outline with a warm amber model badge clearly highlighted",
+          "SymbolicMeaning": "The planning phase, executed by Opus 4.7"
+        },
+        {
+          "Name": "Phase 2 node — EXECUTE",
+          "Description": "Rounded rectangular holographic panel reading 'EXECUTE' in bold caps with a small gear or code-bracket icon. A warm amber badge reads 'Claude Sonnet 4.6'.",
+          "Application": "Second in the vertical stack; same cyan panel styling, distinct amber badge color identical in tone to the Opus badge so the eye groups them as 'Anthropic'",
+          "SymbolicMeaning": "Execution phase handled by Sonnet 4.6"
+        },
+        {
+          "Name": "Phase 3 node — VALIDATE",
+          "Description": "Rounded rectangular holographic panel reading 'VALIDATE' in bold caps with a small checkmark-shield icon. A warm amber badge reads 'Claude Opus 4.7'.",
+          "Application": "Third in the stack; same cyan panel styling, amber badge matching the Plan node",
+          "SymbolicMeaning": "Validation phase, back to Opus 4.7"
+        },
+        {
+          "Name": "Phase 4 node — COMMIT",
+          "Description": "Rounded rectangular holographic panel reading 'COMMIT' in bold caps with a small git-branch icon. No model badge — instead a slim subtle label 'harness action' in cool grey to distinguish it from the model-driven phases.",
+          "Application": "Bottom node of the stack; same cyan panel styling but visibly de-emphasized (slightly darker fill, no amber accent) so it's clear no model is invoked here",
+          "SymbolicMeaning": "The mechanical commit step, performed by the harness rather than a model"
+        },
+        {
+          "Name": "Connector arrows",
+          "Description": "Glowing downward-pointing arrows linking each phase to the next, with a faint magenta gradient pulse suggesting flow",
+          "Application": "Three arrows between the four nodes",
+          "SymbolicMeaning": "Sequential pipeline, one phase feeds the next"
+        },
+        {
+          "Name": "Loop-back hint",
+          "Description": "A thin dashed cyan arrow curving from the bottom (COMMIT) back up to the top (PLAN) along the right edge, with a small label 'next item'",
+          "Application": "Right edge, subtle, secondary to the main vertical flow",
+          "SymbolicMeaning": "Hopper moves on to the next queued item after commit"
+        },
+        {
+          "Name": "Legend strip",
+          "Description": "Slim bar near the bottom showing two color swatches: warm amber = 'model invocation' and cool grey = 'harness action'",
+          "Application": "Bottom of frame, below the COMMIT node and above any margin",
+          "SymbolicMeaning": "Reader can decode badge colors at a glance"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "Four clearly stacked phase nodes — PLAN, EXECUTE, VALIDATE, COMMIT — taking up most of the vertical real estate",
+      "Amber Opus 4.7 badges visually bookend the pipeline (PLAN and VALIDATE), and the Sonnet 4.6 amber badge sits in the middle on EXECUTE",
+      "COMMIT is intentionally de-emphasized and unbadged to show no model runs there",
+      "Subtle dashed loop-back arrow on the right reinforces 'unattended worker, next item' rhythm",
+      "Every text label is sharp, high-contrast, and legible at thumbnail size"
+    ],
+    "LightingFocus": "Cool cyan glow on the pipeline panels overall; the three amber model badges receive an extra warm rim so they pop as the article's focal point",
+    "ThematicTags": ["pipeline", "model-assignment", "agentic-workflow", "hopper"]
+  },
+
+  "ArticleContext": {
+    "Title": "Seven Coding Agents, One Space Invaders Clone",
+    "Tags": ["GenAI", "ai", "Software Engineering", "Tools"],
+    "Themes": ["agentic engineering pipeline", "model assignment per phase", "unattended workers"],
+    "Mood": "analytical"
+  }
+}
