@@ -63,7 +63,7 @@ And ultimately, success is the qualitative experience of playing Space Invaders.
 
 ## The Cost Spread, and What It Doesn't Buy
 
-Among the three working profiles, the cost spread is roughly six-to-one. Anthropic ran $5.91 for the full plan-execute-validate cycle. GLM ran $2.36 (after fixing a hopper bug that was silently dropping the execute-phase cost — an unrelated win the bake-off shook loose). OpenAI ran on a flat-rate subscription, so my marginal cost was zero, though the real token consumption was substantial.
+Among the three working profiles, the cost spread is roughly six-to-one. Anthropic ran $5.91 for the full plan-execute-validate cycle. GLM ran $2.36 (after fixing a hopper bug that was silently dropping the execute-phase cost — an unrelated win the bake-off shook loose). OpenAI shows $0 in the table, and that number is unfair to every other row. I ran it over an OAuth flat-rate subscription, so my marginal cost was zero, but the real token consumption was substantial — and a fair side-by-side needs OpenAI running across the API with per-token billing, the same shape of meter the other rows are measured on. That's a comparison I'll run in a future post; until then, treat the $0 as a billing artifact, not a price.
 
 Here's what "the full plan-execute-validate cycle" actually looks like for the anthropic profile — which model gets invoked at which phase, and which step is the harness doing on its own:
 
