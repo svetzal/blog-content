@@ -60,7 +60,7 @@
     "CharacterPose": {
       "Expression": "Focused concentration with a slight amused half-smile — the look of someone evaluating an artefact, not just enjoying it",
       "BodyPosition": "Standing at the cabinet, weight slightly forward, leaning in toward the CRT, shoulders squared to the screen",
-      "Gesture": "Left hand resting on the joystick (visible at lower edge of the control panel), right hand poised over the fire button"
+      "Gesture": "Left hand poised over the white LEFT/RIGHT movement pushbuttons (visible at the lower edge of the control panel), right hand poised over the round red FIRE button — historically accurate 1978 Taito control layout, no joystick"
     },
     "Props": {
       "Character": [
@@ -72,20 +72,17 @@
       ],
       "Article": [
         {
-          "Name": "Authentic 1978 Space Invaders CRT screen",
-          "Description": "Vertical black playfield showing the classic 5-row alien formation (5 rows of 11 invaders) mid-march, four green shield bunkers below, a small white player cannon at the bottom firing a single white bullet upward. Green and white phosphor colors only — period-correct. Score readout '0420' visible at the top, '03' lives indicator, 'HI-SCORE 9990'. Visible CRT scanlines and slight curvature distortion at the edges of the tube",
-          "Application": "Primary focal point of the frame, occupies the right two-thirds, glows brightly enough to be the dominant light source on her face and shoulder",
-          "SymbolicMeaning": "The artefact being evaluated — the deliverable the bake-off was measured against"
+          "Name": "Authentic 1978 Taito Space Invaders upright cabinet",
+          "Description": "Match the provided reference image exactly in every detail. Tall vertical upright cabinet with cobalt-blue side panels covered in the iconic black silhouetted mutant/monster artwork and orange-and-yellow lunar-landscape illustrations along the bottom edge. White 'SPACE INVADERS' wordmark in the angular 1978 logotype displayed on the side panel. Backlit marquee at the top featuring stars, an astronaut figure, and 'SPACE INVADERS' branding against a dark space background. CRT monitor recessed behind a black bezel showing the playfield. Below the CRT bezel, a recessed control panel with the historically authentic 1978 Taito control layout — NO JOYSTICK. The controls are exactly three pushbuttons: two square or rectangular white/cream-coloured LEFT and RIGHT movement buttons on the left side of the panel, and one round red FIRE button on the right side. Below the control panel, a large chrome/silver embossed coin-door panel with cash-box bezel dominates the lower-front face of the cabinet — this is the most visually distinctive front feature after the marquee. Wood-grain top edge trim. Stout pedestal base. Every element must match the reference image; do not invent controls that are not in the reference.",
+          "Application": "The hero cabinet, occupying the right two-thirds of the frame, captured in three-quarter view so both the front (control panel, CRT, chrome coin door) and the side panel (with the SPACE INVADERS wordmark and monster art) are visible",
+          "SymbolicMeaning": "The artefact being evaluated — the deliverable the bake-off was measured against",
+          "ReferenceImage": "../refs/space-invaders-cabinet-ref.jpg"
         },
         {
-          "Name": "Illuminated Space Invaders marquee",
-          "Description": "Backlit translucent header at the top of the cabinet reading 'SPACE INVADERS' in the classic 1978 logo type, casting warm amber-white light downward onto her hair and shoulders",
-          "Application": "Top of cabinet, light-source for rim lighting"
-        },
-        {
-          "Name": "Sloped arcade control panel",
-          "Description": "Black control deck with a single chrome-balled 8-way joystick on the left and two large round buttons (red and white) on the right",
-          "Application": "Lower foreground of the frame, her hands engaged with it"
+          "Name": "CRT screen content",
+          "Description": "Visible through the cabinet bezel: vertical black playfield showing the classic 5-row alien formation (5 rows of 11 invaders) mid-march, four green shield bunkers below, a small white player cannon at the bottom firing a single white bullet upward. Green and white phosphor colors only — period-correct. Score readout '0420' at the top, '03' lives indicator, 'HI-SCORE 9990'. Visible CRT scanlines and slight curvature distortion at the edges of the tube",
+          "Application": "Inside the cabinet bezel, glowing brightly enough to be the dominant light source on her face and shoulder",
+          "SymbolicMeaning": "Mid-game state of the deliverable under evaluation"
         }
       ],
       "Environment": [

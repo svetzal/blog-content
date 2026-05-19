@@ -1,51 +1,58 @@
 {
-  "ImageType": "diagram",
-  "AspectRatio": "9:16",
-  "Size": "1024x1536",
-  "Purpose": "Vertical infographic showing hopper's plan-execute-validate-commit phase sequence, with the Anthropic profile's model assignments labeled at each phase",
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Horizontal infographic banner showing hopper's per-item workflow — CLAIM, PLAN, EXECUTE, VALIDATE, COMMIT, INTEGRATE — with the Anthropic profile's model assignments labeled at the three engineering phases. Editorial style suitable for a clean light-themed blog. No cyberpunk, no dark backgrounds, no glow effects, no character.",
 
   "Style": {
-    "Genre": "Cyberpunk / Tech Noir with Infographic Elements",
-    "Rendering": "High-detail digital painting with clean graphic overlays, concept art quality, sharp readable type on holographic panels",
+    "Genre": "Clean editorial infographic, like a magazine or technical blog diagram",
+    "Rendering": "Flat vector-style illustration with subtle paper-grain texture, clean lines, soft shadows. NOT cyberpunk, NOT photorealistic, NOT painterly.",
     "Lighting": {
-      "Type": "Even, instructional, clear visibility prioritized",
-      "Sources": ["Ambient cyan tech glow", "Even fill lighting", "Subtle magenta rim on connector arrows"],
-      "Shadows": "Minimal, clarity over drama"
+      "Type": "Flat ambient, no dramatic light sources, no glow",
+      "Sources": ["Even ambient daylight implied"],
+      "Shadows": "Very subtle soft drop-shadows under panels for gentle depth — no high contrast"
     },
     "ColorPalette": {
-      "Primary": ["Electric Cyan", "Cool Blue", "Soft Magenta accents"],
-      "Accents": ["Silver", "White", "Anthropic-warm-tan for model badges"],
-      "Treatment": "Cool blue/cyan dominant for the pipeline frame, warm amber-tan accents reserved exclusively for the two Anthropic model badges so they read instantly as 'the spotlight'"
+      "Background": "Pure white (#ffffff) or nearly white (#fafafa)",
+      "Primary": ["Soft slate blue (#007acc) for outlines and the title", "Dark charcoal (#282c35) for label text"],
+      "Accents": ["Warm amber/orange (#f59e0b) reserved for the Anthropic model badges", "Light cool grey (#9ca3af) for harness-action labels"],
+      "Treatment": "Mostly white with thin coloured outlines. Amber appears only on the three model badges so it reads as the editorial focal accent. Everything else is restrained black-text-on-white."
     },
     "Atmosphere": {
-      "Effects": ["Clean dark navy background", "Holographic UI panels", "Floating arrows", "Subtle scanlines"],
-      "Mood": "Instructive, clear, technical poster"
+      "Effects": [
+        "No glow, no neon, no scanlines, no holographic effects",
+        "Flat clean shapes with thin 1–2px outlines",
+        "Subtle soft drop shadows for depth"
+      ],
+      "Mood": "Calm, clean, editorial — fits a serious technical blog post, not a sci-fi poster"
     }
   },
 
   "PromptKeywords": [
-    "highly detailed", "digital painting", "concept art",
-    "cyberpunk infographic", "educational illustration",
-    "9:16 aspect ratio", "vertical format", "process flow diagram",
-    "clean visual hierarchy", "holographic UI elements",
-    "sharp readable typography on labels", "no character",
-    "dark navy background", "cyan and magenta accents",
-    "warm amber spotlight on highlighted nodes",
+    "clean editorial infographic", "vector illustration style",
+    "white background", "minimal flat design",
+    "16:9 aspect ratio", "horizontal banner format", "left-to-right process flow",
+    "thin outlined rounded rectangles", "subtle drop shadows",
+    "sans-serif typography", "sharp readable text",
+    "no character", "no human figure",
+    "no glow", "no neon", "no scanlines", "no cyberpunk",
+    "minimal colour palette — black text on white with soft blue outlines and amber accent badges",
     "CRITICAL: every text label must be spelled exactly, no letter substitutions, no missing or doubled letters",
-    "exact required spellings: PLAN, EXECUTE, VALIDATE, COMMIT, Claude Opus 4.7, Claude Sonnet 4.6, Anthropic, next item, harness action, Model Invocation, Harness Action, HOPPER, ENGINEERING SEQUENCE"
+    "exact required spellings: CLAIM, PLAN, EXECUTE, VALIDATE, COMMIT, INTEGRATE, Claude Opus 4.7, Claude Sonnet 4.6, Anthropic, next item, harness action, Model Invocation, Harness Action, Hopper, Engineering Sequence"
   ],
 
   "CompositionNotes": {
-    "Framing": "Pure infographic, no human figure, full 9:16 frame used by the pipeline",
-    "Layout": "Four large stacked holographic node-panels running top-to-bottom, connected by glowing downward arrows. Title bar at top, phase nodes filling the middle, a small footnote bar at the bottom.",
-    "DepthOfField": "Deep, every label crisp and readable",
-    "TypographyTreatment": "Sans-serif, all-caps for phase names; mixed case for model badges; high contrast on panels"
+    "Background": "Pure white #ffffff across the full canvas — no gradient, no texture, no border",
+    "Framing": "Pure flat-illustration infographic, no human figure, generous white margins around the pipeline so it breathes",
+    "Layout": "Six equally-sized rounded-rectangle node panels arranged in a single row, left-to-right, with comfortable spacing. Title line above the row. Slim legend at the bottom. A thin dashed grey loop-back arrow underneath returning from INTEGRATE to CLAIM with a small 'next item' label.",
+    "DepthOfField": "Flat, no depth of field, all elements crisp",
+    "TypographyTreatment": "Clean sans-serif (something like Inter, Helvetica, or system-ui). Phase names in medium-weight all-caps. Model badge text in regular weight, mixed case. Title in semibold."
   },
 
   "Situation": {
-    "Name": "Hopper Phase Sequence — Anthropic Profile",
-    "Setting": "Abstract dark navy/black background suggesting a CRT or terminal field, with faint grid lines and a soft cyan vignette. No physical environment, no character.",
-    "Camera": "Flat-on, poster-style, vertical composition",
+    "Name": "Hopper Per-Item Workflow — Anthropic Profile (editorial)",
+    "Setting": "Pure white canvas. No environment, no scene, no atmosphere. This is a flat illustrated diagram, like one you'd find in a clean technical blog post.",
+    "Camera": "Flat-on, poster-style, wide horizontal composition",
     "CharacterPose": {
       "Expression": "N/A — no character in frame",
       "BodyPosition": "N/A",
@@ -54,64 +61,77 @@
     "Props": {
       "Article": [
         {
-          "Name": "Title bar",
-          "Description": "Slim panel at top reading 'HOPPER — ENGINEERING SEQUENCE' with a smaller subtitle 'Anthropic profile model assignments'",
-          "Application": "Top of frame, full width, cyan outline",
+          "Name": "Title",
+          "Description": "Plain text near the top reading 'Hopper — Engineering Sequence' in a clean semibold sans-serif. Smaller subtitle line below in regular weight, soft grey: 'Anthropic profile model assignments'. Left-aligned or centered above the pipeline row.",
+          "Application": "Top of frame, simple text only — no panel, no border around the title",
           "SymbolicMeaning": "Sets the diagram as a hopper-specific pipeline view"
         },
         {
-          "Name": "Phase 1 node — PLAN",
-          "Description": "Large rounded rectangular holographic panel containing the word 'PLAN' in bold caps, with a small clipboard/outline icon. A warm amber badge attached to the right side reads 'Claude Opus 4.7'.",
-          "Application": "Top of the four stacked nodes; cyan panel outline with a warm amber model badge clearly highlighted",
-          "SymbolicMeaning": "The planning phase, executed by Opus 4.7"
+          "Name": "Stage 1 — CLAIM",
+          "Description": "Rounded-rectangle node with a thin light-grey outline (1–2px), white fill, the word 'CLAIM' in dark charcoal all-caps, and a small line-icon (queue/ticket) above the word. No amber badge — instead a single line of small grey text beneath the panel reads 'harness action'.",
+          "Application": "Leftmost of the six nodes; visually de-emphasized so it's clear no model is invoked here",
+          "SymbolicMeaning": "Worker claims the next queued item"
         },
         {
-          "Name": "Phase 2 node — EXECUTE",
-          "Description": "Rounded rectangular holographic panel reading 'EXECUTE' in bold caps with a small gear or code-bracket icon. A warm amber badge reads 'Claude Sonnet 4.6'.",
-          "Application": "Second in the vertical stack; same cyan panel styling, distinct amber badge color identical in tone to the Opus badge so the eye groups them as 'Anthropic'",
-          "SymbolicMeaning": "Execution phase handled by Sonnet 4.6"
+          "Name": "Stage 2 — PLAN",
+          "Description": "Rounded-rectangle node with a slightly stronger soft-blue outline (#007acc, 1.5px), white fill, the word 'PLAN' in dark charcoal all-caps, and a small clipboard line-icon. Below the panel, a small amber pill badge (warm amber #f59e0b fill, white text) reads 'Claude Opus 4.7'.",
+          "Application": "Second from left; the blue outline plus amber badge signal this is an engineering phase with a model invocation",
+          "SymbolicMeaning": "Engineering phase — planning, executed by Opus 4.7"
         },
         {
-          "Name": "Phase 3 node — VALIDATE",
-          "Description": "Rounded rectangular holographic panel reading 'VALIDATE' in bold caps with a small checkmark-shield icon. A warm amber badge reads 'Claude Opus 4.7'.",
-          "Application": "Third in the stack; same cyan panel styling, amber badge matching the Plan node",
-          "SymbolicMeaning": "Validation phase, back to Opus 4.7"
+          "Name": "Stage 3 — EXECUTE",
+          "Description": "Rounded-rectangle node, matching style to PLAN: blue outline, white fill, 'EXECUTE' in dark charcoal, a small gear or code-bracket line-icon. Below, an amber pill badge reads 'Claude Sonnet 4.6'.",
+          "Application": "Third from left; identical visual treatment to PLAN and VALIDATE so the three engineering phases read as a group",
+          "SymbolicMeaning": "Engineering phase — execution, handled by Sonnet 4.6"
         },
         {
-          "Name": "Phase 4 node — COMMIT",
-          "Description": "Rounded rectangular holographic panel reading 'COMMIT' in bold caps with a small git-branch icon. No model badge — instead a slim subtle label 'harness action' in cool grey to distinguish it from the model-driven phases.",
-          "Application": "Bottom node of the stack; same cyan panel styling but visibly de-emphasized (slightly darker fill, no amber accent) so it's clear no model is invoked here",
-          "SymbolicMeaning": "The mechanical commit step, performed by the harness rather than a model"
+          "Name": "Stage 4 — VALIDATE",
+          "Description": "Rounded-rectangle node matching PLAN/EXECUTE style: blue outline, white fill, 'VALIDATE' in dark charcoal, a small checkmark-shield line-icon. Below, an amber pill badge reads 'Claude Opus 4.7'.",
+          "Application": "Fourth from left; same model-invocation visual treatment",
+          "SymbolicMeaning": "Engineering phase — validation, back to Opus 4.7"
         },
         {
-          "Name": "Connector arrows",
-          "Description": "Glowing downward-pointing arrows linking each phase to the next, with a faint magenta gradient pulse suggesting flow",
-          "Application": "Three arrows between the four nodes",
-          "SymbolicMeaning": "Sequential pipeline, one phase feeds the next"
+          "Name": "Stage 5 — COMMIT",
+          "Description": "Rounded-rectangle node matching CLAIM style: thin light-grey outline, white fill, 'COMMIT' in dark charcoal, a small git-commit line-icon. Below, small grey text 'harness action'.",
+          "Application": "Fifth from left; visually de-emphasized like CLAIM",
+          "SymbolicMeaning": "Hopper auto-commits worktree changes — no LLM"
+        },
+        {
+          "Name": "Stage 6 — INTEGRATE",
+          "Description": "Rounded-rectangle node matching CLAIM/COMMIT style: thin light-grey outline, white fill, 'INTEGRATE' in dark charcoal, a small git-merge line-icon. Below, small grey text 'harness action'.",
+          "Application": "Rightmost of the six nodes; de-emphasized like CLAIM and COMMIT",
+          "SymbolicMeaning": "Hopper merges worktree branch to main and cleans up"
+        },
+        {
+          "Name": "Rightward connector arrows",
+          "Description": "Five thin solid grey rightward chevron arrows linking each stage to the next. No glow, no gradient, just clean simple arrows.",
+          "Application": "Horizontal arrows between the six nodes — CLAIM→PLAN, PLAN→EXECUTE, EXECUTE→VALIDATE, VALIDATE→COMMIT, COMMIT→INTEGRATE",
+          "SymbolicMeaning": "Sequential pipeline"
         },
         {
           "Name": "Loop-back hint",
-          "Description": "A thin dashed cyan arrow curving from the bottom (COMMIT) back up to the top (PLAN) along the right edge, with a small label 'next item'",
-          "Application": "Right edge, subtle, secondary to the main vertical flow",
-          "SymbolicMeaning": "Hopper moves on to the next queued item after commit"
+          "Description": "A single thin dashed light-grey arrow curving from the right side (under INTEGRATE) back to the left side (under CLAIM) along the bottom edge of the row, with a tiny grey 'next item' label positioned along the curve",
+          "Application": "Bottom of the diagram, below the node row, very subtle",
+          "SymbolicMeaning": "Worker loops back to claim the next queued item"
         },
         {
-          "Name": "Legend strip",
-          "Description": "Slim bar near the bottom showing two color swatches: warm amber = 'model invocation' and cool grey = 'harness action'",
-          "Application": "Bottom of frame, below the COMMIT node and above any margin",
+          "Name": "Legend",
+          "Description": "Slim line at the very bottom showing two small color swatches with labels in small grey text: amber pill = 'Model Invocation' and small grey square = 'Harness Action'",
+          "Application": "Very bottom of frame, low-key reference",
           "SymbolicMeaning": "Reader can decode badge colors at a glance"
         }
       ]
     },
     "KeyDetails": [
-      "Four clearly stacked phase nodes — PLAN, EXECUTE, VALIDATE, COMMIT — taking up most of the vertical real estate",
-      "Amber Opus 4.7 badges visually bookend the pipeline (PLAN and VALIDATE), and the Sonnet 4.6 amber badge sits in the middle on EXECUTE",
-      "COMMIT is intentionally de-emphasized and unbadged to show no model runs there",
-      "Subtle dashed loop-back arrow on the right reinforces 'unattended worker, next item' rhythm",
-      "Every text label is sharp, high-contrast, and legible at thumbnail size"
+      "Background is pure white — no gradient, no texture, no border, no glow",
+      "Six rounded-rectangle stage nodes arranged in a single horizontal row with generous white margins around them",
+      "Three engineering phases (PLAN, EXECUTE, VALIDATE) share a soft blue outline and have warm amber model-badge pills below them; the other three (CLAIM, COMMIT, INTEGRATE) have thin grey outlines and a small grey 'harness action' label",
+      "Typography is clean editorial sans-serif, dark charcoal on white, no decorative effects",
+      "Connector arrows are thin solid grey chevrons; loop-back is a thin dashed grey curve",
+      "Absolutely no human figure, no character, no cyberpunk styling, no neon, no glow, no dark backgrounds — this is an editorial blog illustration"
     ],
-    "LightingFocus": "Cool cyan glow on the pipeline panels overall; the three amber model badges receive an extra warm rim so they pop as the article's focal point",
-    "ThematicTags": ["pipeline", "model-assignment", "agentic-workflow", "hopper"]
+    "LightingFocus": "Flat ambient — no dramatic lighting. Subtle soft drop-shadows under the rounded panels are the only depth cue.",
+    "ThematicTags": ["pipeline", "model-assignment", "agentic-workflow", "hopper", "editorial"]
   },
 
   "ArticleContext": {
