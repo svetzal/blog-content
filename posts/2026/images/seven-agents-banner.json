@@ -1,0 +1,149 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+
+  "Character": {
+    "Description": "A highly competent, focused woman coder and systems thinker",
+    "Age": "Middle-aged, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": {
+      "Type": "Size 16, feminine",
+      "UpperBody": "Broad shoulders",
+      "LowerBody": "Slim hips"
+    },
+    "Face": {
+      "Complexion": "Light",
+      "Eyes": "Blue-grey",
+      "Expression": "Focused, slightly amused — she's playtesting, not just playing",
+      "Makeup": "Bold, pinks or purples, with a touch of shimmer"
+    },
+    "Hair": {
+      "Color": "Grey/silver",
+      "Length": "Long",
+      "Style": "Flowing wavy curls, partly catching the screen glow from above"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Professional dark blazer over tech-casual attire, sleeves pushed up to the elbows ready to work the joystick and buttons",
+          "Context": "Always present"
+        }
+      ]
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": ["Arcade CRT screen glow as primary key light", "Cabinet marquee fluorescent backlight", "Distant neon signage", "Subtle rim light along her shoulders and hair"],
+      "Shadows": "Sharp, emphasizing the silhouette of her shoulders and head against the bright CRT"
+    },
+    "ColorPalette": {
+      "Primary": ["Electric Blue", "Magenta", "Cyan", "Lime Green"],
+      "Accents": ["Silver", "White phosphor green from CRT", "Warm marquee amber"],
+      "Treatment": "High saturation, strong contrast between warm marquee light and cool CRT phosphor wash"
+    },
+    "Atmosphere": {
+      "Effects": ["Atmospheric haze in the arcade hall", "Bokeh on distant cabinets", "CRT scanlines visible on the screen", "Faint dust motes in the screen-glow beam"],
+      "Mood": "Nostalgic-meets-modern, focused, quietly playful"
+    }
+  },
+
+  "Situation": {
+    "Name": "Playtesting Space Invaders on the Cabinet",
+    "Setting": "A dimly lit retro arcade hall, rows of cabinets receding into atmospheric haze. The hero cabinet is a tall vertical 1978-era Space Invaders machine — black cabinet with the iconic blue-and-orange side art, illuminated marquee at the top reading 'SPACE INVADERS', a sloped control panel with a single 8-way joystick and two large round buttons, and a CRT monitor showing an active mid-game state",
+    "Camera": "Over-the-shoulder shot from behind and slightly above her right shoulder. Her silhouette occupies the left third of the frame; the CRT screen is the visual focal point, clearly readable, occupying the right two-thirds of the frame. Shallow depth of field — she and the cabinet are crisp, the arcade hall behind blurs into bokeh",
+    "CharacterPose": {
+      "Expression": "Focused concentration with a slight amused half-smile — the look of someone evaluating an artefact, not just enjoying it",
+      "BodyPosition": "Standing at the cabinet, weight slightly forward, leaning in toward the CRT, shoulders squared to the screen",
+      "Gesture": "Left hand resting on the joystick (visible at lower edge of the control panel), right hand poised over the fire button"
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Dark blazer with sleeves pushed up",
+          "Description": "Sleeves rolled to mid-forearm, ready for the controls",
+          "Application": "Worn"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "Authentic 1978 Space Invaders CRT screen",
+          "Description": "Vertical black playfield showing the classic 5-row alien formation (5 rows of 11 invaders) mid-march, four green shield bunkers below, a small white player cannon at the bottom firing a single white bullet upward. Green and white phosphor colors only — period-correct. Score readout '0420' visible at the top, '03' lives indicator, 'HI-SCORE 9990'. Visible CRT scanlines and slight curvature distortion at the edges of the tube",
+          "Application": "Primary focal point of the frame, occupies the right two-thirds, glows brightly enough to be the dominant light source on her face and shoulder",
+          "SymbolicMeaning": "The artefact being evaluated — the deliverable the bake-off was measured against"
+        },
+        {
+          "Name": "Illuminated Space Invaders marquee",
+          "Description": "Backlit translucent header at the top of the cabinet reading 'SPACE INVADERS' in the classic 1978 logo type, casting warm amber-white light downward onto her hair and shoulders",
+          "Application": "Top of cabinet, light-source for rim lighting"
+        },
+        {
+          "Name": "Sloped arcade control panel",
+          "Description": "Black control deck with a single chrome-balled 8-way joystick on the left and two large round buttons (red and white) on the right",
+          "Application": "Lower foreground of the frame, her hands engaged with it"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Row of background arcade cabinets",
+          "Description": "Other vintage cabinets receding into the haze, marquees glowing in different neon colors (magenta, cyan, lime green), suggesting a busy arcade hall",
+          "Application": "Background, heavily bokeh-blurred"
+        },
+        {
+          "Name": "Dark patterned carpet floor",
+          "Description": "Classic arcade-style geometric patterned carpet, barely visible in the dim light",
+          "Application": "Foreground floor texture"
+        },
+        {
+          "Name": "Hanging neon sign in distance",
+          "Description": "A faint magenta or cyan tube-sign far in the background, contributing atmospheric color",
+          "Application": "Far background, very out of focus"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "The CRT screen content must be unmistakably authentic Space Invaders — the alien formation, the bunkers, the player cannon must all be legible",
+      "Her silhouette is partly backlit by the marquee above and side-lit by the CRT — creating a clean cinematic profile of her face and shoulder",
+      "Her amused-focused expression sells the framing: this is a playtest, not nostalgia",
+      "Over-the-shoulder framing — camera is clearly behind her, we see the back/side of her head and shoulder, never her full face"
+    ],
+    "LightingFocus": "CRT phosphor green/white as the primary key light on her face, side and hair; warm amber marquee light from above provides rim lighting on the top of her shoulders and the crown of her hair; the rest of the arcade hall fades into cool blue-violet ambient haze",
+    "ThematicTags": ["evaluation", "playtest", "retro-meets-modern", "craft"]
+  },
+
+  "ArticleContext": {
+    "Title": "Seven Coding Agents, One Space Invaders Clone",
+    "Tags": ["GenAI", "ai", "Software Engineering", "Tools"],
+    "Themes": ["coding agent evaluation", "playtesting AI deliverables", "craft and rigor", "compile-green is not done"],
+    "Mood": "analytical"
+  },
+
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "tech noir",
+    "neon light",
+    "cinematic lighting",
+    "high contrast",
+    "16:9 aspect ratio",
+    "wide banner composition",
+    "over-the-shoulder shot",
+    "CRT phosphor glow",
+    "arcade scanlines",
+    "1978 Space Invaders cabinet"
+  ],
+
+  "CompositionNotes": {
+    "Framing": "Over-the-shoulder wide shot. Character silhouette left third, CRT screen right two-thirds",
+    "SubjectPlacement": "Character clearly behind/foreground left, cabinet and screen as visual focal point right",
+    "DepthOfField": "Shallow — character and cabinet crisp, arcade hall in bokeh",
+    "TextSafeArea": "Upper-left and lower-left have room for text overlay if needed"
+  }
+}
