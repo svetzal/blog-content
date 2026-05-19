@@ -55,7 +55,7 @@
 
   "Situation": {
     "Name": "Playtesting Space Invaders on the Cabinet",
-    "Setting": "A dimly lit retro arcade hall, rows of cabinets receding into atmospheric haze. The hero cabinet is a tall vertical 1978-era Space Invaders machine — black cabinet with the iconic blue-and-orange side art, illuminated marquee at the top reading 'SPACE INVADERS', a sloped control panel with a single 8-way joystick and two large round buttons, and a CRT monitor showing an active mid-game state",
+    "Setting": "A dimly lit retro arcade hall, rows of cabinets receding into atmospheric haze. The hero cabinet is a tall vertical 1978-era Space Invaders machine — black cabinet with the iconic blue-and-orange side art, illuminated marquee at the top reading 'SPACE INVADERS', a sloped control panel with the authentic 1978 Taito layout — a single short joystick with a white ball top on the left and a single round red FIRE button on the right, nothing else, and a CRT monitor showing an active mid-game state",
     "Camera": "Over-the-shoulder shot from behind and slightly above her right shoulder. Her silhouette occupies the left third of the frame; the CRT screen is the visual focal point, clearly readable, occupying the right two-thirds of the frame. Shallow depth of field — she and the cabinet are crisp, the arcade hall behind blurs into bokeh",
     "CharacterPose": {
       "Expression": "Focused concentration with a slight amused half-smile — the look of someone evaluating an artefact, not just enjoying it",
