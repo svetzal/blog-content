@@ -1,0 +1,186 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Hero image for 'A Leaf on the Wind, at Machine Speed'",
+  "Character": {
+    "Description": "A highly competent, focused woman coder and systems thinker",
+    "Age": "Middle-aged, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": {
+      "Type": "Size 16, feminine",
+      "UpperBody": "Broad shoulders",
+      "LowerBody": "Slim hips"
+    },
+    "Face": {
+      "Complexion": "Light",
+      "Eyes": "Blue-grey",
+      "Expression": "Calm, analytical concentration under pressure",
+      "Makeup": "Bold magenta and purple makeup with a touch of metallic shimmer"
+    },
+    "Hair": {
+      "Color": "Grey/silver",
+      "Length": "Long",
+      "Style": "Big wavy curls moving slightly in the controlled turbulence"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Professional dark blazer over tech-casual attire, sleeves pushed up",
+          "Context": "Always present, bridges corporate and technical worlds"
+        }
+      ],
+      "Situational": [
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern rectangular frames with subtle cyan interface reflections",
+          "Context": "Worn while tuning the wind-tunnel controls"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, cinematic concept art quality",
+    "Lighting": {
+      "Type": "Dramatic high-contrast lighting, cool inside the tunnel and warm at the control station",
+      "Sources": [
+        "Cyan containment gates",
+        "Magenta code fragments",
+        "Warm amber control-console glow",
+        "Silver rim lighting"
+      ],
+      "Shadows": "Crisp but natural, emphasizing the glass chamber, machinery, and character"
+    },
+    "ColorPalette": {
+      "Primary": [
+        "Cyan",
+        "Electric Blue",
+        "Magenta",
+        "Deep Charcoal"
+      ],
+      "Accents": [
+        "Warm Amber",
+        "Silver",
+        "White"
+      ],
+      "Treatment": "Cool turbulent tunnel contrasted with a calm amber human control point"
+    },
+    "Atmosphere": {
+      "Effects": [
+        "Controlled motion blur inside the tunnel",
+        "Atmospheric haze",
+        "Neon glow",
+        "Reflections on glass and brushed metal"
+      ],
+      "Mood": "High-energy but controlled; analytical rather than panicked"
+    }
+  },
+  "Situation": {
+    "Name": "Containment at Machine Speed",
+    "Setting": "A large industrial cyberpunk wind-tunnel laboratory. A transparent horizontal test chamber dominates the scene. Inside it, autumn leaves mix with luminous fragments of source code and race through a violent artificial wind. Several glowing cyan containment gates progressively narrow and organize the torrent. On the far side of the gates, the flow becomes sparse, coherent, and geometrically ordered. The woman stands outside the tunnel at a substantial physical control console, clearly operating the system rather than being trapped inside it.",
+    "Camera": "Wide cinematic banner composition, three-quarter view across the wind tunnel, character shown from mid-thigh up with the full transformation visible behind and beside her",
+    "CharacterPose": {
+      "Expression": "Focused and steady, eyes tracking the tunnel output with quiet authority",
+      "BodyPosition": "Firm stance beside the control console, shoulders square, body unaffected by most of the turbulence",
+      "Gesture": "One hand makes a precise adjustment on a heavy control lever while the other rests near a bank of physical switches"
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern rectangular frames reflecting the cyan containment gates",
+          "Application": "Worn"
+        },
+        {
+          "Name": "Dark blazer",
+          "Description": "Sleeves pushed up, fabric and silver curls moving only slightly in the air",
+          "Application": "Worn"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "Leaves and code torrent",
+          "Description": "Dry autumn leaves intertwined with abstract luminous code fragments, tangled brackets, and broken structural shapes rushing through the chamber",
+          "Application": "Dense chaotic input side of the wind tunnel",
+          "SymbolicMeaning": "Software entropy arriving at machine speed"
+        },
+        {
+          "Name": "Containment gates",
+          "Description": "Three transparent cyan energy rings supported by real industrial machinery, each gate filtering and organizing the torrent without simply blocking it",
+          "Application": "Spaced through the middle of the tunnel",
+          "SymbolicMeaning": "Intent, tools, evidence, and validation designed into the harness"
+        },
+        {
+          "Name": "Coherent output stream",
+          "Description": "A small number of intact leaves and clean luminous structural lines flowing steadily in one direction",
+          "Application": "Output end of the tunnel",
+          "SymbolicMeaning": "Contained change that has earned its place in the system"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Physical control console",
+          "Description": "A robust brushed-metal console with tactile levers, switches, modest status lights, and no illegible screen text",
+          "Application": "Foreground beside the character"
+        },
+        {
+          "Name": "Industrial wind-tunnel chamber",
+          "Description": "Thick glass, reinforced steel ribs, ducts, fans, and sensor arrays; engineered equipment rather than a magical vortex",
+          "Application": "Primary background and visual frame"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "The woman is outside and in command of the tunnel, never being blown around inside it",
+      "The chaotic input and coherent output must both be visible in the same frame",
+      "Containment gates organize and reduce the torrent rather than acting as simple barriers",
+      "Leaves remain recognizable and connect directly to the originating article",
+      "The tunnel should feel like serious engineering equipment with weight, wear, and physical controls",
+      "No readable code, labels, logos, captions, or text anywhere in the image"
+    ],
+    "LightingFocus": "Cyan and magenta light pulses through the chaotic tunnel while warm amber console light illuminates her hands and face; a silver rim light defines her hair against the machinery",
+    "ThematicTags": [
+      "entropy",
+      "containment",
+      "agentic-engineering",
+      "harness",
+      "software-craft",
+      "human-control"
+    ]
+  },
+  "ArticleContext": {
+    "Title": "A Leaf on the Wind, at Machine Speed",
+    "Tags": [
+      "ai",
+      "agentic-engineering",
+      "software-development",
+      "technical-debt",
+      "craft"
+    ],
+    "Themes": [
+      "containing software entropy at machine speed",
+      "engineering the harness before generating code",
+      "human ownership of intent and acceptance",
+      "recovering codebases that were previously uneconomic to save"
+    ],
+    "Mood": "analytical, high-energy, controlled"
+  },
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "photorealistic concept art",
+    "cyberpunk",
+    "tech noir",
+    "cinematic lighting",
+    "16:9 banner composition",
+    "industrial wind tunnel",
+    "autumn leaves",
+    "luminous code fragments",
+    "engineered containment",
+    "human in control",
+    "no text",
+    "no watermark"
+  ]
+}
