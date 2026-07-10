@@ -83,7 +83,21 @@ The real work is in shaping the environment around the task:
 - requiring evidence before work can advance;
 - deciding when the agent must stop and ask for help.
 
-I saw this recently in one of my own agentic workflows. By tuning the tools available to the agent, I reduced its token cost by a factor of twenty.
+## How Much Code Did You Throw Out?
+
+In my consultancy, I used a five-question questionnaire as a weekly touchpoint with apprentices. One of those questions was: "How much code did you throw out?"
+
+Not how much did you write. How much did you throw out?
+
+People are reluctant to do this. We misattribute the value to the code because that's the visible artefact of the work. But the value was in the outcome it enabled and the understanding we gained while producing it. The second time you wrote something was invariably better, because you weren't the same developer anymore. You had learned from the first attempt.
+
+Recognizing the future maintenance cost of a poor solution takes time and the right kind of experience. The code works today. The tests pass. The awkwardness that will tax every future change hasn't had time to reveal itself yet. Keeping the first attempt can feel prudent right up until the learning it produced becomes the burden everyone else has to carry.
+
+While tuning the inputs to Hone, I threw out a lot of agent code. Real time and real money went into the tokens that produced it. Some of that code taught me what the workflow needed. Some exposed weaknesses in the tools or the context I had supplied. Keeping it would have given that learning an unfortunate future.
+
+The machine makes code cheap to produce. It doesn't make poor code cheap to own.
+
+By tuning the tools available to the agent, I eventually reduced the workflow's token cost by a factor of twenty.
 
 Not with a cleverer prompt. Not by switching to the cheapest model I could find. I changed how the agent interacted with its environment so it could get the information it needed without wandering around, repeatedly rediscovering the same things.
 
