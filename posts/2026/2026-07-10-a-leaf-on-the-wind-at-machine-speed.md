@@ -15,13 +15,13 @@ imageAlt: "Silver-haired woman operating an industrial wind tunnel as chaotic le
 
 I've been helping a friend bring a troubled codebase back under control.
 
-A few years ago, I wouldn't have touched it. Not because the problems were impossible to solve, but because the labour required to solve them responsibly would have been impossible to justify. We would have called it technical debt bankruptcy, gathered whatever knowledge we could from the wreckage, and started talking about a rewrite.
+A few years ago, I wouldn't have touched it. Not because the problems were impossible to solve, but because the labour required to solve them responsibly would have been impossible to justify. If it weren't a going concern, we would have called it technical debt bankruptcy, gathered whatever knowledge we could from the wreckage, and started talking about a rewrite.
 
-Refactoring was always an option in theory. In practice, someone had to pay for all those careful hours.
+Refactoring was always an option in theory. In practice, someone had to pay for all those careful hours, and that was a decision to make.
 
 Agents have changed that calculation.
 
-This hasn't been purely an act of charity. On February 1, 2026, I made the first commit to [Hone](https://vetzal.com/hone-cli/), a CLI that improves a codebase one engineering principle at a time. Hone is where I first tuned and refined the iteration workflow: assess the code, identify the most violated principle, plan one correction, execute it, and independently run the project's quality gates before accepting the result.
+This hasn't been purely an act of charity. On February 1, 2026 after 2 months of experimentation, I made the first commit to [Hone](https://vetzal.com/hone-cli/), a CLI that improves a codebase one engineering principle at a time. Hone is where I continued to tune and refine the iteration workflow: assess the code, identify the most violated principle, plan one correction, execute it, and independently run the project's quality gates before accepting the result. Small, measured, continuous improvement.
 
 But I couldn't simply drop that workflow onto my friend's codebase. The loop can be general. The meaning of *better* is not. Before I could trust an agent to change anything, I had to do the pre-work: understand the project, articulate the principles that should govern it, and establish guardrails capable of distinguishing recovery from another layer of confident damage.
 
@@ -29,9 +29,9 @@ Then I could stress-test the larger idea. Could a sufficiently strong agent harn
 
 Or would it just help us make the fire bigger?
 
-## The Keystrokes Aren't Ours Anymore
+## Those Keystrokes Aren't Ours Anymore
 
-Nine years ago, I wrote a post called ["A Leaf on the Wind"](/2017/2017-04-25-a-leaf-on-the-wind). It came from a Monday morning talk I gave to my small software team about entropy.
+Nine years ago, I wrote a post called ["A Leaf on the Wind"](/2017/2017-04-25-a-leaf-on-the-wind). It came from a Monday morning talk I gave to my downsized software team about entropy 11 years ago.
 
 The world creeps towards chaos, I told them. Leaves scatter across the lawn. Dishes collect beside the sink. Half-finished ideas accumulate in a codebase until nobody can quite remember which direction was deliberate.
 
@@ -39,7 +39,7 @@ Our job as software professionals was to spend every keystroke taming that chaos
 
 I still believe that.
 
-The keystrokes aren't ours anymore.
+If those keystrokes aren't ours anymore, what does this mean?
 
 An agent can add thousands of lines of code in the time it takes me to make a cup of tea. It can confidently introduce a new abstraction, repeat it four different ways, work around a misunderstanding of the domain, and give me a tidy summary assuring me that all the tests pass.
 
@@ -55,9 +55,9 @@ Every time I see an inspection task following some agentic burst, I come back to
 
 You can't review chaos out of a codebase after an agent has produced it either.
 
-We seem to believe that if an agent writes the code and a human inspects the change before committing it, we've preserved human judgment. Technically, perhaps. But there is a point where the volume of work makes meaningful inspection impossible. The larger the burst, the more pressure we feel to accept it, and the less capable we are of building a coherent mental model of what changed.
+We seem to believe that if an agent writes the code and a human inspects the change before committing it, we've preserved human involvement, human judgment. Technically, perhaps. But there is a point where the volume of work makes meaningful inspection impossible. The larger the burst, the more pressure we feel to accept it, and the less capable we are of building a coherent mental model of what changed.
 
-The inspection becomes theatre.
+The inspection becomes theatre. Fast.
 
 Cory Doctorow has written a whole book about this condition: [*The Reverse Centaur's Guide to Life After AI*](https://www.amazon.ca/dp/037462156X). A centaur uses a machine to extend human ability. A reverse centaur serves the machine, taking its instructions, cleaning up its output, and scrambling to make its predictions true. Instead of a human directing a powerful machine, the machine is tossing work at the human and the human is scrambling to keep up. Another diff. Another alleged vulnerability. Another urgent-looking report with seventeen findings, fourteen of which may be nonsense. Inspect. Commit. Triage. Repeat.
 
@@ -71,7 +71,7 @@ The quality boundary was placed too late.
 
 Most of the work in successful agentic engineering happens before we ask the agent to do anything.
 
-That includes before we ask it to write a specification, if that's the current fashion. An agent can produce a beautifully structured specification for the wrong problem just as easily as it can produce beautifully structured code for the wrong problem. Moving the generation step upstream doesn't remove the need for judgment. It just changes the document we're pretending to inspect.
+That includes before we ask it to write a specification, if that's the current fashion. An agent can produce a beautifully structured specification for the wrong problem just as easily as it can produce beautifully structured code for the wrong problem, with a 100% passing test suite. Moving the generation step upstream doesn't remove the need for judgment. It just changes the document we're pretending to inspect.
 
 The real work is in shaping the environment around the task:
 
@@ -85,7 +85,7 @@ The real work is in shaping the environment around the task:
 
 ## How Much Code Did You Throw Out?
 
-In my consultancy, I used a five-question questionnaire as a weekly touchpoint with apprentices. One of those questions was: "How much code did you throw out?"
+In my consultancy and coaching practice, I used a five-question questionnaire as a weekly touchpoint with coachees. One of those questions was: "How much code did you throw out?"
 
 Not how much did you write. How much did you throw out?
 
@@ -93,21 +93,21 @@ People are reluctant to do this. We misattribute the value to the code because t
 
 Recognizing the future maintenance cost of a poor solution takes time and the right kind of experience. The code works today. The tests pass. The awkwardness that will tax every future change hasn't had time to reveal itself yet. Keeping the first attempt can feel prudent right up until the learning it produced becomes the burden everyone else has to carry.
 
-While tuning the inputs to Hone, I threw out a lot of agent code. Real time and real money went into the tokens that produced it. Some of that code taught me what the workflow needed. Some exposed weaknesses in the tools or the context I had supplied. Keeping it would have given that learning an unfortunate future.
+While tuning the inputs to Hone, I threw out a lot of agent code. Real time and real money went into the inference and tokens that produced it. Some of that code taught me what the workflow needed. Some exposed weaknesses in the tools or the context I had supplied. Keeping it would have given that learning an unfortunate future.
 
 The machine makes code cheap to produce. It doesn't make poor code cheap to own.
 
-By tuning the tools available to the agent, I eventually reduced the workflow's token cost by a factor of twenty.
+This week, I took a harness audit log, the reality of how the work got done, and used it to tune the tools available to the agent. This reduced the workflow's token cost by a factor of twenty. (Attention degradation in a long context is not linear, but that's another post.)
 
-Not with a cleverer prompt. Not by switching to the cheapest model I could find. I changed how the agent interacted with its environment so it could get the information it needed without wandering around, repeatedly rediscovering the same things.
+The solution was not a cleverer prompt. Nor by switching to the cheapest model I could find. I changed how the agent interacted with its environment so it could get the information it needed without wandering around, repeatedly rediscovering the same things, or getting bogged down by unneeded information.
 
 You can only do that if you own the tools. You can only know to do it if you're auditing the work.
 
-This is why I've been using the term "Full Stack AI." I mean owning enough of every layer above the language model to tune the whole system to the task. The model matters, of course, but so do the instructions, skills, tools, context assembly, validation, tracing, and the control flow that decides what happens next.
+This is why I've been using the term "Full Stack AI." I mean owning enough of every layer above the language model to tune the whole system to the task. The model matters, of course, but so do the instructions, skills, tools, context assembly, validation, tracing, and the control flow that decides what happens next. And stepping into model fine tuning is a whole other cost and time bucket, unattainable for most.
 
 "Harness" has become a slippery word. Sometimes it means a platform such as Claude Code or Codex. Sometimes it means the collection of instructions, skills, and MCP tools bolted onto that platform. I care less about settling the definition than I do about owning the layers where containment is possible.
 
-If the only part we control is the prompt, we don't own much.
+If the only part we control is the prompt, we don't own much, and we can't control much.
 
 ## Two Codebases
 
@@ -123,13 +123,13 @@ That second codebase is where much of the interesting engineering lives now. We 
 
 The opposite compounds too.
 
-This is the danger in treating a commercial coding agent as the harness rather than one component inside it. We end up optimizing for how quickly the product can generate code instead of how effectively our system can contain change. Fast output looks like progress right up until the humans can no longer explain what the software does.
+This is the danger in treating a commercial coding agent as the harness rather than one component inside it. The tools and baseline instructions of the harness are opaque. We end up optimizing for how quickly the product can generate code instead of how effectively our system can contain change. Fast output looks like progress right up until the humans can no longer explain or support what the software does.
 
 ## Pulling It Out of the Fire
 
 My friend's codebase is useful precisely because it isn't a toy problem. The disorder already exists. The decisions are already tangled together. There are places where we need to understand the current behaviour before we can decide whether that behaviour is even desirable.
 
-You don't recover a system like that with one heroic refactor. Asking an agent to rewrite the whole thing and then reviewing the result would merely be another uncontrolled burst, with a more respectable name.
+You don't recover a system like that with one heroic refactor. Asking an agent to rewrite the whole thing and then reviewing the result would merely be another uncontrolled burst, with an unpredictable outcome from all of the assumptions it makes different than we would have.
 
 Recovery is patient work:
 
@@ -155,7 +155,7 @@ Agents have changed the economics of technical debt. They haven't changed the ph
 
 We can now attempt recoveries that would once have been untenable. We can ask machines to patiently map systems, characterize behaviour, run experiments, and make hundreds of small repairs without becoming tired or discouraged.
 
-We can also ask them to pour thousands of lines into a system before anyone understands the first hundred.
+We can also ask them to pour thousands of lines into a system before anyone has read the first hundred. Because [we designed the principles it followed](/2026/2026-02-20-know-your-principles/).
 
 The difference isn't the model. It's whether we built a harness capable of containing the force we've attached to it.
 
