@@ -21,7 +21,11 @@ Refactoring was always an option in theory. In practice, someone had to pay for 
 
 Agents have changed that calculation.
 
-This hasn't been purely an act of charity. I needed a real codebase against which to stress-test some ideas. Could a sufficiently strong agent harness pull a software system back from a place we would previously have considered lost? Could it help us recover understanding, establish boundaries, characterize behaviour, and gradually make the code safe to change?
+This hasn't been purely an act of charity. On February 1, 2026, I made the first commit to [Hone](https://vetzal.com/hone-cli/), a CLI that improves a codebase one engineering principle at a time. Hone is where I first tuned and refined the iteration workflow: assess the code, identify the most violated principle, plan one correction, execute it, and independently run the project's quality gates before accepting the result.
+
+But I couldn't simply drop that workflow onto my friend's codebase. The loop can be general. The meaning of *better* is not. Before I could trust an agent to change anything, I had to do the pre-work: understand the project, articulate the principles that should govern it, and establish guardrails capable of distinguishing recovery from another layer of confident damage.
+
+Then I could stress-test the larger idea. Could a sufficiently strong agent harness pull a software system back from a place we would previously have considered lost? Could it help us recover understanding, establish boundaries, characterize behaviour, and gradually make the code safe to change?
 
 Or would it just help us make the fire bigger?
 
