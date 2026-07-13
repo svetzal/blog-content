@@ -1,0 +1,100 @@
+{
+  "ImageType": "banner",
+
+  "Style": {
+    "Genre": "Clean editorial infographic — magazine or technical-blog feel",
+    "Rendering": "Flat vector-style illustration, thin 1-2px outlines, subtle soft drop-shadows. No cyberpunk, no photorealism, no painterly textures.",
+    "Background": "Pure white (#ffffff) above the floor line — no gradient, no texture, no border",
+    "ColorPalette": {
+      "OutlinesPrimary": "Soft slate blue (#007acc) — used for the focal context-window container outline and main shape outlines",
+      "OutlinesSecondary": "Light grey (#9ca3af) — used for the floor line, de-emphasized elements, and dimension labels",
+      "Text": "Dark charcoal (#282c35) for labels",
+      "FocalAccent": "Warm amber (#f59e0b) — reserved for the INTENT shape, the focal element",
+      "ShapeFills": "Muted, low-saturation pastels — sage green for CODE, dusty rose for SPEC, warm amber for INTENT"
+    },
+    "Typography": "Clean sans-serif (Inter / Helvetica / system-ui). Shape labels in small caps, semibold, white on shape fill. Container label in small caps, semibold, dark charcoal, positioned INSIDE the container near the top. Dimension annotations in lighter grey, smaller weight."
+  },
+
+  "Situation": {
+    "Name": "Context Window — Fits Comfortably (Wide, On a Floor)",
+    "Setting": "A wide 16:9 frame. A thin light-grey horizontal floor line runs across the lower third of the image — IDENTICAL position to the companion 'overflow' image. The context-window container sits on this floor in the RIGHT half of the image, in the SAME position and dimensions as the companion 'overflow' image. The container is comfortably populated — only a few shapes inside, plenty of breathing room. To the LEFT of the container, the floor is completely empty — clean, breathing room. Pure white above the floor line. This is the BEFORE / ideal state that contrasts with the overflow image.",
+    "Camera": "Flat, head-on infographic perspective — diagrammatic, not perspectival. Same camera position as the companion 'overflow' image. Slight ground-shadow under the container to give it weight on the floor.",
+    "Props": {
+      "Article": [
+        {
+          "Name": "Floor line",
+          "Description": "Same thin (1.5px) light-grey (#9ca3af) horizontal line as the companion 'overflow' image, spanning the full width of the frame, positioned about one-third up from the bottom. Suggests a ground plane or shelf without elaborating on it.",
+          "Application": "Runs edge-to-edge across the lower third of the frame, identical to the companion image"
+        },
+        {
+          "Name": "Context window container",
+          "Description": "A large rounded rectangle with thin slate-blue (#007acc) 2px outline, no fill — IDENTICAL dimensions and position to the companion 'overflow' image. Sits in the right half of the image, its bottom edge resting on the floor line. Roughly square in proportion, occupying about 40% of the image width. INSIDE the container, near the top edge (with comfortable padding from the top), a small-caps semibold label 'CONTEXT WINDOW' in dark charcoal. Just below the label, in lighter grey small text, '~200K tokens'. A subtle soft drop-shadow beneath the container along the floor line, grounding it. The container outline is INTACT — no breaks, no tears (unlike the companion overflow image).",
+          "Application": "Right half of the image, resting on the floor, identical position and size to companion image",
+          "SymbolicMeaning": "The LLM's working memory boundary — fully intact"
+        },
+        {
+          "Name": "CODE shape",
+          "Description": "A medium rounded square filled in muted sage green (#9CB380 approx), labeled 'CODE' in white small-caps semibold centered on the shape. Subtle soft drop-shadow beneath, grounding it to the container's interior floor. Same rendering treatment, shadow weight, and label styling as the shapes inside the companion 'overflow' container.",
+          "Application": "Sits in the upper-left interior of the container (below the title label) with clear white space around it"
+        },
+        {
+          "Name": "SPEC shape",
+          "Description": "A medium circle filled in muted dusty rose (#D9A6A6 approx), labeled 'SPEC' in white small-caps semibold centered on the shape. Subtle soft drop-shadow beneath. Same rendering treatment as the SPEC circles in the companion 'overflow' image.",
+          "Application": "Sits in the upper-right interior of the container (below the title label) with clear white space around it"
+        },
+        {
+          "Name": "INTENT shape",
+          "Description": "A medium rounded triangle (equilateral, gently rounded corners) filled in warm amber (#f59e0b), labeled 'INTENT' in white small-caps semibold centered on the shape. Slightly larger than CODE and SPEC, signalling its focal role. Subtle soft drop-shadow beneath. Same rendering treatment as the INTENT triangles in the companion 'overflow' image.",
+          "Application": "Sits centered in the lower half of the container, resting closer to the container's bottom edge"
+        },
+        {
+          "Name": "Empty floor (left side)",
+          "Description": "The left half of the image is empty floor and empty white background — the same light-grey floor line continues edge-to-edge, and nothing rests on it. This negative space is the point: in the BEFORE state, the container's contents are all contained, and the floor outside it is clean. Directly contrasts the companion 'overflow' image where this same area is filled with a pile of spilled shapes.",
+          "Application": "Occupies the left 50-55% of the frame"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "Wide 16:9 composition, identical staging to the companion 'overflow' image",
+      "The floor line runs at the exact same height as in the companion image",
+      "The container sits in the SAME position and is the SAME size as the companion 'overflow' image — emphasizing the boundary is unchanged between the two states",
+      "The container's outline is FULLY INTACT — no breaks, no tears, unlike the companion image",
+      "'CONTEXT WINDOW' label sits INSIDE the container near the top edge (NOT above it), with '~200K tokens' just beneath in lighter grey",
+      "All three shapes (CODE, SPEC, INTENT) sit entirely within the container boundary — no overlap with the outline",
+      "Generous negative space around each shape inside the container — visibly NOT crammed",
+      "The floor to the LEFT of the container is completely EMPTY — no spilled shapes, no debris, no pile",
+      "Same rendering language as the companion image: flat vector linework, soft drop-shadows under each shape, identical palette, identical line weights",
+      "Composition feels calm, breathable, ordered — the ideal BEFORE state that the overflow image contrasts with"
+    ],
+    "LightingFocus": "Even, flat editorial illumination — no directional light. Identical lighting treatment to the companion 'overflow' image. Only the gentle drop-shadow under each shape and a subtle ground-shadow under the container provide depth."
+  },
+
+  "ArticleContext": {
+    "Title": "When Intent Moves Faster Than Code",
+    "Tags": ["GenAI", "ai", "agentic", "software design"],
+    "Themes": ["context window", "cohesion", "fits comfortably", "small codebase", "ideal state"],
+    "Mood": "calm, ordered, ideal-state"
+  },
+
+  "PromptKeywords": [
+    "clean editorial infographic",
+    "flat vector illustration",
+    "wide 16:9 composition",
+    "white background",
+    "horizontal floor line",
+    "container resting on floor",
+    "intact container outline — no breaks",
+    "title label INSIDE the container near the top",
+    "three shapes comfortably inside container",
+    "soft slate blue outlines",
+    "amber focal accent",
+    "muted pastel shape fills",
+    "soft drop-shadows under each shape",
+    "calm composition",
+    "generous whitespace inside container",
+    "empty floor on the left",
+    "small caps labels",
+    "matches companion overflow image rendering exactly",
+    "no photorealism"
+  ]
+}

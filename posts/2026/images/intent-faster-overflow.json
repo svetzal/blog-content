@@ -1,0 +1,105 @@
+{
+  "ImageType": "banner",
+
+  "Style": {
+    "Genre": "Clean editorial infographic — magazine or technical-blog feel",
+    "Rendering": "Flat vector-style illustration, thin 1-2px outlines, subtle soft drop-shadows. No cyberpunk, no photorealism, no painterly textures.",
+    "Background": "Pure white (#ffffff) above the floor line — no gradient, no texture, no border",
+    "ColorPalette": {
+      "OutlinesPrimary": "Soft slate blue (#007acc) — used for the focal context-window container outline and main shape outlines",
+      "OutlinesSecondary": "Light grey (#9ca3af) — used for the floor line, de-emphasized elements, and dimension labels",
+      "Text": "Dark charcoal (#282c35) for labels",
+      "FocalAccent": "Warm amber (#f59e0b) — reserved for INTENT shapes",
+      "ShapeFills": "Muted, low-saturation pastels — sage green for CODE, dusty rose for SPEC, amber for INTENT, soft slate grey for HELPERS/ABSTRACTIONS/CONFIG/TESTS/DOCS/DEPS",
+      "OverflowSignal": "Where shapes break through the container outline on the left, the container outline is broken (shape sits on top, interrupting the line), making the escape visually unambiguous"
+    },
+    "Typography": "Clean sans-serif (Inter / Helvetica / system-ui). Shape labels in small caps, semibold, white on shape fill. Container label in small caps, semibold, dark charcoal. Dimension annotations in lighter grey, smaller weight."
+  },
+
+  "Situation": {
+    "Name": "Context Window — Overflowing Out the Left Side, Settled on the Floor",
+    "Setting": "A wide 16:9 frame. A thin light-grey horizontal floor line runs across the lower third — IDENTICAL position to the companion 'fits' image. The context-window container sits on this floor in the RIGHT half of the image, in the SAME position and dimensions as the companion image. The container is OVERFILLED — packed beyond capacity — so shapes have been EXTRUDED through its broken LEFT wall under pressure and now sit STATIC on the floor as a settled pile across the left half of the image. This is the AFTER state of an overflow, not a moment of motion. Think of an overfilled grain sack with a tear in the side: the spilled contents have already come to rest on the ground.",
+    "Camera": "Flat, head-on infographic perspective — diagrammatic, not perspectival. Same camera position as the companion 'fits' image.",
+    "Props": {
+      "Article": [
+        {
+          "Name": "Floor line",
+          "Description": "Same thin (1.5px) light-grey (#9ca3af) horizontal line as the companion image, spanning the full width of the frame, positioned about one-third up from the bottom.",
+          "Application": "Runs edge-to-edge across the lower third of the frame, identical to the companion image"
+        },
+        {
+          "Name": "Context window container",
+          "Description": "The SAME rounded rectangle as the companion 'fits' image — same dimensions, same position in the right half of the frame, same thin slate-blue (#007acc) 2px outline. Same small-caps 'CONTEXT WINDOW' label above. Same '~200K tokens' annotation inside the top-right. Same ground-shadow beneath. Nothing about the container has changed.",
+          "Application": "Right half of the image, resting on the floor, identical position and size to companion image",
+          "SymbolicMeaning": "The LLM's working memory boundary, unchanged"
+        },
+        {
+          "Name": "Shapes crammed inside the container",
+          "Description": "Roughly 7-9 shapes packed tightly inside the container with zero breathing room, compressed and slightly deformed against each other: sage-green squares labeled CODE / MODEL, dusty rose circles labeled SPEC, warm amber INTENT, DOCS triangles, soft slate-grey rounded rectangles labeled HELPERS and ABSTRACTIONS. The shapes pressed against the LEFT wall are visibly squeezed against the broken section of outline. NO motion — the shapes are STATIC, just over-packed.",
+          "Application": "Filling the container completely with visible compression against the left wall"
+        },
+        {
+          "Name": "Broken/torn left wall of the container",
+          "Description": "The left wall of the container outline is broken open — a ragged horizontal gap in the slate-blue outline, like a torn seam in an overfilled bag. The break is wide enough that 2-3 shapes are caught HALF inside, HALF outside, wedged in the opening, oozing out under pressure but not yet free. These extruded shapes sit at the floor level of the container or just below it, NOT floating in the air. The container outline above and below the break remains intact.",
+          "Application": "Mid-height on the container's left side, with shapes wedged in the gap"
+        },
+        {
+          "Name": "Shapes extruded and settled at the base of the broken wall",
+          "Description": "Directly outside the broken wall, 3-4 shapes have come fully through the opening and now rest on the floor right at the container's left foot. They are SETTLED, not falling. Some lean against the container's lower-left corner; one or two have tipped onto their sides on the floor; one is half-overlapping the floor line as if it has rolled to a stop. These bridge the gap between the broken wall and the larger pile to the left.",
+          "Application": "On the floor in a narrow band immediately left of the container",
+          "SymbolicMeaning": "The most recent overflow — what just came out"
+        },
+        {
+          "Name": "Settled pile of spilled shapes on the floor (left side)",
+          "Description": "A static, settled pile of 8-12 shapes resting on the floor across the LEFT half of the image. The pile is densest near the container (right edge of the pile) and thins out toward the left edge of the frame. Shapes are at rest — some flat on the floor line, some leaning against each other, some stacked in low heaps no more than 2-3 shapes tall. Subtle ground-shadow under each shape grounds it to the floor. No tilting beyond what gravity would explain (shapes leaning against neighbors, not spinning). Labels visible: CONFIG, TESTS, DOCS, HISTORY, SCAFFOLDING, DEPS, UTILS, plus additional SPEC circles and INTENT triangles. A couple of shapes at the very left edge are partially clipped by the frame, suggesting the spill continues beyond view.",
+          "Application": "Occupies the left half of the frame, resting on the floor line",
+          "SymbolicMeaning": "Code, intent, and supporting artifacts that no longer fit in working memory and have settled into the surrounding world"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "Wide 16:9 composition, identical staging to the companion 'fits' image",
+      "The floor line runs at the exact same height as in the companion image",
+      "The container sits in the SAME position and is the SAME size as the companion image — emphasizing that only the contents changed, not the boundary",
+      "The container's LEFT wall is visibly TORN/BROKEN OPEN at mid-height — a ragged gap in the outline where contents have been extruded under internal pressure",
+      "Shapes are wedged HALF-IN/HALF-OUT of the broken wall, oozing through the opening — not floating in mid-air",
+      "ALL shapes outside the container are RESTING on the floor — none are airborne, none are falling, none have motion trails or speed lines",
+      "Read the scene as the AFTER state of an overflow (settled, static) — NOT the moment of an explosion or eruption",
+      "The pile spreads horizontally along the floor with low height — like accumulated overflow, not a thrown pile",
+      "Visual metaphor: overfilled grain sack with a torn side, contents settled on the ground — NOT a piñata bursting open",
+      "A few shapes are clipped at the left edge of the frame, implying the spill continues beyond view",
+      "Composition still uses clean vector linework — the failure is in arrangement and the torn wall, not in rendering",
+      "No red, no warning colors, no exclamation marks, no motion lines — the static overflow speaks for itself"
+    ],
+    "LightingFocus": "Same flat editorial illumination as the companion image. Each spilled shape has a soft ground-shadow tying it to the floor, reinforcing that everything is at rest. Tension comes entirely from composition (the over-packed container, the torn left wall, the settled pile), not from motion cues, lighting, or color shifts."
+  },
+
+  "ArticleContext": {
+    "Title": "When Intent Moves Faster Than Code",
+    "Tags": ["GenAI", "ai", "agentic", "software design"],
+    "Themes": ["context window overflow", "sprawl", "doesn't fit", "large codebase", "spillover"],
+    "Mood": "crowded, uncomfortable, failure-state"
+  },
+
+  "PromptKeywords": [
+    "clean editorial infographic",
+    "flat vector illustration",
+    "wide 16:9 composition",
+    "white background",
+    "horizontal floor line",
+    "container resting on floor",
+    "overfilled container with torn left wall",
+    "shapes extruded under pressure through broken wall",
+    "settled pile of shapes resting on floor",
+    "static overflow aftermath — not motion",
+    "no airborne shapes, no motion trails",
+    "shapes wedged half-in half-out of broken seam",
+    "overflow has come to rest",
+    "shapes clipped at left edge of frame",
+    "soft slate blue outlines",
+    "amber focal accent",
+    "muted pastel shape fills",
+    "small caps labels",
+    "no photorealism"
+  ]
+}
