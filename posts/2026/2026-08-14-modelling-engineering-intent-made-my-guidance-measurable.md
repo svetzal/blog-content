@@ -1,7 +1,7 @@
 ---
 title: "Modelling Engineering Intent Made My Guidance Measurable"
 date: "2026-08-14"
-published: false
+published: true
 description: "I'd been trying to test my agent guidance for a couple of years, and every attempt died in the same place. What changed wasn't the harness — it was modelling engineering intent as structured records, which made the guidance specific enough to measure at all."
 tags:
   - GenAI
