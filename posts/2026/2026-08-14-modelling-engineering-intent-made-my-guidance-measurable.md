@@ -20,7 +20,7 @@ Every attempt died in the same place. Not for lack of a harness. I could never s
 
 Here's the shape of it. A guidance file of mine said, in effect, write good tests. Fine advice. Now build a test for it. What does the checker look for? You reach for a model to grade the output, which is asking the thing under test to mark its own homework. Or you read the diff yourself and form an impression, which is real information but isn't repeatable and doesn't accumulate. Two years of that.
 
-What changed this summer wasn't the measurement. It was that I finally had something specific enough to measure — and it came from somewhere I wasn't expecting.
+What changed this summer wasn't the measurement. It was that I finally had something specific enough to measure — because I'd spent the spring building exactly that, without yet knowing whether it would work.
 
 ## Two Kinds of Intent
 
@@ -64,7 +64,7 @@ Look at the tradeoff above: colocated specs mean production directories fill wit
 
 ## Where Team Agreement Lives
 
-A side effect I didn't design for: separating the fields changed how disagreements go.
+Separating the fields was also meant to change how disagreements go, and it does.
 
 In the convention arguments I've been part of, two engineers are often disputing different fields entirely. One disputes the strategy — they'd solve it differently. One disputes the tradeoff — they think the cost is higher than stated. One disputes the expectation — they don't believe that's true of *this* codebase. Three different conversations, and in a prose style guide they collapse into "I don't like this rule."
 
@@ -98,15 +98,19 @@ keys = [
 
 989 records is far more than I'd hand an agent, and that's the point. The corpus isn't the artifact. A compiled slice is.
 
-## The Evidence Field Was the Test Spec All Along
+## The Evidence Field Pays Off
 
-Here's where it turned into something I hadn't planned.
+Here's where a bet I'd been carrying since June finally settled.
 
-I set out to build a behavioural benchmark — give an agent a real task twice, once with the compiled guidance and once without, and see what differs. The obvious hard part is deciding what to check for. That's precisely where my previous two years of attempts had stalled.
+The `evidence` field is in the schema for exactly one reason: to force every principle to name the observable proof that it's working. I put it there to make records testable. That was the whole point of it.
+
+What I didn't know was whether it would hold up. It's easy to write a field into a schema, and much harder to know whether the sentences that actually end up in it will carry enough to build anything on. I filled that field in for all 989 records on the belief that it would one day be worth the effort, and belief is all it was.
+
+So when I set out to build the behavioural benchmark, the obvious hard part was deciding what to check for — precisely where my previous two years of attempts had stalled.
 
 Except I didn't have to decide. The records already said.
 
-Every intent carries an `evidence` field describing the observable proof that the strategy is working. For the record above: *"Pytest collection recognizes the configured `*_spec.py` convention and every production module requiring tests has a colocated spec file."* That's not documentation. That's a test specification, written months before I had any thought of benchmarking.
+For the record above, the evidence reads: *"Pytest collection recognizes the configured `*_spec.py` convention and every production module requiring tests has a colocated spec file."* That's a test specification. It was written to be one.
 
 So the checker is a transcription:
 
@@ -129,7 +133,7 @@ def check_colocated_specs(root, production, tests):
 
 Read the evidence sentence and the function side by side. The function is what the sentence says, in Python. I didn't invent a metric for this principle; I implemented the one the record already carried.
 
-And there's a detail I only noticed afterward, which I find genuinely striking. The evidence field is *typed* — `gate`, `static-analysis`, `test`, `review` — and the type turned out to predict how well I could automate it:
+The evidence field is also *typed* — `gate`, `static-analysis`, `test`, `review` — and that typing is where the payoff got sharp. The type drew the line between what I could mechanize and what I couldn't, cleanly:
 
 | Intent | Evidence type | What I could build |
 | --- | --- | --- |
@@ -144,7 +148,7 @@ And there's a detail I only noticed afterward, which I find genuinely striking. 
 
 The three mechanically-typed records I transcribed exactly. The `review`-typed ones I could only approximate — and the check I got *wrong* on first run was one of them. My gateway check recognized only class-shaped gateways; a real agent wrote a module of functions instead, which is at least as idiomatic in Python, and my scorer marked a good solution non-compliant. The agent was right and I was wrong.
 
-Nobody was thinking about benchmarks when they chose `review` for that record. The evidence type was recording something true about the principle — that confirming it takes judgement — and that fact showed up months later as the boundary of what I could mechanize. Modelling well told me something about the world I hadn't asked it.
+That's the taxonomy doing its job. Typing the evidence was a claim about each principle — this one a machine can confirm, that one needs a person — and the benchmark is where those claims got checked against reality. They held. The records marked `review` are genuinely the ones where my mechanical proxy is thinnest, and the one I got wrong sits squarely among them. A distinction I'd drawn on judgement in June turned out to predict, in August, exactly where automation would run out.
 
 ## The Rest of the Harness
 
@@ -174,11 +178,13 @@ If that holds up across more trials and models, six of those eight records are p
 
 I want to be careful about what I'm claiming, because the useful part isn't the benchmark.
 
-I built the intent model for reasons that had nothing to do with measurement. I wanted tacit engineering judgement written down. I wanted disagreements to have an address. I wanted [Foundry](https://github.com/svetzal/foundry) to run autonomous work against something more durable than a prompt string. Measurability was not on the list.
+Every field in that record is load-bearing by design. I wanted tacit engineering judgement written down. I wanted disagreements to have an address. I wanted [Foundry](https://github.com/svetzal/foundry) to run autonomous work against something more durable than a prompt string. And I wanted principles specific enough that you could tell whether one had been followed — which is why `strategy` has to be concrete and `evidence` has to be observable.
 
-But structure that's specific enough to act on turns out to be specific enough to check. The `strategy` field has to be concrete or an agent can't follow it. The `evidence` field has to be observable or a human can't confirm it. Those two constraints, imposed for entirely practical reasons, are also exactly the constraints a measurable claim has to satisfy. The measurement fell out of the modelling.
+Designing for that is one thing. Knowing it was going to work is another, and I didn't. For months the intent model was a bet I was paying for daily — every record another six fields to think through, on the belief that the structure would eventually earn back more than it cost. That's a long time to hold a hypothesis with nothing to check it against.
 
-That's the part I hadn't seen coming, and it's why this attempt worked where the previous two years of attempts didn't. I wasn't missing a harness. I was missing a unit.
+This is where it settled. The same specificity that lets an agent act on a principle is what lets me test whether it did. Not a coincidence I stumbled into — the thing I was building toward, finally standing up under load.
+
+And it's why this attempt worked where the previous two years didn't. I wasn't missing a harness. I was missing a unit.
 
 It doesn't make my guidance correct. A record scoring 1.0 in both arms might still be worth keeping — as a record of an agreement, as a hedge against model drift, as something a *human* should read. Measurement doesn't decide what to keep. It means I'm deciding with evidence rather than a hunch.
 
