@@ -188,12 +188,14 @@ And it's why this attempt worked where the previous two years didn't. I wasn't m
 
 It doesn't make my guidance correct. A record scoring 1.0 in both arms might still be worth keeping — as a record of an agreement, as a hedge against model drift, as something a *human* should read. Measurement doesn't decide what to keep. It means I'm deciding with evidence rather than a hunch.
 
-## What I'd Rather Do Next Time
+## What I'm Doing Next
 
 My guidance files got longer and never shorter. I'd add a line whenever an agent did something I didn't want, and never take one out, because taking one out meant guessing which was load-bearing.
 
-There's advice going around that when a new model drops, you throw the whole file away and rebuild only what you still need. I understand the instinct and I think it's directionally right. It was also, for two years, the only move I had — and it's blunt. An amputation where what I wanted was a diagnosis.
+There's advice going around that when a new model drops, you throw the whole file away and rebuild only what you still need. I understand the instinct and I think it's directionally right. It was also, for two years, the only move I had — and it's blunt. An amputation where I wanted a diagnosis.
 
-I've got 989 records now, and a way to ask of any one of them whether it still changes what an agent builds. Most of them I've never tested. I've tested eight, once, against one model, on one task. That's barely a beginning.
+Now there's a diagnosis. So the work in front of me is to widen it: more trials per arm so the numbers stop being anecdotes, more models, and scenarios that exercise the records I haven't touched. Eight of 989 is barely a beginning, and the remaining 981 are the point.
 
-But it's a beginning that produces a number, and the number exists because I stopped writing principles as prose and started modelling them as intent. When the next model lands, I don't want to throw the file away. I want to run it and find out which lines stopped mattering.
+The records that come back scoring the same in both arms don't get deleted on sight — some of them I'll keep as a statement of what we've agreed, or as a hedge for when a model's defaults drift. But they stop being invisible. I'll know which lines are doing work and which are being carried, and that's a decision I get to make on evidence.
+
+When the next model lands, I'm not throwing the file away. I'm running it, and finding out which lines stopped mattering.
