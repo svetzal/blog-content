@@ -1,0 +1,147 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Hero image for a post about modelling engineering intent as structured records, and how that structure made agent guidance measurable",
+
+  "Character": {
+    "Description": "A highly competent, focused woman coder and systems thinker",
+    "Age": "Middle-aged, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": {
+      "Type": "Size 16, feminine",
+      "UpperBody": "Broad shoulders",
+      "LowerBody": "Slim hips"
+    },
+    "Face": {
+      "Complexion": "Light",
+      "Eyes": "Blue-grey",
+      "Expression": "Thoughtful, analytical",
+      "Makeup": "Bold, pinks or purples, with a touch of shimmer"
+    },
+    "Hair": {
+      "Color": "Grey/silver",
+      "Length": "Long",
+      "Style": "Flowing, big wavy curls"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Professional dark blazer over tech-casual attire, sleeves pushed up",
+          "Context": "Always present, bridges corporate and technical worlds"
+        }
+      ]
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": ["Holographic panel glow", "Screen glow", "Rim lighting"],
+      "Shadows": "Sharp, emphasizing texture and form"
+    },
+    "ColorPalette": {
+      "Primary": ["Cyan", "Electric Blue", "Magenta", "Lime Green"],
+      "Accents": ["Silver", "White", "Cool Blues", "Metallic purples"],
+      "Treatment": "High saturation on the structured side, deliberately desaturated grey on the prose side"
+    },
+    "Atmosphere": {
+      "Effects": ["Bokeh", "Atmospheric haze", "Neon glow", "Reflections on chrome and glass"],
+      "Mood": "Analytical, electric, the quiet of noticing something you weren't looking for"
+    }
+  },
+
+  "Situation": {
+    "Name": "Where the Prose Resolves",
+    "Setting": "A darkened studio workspace dominated by one enormous holographic display wall split into two halves. The LEFT half is a dense, softly-blurred wall of running prose — grey-white paragraphs of guidance text, uncountable, edges bleeding into haze, no structure anywhere in it. The RIGHT half is the same knowledge resolved into a crisp grid of discrete glowing record cards, each card showing six short labelled rows stacked vertically. Down the middle runs a visible resolution seam where the blurred prose crystallizes into hard card edges, like fog condensing into lattice.",
+    "Camera": "Wide mid-shot. Subject stands off-centre in the left third, turned three-quarters away from camera toward the display wall, which fills the right two-thirds of frame. Haze and negative space across the upper left for text overlay.",
+    "CharacterPose": {
+      "Expression": "Focused concentration giving way to recognition — eyes narrowed on one small detail, the particular stillness of noticing something she did not set out to find",
+      "BodyPosition": "Standing close to the display wall, weight settled, shoulders squared to the structured half",
+      "Gesture": "Holding a chrome machinist's caliper up to the display, its jaws closed precisely around one single row of one record card"
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Sleeves pushed up to the forearm",
+          "Application": "Worn"
+        },
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern rectangular frames",
+          "Application": "Worn; the six-row card structure reflected small and sharp in the lenses"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "Wall of unstructured prose",
+          "Description": "Dense grey-white running paragraphs, deliberately soft-focus and dull, no headings, no edges, extending past the frame",
+          "Application": "Fills the left half of the display wall, visibly duller and flatter than the right",
+          "SymbolicMeaning": "Guidance you cannot decompose, select from, or measure"
+        },
+        {
+          "Name": "Grid of six-field intent records",
+          "Description": "Discrete glowing cards in a neat lattice, each showing six short labelled rows in sequence, cyan edges, crisp and countable",
+          "Application": "Fills the right half of the display wall, receding in perspective",
+          "SymbolicMeaning": "The same judgement made structural — capability, threat, expectation, strategy, evidence, tradeoff"
+        },
+        {
+          "Name": "Chrome dial caliper",
+          "Description": "A precision machinist's caliper, brushed chrome, dial face catching the panel light",
+          "Application": "Held in her hand, jaws closed exactly around the sixth row of one card — that row alone burning lime green while every other row on the wall stays cyan",
+          "SymbolicMeaning": "The evidence field was a measurement specification before anyone thought to measure"
+        },
+        {
+          "Name": "Two small result fragments",
+          "Description": "Two faint floating file-tree slivers low in the frame, one reading a conventional tests directory, one reading a spec file sitting beside its module",
+          "Application": "Small, dim, lower right, well below the caliper — present but not competing",
+          "SymbolicMeaning": "The measured difference between guided and unguided work"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Darkened studio",
+          "Description": "Matte black floor and walls with faint reflections of the display wall",
+          "Application": "Surrounds the scene, keeps all light sourced from the panels"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "The left half of the wall is measurably duller and softer than the right — the eye should read the right side as resolved and the left as fog",
+      "Exactly one row on the entire wall glows lime green: the row the caliper is measuring",
+      "The caliper is a real mechanical instrument among holograms — the one physical, precise object in the frame",
+      "Her attention is on the single measured row, not on the wall as a whole"
+    ],
+    "LightingFocus": "Cool cyan dominant from the structured record grid, a flat desaturated grey wash from the prose half, and one small lime-green highlight from the measured row catching the caliper's chrome and the edge of her glasses",
+    "ThematicTags": ["systems-thinking", "intent-modelling", "measurement", "engineering-judgement"]
+  },
+
+  "ArticleContext": {
+    "Title": "Modelling Engineering Intent Made My Guidance Measurable",
+    "Tags": ["GenAI", "Software Engineering", "Principles", "Craft", "Agentic Development", "Intent"],
+    "Themes": [
+      "prose has no unit of measure",
+      "engineering intent as six-field records",
+      "specificity is what makes measurement possible",
+      "the evidence field was a test spec all along"
+    ],
+    "Mood": "analytical"
+  },
+
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "neon light",
+    "cinematic lighting",
+    "high contrast",
+    "16:9 aspect ratio",
+    "wide shot",
+    "banner composition"
+  ]
+}

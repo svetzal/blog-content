@@ -10,6 +10,8 @@ tags:
   - Craft
   - Agentic Development
   - Intent
+image: images/modelling-engineering-intent-banner.png
+imageAlt: "Silver-haired woman in a dark blazer standing before a vast holographic wall, its left half a blurred fog of unstructured prose and its right half a crisp lattice of six-field intent records, holding a chrome caliper closed precisely around one glowing row"
 ---
 
 I've been trying to test my agent guidance for a couple of years. Different approaches, different projects — swap the prompt and eyeball the diff, keep a scratch file of things the agent got wrong, ask a second model whether the first one followed the rules.
@@ -22,13 +24,13 @@ What changed this summer wasn't the measurement. It was that I finally had somet
 
 ## Two Kinds of Intent
 
-I'd already been doing intent modelling for a while, but on the product side. Epilogue Tracker models *product intent*: actors, their goals, the interactions that get them there, the outcomes that matter. It's user-centred design made structural — instead of a backlog of tasks, you hold a model of who benefits and why, and work descends from that.
+I'd already been doing intent modelling for a while, but on the product side. [Epilogue Tracker](https://vetzal.ca/epilogue-tracker/guide/philosophy.html) models *product intent* using the [Screenplay Pattern](https://serenity-js.org/handbook/design/screenplay-pattern/): actors, their goals, the interactions that serve those goals, and the journeys that carry someone through. It's user-centred design made structural — instead of a backlog of tasks, you hold a model of who benefits and why, and work descends from that. Its philosophy page puts the test bluntly: work matters when it helps real people achieve their goals.
 
 That worked well enough that the gap on the other side started to bother me. Product intent tells you what the software should do for people. It says nothing about the engineering judgement that keeps the codebase able to keep doing it — the capabilities I'm protecting, the failure modes I've already been bitten by, the strategies I reach for and, crucially, when they stop paying off.
 
 That judgement lived where it usually lives: in my head, and in prose files that had grown long enough that I no longer knew which parts were load-bearing.
 
-So earlier this summer I started [Alloy](https://vetzal.com/alloy/), to do for engineering intent what Epilogue Tracker does for product intent. Its charter puts the goal plainly: *make a team's engineering judgement explicit enough that agents can act on it*. Same modelling discipline, different domain — and deliberately a separate one, because engineering concerns that get filed as product backlog items either distort the backlog or quietly vanish from it.
+So earlier this summer I started [Alloy](https://vetzal.ca/alloy/) ([source](https://github.com/svetzal/alloy)), to do for engineering intent what Epilogue Tracker does for product intent. Its charter puts the goal plainly: *make a team's engineering judgement explicit enough that agents can act on it*. Same modelling discipline, different domain — and deliberately a separate one, because engineering concerns that get filed as product backlog items either distort the backlog or quietly vanish from it.
 
 ## The Six-Field Record
 
@@ -36,7 +38,7 @@ Alloy models one engineering judgement as a record with six fields. The whole th
 
 > We need to preserve this **capability** because this **threat** matters under this **expectation**, so we prefer this **strategy**, require this **evidence**, and accept this **tradeoff**.
 
-Here's a real record, unedited:
+Here's a [real record](https://github.com/svetzal/guidelines/blob/main/intents/craftsperson/python/colocated-module-specifications.toml), unedited:
 
 ```toml
 id = "guidelines.intent.colocated-module-specifications"
@@ -74,9 +76,9 @@ Once the fields are separate, a disagreement has an address. You can accept a ca
 
 ## From Model to Corpus
 
-Alloy's intent model landed in June. In July I turned it on my own guidance: sixteen hand-written craftsperson agent files — Python, Rust, Elixir, Swift, Kotlin, Go and the rest — decomposed into 989 records in that six-field shape.
+Alloy's intent model landed in June. In July I turned it on my own guidance: sixteen hand-written [craftsperson agent files](https://github.com/svetzal/guidelines) — Python, Rust, Elixir, Swift, Kotlin, Go and the rest — decomposed into [989 records](https://github.com/svetzal/guidelines/tree/main/intents) in that six-field shape. They're browsable as the [Craftsperson Intent Atlas](https://vetzal.ca/guidelines/) if you'd rather read them than clone them.
 
-That decomposition is the thing prose couldn't give me. I can now select a subset, version one idea independently of its neighbours, and ask of any single record whether it still earns its place. A profile names what a particular agent needs, and a compiler turns it into an AGENTS.md:
+That decomposition is the thing prose couldn't give me. I can now select a subset, version one idea independently of its neighbours, and ask of any single record whether it still earns its place. A profile names what a particular agent needs, and a [compiler](https://github.com/svetzal/context-mixer2) turns it into an AGENTS.md:
 
 ```toml
 id = "python-craftsperson-fx"
@@ -148,7 +150,7 @@ Nobody was thinking about benchmarks when they chose `review` for that record. T
 
 ## The Rest of the Harness
 
-The measurement itself is straightforward once the checks exist. Two arms, everything held constant except the compiled AGENTS.md. The task is a small settlement package: fetch a currency rate over HTTP, convert an invoice, apply a tiered fee, round to minor units, fail in two distinguishable ways. Ordinary work, chosen because doing it at all forces all eight decisions.
+The [measurement itself](https://github.com/svetzal/context-mixer2/tree/main/benchmark/exercises) is straightforward once the checks exist. Two arms, everything held constant except the compiled AGENTS.md. The task is a small settlement package: fetch a currency rate over HTTP, convert an invoice, apply a tiered fee, round to minor units, fail in two distinguishable ways. Ordinary work, chosen because doing it at all forces all eight decisions.
 
 The starting skeleton is deliberately barren — no tests, no domain models, no gateway, default pytest config. If the skeleton demonstrates the conventions, a competent agent copies them in *both* arms and I'd be measuring imitation rather than guidance.
 
@@ -174,7 +176,7 @@ If that holds up across more trials and models, six of those eight records are p
 
 I want to be careful about what I'm claiming, because the useful part isn't the benchmark.
 
-I built the intent model for reasons that had nothing to do with measurement. I wanted tacit engineering judgement written down. I wanted disagreements to have an address. I wanted Foundry to run autonomous work against something more durable than a prompt string. Measurability was not on the list.
+I built the intent model for reasons that had nothing to do with measurement. I wanted tacit engineering judgement written down. I wanted disagreements to have an address. I wanted [Foundry](https://github.com/svetzal/foundry) to run autonomous work against something more durable than a prompt string. Measurability was not on the list.
 
 But structure that's specific enough to act on turns out to be specific enough to check. The `strategy` field has to be concrete or an agent can't follow it. The `evidence` field has to be observable or a human can't confirm it. Those two constraints, imposed for entirely practical reasons, are also exactly the constraints a measurable claim has to satisfy. The measurement fell out of the modelling.
 
