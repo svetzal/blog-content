@@ -11,7 +11,7 @@ tags:
   - Agentic Development
   - Intent
 image: images/modelling-engineering-intent-banner.png
-imageAlt: "Silver-haired woman in a dark blazer and glasses standing before a vast holographic wall, its left half a blurred fog of unstructured prose and its right half a crisp lattice of glowing intent records, holding a chrome dial caliper up to the one row on the wall lit green"
+imageAlt: "Silver-haired woman in a dark blazer and glasses facing a vast holographic wall of glowing intent record cards, their rows labelled Capability, Threat, Expectation, Strategy, Evidence and Tradeoff, a faint fog of unstructured text behind her — she holds a flat steel ruler level across the one card lit green"
 ---
 
 I've been trying to test my agent guidance for a couple of years. Different approaches, different projects — swap the prompt and eyeball the diff, keep a scratch file of things the agent got wrong, ask a second model whether the first one followed the rules.

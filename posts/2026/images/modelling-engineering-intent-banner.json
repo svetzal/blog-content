@@ -61,7 +61,7 @@
     "CharacterPose": {
       "Expression": "Focused concentration giving way to recognition — eyes narrowed on one small detail, the particular stillness of noticing something she did not set out to find",
       "BodyPosition": "Standing close to the display wall, weight settled, shoulders squared to the structured half",
-      "Gesture": "Holding a chrome machinist's caliper up to the display, its jaws closed precisely around one single row of one record card"
+      "Gesture": "Holding a plain flat steel ruler horizontally against the display, its straight edge laid across one record card and spanning that card's full width"
     },
     "Props": {
       "Character": [
@@ -90,10 +90,10 @@
           "SymbolicMeaning": "The same judgement made structural — capability, threat, expectation, strategy, evidence, tradeoff"
         },
         {
-          "Name": "Chrome dial caliper",
-          "Description": "A precision machinist's caliper, brushed chrome, dial face catching the panel light",
-          "Application": "Held in her hand, jaws closed exactly around the sixth row of one card — that row alone burning lime green while every other row on the wall stays cyan",
-          "SymbolicMeaning": "The evidence field was a measurement specification before anyone thought to measure"
+          "Name": "Flat steel ruler",
+          "Description": "A plain flat steel machinist's rule — a simple straightedge, rectangular, with clear engraved tick marks and numerals along one edge. Deliberately simple geometry: no hinges, jaws, dials, or moving parts of any kind",
+          "Application": "Held level in one hand and laid flat across the display, its edge spanning the full width of the single record card whose evidence row is lit lime green — every other row on the wall stays cyan",
+          "SymbolicMeaning": "The evidence field was written to be a measurement specification, and here it is being used as one"
         },
         {
           "Name": "Two small result fragments",
@@ -112,11 +112,12 @@
     },
     "KeyDetails": [
       "The left half of the wall is measurably duller and softer than the right — the eye should read the right side as resolved and the left as fog",
-      "Exactly one row on the entire wall glows lime green: the row the caliper is measuring",
-      "The caliper is a real mechanical instrument among holograms — the one physical, precise object in the frame",
-      "Her attention is on the single measured row, not on the wall as a whole"
+      "Exactly one card on the wall has a row lit lime green: the card the ruler is spanning",
+      "The ruler is a plain flat straightedge with tick marks, held level and square to the card — simple, rigid, unambiguous, with no moving parts",
+      "The ruler is the one physical, mechanical object in a frame otherwise full of holograms",
+      "Her attention is on the single card she is measuring, not on the wall as a whole"
     ],
-    "LightingFocus": "Cool cyan dominant from the structured record grid, a flat desaturated grey wash from the prose half, and one small lime-green highlight from the measured row catching the caliper's chrome and the edge of her glasses",
+    "LightingFocus": "Cool cyan dominant from the structured record grid, a flat desaturated grey wash from the prose half, and one small lime-green highlight from the measured row catching the brushed steel of the ruler and the edge of her glasses",
     "ThematicTags": ["systems-thinking", "intent-modelling", "measurement", "engineering-judgement"]
   },
 
