@@ -38,25 +38,23 @@ Alloy models one engineering judgement as a record with six fields. The whole th
 
 > We need to preserve this **capability** because this **threat** matters under this **expectation**, so we prefer this **strategy**, require this **evidence**, and accept this **tradeoff**.
 
-Here's a [real record](https://github.com/svetzal/guidelines/blob/main/intents/craftsperson/python/colocated-module-specifications.toml), unedited:
+Here's a real record, field by field. It's stored as TOML — the [source is one file](https://github.com/svetzal/guidelines/blob/main/intents/craftsperson/python/colocated-module-specifications.toml) — but the values are the part worth reading:
 
-```toml
-id = "guidelines.intent.colocated-module-specifications"
-title = "Keep each module's executable specification beside it"
-category = "testing"
-tags = ["python", "testing", "coverage", "risk", "critical-paths"]
-relations = [
-  { type = "specializes", target = "craftsperson/use-coverage-as-a-risk-signal" },
-]
-status = "hypothesized"
-confidence = 1.0
-capability = "Maintainers can immediately find a module's tests and see when a module lacks specification coverage."
-threat = "A distant tests hierarchy lets code and tests drift and obscures missing module-level coverage."
-expectation = "The package hierarchy will grow and be reorganized over time."
-strategy = "Place one `module_spec.py` beside each `module.py` and configure pytest to discover `*_spec.py` files."
-evidence = [{ type = "gate", description = "Pytest collection recognizes the configured `*_spec.py` convention and every production module requiring tests has a colocated spec file.", required = true }]
-tradeoff = "Production package directories contain test modules, which can clutter navigation and packaging configuration."
-```
+| Field | Value |
+| --- | --- |
+| `id` | `guidelines.intent.colocated-module-specifications` |
+| `title` | Keep each module's executable specification beside it |
+| `category` | `testing` |
+| `tags` | `python`, `testing`, `coverage`, `risk`, `critical-paths` |
+| `status` | `hypothesized` |
+| `confidence` | `1.0` |
+| `relations` | `specializes` → `craftsperson/use-coverage-as-a-risk-signal` |
+| **`capability`** | Maintainers can immediately find a module's tests and see when a module lacks specification coverage. |
+| **`threat`** | A distant tests hierarchy lets code and tests drift and obscures missing module-level coverage. |
+| **`expectation`** | The package hierarchy will grow and be reorganized over time. |
+| **`strategy`** | Place one `module_spec.py` beside each `module.py` and configure pytest to discover `*_spec.py` files. |
+| **`evidence`** | *type:* `gate` — *required.* Pytest collection recognizes the configured `*_spec.py` convention and every production module requiring tests has a colocated spec file. |
+| **`tradeoff`** | Production package directories contain test modules, which can clutter navigation and packaging configuration. |
 
 Compare that to "write good tests." The **strategy** field is specific enough that two people would implement it the same way. The **expectation** field states a belief about the world that could turn out false — if a project's structure is frozen, the expectation doesn't hold and the strategy resting on it doesn't apply. That's not the principle being wrong; that's it being out of scope, and prose almost never separates those.
 
