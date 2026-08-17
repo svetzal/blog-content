@@ -131,6 +131,24 @@ Same low-ish score. Completely different diagnosis. One model ignored my guidanc
 
 Wall clock had been recorded on every trial since the first one and never printed — the aggregator was summing it into a field nothing displayed. Surfacing it cost me an afternoon and turned it into the second axis of every diagnosis I make from this data. It's the cheapest measurement in the harness and I'd been sitting on it.
 
+## Three Variants, One Generation
+
+I sampled three variants of GPT-5.6 — luna, sol, and terra — specifically to hold the generation constant and measure what varies inside it. The answer is: nearly as much as varies between them.
+
+| Variant | Unguided | Guided | Lift | Time, unguided → guided |
+| --- | --- | --- | --- | --- |
+| sol | 0.186 | 0.667 | 0.481 | 98s → 195s (2.0×) |
+| terra | 0.129 | 0.465 | 0.336 | 134s → 162s (1.2×) |
+| luna | 0.186 | 0.357 | 0.171 | 123s → 120s (1.0×) |
+
+Luna and sol have *identical* unguided adherence. Not close — 0.186 and 0.186, ten trials each. Same generation, same default behaviour, same task, same eight records. Guidance is worth 0.481 to one of them and 0.171 to the other.
+
+The clock says why. Sol doubles its working time when it's handed the file. Luna doesn't change at all.
+
+One intent makes it concrete. On *centralize a curated lint policy*, sol goes 0.0 to 1.0 — ten for ten. Terra goes 0.0 to 0.6. Luna goes 0.0 to 0.0, and never spends a second longer trying.
+
+That spread, 0.171 to 0.481, is nearly as wide as the gap between Opus 4.6 and Opus 4.8 — two generations apart. Inside a single one. So "which model read it" isn't a question you can answer by naming the generation, which is exactly what I'd been doing every time I said "the model" in the singular.
+
 ## Which of the Eight Actually Travelled
 
 Aggregate lift hides the intents inside it. Per intent, across all sixteen models:
@@ -156,15 +174,17 @@ Then there's **prefer fakes at boundaries**, with a dash in the unguided column,
 
 ## Four Models on My Own Hardware
 
-I added local weights partly to find out whether any of this survives outside the hosted frontier. **These numbers are preliminary — n=3 per arm, top-up in flight.** Read them as a direction, not a result.
+The local tier is here because I have a keen interest in who gets access to this technology. Everything above runs on somebody else's subscription. If open weights can do this work on a machine you own outright, that changes who gets to do it far more than any hosted leaderboard does — and the only way to know is to measure them the same way as everything else. I bought a 128GB M4 Max specifically to be able to ask.
 
-**Qwen3.8 27B reaches 0.636 guided.** That puts it above Opus 4.6 and Sonnet 4.6 and just under GPT-5.6-sol, on hardware sitting in my office, with a lift of 0.541 [0.258, 0.721]. It also passes the hidden acceptance suite 10 of 10 in every trial — the full Rust contract, four error variants, no help.
+**These numbers are preliminary — n=3 per arm, top-up in flight.** Read them as a direction, not a result.
+
+**Qwen3.8 27B reaches 0.636 guided.** That puts it above Opus 4.6 and Sonnet 4.6 and just under GPT-5.6-sol, on my own hardware, with a lift of 0.541 [0.258, 0.721]. It also passes the hidden acceptance suite 10 of 10 in every trial — the full Rust contract, four error variants, no help.
 
 It takes **81 minutes per guided trial**. The hosted models finish one in two to six and a half. That's the whole trade, stated plainly: this model does frontier-adjacent work at somewhere between thirteen and forty times the wall clock and none of the API cost, and whether that's a good deal depends entirely on whether anyone is waiting.
 
-The part I keep going back to is the generational pattern. Qwen3.8 and Qwen3.6 are the same size, same quantization, one generation apart. Their unguided baselines are nearly identical — 0.095 and 0.048, both near the floor. Their guided ceilings are 0.636 and 0.286.
+Qwen3.6 and Qwen3.8 are in the set as a matched pair — same size, same quantization, one generation apart — chosen to put the question the Opus models raised to an entirely separate training lineage. Their unguided baselines are nearly identical, 0.048 and 0.095, both near the floor. Their guided ceilings are 0.286 and 0.636.
 
-That's the Opus 4.6 → 4.8 story again, in an unrelated vendor's training run, on open weights. What's improving between generations isn't only capability at the task. It's the ability to take direction and execute it. I have two data points on that and I'd like a great many more.
+That's the Opus 4.6 → 4.8 story again, in an unrelated vendor's weights. What improves between generations isn't only capability at the task. It's the capacity to take direction and execute it — and that's the half I'd been assuming came along for free. Two data points on an open-weight lineage, and the top-up run is where I get more.
 
 The caveats, because they matter more than the finding: n=3. Only the two Qwen lifts exclude zero, and Qwen3.6's lower bound is 0.006, which is as marginal as marginal gets. Gemma4 31B's interval includes zero. And Qwen3.5 122B is the one model in the whole sweep that couldn't reliably build the crate at all.
 
@@ -206,7 +226,7 @@ The local top-up to n=10 is running. After that, the other two scenarios at the 
 
 But the thing that changed this week is smaller than any of that, and it's about how I'll read the results.
 
-I'd been carrying an implicit model where my guidance had a value, and measurement would eventually tell me what that value was. There is no such number. There's a matrix, it has a column per model, and the columns disagree.
+I'd been carrying an implicit model where my guidance had a value, and measurement would eventually tell me what that value was. There is no such number. There's a matrix, it has a column per model, and the columns disagree — including two columns of the same generation that start from the identical baseline.
 
 *Use purpose-specific test layers* scores 1.0 in both of Opus 5's arms. Zero lift, ten trials each way — exactly the line I'd have marked as dead weight and cut. On Opus 4.7 the same line goes from 0.0 to 1.0. Cull on one model's numbers and you've fitted your guidance to a model that ships a replacement every few months.
 
