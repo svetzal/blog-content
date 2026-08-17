@@ -40,7 +40,7 @@ Sometimes I've seen contributors take on attitudes, not unlike the attitudes tha
 
 **Use it Because They Know What They're Doing**
 
-One of my favourite ideas I originally heard from [Simon Phipps](http://www.webmink.net/minkblog.htm), who attributes [Bill Joy](http://en.wikipedia.org/wiki/Bill_Joy). It's the idea that you can't hire all the good people. They're just not available to you. A great example of this is the Apache Lucene project.
+One of my favourite ideas I originally heard from [Simon Phipps](https://webmink.com), who attributes [Bill Joy](http://en.wikipedia.org/wiki/Bill_Joy). It's the idea that you can't hire all the good people. They're just not available to you. A great example of this is the Apache Lucene project.
 
 Go to the Lucene [project management committee](http://lucene.apache.org/who.html) page, google the names you find there. You'll find some really smart folks that you'd love to have on your team, but they're all over the world, often employed, and just simply unavailable. But they know their stuff.
 

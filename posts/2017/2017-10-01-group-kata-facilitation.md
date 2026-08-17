@@ -20,7 +20,7 @@ Choose your kata ahead of time, and come in prepared with it. A projector or TV 
 
 There are some helpful technologies out there too, if the team wants to explore a new programming language or test framework then [cyber-dojo](http://cyber-dojo.org) is a great zero-setup web based environment with which to start. If you're doing this within an organization, I recommend supporting the [cyber-dojo Foundation](http://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html) who assembled and maintain the technologies._
 
-Any kata will do, though when starting a practice regime with a team [I like to focus on simpler code katas like Fizzbuzz](https://codingculture.io/2017/05/13/worthiness-fizzbuzz-kata/). I find it useful to start from a baseline, uncover some assumptions, and help the pairs focus on their approach rather than solving a puzzle.
+Any kata will do, though when starting a practice regime with a team [I like to focus on simpler code katas like Fizzbuzz](/2017/2017-05-13-worthiness-fizzbuzz-kata). I find it useful to start from a baseline, uncover some assumptions, and help the pairs focus on their approach rather than solving a puzzle.
 
 ## Choosing a Theme
 

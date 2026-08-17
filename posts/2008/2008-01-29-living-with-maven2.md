@@ -10,7 +10,7 @@ tags:
 ---
 I often see a lot of complaining about the [Apache Maven](http://maven.apache.org/) build tool. In fact, sometimes I do a lot of complaining about it myself.
 
-The fact is, however, that ever since my friend [Mike Bowler](http://www.sphericalimprovement.com/blogs/mbowler/) introduced me to it I've been hooked.
+The fact is, however, that ever since my friend Mike Bowler introduced me to it I've been hooked.
 
 **The Good**
 
@@ -40,7 +40,7 @@ In fact, I find it's good practice to **occasionally erase** your local workstat
 
 **The Ugly**
 
-Yeah, documentation has never been Maven's strong point. Get the [Better Builds with Maven](http://www.devzuz.com/web/guest/products/resources#BBWM) book (it's free). Seriously, get it and give it a quick read. Then go back to the Maven website and things will make more sense for you.
+Yeah, documentation has never been Maven's strong point. Get the Better Builds with Maven book (it's free). Seriously, get it and give it a quick read. Then go back to the Maven website and things will make more sense for you.
 
 **The Tips and Tricks**
 
@@ -57,3 +57,7 @@ These are some tips I can provide when working with Maven:
 - Make sure you understand what dependencies you're using that are provided at run-time (say inside your server container), and mark them as such - huge candidates are things like servlet-apis, j2ee-apis, etc.
 
 These simple tips will help keep your Maven builds lean and clean and dependable, and let you drop in any developer familiar with Maven to have them immediately productive.
+
+---
+
+*Link note (2026): two linked sites from 2008 are no longer online and could not be traced, so those references are unlinked.*

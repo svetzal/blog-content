@@ -31,7 +31,7 @@ I feel accepted by the LLC community, by the agile coaching community, and that 
 
 Regular life of course is still a struggle. It's a common struggle though, and I feel better equipped to bear it.
 
-This year marked the launch of my first software service ([primr.io](https://primr.io)) in 12 years. I'm excited for it, but I have the same fears as many entrepreneurs - will it be successful, will it survive, will people care about it. 2016 will tell me that.
+This year marked the launch of my first software service (primr.io) in 12 years. I'm excited for it, but I have the same fears as many entrepreneurs - will it be successful, will it survive, will people care about it. 2016 will tell me that.
 
 What I find most interesting though, is that for years I've strived to figure out a product that I could build, and after the turmoil of 2014 what arose seems a merging of my social justice advocacy and my software skills, two worlds I didn't see colliding, yet in hindsight it seems so obvious.
 
@@ -54,3 +54,7 @@ My spouse and I continue our journey, still reconciling our relationship, now wi
 I don't get to see many friends, or grow many acquaintances into friendships, but that's OK. I have a couple friendships that blossomed in 2015 and help keep me energized, and I've always been a quality over quantity person when it came to friendships.
 
 I don't know what 2016 will bring me, but change is not only inevitable but required. My cash position needs to improve, and continuing on my current path isn't going to do it. That's OK though, I think it's going to be fun!
+
+---
+
+*Link note (2026): the service linked above is no longer online.*

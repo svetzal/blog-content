@@ -12,13 +12,13 @@ tags:
 ---
 I see a lot of misunderstanding around doing code kata in the work that I do.
 
-Just this week, I had a conversation with my apprentice about [Fizzbuzz](https://codingculture.io/wp-content/uploads/2017/05/Fizz_buzz). He felt it wasn't a worthwhile kata to do because the problem was so trivial. So we had a talk, and today's Saturday morning rant was born :)
+Just this week, I had a conversation with my apprentice about [Fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz). He felt it wasn't a worthwhile kata to do because the problem was so trivial. So we had a talk, and today's Saturday morning rant was born :)
 
 The purpose of kata is to practice, practice the same motions, repeatedly, until they are natural and you can stop actively thinking about them.
 
 Because that's when you expose the underlying challenges, hiding in the weeds.
 
-As programmers, many of us love programming puzzles. Some kata are great programming puzzles, and sites like [CodeWars](https://codingculture.io/wp-content/uploads/2017/05/www.codewars.com) are great at gamifying this kind of puzzle solving. That's one kind of mental agility, work on a different problem every time, get good at tackling a problem and finding a resolution. The focus is on the problem in front of your face. You move on to a new problem, more complex than the last.
+As programmers, many of us love programming puzzles. Some kata are great programming puzzles, and sites like [CodeWars](https://www.codewars.com) are great at gamifying this kind of puzzle solving. That's one kind of mental agility, work on a different problem every time, get good at tackling a problem and finding a resolution. The focus is on the problem in front of your face. You move on to a new problem, more complex than the last.
 
 That is not the purpose of kata, however.
 

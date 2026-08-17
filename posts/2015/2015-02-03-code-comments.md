@@ -22,7 +22,7 @@ Stop it.
 
 1. If you see a comment that lies, fix it or delete it. Immediately. If you leave that there, it _will_ do harm, and that harm will be _your_ responsibility.
 
-2. If you've found the [Chaos in the Matryoshka](https://codingculture.io/wp-content/uploads/2015/02/the-chaos-in-the-matryoshka), use code comments to explain _why_ the code looks as twisted as it does. Clearly. Concisely. Don't use expletives.
+2. If you've found the Chaos in the Matryoshka, use code comments to explain _why_ the code looks as twisted as it does. Clearly. Concisely. Don't use expletives.
 
 3. If you feel you need to write a comment to explain _what_ the code is doing, refactor the code so that it is clear. That's bad code. Fix it. Immediately.
 
@@ -32,3 +32,7 @@ Stop it.
 Then you estimated poorly, didn't you. Do better next time.
 
 The code you are looking at is your responsibility. Not your managers. Not your CEOs. Yours. You are the professional on the job. Own it.
+
+---
+
+*Link note (2026): this post originally linked to a former Mojility domain that I let lapse and no longer own. The original source could not be traced, so the reference is unlinked.*

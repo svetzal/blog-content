@@ -8,7 +8,7 @@ tags:
   - developer
   - architecture
 ---
-On my last post, I began dissecting what might be causing [JBoss Seam](http://labs.jboss.com/jbossseam/) to be "slow" on one of our projects. In this post, I'm going to show the results of some testing on another Seam based project which hasn't shown slow performance.
+On my last post, I began dissecting what might be causing [JBoss Seam](https://www.seamframework.org) to be "slow" on one of our projects. In this post, I'm going to show the results of some testing on another Seam based project which hasn't shown slow performance.
 
 At TWM we have a product called [Communicator](http://threewisemen.ca/article.php?id=AK6-3C) that does bulk correspondence for print or email. It archives this correspondence over a WebService interface to a central server, which has a Seam based UI to browse and examine the correspondence sent.
 
