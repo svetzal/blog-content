@@ -1,0 +1,173 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Hero image for a post about the difference between a project spec and a product spec — a well-made tool that finishes its job cleanly, and the larger territory it was never built to reach",
+
+  "Character": {
+    "Description": "A highly competent, focused woman coder and systems thinker",
+    "Age": "Middle-aged, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": {
+      "Type": "Size 16, feminine",
+      "UpperBody": "Broad shoulders",
+      "LowerBody": "Slim hips"
+    },
+    "Face": {
+      "Complexion": "Light",
+      "Eyes": "Blue-grey",
+      "Expression": "Focused, working, undeterred",
+      "Makeup": "Bold, pinks or purples, with a touch of shimmer"
+    },
+    "Hair": {
+      "Color": "Grey/silver",
+      "Length": "Long",
+      "Style": "Flowing, big wavy curls"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Professional dark blazer over tech-casual attire, sleeves pushed up past the forearm",
+          "Context": "Always present, bridges corporate and technical worlds"
+        }
+      ]
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": [
+        "Cyan glow from the small measured region of the structure",
+        "A warm amber handheld lamp she carries",
+        "Cold rim light from above"
+      ],
+      "Shadows": "Deep and swallowing, especially across the unlit upper structure"
+    },
+    "ColorPalette": {
+      "Primary": ["Cyan", "Electric Blue", "Deep Shadow", "Warm Amber"],
+      "Accents": ["Brushed steel", "Silver", "Oxidised bronze", "Dust grey"],
+      "Treatment": "Crisp saturated cyan confined to one small lit band; everything above it falling into unlit blue-black; a single warm amber pool around her hands"
+    },
+    "Atmosphere": {
+      "Effects": [
+        "Dust motes in the lamp beam",
+        "Atmospheric haze in the dark upper reaches",
+        "Reflections on worn metal",
+        "Bokeh"
+      ],
+      "Mood": "Grounded, determined, archaeological — the quiet of continuing to work in a place where many have already tried"
+    }
+  },
+
+  "Situation": {
+    "Name": "The Tool That Finishes Its Job",
+    "Setting": "The base of an enormous dark structure that fills the frame and continues up out of it — a codebase rendered as vast architecture, lattices of beams and panels and interlocking modules receding into unlit haze above. Only a narrow horizontal band at the very bottom, at her working height, is lit: a crisp cyan strip where panels are labelled, annotated, precisely finished. Everything above that band is the same structure in darkness, unlabelled, its shapes just readable in silhouette. The floor around her feet is a shallow archaeological litter of earlier tools, half-sunk into dust.",
+    "Camera": "Wide shot, low angle looking slightly up so the dark structure towers. Subject stands off-centre in the lower right third, small against the structure. Deep negative space in the dark upper left for text overlay.",
+    "CharacterPose": {
+      "Expression": "Focused concentration, jaw set, mid-task — the look of someone who has been at this a long time and is not stopping. Not frustration, not defeat, not surprise.",
+      "BodyPosition": "Braced in a working stance, one foot forward, weight committed, leaning in toward the lit band",
+      "Gesture": "One hand pressing a gleaming precision tool flat against the lit cyan band where it fits perfectly; the other hand raised above it, holding a small amber lamp up into the darkness, trying to see how far the structure goes"
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Sleeves pushed up, dust on the forearms and hem",
+          "Application": "Worn"
+        },
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern rectangular frames",
+          "Application": "Worn; the cyan lit band reflected sharp in one lens, darkness in the other"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "The new tool",
+          "Description": "A beautifully machined modern instrument — a precision template or jig of brushed steel and cyan-lit glass, obviously new, obviously excellent, immaculate next to everything else in frame. Its working edge exactly matches the height of the lit band and no more.",
+          "Application": "Held flat against the lit band, seated perfectly, doing its job correctly — clearly fitting, clearly finished, clearly not tall enough to reach the darkness above",
+          "SymbolicMeaning": "Spec-kit: well made, well fitted, and scoped to one change"
+        },
+        {
+          "Name": "The lit band",
+          "Description": "A narrow horizontal strip of the structure at working height, crisply annotated with small labels, tick marks and clean panel edges, glowing cyan",
+          "Application": "Runs the full width of frame at the bottom, the only illuminated part of the structure",
+          "SymbolicMeaning": "The project spec — the change, fully described, and finished"
+        },
+        {
+          "Name": "The dark structure above",
+          "Description": "The same lattice architecture continuing upward, vast, unlabelled, shapes discernible but no annotation anywhere on it, disappearing into haze",
+          "Application": "Occupies the upper two thirds of the frame, unlit",
+          "SymbolicMeaning": "The product spec — the system itself, still undescribed"
+        },
+        {
+          "Name": "Strata of earlier tools",
+          "Description": "Worn, superseded instruments half-buried in dust across the floor — a cracked drafting compass, a snapped bronze straightedge, a dead holographic emitter with a fogged lens, a seized set of calipers, a stack of swollen ring binders gone soft with age, a fanned deck of punch cards. Obsolete and weathered, NOT smashed or thrown — each one laid down where it stopped working.",
+          "Application": "Scattered in the shallow dust around her boots and forward into the foreground, catching a little amber lamplight",
+          "SymbolicMeaning": "Forty years of attempts at the same problem — literate programming, decision records, big design documents, the tools that came before"
+        },
+        {
+          "Name": "Amber handheld lamp",
+          "Description": "A small warm practical lamp, old and well-used, its beam narrow and honest — reaching only a short way up into the dark",
+          "Application": "Raised in her free hand, casting a warm pool on her face and on the nearest dark panels, its beam visibly falling short",
+          "SymbolicMeaning": "What she carries in her head, and how far it reaches on its own"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Dust floor",
+          "Description": "Fine pale dust over a dark hard floor, disturbed by her boots, undisturbed further out",
+          "Application": "Ground plane, holds the earlier tools"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "The new tool in her hand must read as EXCELLENT — pristine, precise, expensive, correctly seated. This is not a bad tool. It is the right tool for the lit band and the lit band only.",
+      "The earlier tools on the ground are worn and superseded, never smashed, never mocked — laid down, dusty, dignified",
+      "The lit cyan band is genuinely and satisfyingly finished: crisp labels, clean edges, complete work",
+      "The darkness above is not empty — the structure is clearly there, clearly large, just undescribed",
+      "Her amber lamp beam visibly stops short of the top of the frame",
+      "Her posture is working, not despairing: braced, forward, still going",
+      "She is small in frame against the structure, but planted and unbothered by that"
+    ],
+    "LightingFocus": "One crisp cyan band across the bottom third where the tool fits, deep unlit blue-black across the upper two thirds, and a single warm amber pool from her lamp that reaches a little way into the dark and then gives out",
+    "ThematicTags": [
+      "systems-thinking",
+      "intent",
+      "tooling",
+      "software-archaeology",
+      "craft"
+    ]
+  },
+
+  "ArticleContext": {
+    "Title": "The Spec for the Work Isn't the Spec for the Thing",
+    "Tags": ["GenAI", "Software Engineering", "Agentic Development", "Intent"],
+    "Themes": [
+      "a project spec describes a change and expires",
+      "a product spec describes the system and does not",
+      "the tool is good and scoped to a smaller job than the one you have",
+      "forty years of living-documentation attempts came before",
+      "ship anyway — the gap becomes visible by building across it"
+    ],
+    "Mood": "analytical"
+  },
+
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "cinematic lighting",
+    "high contrast",
+    "volumetric light",
+    "16:9 aspect ratio",
+    "wide shot",
+    "low angle",
+    "banner composition"
+  ]
+}
