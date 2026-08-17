@@ -1,0 +1,167 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Hero image at top of blog post, sets the tone and theme",
+
+  "Character": {
+    "Description": "A highly competent, focused woman coder and systems thinker",
+    "Age": "Middle-aged, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": {
+      "Type": "Size 16, feminine",
+      "UpperBody": "Broad shoulders",
+      "LowerBody": "Slim hips"
+    },
+    "Face": {
+      "Complexion": "Light",
+      "Eyes": "Blue-grey",
+      "Expression": "Thoughtful, analytical",
+      "Makeup": "Bold, pinks or purples, with a touch of shimmer"
+    },
+    "Hair": {
+      "Color": "Grey/silver",
+      "Length": "Long",
+      "Style": "Flowing, big wavy curls"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Professional dark blazer over tech-casual attire, sleeves often pushed up",
+          "Context": "Always present, bridges corporate and technical worlds"
+        }
+      ]
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": ["Screen glow", "Rim lighting", "Side lighting"],
+      "Shadows": "Sharp, emphasizing texture and form"
+    },
+    "ColorPalette": {
+      "Primary": ["Cyan", "Electric Blue", "Magenta", "Lime Green"],
+      "Accents": ["Silver", "White", "Cool Blues", "Metallic purples"],
+      "Treatment": "High saturation, strong contrast between cool tech light and deep shadow"
+    },
+    "Atmosphere": {
+      "Effects": ["Bokeh", "Atmospheric haze", "Neon glow", "Reflections on surfaces"],
+      "Mood": "Analytical, electric, high-stakes"
+    }
+  },
+
+  "Situation": {
+    "Name": "Sixteen Columns, One Deck",
+    "Setting": "A darkened measurement hall. Sixteen tall, narrow translucent glass columns stand in a row receding into haze, evenly spaced, each the height of two people. Every column contains the identical vertical stack of eight small glowing intent cards — the SAME eight cards, in the SAME order, repeated in all sixteen columns. What differs is how far up each column the cards are lit: one column at the far left is lit all the way to the top, one column is entirely dark with its eight cards visible but cold and grey, and the rest are lit to scattered intermediate heights, forming a jagged, non-monotonic skyline. Faint numeric readouts float at the base of each column.",
+    "Camera": "Wide shot, low three-quarter angle looking along the row of columns so the varying lit heights read as an uneven skyline. Subject stands in the right third in the foreground, turned three-quarters away from camera toward the columns. Negative space and haze across the upper left for text overlay.",
+    "CharacterPose": {
+      "Expression": "Focused analytical concentration, slight squint, mouth set — the look of someone reading a distribution she built the instrument to produce, and finding it disagrees with itself",
+      "BodyPosition": "Standing close to the row, weight settled, shoulders squared to the columns",
+      "Gesture": "One hand resting flat against the glass of a SHORT, barely-lit column in the foreground — deliberately not the tall bright one, which stands further down the row untouched"
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Sleeves pushed up to the forearm",
+          "Application": "Worn"
+        },
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern rectangular frames",
+          "Application": "Worn; the jagged column skyline reflected small and sharp across the lenses"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "Sixteen identical card stacks",
+          "Description": "Sixteen tall glass columns, each holding the same vertical stack of eight small glowing cards in the same order — visibly, unmistakably the same deck repeated sixteen times",
+          "Application": "Fill the middle and left of frame, receding into haze",
+          "SymbolicMeaning": "One slice of guidance, read by sixteen different models"
+        },
+        {
+          "Name": "The uneven lit skyline",
+          "Description": "The fill height of each column varies wildly and without pattern — full, near-empty, mid, dark, high, low — deliberately NOT a smooth ascending or descending progression",
+          "Application": "The dominant visual rhythm across the row",
+          "SymbolicMeaning": "The same records are worth wildly different amounts, and not in order of capability"
+        },
+        {
+          "Name": "One wholly dark column",
+          "Description": "A single column whose eight cards are present but entirely unlit, cold grey, no glow at all",
+          "Application": "Standing mid-row among lit neighbours",
+          "SymbolicMeaning": "A model that read the guidance and changed nothing"
+        },
+        {
+          "Name": "Floating interval brackets",
+          "Description": "Small thin horizontal error-bar brackets hovering beside each column's readout, some narrow, some wide enough to cross zero",
+          "Application": "Faint, at the base of the columns, secondary to the skyline",
+          "SymbolicMeaning": "Every rate carries a width; a single trial is an anecdote"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Darkened measurement hall",
+          "Description": "Matte black floor and walls with the columns' light reflecting in long streaks across the floor",
+          "Application": "Surrounds the scene, keeps all light sourced from the columns"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "The eight cards must read as IDENTICAL from column to column — same shapes, same order, same positions. Only the lit height differs",
+      "The lit heights must be jagged and unordered, never a neat ascending staircase",
+      "Exactly one column is completely unlit while its neighbours glow",
+      "Her hand rests on a short, dim column, not on the tallest one",
+      "Her attention is on the column she is touching, not on the brightest in the row"
+    ],
+    "LightingFocus": "Cool cyan and electric blue dominant, sourced entirely from the lit card stacks. The tall fully-lit column throws the strongest glow from further down the row, while the short column under her hand gives only a weak magenta-tinged underlight across her fingers and jaw — the composition should make the eye ask why she is touching the dim one",
+    "ThematicTags": [
+      "systems-thinking",
+      "measurement",
+      "model-variation",
+      "engineering-judgement"
+    ]
+  },
+
+  "ArticleContext": {
+    "Title": "What Sixteen Models Did With the Same Eight Principles",
+    "Tags": [
+      "GenAI",
+      "Software Engineering",
+      "Principles",
+      "Craft",
+      "Agentic Development",
+      "Intent"
+    ],
+    "Themes": [
+      "the value of a guidance slice is not a property of the slice",
+      "lift is not monotonic in model capability",
+      "needing guidance and being able to act on it are different axes",
+      "measuring this is mostly a fight against your own instrument"
+    ],
+    "Mood": "analytical"
+  },
+
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "neon light",
+    "cinematic lighting",
+    "high contrast",
+    "16:9 aspect ratio",
+    "wide shot",
+    "banner composition"
+  ],
+
+  "CompositionNotes": {
+    "Framing": "Wide shot along a receding row of columns to show the full uneven skyline",
+    "SubjectPlacement": "Character in the right third foreground, columns filling the middle and left",
+    "DepthOfField": "Shallow to medium; far columns softened by haze but their lit heights still legible",
+    "TextSafeArea": "Upper left haze reserved for text overlay"
+  }
+}
