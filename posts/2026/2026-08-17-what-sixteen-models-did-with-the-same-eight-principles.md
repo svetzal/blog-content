@@ -32,7 +32,9 @@ The scenario is `rate-card`, one of three in the harness and the only Rust one: 
 
 Those eight are disjoint from the sets the other two scenarios score, which is deliberate: two exercises scoring the same intents would measure the harness twice and the guidance once.
 
-The exercises are seeded from the DeepSWE benchmarks. That's a recent move on my part, and the reason is contamination: enough of the older benchmark suites have been trained into the models by now that a task drawn from one tells you about a model's memory rather than its judgement. Reaching for a newer suite is the cheapest defence available, and it's not a permanent one.
+The exercises are seeded from [DeepSWE](https://deepswe.datacurve.ai), Datacurve's software-engineering benchmark — 113 tasks across 91 repositories in five languages, Rust among them, with v1.1 dated four days before I'm writing this. That recency is the entire reason I'm using it. Enough of the older suites have been trained into the models by now that a task drawn from one tells you about a model's memory rather than its judgement.
+
+DeepSWE is built against exactly that: its tasks are written from scratch rather than adapted from existing commits or pull requests, and it carries a canary string so it can detect its own presence in a training corpus. Seeding from a suite built that way is the cheapest defence available to me. It isn't a permanent one — a canary tells you when it's been breached, not that it won't be.
 
 What I change is the starting project, and that change is doing real work. A skeleton has to be neutral on every decision it scores — no existing tests, no domain models, no gateway, default configuration — because a skeleton that already demonstrates the conventions measures whether an agent can copy, not whether guidance changes anything. That neutrality *is* the control arm. Without it there's nothing to compare against, which is why the task comes off the shelf and the starting point doesn't.
 
