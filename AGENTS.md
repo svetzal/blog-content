@@ -169,7 +169,8 @@ node ~/.claude/skills/blog-image-generator/scripts/generate-image.mjs \
   posts/YYYY/images/scene-name.png
 ```
 
-Requires `OPENAI_API_KEY` environment variable.
+Requires `OPENAI_API_KEY`, which lives in `~/.secrets.sh`. Agent shells do not load it, so run
+the generator as `source ~/.secrets.sh && node ...`.
 
 6. **Update article frontmatter**:
 

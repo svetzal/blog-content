@@ -40,7 +40,7 @@ There's a quiet vindication in this for anyone who spent the last two decades on
 
 The developers who internalized those practices — whether through formal training or years of hard-won pain that taught the same lessons in a different accent — are the most important people in our field right now. They built the muscles agentic development requires. They know how to keep code small. They know how to keep concerns where they belong. They know when to delete. Those are the skills that determine whether your agent keeps moving or grinds to a halt against the codebase you let grow.
 
-I built an eight week program in CodingCulture.io (since dismantled) that coached people through exactly this — Beck's four rules, testing in legacy systems, design through testing, coupling and cohesion. At the time it felt like keeping a quiet flame lit for craft. Now it feels like the curriculum nobody knew they were going to need.
+I built an eight week program under Coding Culture, a coaching practice I ran under Mojility and have since retired, that coached people through exactly this — Beck's four rules, testing in legacy systems, design through testing, coupling and cohesion. At the time it felt like keeping a quiet flame lit for craft. Now it feels like the curriculum nobody knew they were going to need.
 
 ## Intent Became the Bottleneck
 
