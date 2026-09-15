@@ -17,7 +17,7 @@ This repository contains markdown content for Stacey Vetzal's personal blog ("St
 
 This content repo is embedded as a **git submodule** inside the site repo:
 
-```
+```text
 ~/Work/Projects/Personal/stacey-blog/     # Parent: git@github.com:svetzal/stacey.vetzal.com.git
 ├── content/                               # THIS REPO (submodule → https://github.com/svetzal/blog-content.git)
 │   ├── posts/YYYY/                        # Blog posts by year
@@ -54,6 +54,7 @@ The publish script:
 ## Content Organization
 
 ### Blog Posts (`posts/`)
+
 - Posts are organized by year in `posts/YYYY/` directories (e.g., `posts/2025/`, `posts/2024/`)
 - Post filenames follow the pattern: `YYYY-MM-DD-slug.md`
 - Each YYYY directory may have an associated `images/` subdirectory for post-specific images (e.g., `posts/2024/images/`)
@@ -61,6 +62,7 @@ The publish script:
 ## Frontmatter Conventions
 
 ### Published Blog Posts
+
 ```yaml
 ---
 title: "Post Title"
@@ -76,6 +78,7 @@ imageAlt: "Alt text for image"
 ```
 
 ### Draft Posts and Knowledge Base Notes
+
 ```yaml
 ---
 date: "YYYY-MM-DD"
@@ -84,6 +87,7 @@ published: false
 ```
 
 **Key Patterns:**
+
 - `published: true` indicates ready-to-publish blog posts
 - `published: false` or missing `published` field indicates drafts/notes
 - Dates can be quoted strings or unquoted (both formats exist in the codebase)
@@ -93,18 +97,21 @@ published: false
 ## Content Conventions
 
 ### Obsidian-Specific Syntax
+
 - Wiki-style links: `[[Page Name]]` or `[[filename]]`
 - Image embeds: `![[image-filename.jpeg]]`
 - These links work in Obsidian but may need transformation for the blog platform
 
 ### Images
+
 - Blog post images stored in `posts/YYYY/images/` subdirectories
-- Generic assets in `assets/` (e.g., `assets/avatar.jpg`, `assets/gatsby-icon.png`)
+- Generic assets in `assets/` (e.g., `assets/reference-1.jpg`, `assets/gatsby-icon.png`)
 - Some images referenced with full paths, others with relative paths
 
 ## Topic Focus
 
 This blog covers software development, agile practices, design thinking, and cognitive biases:
+
 - **Technical content**: TDD, software design, development practices
 - **Process/Methodology**: Agile coaching, project estimation, team dynamics
 - **Thinking**: Cognitive biases, problem-solving approaches
@@ -121,23 +128,23 @@ This blog covers software development, agile practices, design thinking, and cog
 
 ## Image Generation
 
-Blog posts use a consistent visual system featuring a silver-haired woman systems thinker in a cyberpunk style. A Claude Code Skill at `~/.claude/skills/blog-image-generator/` handles image generation.
+Blog posts use a consistent visual system featuring a silver-haired woman systems thinker in a cyberpunk style. The cmx-managed `blog-image-generator` skill handles image generation from every supported agent platform.
 
-**Character Variant:** This blog exclusively uses the `cyberpunk` character variant from `~/.claude/skills/blog-image-generator/character-variants/cyberpunk.json`. Do not use other character variants.
+**Character Variant:** This blog exclusively uses the `cyberpunk` character variant from the loaded `blog-image-generator` skill's `character-variants/cyberpunk.json`. Do not use other character variants.
 
-**Scene Variants:** Scene style variants are available in `~/.claude/skills/blog-image-generator/scene-variants/`. The default is `cyberpunk.json`.
+**Scene Variants:** Scene style variants are available in the loaded skill's `scene-variants/` directory. The default is `cyberpunk.json`.
 
 ### Image Types
 
 | Type | Aspect Ratio | Size | Purpose |
-|------|--------------|------|---------|
+| ------ | -------------- | ------ | --------- |
 | `banner` | 16:9 | 1536x1024 | Hero image at top of article |
 | `callout` | 1:1 | 1024x1024 | Inline illustration within article |
 | `diagram` | 9:16 | 1024x1536 | Tall infographic or process diagram |
 
 ### Procedure for New Articles
 
-1. **Read baseline specs** in `~/.claude/skills/blog-image-generator/baselines/`:
+1. **Read baseline specs** in the loaded skill's `baselines/` directory:
    - `banner.json`, `callout.json`, `diagram.json` — image type templates
    - `scene.schema.json` — full schema reference
 
@@ -157,22 +164,17 @@ Blog posts use a consistent visual system featuring a silver-haired woman system
    - Frustrated: harsh contrasts, exasperated expression, chaotic elements
    - Contemplative: soft diffused lighting, distant gaze, quiet setting
 
-5. **Generate image**:
+5. **Generate image** from the content repository root. Resolve `generate-image.mjs` from the currently loaded skill directory rather than assuming a platform-specific installation path:
 
 ```bash
-# First time setup (only needed once)
-cd ~/.claude/skills/blog-image-generator/scripts && npm install && cd -
-
-# Generate image (run from the content/ directory)
-node ~/.claude/skills/blog-image-generator/scripts/generate-image.mjs \
+node /absolute/path/to/blog-image-generator/scripts/generate-image.mjs \
   posts/YYYY/images/scene-name.json \
   posts/YYYY/images/scene-name.png
 ```
 
-Requires `OPENAI_API_KEY`, which lives in `~/.secrets.sh`. Agent shells do not load it, so run
-the generator as `source ~/.secrets.sh && node ...`.
+The dependency-free generator requires Node.js 18+ and `OPENAI_API_KEY`, which lives in `~/.secrets.sh`. Agent shells do not load it, so run the generator as `source ~/.secrets.sh && node ...`.
 
-6. **Update article frontmatter**:
+1. **Update article frontmatter**:
 
 ```yaml
 image: images/scene-name.png
@@ -181,7 +183,7 @@ imageAlt: "Description of the scene for accessibility"
 
 ### File Organization
 
-```
+```text
 posts/2025/images/
 ├── article-banner.png        # Generated banner
 ├── article-banner.json       # Banner specification
@@ -190,7 +192,7 @@ posts/2025/images/
 └── article-diagram.png       # Process diagram
 ```
 
-The skill documentation (`~/.claude/skills/blog-image-generator/SKILL.md`) contains full examples and detailed instructions.
+The loaded skill's `SKILL.md` contains full examples and detailed instructions.
 
 ## Presentation Generation
 
@@ -199,7 +201,7 @@ Blog content can be converted to Slidev markdown presentations, or talks can be 
 ### Presentation Types
 
 | Type | Slides | Template | Best For |
-|------|--------|----------|----------|
+| ------ | -------- | ---------- | ---------- |
 | Conference talk | 20-40 | `talk-from-scratch.md` | Full-length presentations |
 | Blog conversion | 10-25 | `blog-post-conversion.md` | Turning articles into talks |
 | Technical demo | 10-20 | `technical-demo.md` | Code-heavy walkthroughs |
