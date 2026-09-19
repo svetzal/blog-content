@@ -1,14 +1,14 @@
 ---
 title: "A 45-year-old computer learns to invent computer names"
 date: 2026-09-20
-published: false
+published: true
 image: "images/coco-llm-1-banner.png"
 imageAlt: "An illustration: a silver-haired woman in a dark blazer sits at a night-time workbench lit by neon, one hand on the keyboard of a worn 1981 Radio Shack Color Computer, the other holding a twenty-sided die, smiling at a small green-phosphor monitor whose text is a soft unreadable glow"
 description: "My Tandy Color Computer from 1981 starts from random numbers and, a minute later, invents computer names that never existed. Post one of five on how it does that."
 tags:
   - ai
   - coco
-  - 6809
+  - "6809"
   - learning
 ---
 
@@ -87,7 +87,7 @@ ARCHIMEDES ARCHIMEDES ARCHIMEDES 400 SINCLAIR COLOR
 
 Nonsense, and the particular kind of nonsense you'd expect from throwing dice: words repeated, no maker at the front, no end in sight.
 
-Then it trains. Fifty-eight examples, twenty times through, which is 1,160 corrections, each one a guess, a measurement of how wrong the guess was, and a nudge. Under the emulator, running at the real machine's clock rate, that takes under a minute. Then I ask for names again, same seed, same request:
+Then it trains. Fifty-eight examples, twenty times through, which is 1,160 corrections, each one a guess, a measurement of how wrong the guess was, and a nudge. Under the emulator, running at the real machine's clock rate, that takes a little over a minute. Then I ask for names again, same seed, same request:
 
 ```text
 SINCLAIR AMIGA
