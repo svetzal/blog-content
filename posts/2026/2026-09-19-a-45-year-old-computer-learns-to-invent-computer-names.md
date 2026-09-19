@@ -129,4 +129,12 @@ make present EXP=4
 
 It trains at the 1981 clock rate, parks when it's done, and draws names when you press a key. Nothing is sped up.
 
+## Watch it work, start to finish
+
+Here's the whole thing, about two minutes, recorded from the emulator running at the real machine's clock rate. Nothing is sped up. Twenty times through the examples, then PRESS ANY KEY, then the same seed drawn before training and after it, one name at a time. The pause between names is the 6809 doing 29 multiplies and a softmax for every token.
+
+<video controls preload="metadata" playsinline style="width: 100%; max-width: 640px; display: block; margin: 0 auto; image-rendering: pixelated;" src="/2026/images/coco-llm-1-live-training.mp4">
+The emulator training for two minutes and then drawing names.
+</video>
+
 Next post: the training weights, why every word gets three of them, and why it's useful to think in probabilities.
