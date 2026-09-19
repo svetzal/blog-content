@@ -1,6 +1,6 @@
 ---
 title: "A 45-year-old computer learns to invent computer names"
-date: 2026-09-20
+date: 2026-09-19
 published: true
 image: "images/coco-llm-1-banner.png"
 imageAlt: "An illustration: a silver-haired woman in a dark blazer sits at a night-time workbench lit by neon, one hand on the keyboard of a worn 1981 Radio Shack Color Computer, the other holding a twenty-sided die, smiling at a small green-phosphor monitor whose text is a soft unreadable glow"
