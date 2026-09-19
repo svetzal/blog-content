@@ -26,7 +26,7 @@ Here's the whole answer. Guess the next word. Measure how wrong you were. Nudge 
 
 That's it. That's the trick. Everything the big models do rides on that loop, run on a great deal more text with a great many more numbers. So I wanted to see the loop with my own eyes, at a scale where I could point at every part of it, on a machine where nothing could hide. The CoCo was the obvious candidate (it's fair to say it's responsible for my entire career), and 6809 assembly language was the only way it was going to fit.
 
-The model on it has 290 numbers. Not 290 million, or billion. Two hundred and ninety.
+The model has 290 parameters, numbers that we can change to fit it to a purpose.
 
 ## The training data
 
