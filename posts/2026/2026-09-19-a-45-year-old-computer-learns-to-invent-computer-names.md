@@ -100,6 +100,25 @@ Sinclair never made an Amiga. Commodore never made an Atari. But it's interestin
 
 Sit with that for a minute. Is that impressive? Yes. Is it understanding? No. It's the same distance from understanding as the big models are, and here the distance is short enough to walk.
 
+## Why stop at twenty?
+
+Twenty times through the examples is a number I chose, and it's worth saying why, because the obvious move is to keep going. The training loop reports a number called the loss, which measures how wrong the guesses are, and it keeps falling well past twenty. At twenty it's 1.83. At sixty it's 1.27. By that measure the model is still getting better.
+
+So why not run it for sixty? Here's what it draws at sixty, same seed, same request:
+
+```text
+SINCLAIR BBC
+SINCLAIR II
+COMMODORE 64
+TANDY MODEL COMPUTER
+```
+
+COMMODORE 64 is in the training data. At sixty, so are 143 of the 200 draws, word for word. The model has stopped inventing and started reciting. At twenty, 18 of the 200 were copies. Same 290 parameters, same arithmetic. The only thing that moved was how long I let it run, and it slid from making things up to handing back what it was given.
+
+That has a name: overfitting. The model has fit the training data so closely that the training data is most of what comes out. And I only know it happened because I measured the thing I actually cared about, new names with the right shape, rather than the number the training loop hands me. The loss said keep going. The names said stop.
+
+There's a trap at the other end too. At epoch zero, before any training, every draw is new, and not one of them is a name. New is easy. New and shaped is the whole game, and twenty was where this model had the most of both: 179 of 200 draws that were not in the training data and still looked like a computer.
+
 ## Try it yourself
 
 Everything is on GitHub, at [svetzal/coco-llm](https://github.com/svetzal/coco-llm). With the XRoar emulator installed, one command starts the run from random numbers:
