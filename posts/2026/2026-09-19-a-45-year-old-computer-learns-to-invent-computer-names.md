@@ -3,7 +3,7 @@ title: "A 45-year-old computer learns to invent computer names"
 date: 2026-09-19
 published: true
 image: "images/coco-llm-1-banner.png"
-imageAlt: "An illustration: a silver-haired woman in a dark blazer sits at a night-time workbench lit by neon, one hand on the keyboard of a worn 1981 Radio Shack Color Computer and the other holding a twenty-sided die, smiling at a beige CRT monitor showing dark blocky Star Trek episode titles on the CoCo's bright green display"
+imageAlt: "An illustration: a silver-haired woman in a dark blazer sits at a night-time workbench lit by neon, one hand on the keyboard of a worn 1981 Radio Shack Color Computer and the other holding a twenty-sided die, smiling at a beige CRT monitor showing rows of dark blocky characters on the CoCo's bright green display"
 description: "My Tandy Color Computer from 1981 starts from random numbers and, a minute later, invents computer names that never existed. Post one of five on how it does that."
 tags:
   - ai

@@ -95,7 +95,7 @@
         {
           "Name": "Color composite CRT showing the CoCo green raster",
           "ReferenceImage": "coco-llm-1-screen-reference.png",
-          "Description": "A vintage beige composite monitor like the reference photo, with a deep black inner bezel and curved glass. The CoCo display is not green text on black: it is a bright, nearly rectangular green raster with dark, chunky 8-bit characters arranged in short 32-column rows. Preserve the episode-title screen from the reference, including its slight CRT bloom, scan softness and curved-glass reflections.",
+          "Description": "A vintage beige composite monitor like the reference photo, with a deep black inner bezel and curved glass. The CoCo display is not green text on black: it is a bright, nearly rectangular green raster with dark, chunky 8-bit characters arranged in short 32-column rows. Preserve the screen's slight CRT bloom, scan softness and curved-glass reflections. Character shapes should be visible, but individual words should remain too soft to read.",
           "Application": "On the desk beside the computer, angled toward the character, the main light source",
           "SymbolicMeaning": "The output, seen but not read"
         },
@@ -127,9 +127,9 @@
     "KeyDetails": [
       "The computer is unmistakably the worn 1981 machine from the reference photo, not a generic retro computer",
       "The CRT faithfully resembles the reference photo: beige cabinet, black bezel, curved glass, and a bright green CoCo raster with dark blocky 32-column characters",
-      "The dark 8-bit episode titles match the real screen in the reference photograph",
+      "The dark 8-bit character rows resemble the real screen in the reference photograph without introducing readable copy",
       "Green screen light on her face and hands against cyan and magenta from the room",
-      "No added words anywhere in the image: no signs, posters, slogans, neon lettering, book titles, mug slogans, labels or captions. The only readable text is the authentic episode-title output on the CRT.",
+      "No readable words anywhere in the image: no signs, posters, slogans, neon lettering, book titles, mug slogans, labels or captions. The CRT contains only soft, non-legible character rows.",
       "No smartwatch, no modern devices, no phone; the only technology in focus is the 1981 machine and its monitor"
     ],
     "LightingFocus": "Green raster glow from the color CRT on the character and the keyboard; neon rim light separates her from the dark room",
