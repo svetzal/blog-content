@@ -70,15 +70,13 @@ Every extra number is another 87 multiplies per example: 29 to score the tokens 
 
 The run you watched last time took about 100 seconds to reach PRESS ANY KEY, and 45 of them were multiplies. The rest is computing probabilities, the updates and the display.
 
-Six would probably still have fit my three-minute budget. Three was enough: three numbers per token told 29 tokens apart well enough that widening never earned its cost. I kept a rule to widen only when the evidence said quality was insufficient, and it never did.
-
-This three is not the window. The window is two tokens wide for a different reason: no name in the training data is longer than three tokens, so two tokens of context are enough to say what comes next. Sentences are a different job. The sentence completer in a later post has 255 tokens, a window five tokens wide and more numbers per token, because a sentence has more to keep track of than a name.
+Six would probably still have fit my three-minute budget, but three was enough. Three numbers per token told 29 tokens apart well enough that the extra width never earned its cost.
 
 The other choice I priced was the one I built first and threw away. Make a token a single character instead of a whole word and the model has to predict every letter: 12,859,560 multiplies. At eleven cycles each, the cost of the bare MUL instruction and the floor I priced it at, that is 158 seconds against a 180-second budget. At what a multiply costs in practice, it is half an hour.
 
 ## What is a parameter?
 
-Count them.
+It's just something that can change in the model.
 
 ```text
  2 window positions x 29 tokens x 3 numbers  =  174   the two tables
@@ -88,17 +86,17 @@ Count them.
                                                 290
 ```
 
-A parameter is one number that training is allowed to change. This model has 290. GPT-3 had 175 billion; DeepSeek-V3 has 671 billion. Same word, same meaning.
+This model has 290. GPT-3 had 175 billion; DeepSeek-V3 has 671 billion. But the thing I enjoyed most about doing all this was seeing what I could do at the very small end of the scale.
 
-Every term in that sum is a decision somebody made: how wide the window is, how many tokens exist, how many numbers describe each one.
+In this computer field, we seem to get quickly obsessed with scale, buying the biggest computer, the biggest graphics card, training the biggest model. I enjoy using this old hardware because I think it's easy to become wasteful these days, and there's no challenge in that. Constraints make me more creative, teach me more about how things can work.
 
 ## A score for every token
 
-The second table on that list is the scoreboard: a row of three numbers for every token the model might predict, plus that token's starting nudge. To score a token, multiply the three context numbers by the token's three weights and add the nudge. Do it 29 times and every token has a score.
+The 87 and the 29 in that count are the scoreboard: for every token the model might predict, three numbers called its weights, plus its starting nudge. To score a token, multiply the three context numbers by the token's three weights and add the nudge. Do it 29 times and every token has a score.
 
 That's 87 multiplies. Next post shows the 6809 doing one.
 
-Before training the tables are random and small, so the scores are all near zero. Here are the shares they turn into for the window END, COMMODORE, where the right answer is AMIGA:
+Before training all 290 numbers are random and small, so the scores are all near zero. Here are the shares they turn into for the window END, COMMODORE, where the right answer is AMIGA:
 
 ```text
 TRS-80   3.49%    <- the largest share, barely
@@ -129,7 +127,7 @@ Back to the window END, COMMODORE, where the right answer is AMIGA and the model
 
 AMIGA should have had 100% and got 3.45%, so the model was wrong by 0.9655. Every weight's change is that, times a rate, times what the weight contributed.
 
-Take AMIGA's row in the scoreboard, its three weights. They were multiplied by the three context numbers, minus 0.0295, minus 0.0453 and plus 0.0415, to make AMIGA's score. Each weight's contribution was its own context number, so each gets nudged by that number, scaled:
+Take AMIGA's three weights from the scoreboard. To make AMIGA's score, each was multiplied by one of the three context numbers, minus 0.0295, minus 0.0453 and plus 0.0415, the sum of the two rows fetched from the tables at the top of this post. Each weight's contribution was its own context number, so each gets nudged by that number, scaled:
 
 ```text
 context numbers      -0.0295   -0.0453   +0.0415
