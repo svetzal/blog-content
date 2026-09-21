@@ -2,7 +2,7 @@
 title: "Where the numbers live"
 date: 2026-09-27
 published: false
-description: "COMMODORE is token 13, and thirteen means nothing. Post two of five: the two tables where the model's numbers live, why each word gets three, what a parameter is, what one step of training changes, and how a score becomes something you can roll a die on."
+description: "Post two of five: the two tables where the model's numbers live, why each word gets three, what a parameter is, what one step of training changes, and how a score becomes something you can roll a die on."
 tags:
   - ai
   - coco
@@ -10,9 +10,17 @@ tags:
   - learning
 ---
 
-Last time I left you holding one fact: COMMODORE is token 13, because it's thirteenth when the words are sorted, and that is all thirteen means. There is nothing to learn from doing arithmetic on a name.
+Last post covered:
 
-So what does the model do arithmetic on? Three numbers per token, and they live in a table.
+- The loop. Guess the next token, measure how wrong the guess was, nudge every number a little in the direction that would have made it less wrong, repeat.
+- The training data. Eighteen vintage computer names, split into words, sorted and numbered: 29 tokens. COMMODORE is 13 because it is thirteenth in that list. The number is a label, not a quantity.
+- The window. Two tokens wide. The model's only job is to guess the token that comes next, so the eighteen names become 58 examples.
+- The parameters. 290 numbers that training changes.
+- Twenty epochs. Enough training to invent plausible names, not so much that it repeats the training data.
+
+This post is about the 290 numbers: where they live, what each one does, and what one training step does to them.
+
+The token number is not one of them. The arithmetic is on three numbers per token, and they live in a table.
 
 ## Two tables
 
