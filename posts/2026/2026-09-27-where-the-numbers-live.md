@@ -88,13 +88,15 @@ It's just something that can change in the model.
 
 This model has 290. GPT-3 had 175 billion; DeepSeek-V3 has 671 billion. But the thing I enjoyed most about doing all this was seeing what I could do at the very small end of the scale.
 
-In this computer field, we seem to get quickly obsessed with scale, buying the biggest computer, the biggest graphics card, training the biggest model. I enjoy using this old hardware because I think it's easy to become wasteful these days, and there's no challenge in that. Constraints make me more creative, teach me more about how things can work.
+In this computer field, we seem to get quickly obsessed with scale, buying the biggest computer, the biggest graphics card, training the biggest model. The whole world has gone crazy on this with gpu compute datacentres.
+
+I enjoy using this old hardware because I think it's easy to become wasteful these days, and there's no challenge in that. Especially if you have money. Constraints make me more creative, teach me more about how things can work.
 
 ## A score for every token
 
 The 87 and the 29 in that count are the scoreboard: for every token the model might predict, three numbers called its weights, plus its starting nudge. To score a token, multiply the three context numbers by the token's three weights and add the nudge. Do it 29 times and every token has a score.
 
-That's 87 multiplies. Next post shows the 6809 doing one.
+That's 87 multiplies, and the 6809's MUL instruction multiplies two unsigned 8-bit numbers. Each weight is stored as 16 bits but scores with its top byte, the context number goes in as all 16, and one product takes two MUL instructions plus a step to fix the sign. Next post shows the 6809 doing one.
 
 Before training all 290 numbers are random and small, so the scores are all near zero. Here are the shares they turn into for the window END, COMMODORE, where the right answer is AMIGA:
 
@@ -107,7 +109,7 @@ ATARI    3.48%
 AMIGA    3.45%    <- the right answer, in the middle of the pack
 ```
 
-Twenty-nine tokens, each near one in twenty-nine. Nothing stands out yet.
+Twenty-nine tokens, mostly indistinguished.
 
 ## Scores become shares
 
