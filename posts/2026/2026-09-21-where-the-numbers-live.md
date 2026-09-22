@@ -1,7 +1,7 @@
 ---
 title: "Where the numbers live"
-date: 2026-09-27
-published: false
+date: 2026-09-21
+published: true
 description: "Post two of five: the two tables where the model's numbers live, why each word gets three, what a parameter is, what one step of training changes, and how a score becomes something you can roll a die on."
 tags:
   - ai
