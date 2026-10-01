@@ -15,8 +15,10 @@ October 3-4, 2026; exact event date not yet supplied.
 
 The audience is a mix of engaged professionals, many with an agile coaching
 background. Assume experience with uncertainty and collaboration, but no
-familiarity with Foundry or software internals. Aim for 38 minutes, including
-about six minutes of participation and roughly 32 minutes of speaking.
+familiarity with Foundry or software internals. The [HTML deck](deck/index.html)
+has 31 illustrated speaking slides, two reference slides, and a 38:55 timing
+budget including participation. Its [presenter guide](deck/README.md) has the
+current running order and a shorter route. This outline holds the deeper material.
 
 ## The idea to leave with
 
@@ -49,7 +51,11 @@ This is Stacey's connection to Kent Beck's talk. Beck did not describe or
 endorse Foundry. The examples below show specific defects being caught and
 corrected; they are not a comparative study of development methods.
 
-## Running order
+## Original outline running order
+
+The HTML deck develops optionality through a longer illustrated example before
+the campaign cases. Its presenter guide is the current delivery order. The
+earlier outline below remains useful as an alternative arrangement.
 
 | Time | Question | Job of this section |
 | --- | --- | --- |
@@ -356,8 +362,9 @@ Source: [reconciliation and its regression tests](https://github.com/svetzal/fou
 ## Authoring home and publication path
 
 This draft follows the existing `content/presentations/<talk-slug>/` convention
-beside `finding-your-true-worth`. Keep future slides, assets, and speaker notes
-in this directory. A Slidev deck can use the shared presentation tooling.
+beside `finding-your-true-worth`. Slides, illustrations, and speaker notes are
+in `deck/`. The deck uses standalone Reveal.js HTML, matching the CoCo LLM talk's
+presentation format. Open `deck/index.html`; no build step is required.
 
 The older `~/Work/Projects/Personal/presentations/` folder contains other decks
 but is not currently a Git repository. The blog content repository gives this
@@ -365,7 +372,7 @@ talk version history and a natural home for later linking.
 
 The site's current Astro collection loads only `content/posts/**/*.md`.
 Saving this outline does not create a talk page or publish a deck. A later
-publishing step can build the deck at a stable path and add a blog post or
+publishing step can copy the deck to a stable path and add a blog post or
 talk index linking to it. The title and structure here remain editable.
 
 Private source notes and selected campaign events are in the Operations repo
