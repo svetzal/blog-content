@@ -20,6 +20,19 @@ about six minutes of participation and roughly 32 minutes of speaking.
 
 ## The idea to leave with
 
+"Reveal the problem better using optionality as a design constraint."
+
+Stacey's framing, October 1. Holding different possible approaches gives us
+different ways to see the problem. Each exposes assumptions that a single
+favoured solution can hide. Trying an approach produces evidence that can
+change our understanding of the problem as well as the next implementation.
+
+The design constraint is to keep meaningful alternatives practical to explore
+as the system evolves. Some options can close deliberately. Protect the ones
+that let us investigate important uncertainty without rebuilding everything.
+This is a proposed discipline for the talk, not a claim that Foundry currently
+generates three alternatives at every formation.
+
 "The goal gives us direction. What we learn changes the next step."
 
 A specification makes intent discussable and gives us something to test. The
@@ -126,6 +139,28 @@ and [effort to mission, around 43:30](https://www.youtube.com/watch?v=F8fBgDCf2Y
 These are paraphrases from timestamped reading notes, not verbatim quotations.
 
 ## 4. Who decides the next step?
+
+Bridge from Beck to Jerry Weinberg: different possible approaches can expose
+different understandings of the problem. Stacey recalls his rule of three in
+those terms. Treat that as a paraphrase until the exact book passage is
+verified. Weinberg's own [problem-definition essay](https://secretsofconsulting.blogspot.com/2011/07/)
+distinguishes a proposed solution from the problem it is intended to solve.
+
+Visual cue: begin with people leaving an onboarding process. A shorter form
+raises a question about effort; guided help raises a question about uncertainty;
+deferring checks raises a question about timing. Reveal each alternative and
+its question. These are hypotheses to investigate, not findings from a study.
+
+Then show a system evolving. A rule initially reaches across the workflow.
+Considering a different route exposes the assumption behind that coupling.
+Reshape the system so another rule is practical to try, retain the existing
+route, and observe what the experiment teaches us. The ability to explore a
+different explanation becomes something the design must preserve.
+
+These two visuals replace part of the verbal loop explanation below; keep
+this section within its four-minute slot. The optional band sketch can show
+the resulting room to change, but the main reveal is what alternatives teach
+us about the problem.
 
 Start with a small mission: help someone find problems in their agent guidance
 before they rely on it. The validator in the next story belongs to Context
@@ -237,8 +272,9 @@ Ask participants to choose a real goal in their work. Offer onboarding as a
 fallback. Put these prompts on one screen:
 
 - What change are you trying to produce for someone?
-- What do you currently believe will help? What could you try next?
-- What result would make you choose a different next step?
+- Name different approaches. What does each assume the problem is?
+- What small experiment could distinguish those explanations, and what would
+  you need to keep changeable to try another approach afterward?
 
 Give pairs two minutes. Then take two examples, asking specifically what
 decision the new evidence would change. If someone gives a deliverable,
