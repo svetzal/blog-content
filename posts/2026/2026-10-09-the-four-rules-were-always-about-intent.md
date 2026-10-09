@@ -14,11 +14,11 @@ tags:
 
 [Kun Chen](#kun-chen) ran an experiment this week that got a lot of people excited. On the DeepSWE eval set, he forbade an agent from writing any tests. The success rate didn't drop. It went up a hair, not significantly, while time and tokens went down, significantly. Of the thousands of tests the unrestricted arm had written, about two thirds were unit tests and a third were integration tests, and neither bucket helped at all.
 
-His read on why is the part I keep coming back to. The implementation and the tests were both the agent's interpretation of the intent, so the tests couldn't be any more accurate than the code they were checking.
+His explanation is the better half of the finding. The implementation and the tests were both the agent's interpretation of the intent, so the tests couldn't be any more accurate than the code they were checking.
 
 That's interesting empirical evidence. And then he said what the industry has been itching to hear for twenty years: tell your agents to stop writing tests. Within a day I was seeing it quoted in repo guidelines as a standing rule.
 
-I think the finding is right and the takeaway misses the mark. The reason it misses has been bothering me for a while, and it starts with a rule I thought I knew.
+The finding is right. The takeaway misses the mark, and the reason starts with a rule I thought I knew.
 
 ## One rule ate the other three
 
@@ -35,15 +35,15 @@ So I tried an experiment. What happens if you rewrite all four rules with intent
 3. **Don't duplicate your expressions of intent.** Every second copy is an invitation to diverge, and divergence is how a codebase stops meaning anything in particular.
 4. **Express intent with the smallest footprint you can manage.** Every word you spend on it is a word someone, or something, has to read.
 
-Read that list back and the original four rules are still there. Nothing got dropped. But the subject changed from *the code* to *the thing the code is for*, and that shift does more work than one word should.
+The original four rules are all still in that list. Nothing got dropped. But the subject changed from *the code* to *the thing the code is for*, and that shift does more work than one word should.
 
 ## What the eval actually measured
 
-Hold Kun Chen's result up against rule three.
+Kun Chen's result is rule three with numbers on it.
 
 An agent reads a task description. It forms an interpretation. It writes an implementation from that interpretation, and then it writes tests from the same interpretation. Two expressions of one guess. If the guess was wrong, the tests agree with the wrong code, pass, and tell you nothing. If the guess was right, the tests agree with the right code, pass, and tell you nothing you didn't already have.
 
-That's not a finding about tests. It's a finding about duplication. The eval measured what happens when you hold two copies of the same expression of intent, and the answer is what rule three has always said: the second copy costs you something and buys you nothing.
+The eval measured duplication, not tests. It measured what happens when you hold two copies of the same expression of intent, and the answer is what rule three has always said: the second copy costs you something and buys you nothing.
 
 What tests are *for* is rule one. Validate, continuously, that what we built matches what we meant. A test can only do that job if the intent it carries came from somewhere other than the code it's checking. When I write a test before the code, the intent in the test came from me, and the code has to answer to it. When a stakeholder describes a case I hadn't considered, the test that captures it is a second *source* of intent, not a second copy. That's where the validation lives. Kun Chen's own caveat points at exactly this: he suspects tests still carry value when a human can say what they mean more precisely as cases than as requirements. I'd put it more strongly. That's the only time they ever did.
 
@@ -51,13 +51,13 @@ So "stop writing tests" is the wrong rule. The right one is older and less excit
 
 ## Duplication was never about code
 
-Rule three is also the one that reorganized my week, because tests are only the most visible place it bites.
+Tests are only the most visible place rule three bites.
 
 We've always treated "no duplication" as a statement about code. Two functions that do the same thing. The same literal in six places. Copy-paste with the variable names changed. We're good at spotting that kind, and the tools are better than we are.
 
 The duplication that rots a project is the other kind. The README that explains how the config loader works, next to the config loader. The architecture decision record that says "we chose Postgres because," next to a migration that says something slightly different. The comment above the function that no longer describes the function. Each of those is a second expression of the same intent, and the moment there are two, one of them is wrong. You just don't know which yet.
 
-I've been building [Alloy](https://vetzal.ca/alloy/) and the [intent corpus behind my agent guidance](https://vetzal.ca/guidelines/) for most of this year, and that's the lens that work gave me. Once you model intent as a thing with a home, a record with an address, the duplicates become visible. The same judgement stated in a prose guide, restated in a comment, restated again in a test description. Three expressions. Three chances to drift.
+I've been building [Alloy](https://vetzal.ca/alloy/) and the [intent corpus behind my agent guidance](https://vetzal.ca/guidelines/) for most of this year. Once you model intent as a thing with a home, a record with an address, the duplicates become visible. The same judgement stated in a prose guide, restated in a comment, restated again in a test description. Three expressions. Three chances to drift.
 
 So lately the work has been subtraction. An intent exists in the code, or it exists in the documentation, but not both. If the code can carry it, with a name, a type, a test that reads as a sentence, the documentation doesn't repeat it. If the code can't carry it, because it's a tradeoff or an expectation about the world, it goes in a record, and the code doesn't try to paraphrase it.
 
