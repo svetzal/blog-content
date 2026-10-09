@@ -78,7 +78,7 @@ That's how principles evolve. You adopt them, you use them, you bump into their 
 
 So, wherever you are in your career: write down your principles. Not your team's architecture decisions. Not your company's coding standards. *Your* principles — the ones you actually use to make decisions when you're alone with the code.
 
-If you're junior, they might be things your mentor told you. Great. Write them down anyway. Watch how it changes your relationship to them — from things you follow to things you *choose* to follow. That's a meaningful shift.
+If you're junior, they might be things your mentor told you. Great. Write them down anyway. Watch how it changes your relationship to them — from things you follow to things you *choose* to follow.
 
 If you're intermediate, you probably have a mix of inherited and earned principles. Some of them conflict with each other. (Welcome to the messy middle.) Writing them down will surface those contradictions, and that's where growth lives.
 

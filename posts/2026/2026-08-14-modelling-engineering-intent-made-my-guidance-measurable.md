@@ -170,7 +170,7 @@ Without guidance, the model followed **6 of the 8 intents on its own**. With gui
 
 The two that moved were the two most specific to how I work. Unguided, the agent produced exactly what you'd predict — `tests/test_rates.py`, `tests/test_settle.py`, no `Describe` classes, no `should_` methods. Guided, it produced `rates_gateway_spec.py` sitting beside `rates_gateway.py`, with `Describe` classes and `should_` methods inside, and the pytest config updated so they'd actually be collected.
 
-The other six — frozen models, modern type syntax, plain assertions, named domain errors, an owned gateway, a pure core — the model already did unprompted. Not partially. Cleanly.
+The other six — frozen models, modern type syntax, plain assertions, named domain errors, an owned gateway, a pure core — the model already did unprompted. Cleanly.
 
 If that holds up across more trials and models, six of those eight records are paying rent in my context window every session to tell a model something it already knows.
 

@@ -51,7 +51,7 @@ It moves from production to ambiguity.
 
 In conversation with [Kris Jenkins](#kris-jenkins) on *Developer Voices*, [Henry Garner](#henry-garner) describes a shift from hands-on coding toward what he calls delegated coding: humans still own architecture, risk judgment, verification, and the definition of what the system is supposed to do, while agents increasingly handle the implementation. His bottom line is that velocity comes from clarity of intent, not from surrendering judgment.
 
-[Kris Jenkins](#kris-jenkins) usefully distinguishes between reckless "vibe coding" and this more disciplined model of delegated coding. The important question is not whether AI writes code, but where human responsibility sits relative to the code, the architecture, and the consequences. That framing matters. It gives us language for a middle path between AI boosterism and reflexive skepticism.
+[Kris Jenkins](#kris-jenkins) usefully distinguishes between reckless "vibe coding" and this more disciplined model of delegated coding. The important question is not whether AI writes code, but where human responsibility sits relative to the code, the architecture, and the consequences. It gives us language for a middle path between AI boosterism and reflexive skepticism.
 
 So what happens to all that coordination machinery we built? The PRDs, the sprint planning, the cross-functional syncs, the design-to-engineering handoffs?
 

@@ -45,7 +45,7 @@ MAX_RETRIES_BEFORE_RATE_LIMIT = 3
 
 That name is better, and it's better in a specific way. It stopped describing only our behaviour and started describing the relationship. A reader now knows the 3 isn't ours to pick freely. There's a counterparty, and they have a limit. Part of the obligation now sits in the identifier, in plain view of anyone who opens the file.
 
-So I don't want any of this read as source code being a poor medium for intent. It isn't. We just don't push it very hard. In the middle of wiring up an algorithm, expressiveness reads as overhead. What could have been a named type stops short as a string. What could have been a value object stops short as an int. What could have been a state machine stops short as a chain of ifs. We stop there because the plainer form looks computationally cheaper, and often it isn't even that. Most codebases I've worked in, mine included, could carry far more meaning than they do. Most of us stop at `MAX_RETRIES` and call it named.
+None of this means source code is a poor medium for intent. We just don't push it very hard. In the middle of wiring up an algorithm, expressiveness reads as overhead. What could have been a named type stops short as a string. What could have been a value object stops short as an int. What could have been a state machine stops short as a chain of ifs. We stop there because the plainer form looks computationally cheaper, and often it isn't even that. Most codebases I've worked in, mine included, could carry far more meaning than they do. Most of us stop at `MAX_RETRIES` and call it named.
 
 So the first answer is always to put more into the code. Push the naming, push the types, push the structure, until the code says everything code can say.
 

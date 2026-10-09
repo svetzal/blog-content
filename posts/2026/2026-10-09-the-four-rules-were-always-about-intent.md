@@ -35,7 +35,7 @@ So I tried an experiment. What happens if you rewrite all four rules with intent
 3. **Don't duplicate your expressions of intent.** Every second copy is an invitation to diverge, and divergence is how a codebase stops meaning anything in particular.
 4. **Express intent with the smallest footprint you can manage.** Every word you spend on it is a word someone, or something, has to read.
 
-The original four rules are all still in that list. Nothing got dropped. But the subject changed from *the code* to *the thing the code is for*, and that shift does more work than one word should.
+The original four rules are all still in that list. But the subject changed from *the code* to *the thing the code is for*, and that shift does more work than one word should.
 
 ## What the eval actually measured
 
@@ -65,7 +65,7 @@ So lately the work has been subtraction. An intent exists in the code, or it exi
 
 That subtraction leads somewhere I wouldn't have gone a year ago.
 
-Documentation is becoming a purely derivative artifact. Not unimportant. Derivative, in the way a compiled binary is derivative of its source. You don't hand-edit the binary. You fix the source and build again.
+Documentation is becoming a purely derivative artifact. Derivative, in the way a compiled binary is derivative of its source. You don't hand-edit the binary. You fix the source and build again.
 
 Last week I shipped [a plugin](https://github.com/svetzal/guidelines/tree/main/plugins/product-atlas) that works exactly this way for product documentation. It reads the code and whatever intent the product owner has recorded, and writes the stakeholder-facing docs from those two sources. When they disagree, it doesn't guess. It files a question, and the goal is an empty questions folder. Intent stays as the lasting statement of purpose. The documentation is regenerated from it.
 

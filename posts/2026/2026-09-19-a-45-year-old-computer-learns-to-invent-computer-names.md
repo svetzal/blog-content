@@ -14,9 +14,9 @@ tags:
 
 Last Sunday I spent the day at an exhibit table with my Tandy Color Computers, rotating through demos: a rock-paper-scissors game that learns how you play, a sentence completer, a melody that finishes the bar you give it. The one I could have left up all day was a screen of sixteen Star Trek episode titles, none of which were ever filmed. I could tell who the Star Trek fans were. They'd stop, read TRIBBLES OF ARCHONS off the green screen, and laugh.
 
-Every one of those demos is the same small piece of arithmetic, running on a machine that arrived under a Christmas tree 45 years ago with 32 kilobytes of memory. The talk I gave that afternoon opened with a promise, and I'll make it again here: by the end of this series you will know exactly how it does that, and you will be unimpressed by it in precisely the right way.
+Every one of those demos uses the same basic arithmetic, run on a machine that I got for Christmas 45 years ago with 32 kilobytes of memory. By the end of this series you will get a good glimpse inside how it works, and I'm hoping you too will be unimpressed by it in precisely the right way.
 
-This is post one of five. It covers the training data, what the model's input is at any one moment, and what happens when you let it run. The arithmetic comes next time.
+This is post one of five. It covers the training data, what tokens are and how they work, and what the context window is. The arithmetic comes next time.
 
 ## Same trick as ChatGPT
 

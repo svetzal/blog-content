@@ -100,11 +100,11 @@ Which reframes something I'd been treating as a cleanup task. I'd assumed the lo
 
 The second thing the sweep separates is one I'd been collapsing.
 
-Opus 4.6 tops out at **0.414** guided. Not because it doesn't need the guidance — it starts at 0.086, so it needs nearly all of it. It gets handed eight principles and follows three, over and over: 3/7, 3/7, 3/7, 3/7, 3/7, 2/7, 3/7, 2/7, 2/7, 5/7. That's remarkably stable. It's not failing at random; it has a ceiling.
+Opus 4.6 tops out at **0.414** guided. Not because it doesn't need the guidance — it starts at 0.086, so it needs nearly all of it. It gets handed eight principles and follows three, over and over: 3/7, 3/7, 3/7, 3/7, 3/7, 2/7, 3/7, 2/7, 2/7, 5/7. It's not failing at random; it has a ceiling.
 
 Sonnet 4.6 sits at the other pole on the other axis. Unguided adherence of **0.000** — not "low", zero, across all ten trials and every applicable intent. It follows precisely none of these eight principles left to itself, and rises to 0.457 when told. Maximum need, moderate reach.
 
-And Opus 4.8 and Opus 5 both hit **1.000** guided. Perfect adherence, every trial. Whatever else separates them, both can execute an instruction of this kind completely when it arrives.
+And Opus 4.8 and Opus 5 both hit **1.000** guided, every trial. Whatever else separates them, both can execute an instruction of this kind completely when it arrives.
 
 So there are two questions, and I'd been asking one:
 
