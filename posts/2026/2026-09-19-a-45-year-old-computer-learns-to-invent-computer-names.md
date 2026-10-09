@@ -30,8 +30,6 @@ The model has 290 parameters, numbers that we can change to fit it to a purpose.
 
 ## The training data
 
-Let's take a look at the training data...
-
 Eighteen names of vintage computers, [the file the run reads](https://github.com/svetzal/coco-llm/blob/main/experiments/data/EXP-001-computer-names.txt):
 
 ```text
@@ -98,7 +96,7 @@ TANDY ARCHIMEDES
 
 Sinclair never made an Amiga. Commodore never made an Atari. But it's interesting to think, if they had how would it be different? Out of 200 draws at that point, 179 were both new (not one of the eighteen, word for word) and the right shape (two to four words, starting with a maker). The machine has no idea what any of those words mean. It knows which tokens tend to follow which, and that turns out to be enough to make something that reads like a product line.
 
-Sit with that for a minute. Is that impressive? Yes. Is it understanding? No. It's the same distance from understanding as the big models are, and here the distance is short enough to walk.
+Is that impressive? Yes. Is it understanding? No. It's the same distance from understanding as the big models are, and here the distance is short enough to walk.
 
 ## Why stop at twenty?
 

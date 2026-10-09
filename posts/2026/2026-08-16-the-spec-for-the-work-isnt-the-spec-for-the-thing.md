@@ -35,15 +35,13 @@ def fetch_rate(currency):
         ...
 ```
 
-Magic number gone. That's Beck's second rule of simple design earning its keep — *reveals intent*. A moment ago the 3 told you nothing. Now it tells you something.
-
-Look closely at what, though. `MAX_RETRIES` describes our side of the exchange: how many times this code will try before it gives up. It says nothing about why three. And the why lives on the far side of a network boundary, in somebody else's system.
+Magic number gone. That's Beck's second rule of simple design earning its keep — *reveals intent*. A moment ago the 3 told you nothing. Now it tells you something, though only about our side of the exchange: how many times this code will try before it gives up. It says nothing about why three. And the why lives on the far side of a network boundary, in somebody else's system.
 
 ```python
 MAX_RETRIES_BEFORE_RATE_LIMIT = 3
 ```
 
-That name is better, and it's better in a specific way. It stopped describing only our behaviour and started describing the relationship. A reader now knows the 3 isn't ours to pick freely. There's a counterparty, and they have a limit. Part of the obligation now sits in the identifier, in plain view of anyone who opens the file.
+That name is better in a specific way. It stopped describing only our behaviour and started describing the relationship. A reader now knows the 3 isn't ours to pick freely. There's a counterparty, and they have a limit. Part of the obligation now sits in the identifier, in plain view of anyone who opens the file.
 
 None of this means source code is a poor medium for intent. We just don't push it very hard. In the middle of wiring up an algorithm, expressiveness reads as overhead. What could have been a named type stops short as a string. What could have been a value object stops short as an int. What could have been a state machine stops short as a chain of ifs. We stop there because the plainer form looks computationally cheaper, and often it isn't even that. Most codebases I've worked in, mine included, could carry far more meaning than they do. Most of us stop at `MAX_RETRIES` and call it named.
 
@@ -53,9 +51,9 @@ Then look at what the better name still doesn't tell you. Whose rate limit? What
 
 None of that fits in an identifier, and no refactoring will put it there. *Reveals intent* is still the right rule. I've taught it more times than I can count and I'd teach it again tomorrow. The rule has a horizon, and this is where you can see it.
 
-Do the code work first, and less is left over than you would expect. What remains is real.
+Do the code work first, and less is left over than you would expect.
 
-I've been circling that remainder for a while now. [Code is knowledge](/2026/2026-04-09-code-is-knowledge), and [every codebase is an uncompiled knowledge base](/2026/2026-04-10-every-codebase-is-an-uncompiled-knowledge-base). But only some of that knowledge makes it into the code. The rest evaporates on contact with the keyboard.
+[Code is knowledge](/2026/2026-04-09-code-is-knowledge), and [every codebase is an uncompiled knowledge base](/2026/2026-04-10-every-codebase-is-an-uncompiled-knowledge-base). But only some of that knowledge makes it into the code. The rest evaporates on contact with the keyboard.
 
 ## Why I passed on spec-kit the first time
 
@@ -63,13 +61,13 @@ GitHub released spec-kit almost exactly a year ago — first commit August 21st,
 
 I carried on with what I was already doing: hand-tuning my own agent guidance, and working through the [CRAFT ideas](https://github.com/svetzal/context-mixer/blob/main/THEORY.md) I'd been sketching in context-mixer. Chunk knowledge into small domain-coherent units, keep them from contaminating each other, fit a selection to the task in front of you. Those ideas eventually spun out into tools of their own: [Epilogue Tracker](https://vetzal.ca/epilogue-tracker/guide/philosophy.html) for product intent, [Alloy](https://vetzal.ca/alloy/) for engineering intent, and a [compiler](https://github.com/svetzal/context-mixer2) that turns intent records into agent guidance.
 
-"Incomplete" was as precise as I could be at the time. It nagged at me, because a vague objection isn't much use to anyone, including me.
+"Incomplete" was as precise as I could be at the time, and a vague objection isn't much use to anyone, including me.
 
-Spec-kit is getting a lot of attention now in circles I'm connected to. So I cloned it again this week and read the whole thing — the manifesto, every command prompt, the templates, the docs on persistence and complexity. A year of building along my own line turns out to be a good way to see what a tool does and doesn't do. I can name it now.
+Spec-kit is getting a lot of attention now in circles I'm connected to. So I cloned it again this week and read the whole thing — the manifesto, every command prompt, the templates, the docs on persistence and complexity. After a year of building along my own line, I can name it.
 
-What I found isn't a flaw. It's a category difference, and I think it's the same one a lot of people are bumping into without a word for it.
+What I found isn't a flaw. It's a category difference.
 
-Credit where it's due first, because the craft in there is real. The `[NEEDS CLARIFICATION]` marker forces a model to flag an unknown instead of quietly filling it with something plausible. That's the failure mode that worries me most about generative tooling, and they built a direct countermeasure for it. The user-story template insists each story be independently testable and deliver a viable slice on its own. That's vertical slicing, hard-won practice that a lot of teams never picked up. Success criteria have to be measurable and technology-agnostic. I've coached teams who would have been better off for exactly that discipline.
+The craft in there is real. The `[NEEDS CLARIFICATION]` marker forces a model to flag an unknown instead of quietly filling it with something plausible. That's the failure mode that worries me most about generative tooling, and they built a direct countermeasure for it. The user-story template insists each story be independently testable and deliver a viable slice on its own. That's vertical slicing, hard-won practice that a lot of teams never picked up. Success criteria have to be measurable and technology-agnostic. I've coached teams who would have been better off for exactly that discipline.
 
 ## Two kinds of spec
 
@@ -79,13 +77,11 @@ A **product spec** describes the system. It's true *now*. Here's what this thing
 
 Spec-kit builds an excellent project spec. The whole workflow is shaped for it — specify, plan, tasks, implement — all scoped to one feature directory, all pointed at one change.
 
-The clearest evidence sits in the repo itself, in a document called `spec-persistence.md`. It asks what should happen to these files after the code ships. It offers three answers: discard them, freeze them as history, or keep them as the living contract. Then it says plainly that none is the default and none is required. I found that genuinely honest, and completely diagnostic. A durable artifact doesn't need three competing theories about whether it survives contact with production. The question only comes up because the artifact was built for a change, and the change is over.
+The clearest evidence sits in the repo itself, in a document called `spec-persistence.md`. It asks what should happen to these files after the code ships. It offers three answers: discard them, freeze them as history, or keep them as the living contract. Then it says plainly that none is the default and none is required. That's honest, and it's diagnostic. A durable artifact doesn't need three competing theories about whether it survives contact with production. The question only comes up because the artifact was built for a change, and the change is over.
 
-So if you arrived wanting a product spec, you get something well-made that answers a different question. That's a disorienting feeling, and I don't think it has a name in most people's heads yet. It certainly didn't in mine a year ago.
+So if you arrived wanting a product spec, you get something well-made that answers a different question. That's a disorienting feeling. It didn't have a name in my head a year ago.
 
 ## Coherence is not correspondence
-
-The second thing I found changed how I think about this whole category of tool, including my own.
 
 Every quality check in spec-kit compares the documents to each other. Does the plan match the spec? Do the tasks cover the requirements? Any placeholders left, any terminology drift, any conflict with the project's constitution? The metrics it reports back are coverage percentage, ambiguity count, duplication count.
 
@@ -97,7 +93,7 @@ For a project spec, coherence is the right check. You have three artifacts and y
 
 That isn't a knock. It's the question I now ask of any spec framework, and I asked it of my own first. What do the checks actually range over? If the answer is "the other documents," you have a coherence engine. Your correspondence has to come from somewhere else — usually a person who knows something the documents don't.
 
-I built a [behavioural benchmark for my own guidance](/2026/2026-08-14-modelling-engineering-intent-made-my-guidance-measurable) last week, and this is what I was most careful about. I don't ask a model whether it complied. I don't read the agent's transcript. The acceptance suite runs against a real local HTTP server and never inspects module layout, because I wanted a check that could disagree with me. What an agent says it did isn't evidence that it did. What a document says about itself isn't evidence either.
+I built a [behavioural benchmark for my own guidance](/2026/2026-08-14-modelling-engineering-intent-made-my-guidance-measurable) last week. I don't ask a model whether it complied. I don't read the agent's transcript. The acceptance suite runs against a real local HTTP server and never inspects module layout, because I wanted a check that could disagree with me. What an agent says it did isn't evidence that it did. What a document says about itself isn't evidence either.
 
 These tools also drift, and I say that as somebody who spent years inside enterprise process, including a stretch doing SAFe. Spec-kit's community catalog now carries 31 presets and 152 extensions. A dozen have "governance" in the name. Three cover requirements intake alone — authoring, review, and sequencing, as separate stages. One maps tasks into Jira epics and stories. One imports the arc42 architecture document set.
 
@@ -105,7 +101,7 @@ Nobody's doing anything wrong there. I read it as a signal about the tool's shap
 
 ## What the missing artifact has to carry
 
-I should be straight about my own gaps here, because I've built for part of this and not the part I'm describing.
+I've built for part of this and not the part I'm describing.
 
 Engineering judgement I have covered. [Alloy](https://vetzal.ca/alloy/) models one judgement as a six-field record: capability, threat, expectation, strategy, evidence, tradeoff. The **expectation** field states the belief about the world that the choice rests on. The **tradeoff** field names what the choice costs, written by the person arguing for it. Between them you can tell a contract from a convenience. There are [989 of those records](https://vetzal.ca/guidelines/) now.
 

@@ -37,7 +37,7 @@ Here's today's cohort and the result, as a single picture before I dig in:
 
 ## What I Was Actually Measuring
 
-The headline number everyone wants is cost. I'll get there. But cost was never the only question, and it turned out not to be the most interesting one.
+The headline number everyone wants is cost, and it's below. But cost was never the only question.
 
 What I really wanted to know:
 
@@ -57,9 +57,9 @@ Four profiles produced binaries that crash on launch. Both qwen runs through Ope
 
 The crashes group into two well-known Bevy gotchas, both runtime-only. B0001, where two ECS systems want overlapping mutable access to the same component and Bevy panics at schedule start. And the missing-`StatesPlugin` trap, where you call `init_state` before `DefaultPlugins` and the state-transition schedule isn't registered yet. Both are catchable in under five seconds with a smoke launch — start the binary, sleep three, kill it, check the exit. The only profile that did this as part of validate was anthropic. Everyone else trusted compile-success as a proxy for "it works."
 
-It's not just about the validation contract, though. The contract helps — but the gates you wire into it, and the codebase that has to clear them, are two halves of the same question. The other half is whether what comes out is maintainable: by a human, or by the next Gen AI session that has to live in it.
+The validation contract helps — but the gates you wire into it, and the codebase that has to clear them, are two halves of the same question. The other half is whether what comes out is maintainable: by a human, or by the next Gen AI session that has to live in it.
 
-And ultimately, success is the qualitative experience of playing Space Invaders. Any game designer will tell you the same thing: the game works — but is it fun?
+And ultimately, success is the experience of playing it. The game works, but is it fun?
 
 ## The Cost Spread, and What It Doesn't Buy
 
@@ -77,7 +77,7 @@ So "GLM at $2.36 is just as good" is true on a narrow read. On this task, played
 
 The qwen failures weren't model-stupidity in the obvious sense. Plans were detailed. Risk registers named the right things. Code compiled. What broke was the model's ability to reason end-to-end about Bevy's ECS scheduler and plugin-ordering rules — the runtime invariants that live in the *spaces between* the code you've written. Every system looks fine in isolation. The conflict only shows up when they're wired together and the schedule starts running.
 
-The ollama local-hosting story is its own lesson. First run hung for three hours and produced nothing — the model went into a 33,000-token monologue with no tool calls, then the agent loop deadlocked. I dug into it. Root cause: ollama defaults flash attention to off. At 256K context, regular attention drifts numerically enough to corrupt the special tokens the qwen3 chat template uses to delimit tool calls from prose. The model loses its protocol mid-execute and starts generating free-form text it thinks is a tool call. After flipping `OLLAMA_FLASH_ATTENTION=1` and re-running, the agent loop ran clean — though the model still shipped a binary that crashes at launch, same as its OpenRouter-hosted siblings.
+The first ollama run hung for three hours and produced nothing — the model went into a 33,000-token monologue with no tool calls, then the agent loop deadlocked. I dug into it. Root cause: ollama defaults flash attention to off. At 256K context, regular attention drifts numerically enough to corrupt the special tokens the qwen3 chat template uses to delimit tool calls from prose. The model loses its protocol mid-execute and starts generating free-form text it thinks is a tool call. After flipping `OLLAMA_FLASH_ATTENTION=1` and re-running, the agent loop ran clean — though the model still shipped a binary that crashes at launch, same as its OpenRouter-hosted siblings.
 
 Two findings stacked there. The qwen3.6 family appears to have a real ceiling on shipping runnable Rust+Bevy, independent of hosting. And local LLMs aren't actually free — you trade dollar cost for an obligation to harden every layer the cloud providers were quietly absorbing for you.
 

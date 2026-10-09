@@ -51,7 +51,7 @@ Now it can arrive before the kettle boils.
 
 ## You Can't Inspect Quality Into a Product
 
-Every time I see an inspection task following some agentic burst, I come back to an old truth: you can't inspect quality into a product.
+Every time I see an inspection task following some agentic burst, the old truth applies: you can't inspect quality into a product.
 
 You can't review chaos out of a codebase after an agent has produced it either.
 

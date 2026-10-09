@@ -14,7 +14,7 @@ imageAlt: "Silver-haired woman in cyberpunk workshop setting, gesturing toward h
 
 I was running workshops this week on building AGENTS.md files—those plain-text instruction files that tell AI coding agents how to navigate and contribute to your codebase. Think of them as onboarding documents for robots: here's where we put things, here's how we name things, here's what matters and why.
 
-In each I asked for volunteers to share what they'd written. And beautiful things happened.
+In each I asked for volunteers to share what they'd written.
 
 One developer had captured years of institutional knowledge in a few paragraphs. Another had articulated patterns so deeply internalized she'd never spoken them aloud. With each share, I found myself pointing out the same thing: "Do you see what you just did? You took tacit knowledge—stuff that lived only in your head—and made it explicit. You saved that agent from wandering through dozens of files trying to figure out what you already know."
 
@@ -30,7 +30,7 @@ So why do we keep reducing ourselves to the typing?
 
 ## What AI Actually Automates
 
-Booch predicts automation will eat the "pipeline glue" work—the repetitive, messy stuff like CI/CD scaffolding, infrastructure-as-code templates, simple CRUD apps. The well-worn patterns. And he's right. LLMs are brilliant at those because the distance between intent and output is short and predictable.
+Booch predicts automation will eat the "pipeline glue" work—the repetitive, messy stuff like CI/CD scaffolding, infrastructure-as-code templates, simple CRUD apps. The well-worn patterns. LLMs are brilliant at those because the distance between intent and output is short and predictable.
 
 They can't know that your team tried microservices in 2019 and it was a disaster because of the org structure at the time. They can't know that the reason you never use that particular library is because of a security incident that never made it into the public CVE database. They can't know that Janet in accounting has a workflow that depends on that weird edge case in the billing module.
 

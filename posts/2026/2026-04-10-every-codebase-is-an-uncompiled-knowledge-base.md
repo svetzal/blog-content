@@ -12,17 +12,17 @@ image: images/uncompiled-knowledge-base-banner.png
 imageAlt: "Silver-haired woman resting one hand on a weathered legacy server rack as translucent holographic knowledge structures rise from it into warm amber light, golden motes drifting upward like embers"
 ---
 
-Andrej Karpathy's [recent tweet](https://x.com/karpathy/status/2039805659525644595) about LLM knowledge bases hit over 16 million views, and I think the reason is that he named something a lot of us have been circling around without quite landing on: the tedious part of maintaining a knowledge base isn't the reading or the thinking. It's the bookkeeping. And LLMs are exceptionally good at bookkeeping.
+Andrej Karpathy's [recent tweet](https://x.com/karpathy/status/2039805659525644595) about LLM knowledge bases hit over 16 million views. He named the tedious part of maintaining a knowledge base: it isn't the reading or the thinking. It's the bookkeeping. And LLMs are exceptionally good at bookkeeping.
 
 His [architecture](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) is elegant in its simplicity. A `raw/` directory of immutable source documents. A `wiki/` of LLM-generated markdown — summaries, entity pages, concept pages, interlinked and continuously updated. A schema that tells the agent how to structure everything. Three operations: ingest new sources and update the wiki, query with synthesized answers and citations, and lint for contradictions, stale claims, and gaps. His argument against RAG is pointed: RAG produces answers but doesn't build lasting knowledge. Each query starts from scratch. The wiki is a persistent, compounding artifact.
 
-The community response confirms that this idea is resonating. Lex Fridman extends the pattern with dynamic visualizations and focused mini-knowledge-bases he loads into voice mode for interactive discussions. Others have converged on the `.brain` folder — a directory at the root of a project that acts as persistent agent memory across sessions. Vamshi Reddy nailed the business angle: "Every business has a `raw/` directory. Nobody's ever compiled it. That's the product." Karpathy agreed, calling it an incredible new product category.
+Lex Fridman extends the pattern with dynamic visualizations and focused mini-knowledge-bases he loads into voice mode for interactive discussions. Others have converged on the `.brain` folder — a directory at the root of a project that acts as persistent agent memory across sessions. Vamshi Reddy nailed the business angle: "Every business has a `raw/` directory. Nobody's ever compiled it. That's the product." Karpathy agreed, calling it an incredible new product category.
 
-All of this energy is real, and it deserves credit. But there's a gap in the framing that I think matters.
+There's a gap in the framing, though.
 
 ## The False Boundary
 
-Karpathy describes his shift as moving from manipulating code to manipulating knowledge. It's an interesting framing — and it creates a boundary that doesn't hold up.
+Karpathy describes his shift as moving from manipulating code to manipulating knowledge. It creates a boundary that doesn't hold up.
 
 Code *is* knowledge. It's knowledge expressed in a formal language rather than a natural one, but the distance between those forms of expression is shorter than we tend to assume. I wrote about this in [my previous post](/2026/2026-04-09-code-is-knowledge) — a codebase encodes how an organization thinks about its customers, its domain, its risks, and its trade-offs. The naming reveals domain models. The architecture reveals organizational assumptions. The error handling reveals risk judgments. The test suite reveals what the business considers important enough to verify.
 

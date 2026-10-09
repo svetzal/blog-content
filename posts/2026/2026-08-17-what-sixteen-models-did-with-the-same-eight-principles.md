@@ -16,7 +16,7 @@ imageAlt: "Silver-haired woman in a dark blazer standing before sixteen tall glo
 
 [Last week's post](/2026/2026-08-14-modelling-engineering-intent-made-my-guidance-measurable) ended with a number I was careful to call an anecdote. One model, one trial per arm. Without guidance it followed 6 of my 8 intents on its own; with guidance, 8. And I wrote that if it held up, six of those records were paying rent in my context window every session to tell a model something it already knew.
 
-It didn't hold up. Not because the number was wrong — it was a fine number for the model that produced it. It didn't hold up because "6 of 8 unguided" isn't the sort of thing that *can* hold up. It's a property of a model, not of my guidance, and I'd quietly written it down as though it were a property of my guidance.
+It didn't hold up. Not because the number was wrong — it was a fine number for the model that produced it. It didn't hold up because "6 of 8 unguided" isn't the sort of thing that *can* hold up. It's a property of a model, not of my guidance, and I'd written it down as though it were a property of my guidance.
 
 So I ran it properly. Sixteen models, 313 trials, one scenario.
 
@@ -69,7 +69,7 @@ Qwen3.5 122B fails in both arms at about the same rate, 0.70 unguided and 0.80 g
 
 Qwen3.6 27B is the one worth looking at, because it goes 1.0 unguided and 0.8 guided — a drop that appears only in the arm that got the file. That is precisely the shape the acceptance suite exists to catch, so I read both failures. One shipped a crate that doesn't compile, calling a `round_half_up` it never defined. The other got two pricing rules wrong. Neither failure is anything the guidance asked for, and the difference is not distinguishable from zero anyway: −0.20, interval [−0.510, 0.112], at ten trials a side.
 
-What I'd say honestly is that the guided arm asks a model to do more, and a weak model doing more has more surface to fail on. That's a real cost, and it's separate from the failure mode I was worried about. Across all 313 trials, guidance mandating something that broke the software never appeared once.
+The guided arm asks a model to do more, and a weak model doing more has more surface to fail on. That's a real cost, and it's separate from the failure mode I was worried about. Across all 313 trials, guidance mandating something that broke the software never appeared once.
 
 ## Lift Is Not Monotonic in Capability
 
@@ -92,13 +92,11 @@ Here's Opus 5 intent by intent, ten trials per arm:
 
 It already does half of this. Nobody told it to document its public API or split unit tests from integration tests; it just does, every time. So the space my guidance can occupy is whatever headroom is left — three intents it never reaches for, one it takes 40% of the time, one it misses about one run in five. It collects every bit of that. Guided Opus 5 is 8/8 in all ten trials.
 
-That's the shape of it. Lift is the gap between what a model does by default and what it can be brought to. Better models close that gap from below, on their own, which shrinks the space guidance can occupy. A record's value isn't a property of the record. It's a property of the record *and* the reader, and the reader keeps changing under me.
+Lift is the gap between what a model does by default and what it can be brought to. Better models close that gap from below, on their own, which shrinks the space guidance can occupy. A record's value isn't a property of the record. It's a property of the record *and* the reader, and the reader keeps changing under me.
 
-Which reframes something I'd been treating as a cleanup task. I'd assumed the low-lift records were the ones to cull. But a record with no lift on Opus 5 had a lift of 1.0 on Opus 4.7 — the sixteen columns disagree with each other, constantly, about which of my eight principles is worth saying out loud.
+I'd assumed the low-lift records were the ones to cull. But a record with no lift on Opus 5 had a lift of 1.0 on Opus 4.7 — the sixteen columns disagree with each other, constantly, about which of my eight principles is worth saying out loud.
 
 ## Needing It and Being Able to Act on It Are Different Axes
-
-The second thing the sweep separates is one I'd been collapsing.
 
 Opus 4.6 tops out at **0.414** guided. Not because it doesn't need the guidance — it starts at 0.086, so it needs nearly all of it. It gets handed eight principles and follows three, over and over: 3/7, 3/7, 3/7, 3/7, 3/7, 2/7, 3/7, 2/7, 2/7, 5/7. It's not failing at random; it has a ceiling.
 
@@ -113,11 +111,11 @@ So there are two questions, and I'd been asking one:
 
 They're independent. Opus 4.6 needs it and mostly can't use it. Opus 5 can use all of it and needs half. GPT-5.4 needs it (0.114) and does nothing at all with it (0.114). If I'd only measured lift, those three would have blurred into "guidance helps some models more than others," which is true and useless.
 
-The practical consequence is that a low number means two completely different things, and you can't tell which from the number. Which brings me to the thing that can tell you.
+The practical consequence is that a low number means two completely different things, and you can't tell which from the number.
 
 ## Time Is the Diagnostic
 
-Guided trials take longer. That's the least surprising sentence in this post and also the most useful signal in the data, because *how much* longer sorts the low scores into their two piles.
+Guided trials take longer, and *how much* longer sorts the low scores into their two piles.
 
 | Model | Unguided | Guided | Ratio | Lift |
 | --- | --- | --- | --- | --- |
@@ -153,7 +151,7 @@ Luna and sol have *identical* unguided adherence. Not close — 0.186 and 0.186,
 
 The clock says why. Sol doubles its working time when it's handed the file. Luna doesn't change at all.
 
-One intent makes it concrete. On *centralize a curated lint policy*, sol goes 0.0 to 1.0 — ten for ten. Terra goes 0.0 to 0.6. Luna goes 0.0 to 0.0, and never spends a second longer trying.
+On *centralize a curated lint policy*, sol goes 0.0 to 1.0 — ten for ten. Terra goes 0.0 to 0.6. Luna goes 0.0 to 0.0, and never spends a second longer trying.
 
 That spread, 0.171 to 0.481, is nearly as wide as the gap between Opus 4.6 and Opus 4.8 — two generations apart. Inside a single one. So "which model read it" isn't a question you can answer by naming the generation, which is exactly what I'd been doing every time I said "the model" in the singular.
 
@@ -172,8 +170,6 @@ Aggregate lift hides the intents inside it. Per intent, across all sixteen model
 | Compile public documentation | 0.00–1.00 | 3 of 16 |
 | Prefer fakes at boundaries | — | 0 of 16 |
 
-Two of those rows are the interesting ones.
-
 **Centralize a curated lint policy** has an unguided rate of exactly zero across all sixteen models. Not one of them, in 160 control trials, wrote a workspace lint table on its own. Ask for it and eleven of them deliver. That's a record earning its place with every reader I have.
 
 **Structured tracing** is nearly the same story with wider reach: near-zero by default everywhere, lifted in twelve of sixteen. Instrumenting your code so an operator can see what happened is apparently not a thing models do unprompted, and it's the single most portable thing in my slice.
@@ -188,17 +184,15 @@ Three of the four are now at ten trials a side, same as everything else. **Qwen3
 
 **Qwen3.8 27B reaches 0.636 guided.** That puts it above Opus 4.6 and Sonnet 4.6 and just under GPT-5.6-sol, on my own hardware, with a lift of 0.551 [0.326, 0.723]. It also passes the hidden acceptance suite 10 of 10 in every trial — the full Rust contract, four error variants, no help.
 
-It takes **81 minutes per guided trial**. The hosted models finish one in two to six and a half. That's the whole trade, stated plainly: this model does frontier-adjacent work at somewhere between thirteen and forty times the wall clock and none of the API cost, and whether that's a good deal depends entirely on whether anyone is waiting.
+It takes **81 minutes per guided trial**. The hosted models finish one in two to six and a half. That's the trade: this model does frontier-adjacent work at somewhere between thirteen and forty times the wall clock and none of the API cost, and whether that's a good deal depends entirely on whether anyone is waiting.
 
 Qwen3.6 and Qwen3.8 are in the set as a matched pair — same size, same quantization, one generation apart — chosen to put the question the Opus models raised to an entirely separate training lineage. Their unguided baselines sit together on the floor, 0.014 and 0.086. Their guided ceilings are 0.338 and 0.636.
 
 That's the Opus 4.6 → 4.8 story again, in an unrelated vendor's weights. What improves between generations isn't only capability at the task. It's the capacity to take direction and execute it — and that's the half I'd been assuming came along for free. Two data points on an open-weight lineage, and the top-up run is where I get more.
 
-The caveats, because they matter more than the finding. Qwen3.8's guided arm is three trials, so its 0.636 is the softest number in this post. Three of the four local lifts now exclude zero — Gemma4's did not when I first drafted this, at three trials a side, and does now at ten, which is its own small lesson about publishing early numbers. Qwen3.5 122B still can't reliably build the crate in either arm, and Qwen3.6 dropped two guided trials on faults of its own making.
+The caveats. Qwen3.8's guided arm is three trials, so its 0.636 is the softest number in this post. Three of the four local lifts now exclude zero — Gemma4's did not when I first drafted this, at three trials a side, and does now at ten, which is its own small lesson about publishing early numbers. Qwen3.5 122B still can't reliably build the crate in either arm, and Qwen3.6 dropped two guided trials on faults of its own making.
 
 ## Mostly I Was Fighting My Own Instrument
-
-If there's a part of this worth stealing, it isn't the numbers.
 
 **Seven scoring checks have been wrong**, and every scenario's first real run has corrected at least one. All seven went the same direction: my check was stricter than the intent, and the agent was right. My gateway check tested which *file* a trait was declared in — but a trait beside its implementation is ordinary Rust, and the intent only asks that the core depend on the contract. My documentation check counted `pub(crate)` items as public API, when rustdoc doesn't. Each time, I'd encoded my own habits into the checker and called it the principle.
 
@@ -208,7 +202,7 @@ Guidance breaks the software. That's a hell of a finding. It was entirely false,
 
 I caught it because every guided trial failed identically and completely, which real failures rarely do. Fixing the suite and re-scoring the 39 trials already banked took minutes and cost zero agent invocations. Every guided Opus 5 trial went from 0/10 to 10/10.
 
-That re-score was only possible because I'd committed the trial archive a few hours earlier — metrics plus the workspace source the agent produced — on the reasoning that an agent invocation is expensive and irreproducible while parsing code is neither. This is precisely what I archived it for. Without it, learning the same thing would have cost a day of subscription budget.
+That re-score was only possible because I'd committed the trial archive a few hours earlier — metrics plus the workspace source the agent produced — on the reasoning that an agent invocation is expensive and irreproducible while parsing code is neither. Without it, learning the same thing would have cost a day of subscription budget.
 
 **A local model scored 8/8 unguided.** Perfect adherence with no guidance at all — an extraordinary result, and extraordinary in exactly the way that should make you suspicious. Its source was byte-identical to my own reference solution. It hadn't solved the task; it had found the answer key. Workspaces were living under the repository, and opencode resolves its project root by walking up to the enclosing git repo, which put `reference/` within reach. Claude Code and Codex confine tools to the working directory, which is why 240 hosted trials never touched it. I audited all 240 — clean, both arms, every model. All 8 local trials were purged, including the two that happened not to find it, because the opportunity existing is enough to disqualify the condition. Workspaces now live outside any repo, and every trial is fingerprinted against its reference.
 
@@ -216,7 +210,7 @@ That one I could catch, because the answer key was on the filesystem and I could
 
 **And single trials lie.** Unguided Opus 5, ten runs, identical inputs: 4/7, 2/7, 3/7, 3/7, 3/7, 3/7, 4/8, 4/7, 3/7, 4/7. Double the score from one run to another, same model, same prompt. Every lift I reported before n=10 had an interval that included zero.
 
-The through-line is uncomfortable and I think correct: measuring this is mostly a fight against your own instrument. And what caught each of these was a result that didn't look like real work — 8/8 with no guidance at all, every guided trial failing in precisely the same way, a violation flagged on code I'd have signed off in review. Not a number that looked wrong. A number that looked *too clean*.
+Measuring this is mostly a fight against your own instrument, and what caught each of these was a result that didn't look like real work — 8/8 with no guidance at all, every guided trial failing in precisely the same way, a violation flagged on code I'd have signed off in review. Not a number that looked wrong. A number that looked *too clean*.
 
 ## What This Doesn't Say
 
@@ -231,8 +225,6 @@ So: nothing here says my guidance is worth 0.89 in general. It says these eight 
 ## What I'm Doing Next
 
 The local top-up to n=10 is running. After that, the other two scenarios at the same depth, and then the records I haven't touched — because eight of 989 is a rounding error, and the remaining 981 are the entire point.
-
-But the thing that changed this week is smaller than any of that, and it's about how I'll read the results.
 
 I'd been carrying an implicit model where my guidance had a value, and measurement would eventually tell me what that value was. There is no such number. There's a matrix, it has a column per model, and the columns disagree — including two columns of the same generation that start from the identical baseline.
 

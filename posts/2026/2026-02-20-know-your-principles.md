@@ -16,19 +16,17 @@ I was pair-programming with a junior developer a few years ago. We were trying t
 
 She looked at me like I'd performed a magic trick.
 
-It wasn't magic. That moment came to mind this morning and made me think of all the times I'd done something similar. I realized I hadn't *remembered* where I put it. I'd *predicted* where it would be, by running my own design principles forward and arriving at the same conclusion I'd reached when I first wrote it. The code is organized the way I think, so I can navigate it without a map — the principles in my head *are* the map. Peter Naur called this "the theory of the program" back in 1985: the idea that a working program lives not just in source code but in the mental model carried by the people who built it. My principles aren't just guidelines I follow. They're the theory I carry.
+It wasn't magic. I hadn't *remembered* where I put it. I'd *predicted* where it would be, by running my own design principles forward and arriving at the same conclusion I'd reached when I first wrote it. The code is organized the way I think, so I can navigate it without a map — the principles in my head *are* the map. Peter Naur called this "the theory of the program" back in 1985: the idea that a working program lives not just in source code but in the mental model carried by the people who built it. My principles aren't just guidelines I follow. They're the theory I carry.
 
-And here's something else: when I asked her what principles *she* was using to reason about the code, she froze. Not because she thought she didn't have any — she did, she just couldn't name them yet.
+When I asked her what principles *she* was using to reason about the code, she froze. Not because she thought she didn't have any — she did, she just couldn't name them yet.
 
 ## The Articulation Gap
 
 There's a bit of conversation right now about "comprehension debt" — the accumulated gap between what a software system does and what the team actually understands about it. Research is piling up showing that AI-assisted development can widen this gap fast, because developers accept generated code without building the mental model that would have come from writing it themselves.
 
-That's a real problem. But I think the conversation is missing something deeper.
+That's a real problem, but it doesn't start with AI. It starts with developers who can't articulate the principles they're already using.
 
-Comprehension debt doesn't start with AI. It starts with developers who can't articulate the principles they're already using.
-
-Think about it. Every developer — junior, intermediate, senior — operates on principles. Some are inherited from mentors. Some are absorbed from codebases. Some are hard-won through spectacular failures at 2 AM. But most developers, if you ask them "what are your design principles?", will stare at you for a beat too long before saying something vague about clean code.
+Every developer — junior, intermediate, senior — operates on principles. Some are inherited from mentors. Some are absorbed from codebases. Some are hard-won through spectacular failures at 2 AM. But most developers, if you ask them "what are your design principles?", will stare at you for a beat too long before saying something vague about clean code.
 
 That's the real gap. Not between code and understanding — between understanding and *articulation*.
 
@@ -42,9 +40,9 @@ A junior might be working with "always write a test before I call something done
 
 An intermediate developer might be operating on "keep business logic out of controllers" — something they've seen violated enough times to feel in their bones, even if they'd struggle to give you a precise rationale beyond "it gets messy."
 
-A senior developer has principles so deeply embedded they've become invisible. "State changes flow in one direction." "When in doubt, make it explicit." "If it touches money, it gets its own test suite." They don't even think of these as principles anymore. They're just how things are done. Which is exactly the problem.
+A senior developer has principles so deeply embedded they've become invisible. "State changes flow in one direction." "When in doubt, make it explicit." "If it touches money, it gets its own test suite." They don't even think of these as principles anymore. They're just how things are done.
 
-Because tacit principles — principles you can't name — are principles you can't teach, can't evaluate against, and can't encode into the systems that increasingly need them.
+Tacit principles — principles you can't name — are principles you can't teach, can't evaluate against, and can't encode into the systems that increasingly need them.
 
 ## Why This Matters Now
 
@@ -54,15 +52,13 @@ When AI generates code, that weaving doesn't happen. The code might be fine. It 
 
 Research from Anthropic found that developers using AI scored 17% lower on comprehension of concepts they'd just used. A Microsoft study found that higher confidence in AI output correlates with less critical thinking. And a randomized trial on experienced open-source maintainers found AI tools actually *increased* completion time by 19% in mature repos — despite developers believing they were faster.
 
-The pattern is consistent: when we stop doing the cognitive work of creation, we lose the understanding that comes with it. And we don't even notice, because the *feeling* of understanding persists long after the reality has faded.
+When we stop doing the cognitive work of creation, we lose the understanding that comes with it. And we don't even notice, because the *feeling* of understanding persists long after the reality has faded.
 
 But developers who can articulate their principles have an anchor. When AI suggests something, they can ask: "does this align with how we think?" That question is only possible if you know how you think.
 
 ## Borrowed Principles Are Still Principles
 
-I want to come back to that junior developer, because I think she represents something important.
-
-After our pairing session, I asked her to write down the principles she'd been taught — even the ones she wasn't sure she agreed with yet. She came back with a short list:
+After our pairing session, I asked the junior developer to write down the principles she'd been taught — even the ones she wasn't sure she agreed with yet. She came back with a short list:
 
 - Write a test for the behavior you expect before you write the code.
 - Don't repeat yourself — if you've written it twice, extract it.
@@ -70,7 +66,7 @@ After our pairing session, I asked her to write down the principles she'd been t
 
 Were these *her* principles? Not entirely. She'd borrowed them from her bootcamp, from her mentor, from a book. She couldn't defend all of them rigorously. She suspected the second one might be wrong sometimes (and she's right — it is).
 
-But she could *name* them. And naming them meant she could evaluate code against them, have conversations about them, and — crucially — start to notice when her experience was telling her something different than what she'd been taught.
+But she could *name* them. And naming them meant she could evaluate code against them, have conversations about them, and start to notice when her experience was telling her something different than what she'd been taught.
 
 That's how principles evolve. You adopt them, you use them, you bump into their edges, and eventually you refine them into something that's genuinely yours. But you can't refine what you can't articulate. The journey from borrowed principle to earned conviction requires you to hold the principle up to the light and examine it — and you can't do that if it's invisible.
 
@@ -86,7 +82,7 @@ If you're senior, this might be the hardest exercise of all. You've been operati
 
 ## The Bridge We Actually Need
 
-Comprehension debt is real, and it's accelerating. AI can generate code faster than teams can build understanding of it. The research is clear on that.
+Comprehension debt is real, and it's accelerating. AI can generate code faster than teams can build understanding of it.
 
 But the solution isn't just better documentation or more rigorous code review — though both help. The deeper solution is a team of developers who can articulate the principles that make their codebase coherent. Principles that a new hire can learn. Principles that an AI tool can be measured against. Principles that survive when the person who wrote the code moves on.
 

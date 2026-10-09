@@ -64,13 +64,13 @@ When I was developing training materials on agentic development practices at RBC
 
 Now drop that fluid intent into a large codebase and watch the tension form. Intent wants to move fast — it's exploring, settling, adjusting, finding the right shape. The code wants to move slow — it's load-bearing, depended-on, surgical-by-necessity. You can't rebuild the third module from scratch every time the intent shifts; other things depend on its shape, on its contract, on the assumptions it quietly enforces for the rest of the system.
 
-So intent and code start moving at different speeds, and the friction is real.
+So intent and code start moving at different speeds, and that difference is friction.
 
 Cohesion is what reduces that friction. Not because it's pretty. Because cohesive code is small enough to re-shape when the intent changes — without taking out the rest of the system on the way. Sprawl makes intent expensive. Cohesion makes intent cheap. The gap between those two cost curves, in an agentic world, is the gap between teams that ship and teams that build elaborate processes to compensate for the fact that they can't.
 
 If your code is so entangled that the agent can't see all the pieces it needs to change in order to honour a single shift in intent, the agent isn't your bottleneck. Your code organization is.
 
-That's a harder conversation than "we need better tooling." But it's the real one.
+That's a harder conversation than "we need better tooling."
 
 ## What This Adds Up To
 

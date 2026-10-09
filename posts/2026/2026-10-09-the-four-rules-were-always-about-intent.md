@@ -18,11 +18,11 @@ His explanation is the better half of the finding. The implementation and the te
 
 That's interesting empirical evidence. Then he drew the rule: tell your agents to stop writing tests. The next day [one project](https://github.com/douglasjarquin/sum/issues/287) made it a standing directive, and its agents no longer write tests at all.
 
-The finding is right. The takeaway misses the mark, and the reason starts with a rule I thought I knew.
+The finding is right. The takeaway misses the mark, and the reason starts with a rule I already knew.
 
 ## One rule ate the other three
 
-Kent Beck's four rules of simple design, in the order I learned them: passes the tests, reveals intent, no duplication, fewest elements. I taught them for years in [an eight-week program I ran under Coding Culture](/2026/2026-05-23-when-intent-moves-faster-than-code/). The internet has argued about the order of the middle two for a decade. I thought I knew them.
+Kent Beck's [four rules of simple design](https://www.martinfowler.com/bliki/BeckDesignRules.html), in the order I learned them: passes the tests, reveals intent, no duplication, fewest elements. Beck wrote them down in the first edition of *Extreme Programming Explained*, and Corey Haines wrote [a whole book on them](https://leanpub.com/4rulesofsimpledesign). I taught them for years in [an eight-week program I ran under Coding Culture](/2026/2026-05-23-when-intent-moves-faster-than-code/). Beck's own two formulations in that first edition put the middle two in different orders, and people have argued about it ever since. I thought I knew them.
 
 Over the past year the second rule quietly ate the other three.
 
@@ -35,7 +35,7 @@ So I tried an experiment. What happens if you rewrite all four rules with intent
 3. **Don't duplicate your expressions of intent.** Every second copy is an invitation to diverge, and divergence is how a codebase stops meaning anything in particular.
 4. **Express intent with the smallest footprint you can manage.** Every word you spend on it is a word someone, or something, has to read.
 
-The original four rules are all still in that list. But the subject changed from *the code* to *the thing the code is for*, and that shift does more work than one word should.
+The original four rules are all still in that list. But the subject changed from *the code* to *the thing the code is for*.
 
 ## What the eval actually measured
 
@@ -45,9 +45,9 @@ An agent reads a task description. It forms an interpretation. It writes an impl
 
 The eval measured duplication, not tests. It measured what happens when you hold two copies of the same expression of intent, and the answer is what rule three has always said: the second copy costs you something and buys you nothing.
 
-What tests are *for* is rule one. Validate, continuously, that what we built matches what we meant. A test can only do that job if the intent it carries came from somewhere other than the code it's checking. When I write a test before the code, the intent in the test came from me, and the code has to answer to it. When a stakeholder describes a case I hadn't considered, the test that captures it is a second *source* of intent, not a second copy. That's where the validation lives. Kun Chen's own caveat points at exactly this: he suspects tests still carry value when a human can say what they mean more precisely as cases than as requirements. I'd put it more strongly. That's the only time they ever did.
+What tests are *for* is rule one. Validate, continuously, that what we built matches what we meant. A test can only do that job if the intent it carries came from somewhere other than the code it's checking. When I write a test before the code, the intent in the test came from me, and the code has to answer to it. When a stakeholder describes a case I hadn't considered, the test that captures it is a second *source* of intent, not a second copy. Kun Chen's own caveat points at exactly this: he suspects tests still carry value when a human can say what they mean more precisely as cases than as requirements. I'd put it more strongly. That's the only time they ever did.
 
-So "stop writing tests" is the wrong rule. The right one is older and less exciting: don't let the same interpreter write both sides of a check.
+So "stop writing tests" is the wrong rule. The right one is older: don't let the same interpreter write both sides of a check.
 
 ## Duplication was never about code
 
@@ -62,8 +62,6 @@ I've been building [Alloy](https://vetzal.ca/alloy/) and the [intent corpus behi
 So lately the work has been subtraction. An intent exists in the code, or it exists in the documentation, but not both. If the code can carry it, with a name, a type, a test that reads as a sentence, the documentation doesn't repeat it. If the code can't carry it, because it's a tradeoff or an expectation about the world, it goes in a record, and the code doesn't try to paraphrase it.
 
 ## Documentation becomes a derivative
-
-That subtraction leads somewhere I wouldn't have gone a year ago.
 
 Documentation is becoming a purely derivative artifact. Derivative, in the way a compiled binary is derivative of its source. You don't hand-edit the binary. You fix the source and build again.
 

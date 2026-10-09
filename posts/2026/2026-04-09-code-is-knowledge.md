@@ -24,7 +24,7 @@ Code is knowledge. We've always known this implicitly. Now we have tools that ca
 
 ## An Old Thread
 
-This isn't a new insight. It's a thread that runs through decades of thinking about what programming actually is, and we keep rediscovering it.
+The idea runs through decades of thinking about what programming is, and we keep rediscovering it.
 
 Michael Polanyi argued in 1966 that "we know more than we can tell." His concept of tacit knowledge — the understanding we carry but can't easily articulate — describes exactly what lives inside a codebase. Developers make thousands of decisions based on understanding they never write down. When they leave, that understanding goes with them. Only what they encoded in the code survives.
 
@@ -38,7 +38,7 @@ All of this has been sitting there for decades. What's changed is that we now ha
 
 ## What Code Tells You
 
-When I say code is knowledge, I mean something specific. A codebase doesn't just record what a system does. It records what a business *believes*.
+A codebase doesn't just record what a system does. It records what a business *believes*.
 
 - **Naming conventions** reveal a domain model. When your code calls someone a `PrimaryAccountHolder` and your support team calls them a "subscriber," that gap is a finding.
 - **Architecture** reveals organizational assumptions. Service boundaries tend to mirror team boundaries — Conway's Law in action. When those boundaries don't match business reality, the mismatch is information.

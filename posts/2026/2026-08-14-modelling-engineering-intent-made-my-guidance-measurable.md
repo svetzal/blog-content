@@ -26,7 +26,7 @@ What changed this summer wasn't the measurement. It was that I finally had somet
 
 I'd already been doing intent modelling for a while, but on the product side. [Epilogue Tracker](https://vetzal.ca/epilogue-tracker/guide/philosophy.html) models *product intent* using the [Screenplay Pattern](https://serenity-js.org/handbook/design/screenplay-pattern/): actors, their goals, the interactions that serve those goals, and the journeys that carry someone through. It's user-centred design made structural — instead of a backlog of tasks, you hold a model of who benefits and why, and work descends from that. Its philosophy page puts the test bluntly: work matters when it helps real people achieve their goals.
 
-That worked well enough that the gap on the other side started to bother me. Product intent tells you what the software should do for people. It says nothing about the engineering judgement that keeps the codebase able to keep doing it — the capabilities I'm protecting, the failure modes I've already been bitten by, the strategies I reach for and, crucially, when they stop paying off.
+That worked well enough that the gap on the other side started to bother me. Product intent tells you what the software should do for people. It says nothing about the engineering judgement that keeps the codebase able to keep doing it — the capabilities I'm protecting, the failure modes I've already been bitten by, the strategies I reach for and when they stop paying off.
 
 That judgement lived where it usually lives: in my head, and in prose files that had grown long enough that I no longer knew which parts were load-bearing.
 
@@ -58,7 +58,7 @@ Here's a real record, field by field. It's stored as TOML — the [source is one
 
 Compare that to "write good tests." The **strategy** field is specific enough that two people would implement it the same way. The **expectation** field states a belief about the world that could turn out false — if a project's structure is frozen, the expectation doesn't hold and the strategy resting on it doesn't apply. That's not the principle being wrong; that's it being out of scope, and prose almost never separates those.
 
-And the **tradeoff** field is the one Alloy's own docs are most insistent about, for a reason I've come to appreciate: without it, you collect truisms. People accept truisms because they sound correct, and agents then over-apply them everywhere by reflex. A record saying "prefer gateway abstractions" is weak. A record saying "prefer gateway abstractions for volatile external providers, accepting that premature abstraction hurts for stable internal modules" tells an agent where the strategy *stops* paying off.
+And the **tradeoff** field is the one Alloy's own docs are most insistent about: without it, you collect truisms. People accept truisms because they sound correct, and agents then over-apply them everywhere by reflex. A record saying "prefer gateway abstractions" is weak. A record saying "prefer gateway abstractions for volatile external providers, accepting that premature abstraction hurts for stable internal modules" tells an agent where the strategy *stops* paying off.
 
 Look at the tradeoff above: colocated specs mean production directories fill with test modules and packaging config has to cope. That's a real cost, written down by the person advocating the practice. When someone pushes back six months from now, they aren't uncovering a hidden flaw. They're reading the receipt.
 
@@ -102,7 +102,7 @@ keys = [
 
 Here's where a bet I'd been carrying since June finally settled.
 
-The `evidence` field is in the schema for exactly one reason: to force every principle to name the observable proof that it's working. I put it there to make records testable. That was the whole point of it.
+The `evidence` field is in the schema for exactly one reason: to force every principle to name the observable proof that it's working. I put it there to make records testable.
 
 What I didn't know was whether it would hold up. It's easy to write a field into a schema, and much harder to know whether the sentences that actually end up in it will carry enough to build anything on. I filled that field in for all 989 records on the belief that it would one day be worth the effort, and belief is all it was.
 
@@ -133,7 +133,7 @@ def check_colocated_specs(root, production, tests):
 
 Read the evidence sentence and the function side by side. The function is what the sentence says, in Python. I didn't invent a metric for this principle; I implemented the one the record already carried.
 
-The evidence field is also *typed* — `gate`, `static-analysis`, `test`, `review` — and that typing is where the payoff got sharp. The type drew the line between what I could mechanize and what I couldn't, cleanly:
+The evidence field is also *typed* — `gate`, `static-analysis`, `test`, `review` — and the type drew the line between what I could mechanize and what I couldn't, cleanly:
 
 | Intent | Evidence type | What I could build |
 | --- | --- | --- |
@@ -148,7 +148,7 @@ The evidence field is also *typed* — `gate`, `static-analysis`, `test`, `revie
 
 The three mechanically-typed records I transcribed exactly. The `review`-typed ones I could only approximate — and the check I got *wrong* on first run was one of them. My gateway check recognized only class-shaped gateways; a real agent wrote a module of functions instead, which is at least as idiomatic in Python, and my scorer marked a good solution non-compliant. The agent was right and I was wrong.
 
-That's the taxonomy doing its job. Typing the evidence was a claim about each principle — this one a machine can confirm, that one needs a person — and the benchmark is where those claims got checked against reality. They held. The records marked `review` are genuinely the ones where my mechanical proxy is thinnest, and the one I got wrong sits squarely among them. A distinction I'd drawn on judgement in June turned out to predict, in August, exactly where automation would run out.
+Typing the evidence was a claim about each principle — this one a machine can confirm, that one needs a person — and the benchmark is where those claims got checked against reality. They held. The records marked `review` are genuinely the ones where my mechanical proxy is thinnest, and the one I got wrong sits squarely among them. A distinction I'd drawn on judgement in June turned out to predict, in August, exactly where automation would run out.
 
 ## The Rest of the Harness
 
@@ -176,13 +176,11 @@ If that holds up across more trials and models, six of those eight records are p
 
 ## The Inflection Point
 
-The useful part isn't the benchmark.
-
 Every field in that record is load-bearing by design. I wanted tacit engineering judgement written down. I wanted disagreements to have an address. I wanted [Foundry](https://github.com/svetzal/foundry) to run autonomous work against something more durable than a prompt string. And I wanted principles specific enough that you could tell whether one had been followed — which is why `strategy` has to be concrete and `evidence` has to be observable.
 
 Designing for that is one thing. Knowing it was going to work is another, and I didn't. For months the intent model was a bet I was paying for daily — every record another six fields to think through, on the belief that the structure would eventually earn back more than it cost. That's a long time to hold a hypothesis with nothing to check it against.
 
-This is where it settled. The same specificity that lets an agent act on a principle is what lets me test whether it did. Not a coincidence I stumbled into — the thing I was building toward, finally standing up under load.
+The same specificity that lets an agent act on a principle is what lets me test whether it did. I built toward that, and this is where it stood up under load.
 
 And it's why this attempt worked where the previous two years didn't. I wasn't missing a harness. I was missing a unit.
 

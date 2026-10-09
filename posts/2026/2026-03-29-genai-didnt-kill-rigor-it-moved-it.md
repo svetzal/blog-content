@@ -43,7 +43,7 @@ Those aren't productivity failures. They're the cost of producing value with an 
 
 ## What Changed
 
-Today I look at GenAI, and one of those old tiny technical tasks — make this HTML template, write that Java class — gets produced in seconds by my agent. It's not even worth talking about. Seconds to process. But the overhead to organize them? Still there. The inefficiencies born of human communication and trust separated by concerns — well, they start to become irrelevant because the agent can organize and assemble the technical bits so quickly.
+Today I look at GenAI, and one of those old tiny technical tasks — make this HTML template, write that Java class — gets produced in seconds by my agent. But the overhead to organize them? Still there. The inefficiencies born of human communication and trust separated by concerns — well, they start to become irrelevant because the agent can organize and assemble the technical bits so quickly.
 
 Implementation is now dramatically cheaper. And when implementation gets cheap, the bottleneck moves.
 
@@ -71,13 +71,13 @@ That same shift is happening again, at a different scale.
 
 **Context.** Where reality lives. The information environment in which an agent operates — the system prompts, tool definitions, retrieved documents, project conventions, decision history. Your prompt might be 200 tokens. The context window it lands in might be a million. That other 99.98% is where the real leverage sits. People who are dramatically more effective with AI aren't writing dramatically better prompts. They're building better context infrastructure.
 
-**Evaluation.** How we tell polished wrongness from correct output. This is the one that keeps me up at night. AI often fails in a fluent way — it sounds correct even when it isn't. [Jones](#nate-b-jones) calls evaluation and quality judgment the single most frequently cited skill in AI job postings. The discipline is resisting the urge to equate fluency with competence. Noticing not just whether the core answer looks fine, but where the edges and corner cases break. Building systems that verify output instead of merely admiring it.
+**Evaluation.** How we tell polished wrongness from correct output. AI often fails in a fluent way — it sounds correct even when it isn't. [Jones](#nate-b-jones) calls evaluation and quality judgment the single most frequently cited skill in AI job postings. The discipline is resisting the urge to equate fluency with competence. Noticing not just whether the core answer looks fine, but where the edges and corner cases break. Building systems that verify output instead of merely admiring it.
 
 When mis-specification gets expensive, these three skills become the load-bearing structure of professional work.
 
 ## Why This Changes Roles
 
-[Rory Sutherland](#rory-sutherland), in his 2026 predictions interview with *The Drum*, warns that AI will first be sold as "the same, worse, but cheaper." He calls it the doorman fallacy: define a role too narrowly, automate that narrow slice, claim all the savings, and ignore the wider value the role created. The sharpest part of his argument is structural: the people who cut the doorman are never held accountable for the value they destroyed. The incentive system rewards visible cost savings and ignores invisible value destruction. That's not a bad instinct — it's a broken feedback loop.
+[Rory Sutherland](#rory-sutherland), in his 2026 predictions interview with *The Drum*, warns that AI will first be sold as "the same, worse, but cheaper." He calls it the doorman fallacy: define a role too narrowly, automate that narrow slice, claim all the savings, and ignore the wider value the role created. The people who cut the doorman are never held accountable for the value they destroyed. The incentive system rewards visible cost savings and ignores invisible value destruction. That's not a bad instinct — it's a broken feedback loop.
 
 I share that concern. But when the translation layers between people thin out, everybody gets closer to the product. The PM isn't writing a document that an engineer will interpret. They're shaping the actual artifact. The designer isn't producing a mock-up that approximates the final thing. They're working on the final thing. Fewer people may need to sit in translation layers. More people can work closer to the artifact itself.
 
@@ -93,7 +93,7 @@ We're in a similar migration now.
 
 The old bottleneck was implementation. The new bottleneck is ambiguity. The rigor that used to live in coordination and translation now needs to live in specification, context, and evaluation.
 
-We are not becoming less rigorous. We are being forced to become rigorous in different places — and if my experience is any guide, what we find on the other side is closer to the work, closer to the customer, and closer to the thing that actually matters.
+We are not becoming less rigorous. We are being forced to become rigorous in different places — and if my experience is any guide, what we find on the other side is closer to the work and closer to the customer.
 
 ---
 

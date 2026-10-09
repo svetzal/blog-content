@@ -22,17 +22,13 @@ And the dismissiveness. Oh, the dismissiveness. "You're wasting your time on tha
 
 The Manifesto resonated with something I already felt but couldn't articulate: that curiosity wasn't just acceptable, it was *essential*. That taking things apart to understand them was a feature, not a bug.
 
-Forty years later, I still feel that resonance in my bones.
-
 ## What Hacker Actually Means
 
 IETF RFC 1392 defines it this way:
 
 > **hacker** — A person who delights in having an intimate understanding of the internal workings of a system, computers and computer networks in particular. The term is often misused in a pejorative context, where "cracker" would be the correct term.
 
-*Delights*. That's the word that matters.
-
-Not "tolerates" or "endures" or "professionally engages with." Delights. The hacker finds joy in understanding. In poking at seams. In asking "but what happens if I do *this*?"
+*Delights*. Not "tolerates" or "endures" or "professionally engages with." Delights. The hacker finds joy in understanding. In poking at seams. In asking "but what happens if I do *this*?"
 
 This isn't about breaking things (though yes, sometimes things break). It's about the fundamental orientation toward systems: curiosity first, boundaries second. Learn what it does before you decide what it's for.
 
@@ -41,8 +37,6 @@ The media spent decades confusing hackers with criminals. They still do, mostly.
 That's a creative act. An optimistic one, even.
 
 ## The New Frontier Looks Familiar
-
-And now here we are, in early 2026, watching something fascinating unfold.
 
 GenAI has become the new playground. Claude, GPT, Copilot, local models, agent frameworks — there's a whole ecosystem of systems to explore. And the hackers are out there, delighting in intimate understanding. Poking at the seams. Asking "what happens if I do *this*?"
 
@@ -68,7 +62,7 @@ This is when the hackers thrive. When the systems are new enough that nobody's s
 
 (Yes, I've been doing exactly this. So have you, probably, if you're reading this.)
 
-The window will close eventually. The platforms will mature. The commercial interests will find their footing. That's not cynicism — that's just the pattern. The early internet believers thought the open web would last forever, and they were wrong about that.
+The window will close eventually. The platforms will mature. The commercial interests will find their footing. The early internet believers thought the open web would last forever, and they were wrong about that.
 
 But they weren't wrong about the *value* of what they built during that window. The protocols, the communities, the culture — so much of what makes the internet worthwhile came from that early hacker era. The spirit survived even as the commercialization rolled in.
 
@@ -92,7 +86,7 @@ And when I watch the AI hacker community doing their thing — building agents, 
 
 "This is our world now," the Manifesto said. "The world of the electron and the switch, the beauty of the baud."
 
-Forty years later, the electrons have gotten faster and the switches have gotten smaller. The baud has become the API call, the token stream, the model weight. But the underlying truth remains: there are systems in the world, and some of us find deep joy in understanding them.
+Forty years later, the electrons have gotten faster and the switches have gotten smaller. The baud has become the API call, the token stream, the model weight. There are still systems in the world, and some of us still find deep joy in understanding them.
 
 The Manifesto was angry, as manifestos often are. It was written by someone who felt criminalized for their curiosity. But beneath the anger was something more enduring: a declaration that understanding matters. That exploring matters. That the person who wants to know how things work isn't a problem to be solved — they're a gift to be cultivated.
 

@@ -42,9 +42,7 @@ An agent doesn't feel social pressure. It doesn't worry about looking slow. It d
 
 An agent can be prompted — instructed, really — to always cooperate. To treat every piece of code as if it's going to be read and modified by someone else. To refuse the quick hack when a clean solution exists. To write the automated tests. To leave the campsite better than it found it, every single time.
 
-Think about that for a moment. What happens when one player in a prisoner's dilemma *always* cooperates, reliably, predictably?
-
-Game theory tells us: it changes everything.
+What happens when one player in a prisoner's dilemma *always* cooperates, reliably, predictably?
 
 When you know your pair will cooperate, defection becomes less attractive. The dynamic shifts. Trust becomes possible. And in iterated games — which is exactly what software development is — consistent cooperation tends to breed more cooperation.
 
@@ -52,7 +50,7 @@ When you know your pair will cooperate, defection becomes less attractive. The d
 
 I'm not naive about this. Agents can write terrible code. They hallucinate. They make choices that optimize for the immediate request while ignoring everything else. Left to their own devices, with careless prompting, they're just as capable of creating cruft as any burned-out developer trying to hit a deadline.
 
-But here's the opportunity: we get to tune them.
+But we get to tune them.
 
 We get to encode values into our agents that are hard to encode into performance review systems. We can tell them — explicitly, in their system prompts — to prioritize readability over cleverness. To add tests. To consider the humans who'll maintain this code next year. To cooperate.
 
@@ -67,5 +65,3 @@ The genie can't read your mind. But unlike the genies in stories, this one can b
 Will AI coding tools live up to the hype? Probably not in the ways the marketing suggests. Will they create as many problems as they solve? Almost certainly, at least in the short term.
 
 But if we're intentional about it — if we encode cooperation into our agents instead of just speed — we might find ourselves with something genuinely new: a teammate who never feels the temptation to cut corners just because everyone else is.
-
-That's not magic. That's just good system design.
