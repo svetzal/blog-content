@@ -69,5 +69,3 @@ Will AI coding tools live up to the hype? Probably not in the ways the marketing
 But if we're intentional about it — if we encode cooperation into our agents instead of just speed — we might find ourselves with something genuinely new: a teammate who never feels the temptation to cut corners just because everyone else is.
 
 That's not magic. That's just good system design.
-
-And maybe, for once, we'll all come out ahead.

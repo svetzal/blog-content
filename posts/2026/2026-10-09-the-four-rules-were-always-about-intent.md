@@ -81,7 +81,7 @@ An alternate expression is a second one. If the tests are where intent lives, th
 
 What I want from a test now is narrower and more useful. I want it to validate, continuously, that the code still does what the intent says. Rule one. The intent itself lives somewhere with an address, and the test points at it rather than restating it. That means the intent has to be mine, or the stakeholder's, or the record's. Anyone's but the implementer's.
 
-Dijkstra said tests can only show that something doesn't work, never that it does. He was right, and the four rules were quietly agreeing with him the whole time. The tests were never the intent. They were the first way we found to check it. An agent writing its own tests isn't checking anything. It's agreeing with itself, and we just paid to find out how much that's worth.
+Dijkstra said testing can show the presence of bugs, never their absence. The tests were never the intent. They were the first way we found to check it. An agent writing its own tests isn't checking anything. It's agreeing with itself.
 
 ---
 
