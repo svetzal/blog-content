@@ -1,5 +1,5 @@
 ---
-title: "The four rules were always about intent"
+title: "Were the four rules always about intent?"
 date: "2026-10-09"
 published: true
 description: "An eval showed agent-written tests add nothing, and the rule drawn from it was 'stop writing tests.' Beck's four rules of simple design, remodelled around intent, say something more useful about why."
