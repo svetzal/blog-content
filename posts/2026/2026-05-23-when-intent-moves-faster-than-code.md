@@ -10,7 +10,7 @@ tags:
   - software design
 ---
 
-Lately I've been noticing a rhythm. On a small codebase — small enough that the code, the specification, and my evolving intent all fit comfortably in an agent's context window — the work moves. Iteration after iteration, decisions land and the system reshapes around them. Switch to a larger codebase and the rhythm collapses. Same agent. Same model. Same hands. The work gets slow and careful and full of pauses.
+Lately my work with agents has a rhythm. On a small codebase — small enough that the code, the specification, and my evolving intent all fit comfortably in an agent's context window — the work moves. Iteration after iteration, decisions land and the system reshapes around them. Switch to a larger codebase and the rhythm collapses. Same agent. Same model. Same hands. The work gets slow and careful and full of pauses.
 
 The difference isn't me. It isn't the agent. It's what fits.
 
@@ -52,7 +52,7 @@ And intent is messier work than construction ever was. Slower. More conversation
 
 ## What Are We Even Measuring?
 
-This is the part that frustrates people. Progress used to be visible because the unit was the feature: planned, scoped, built, shipped. You could line them up on a board and watch them move. With agentic work, the feature is fluid. It shifts to best represent the intent underneath it, because the construction is cheap and the construction was never the point.
+This is where the frustration comes from. Progress used to be visible because the unit was the feature: planned, scoped, built, shipped. You could line them up on a board and watch them move. With agentic work, the feature is fluid. It shifts to best represent the intent underneath it, because the construction is cheap and the construction was never the point.
 
 So what do you measure?
 

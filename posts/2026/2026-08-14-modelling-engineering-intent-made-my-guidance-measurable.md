@@ -18,7 +18,7 @@ I've been trying to test my agent guidance for a couple of years. Different appr
 
 Every attempt died in the same place. Not for lack of a harness. I could never say precisely enough what I was testing *for*.
 
-Here's the shape of it. A guidance file of mine said, in effect, write good tests. Fine advice. Now build a test for it. What does the checker look for? You reach for a model to grade the output, which is asking the thing under test to mark its own homework. Or you read the diff yourself and form an impression, which is real information but isn't repeatable and doesn't accumulate. Two years of that.
+A guidance file of mine said, in effect, write good tests. Fine advice. Now build a test for it. What does the checker look for? You reach for a model to grade the output, which is asking the thing under test to mark its own homework. Or you read the diff yourself and form an impression, which is real information but isn't repeatable and doesn't accumulate. Two years of that.
 
 What changed this summer wasn't the measurement. It was that I finally had something specific enough to measure — because I'd spent the spring building exactly that, without yet knowing whether it would work.
 
@@ -162,7 +162,7 @@ Before running any agent I wrote a reference solution and scored it, along with 
 
 ## What the First Run Showed
 
-One trial per arm, so this is an anecdote rather than a finding. I want to be precise about that, because the number is interesting enough to get misused.
+One trial per arm, so this is an anecdote rather than a finding, and the number is interesting enough to get misused.
 
 Both arms shipped working code — 10 of 10 acceptance either way. The guidance broke nothing.
 
@@ -176,7 +176,7 @@ If that holds up across more trials and models, six of those eight records are p
 
 ## The Inflection Point
 
-I want to be careful about what I'm claiming, because the useful part isn't the benchmark.
+The useful part isn't the benchmark.
 
 Every field in that record is load-bearing by design. I wanted tacit engineering judgement written down. I wanted disagreements to have an address. I wanted [Foundry](https://github.com/svetzal/foundry) to run autonomous work against something more durable than a prompt string. And I wanted principles specific enough that you could tell whether one had been followed — which is why `strategy` has to be concrete and `evidence` has to be observable.
 

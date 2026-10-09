@@ -26,7 +26,7 @@ Forty years later, I still feel that resonance in my bones.
 
 ## What Hacker Actually Means
 
-There's a definition in IETF RFC 1392 that's always stuck with me:
+IETF RFC 1392 defines it this way:
 
 > **hacker** — A person who delights in having an intimate understanding of the internal workings of a system, computers and computer networks in particular. The term is often misused in a pejorative context, where "cracker" would be the correct term.
 
@@ -50,13 +50,13 @@ Over the past few months, I've watched people build (and built myself) what they
 
 Some of these ideas are wild. Some are genuinely brilliant. Many are both.
 
-What strikes me is the *energy*. It feels like the early internet again, or the early days of personal computing. There's a window right now — before the platforms ossify, before the terms of service clamp down, before someone decides how it's all supposed to work — where curious people can just *explore*.
+The *energy* is the same as the early internet, or the early days of personal computing. There's a window right now — before the platforms ossify, before the terms of service clamp down, before someone decides how it's all supposed to work — where curious people can just *explore*.
 
 And they are. We are.
 
 ## Before They Figure Out How to Sell It
 
-Here's the thing about these windows: they close.
+These windows close.
 
 The early web was a glorious mess of experimental pages, weird communities, and people figuring out what hypertext could become. Then came the walled gardens, the advertising platforms, the algorithmic feeds designed to maximize engagement at the cost of everything else.
 

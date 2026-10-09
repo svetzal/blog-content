@@ -48,7 +48,7 @@ Extraction feeds synthesis feeds application. The cycle compounds.
 
 We're already doing a version of this with the Screenplay Pattern. When we point an agent at a running legacy application and have it infer actors, goals, and interactions, we're performing extraction — making product intent explicit from an existing system. The agent examines what each user type can see and do, traces workflows, and builds a structured model of who the system serves and how. But product intent is just one lens. The same approach generalizes to architecture, data modelling, operational patterns, code design — each lens revealing a different dimension of organizational knowledge that was always embedded in the code but never surfaced.
 
-The important thing isn't any one extraction. It's that the extractions feed forward. What you learn from archaeology becomes source material for synthesis, and what you synthesize informs the next round of building. Each pass through the cycle makes the next one richer.
+No single extraction matters as much as the way they feed forward. What you learn from archaeology becomes source material for synthesis, and what you synthesize informs the next round of building. Each pass through the cycle makes the next one richer.
 
 ## Point an Agent at Your Codebase
 
@@ -73,9 +73,9 @@ mkdir -p my-extraction/sources
 mkdir -p my-extraction/extraction/{actors,goals,interactions,journeys}
 ```
 
-2. Copy the prompt from the gist into `my-extraction/AGENTS.md` (or `CLAUDE.md` — many coding agents will pick up either).
+1. Copy the prompt from the gist into `my-extraction/AGENTS.md` (or `CLAUDE.md` — many coding agents will pick up either).
 
-3. Open the directory in your preferred coding agent — Claude Code, OpenCode, GitHub Copilot, or any agent that can read files and follow a prompt — and tell it where your codebase lives:
+2. Open the directory in your preferred coding agent — Claude Code, OpenCode, GitHub Copilot, or any agent that can read files and follow a prompt — and tell it where your codebase lives:
 
 ```
 Extract the screenplay pattern from /path/to/my/codebase

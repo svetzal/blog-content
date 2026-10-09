@@ -34,7 +34,7 @@ That's the real gap. Not between code and understanding — between understandin
 
 ## Principles at Every Stage
 
-Here's where I think we get this wrong: we treat principles as something you earn after twenty years of battle scars. Senior developer wisdom. The kind of thing you nod sagely about in architecture reviews.
+We get this wrong by treating principles as something you earn after twenty years of battle scars. Senior developer wisdom. The kind of thing you nod sagely about in architecture reviews.
 
 But junior developers have principles too. They're just different.
 
@@ -48,7 +48,7 @@ Because tacit principles — principles you can't name — are principles you ca
 
 ## Why This Matters Now
 
-Here's the thing: when you write code yourself, your principles get woven into the work automatically. Every micro-decision — where to put this function, what to name that variable, how to structure this module — reflects your thinking. The code becomes a physical expression of your mental model.
+When you write code yourself, your principles get woven into the work automatically. Every micro-decision — where to put this function, what to name that variable, how to structure this module — reflects your thinking. The code becomes a physical expression of your mental model.
 
 When AI generates code, that weaving doesn't happen. The code might be fine. It might even be good. But it wasn't shaped by *your* principles, so it doesn't reinforce your mental model, and it might not match the reasoning framework that makes the rest of your codebase navigable.
 
@@ -76,9 +76,7 @@ That's how principles evolve. You adopt them, you use them, you bump into their 
 
 ## The Uncomfortable Exercise
 
-So here's my challenge, regardless of where you are in your career.
-
-Write down your principles. Not your team's architecture decisions. Not your company's coding standards. *Your* principles — the ones you actually use to make decisions when you're alone with the code.
+So, wherever you are in your career: write down your principles. Not your team's architecture decisions. Not your company's coding standards. *Your* principles — the ones you actually use to make decisions when you're alone with the code.
 
 If you're junior, they might be things your mentor told you. Great. Write them down anyway. Watch how it changes your relationship to them — from things you follow to things you *choose* to follow. That's a meaningful shift.
 

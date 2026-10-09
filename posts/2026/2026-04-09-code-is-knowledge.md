@@ -71,7 +71,7 @@ Those revelations led to meaningful rewrites — not just of code, but of how te
 
 ## The Drift Problem
 
-Here's where it gets complicated. The accuracy of any knowledge you extract from code depends on something that has nothing to do with the extraction tool. It depends on organizational distance — how far removed the developers were from the people the code was meant to serve.
+The accuracy of any knowledge you extract from code depends on something that has nothing to do with the extraction tool. It depends on organizational distance — how far removed the developers were from the people the code was meant to serve.
 
 When developers work closely with customers — hearing their language, sitting in on support calls, understanding what frustrates them — the code tends to reflect customer reality faithfully. Naming stays close to the domain. Workflows map to what people actually do. Knowledge extracted from that codebase is reasonably trustworthy.
 
@@ -85,7 +85,7 @@ Organizational distance makes accurate extraction harder. But it makes the case 
 
 ## Drift as Diagnostic
 
-Here's the part I find most useful: the drift itself is a finding.
+The drift itself is a finding.
 
 When extracted knowledge diverges significantly from what other sources say, that divergence is diagnostic. A codebase that models three user types when the support team talks about seven is telling you something important — not about the code, but about the organization. It's revealing where the internal model has separated from customer reality.
 

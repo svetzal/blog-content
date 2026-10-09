@@ -18,7 +18,7 @@ We're all making wishes now. "Build me a feature." "Refactor this module." "Fix 
 
 ## The Slot Machine in Your Editor
 
-Here's the thing about agentic coding right now: it's addictive by design. Not the math and technology, that's just non-deterministic, but the products built around it.
+Agentic coding right now is addictive by design. Not the math and technology, that's just non-deterministic, but the products built around it.
 
 Variable rewards. B.F. Skinner figured this out decades ago with pigeons and pellets. Unpredictable payoffs create compulsive behavior far more effectively than consistent ones. Sometimes the agent nails it on the first try and you feel like a wizard. Sometimes it hallucinates an API that doesn't exist. Sometimes it produces something almost right that takes you an hour to debug.
 
@@ -26,7 +26,7 @@ That intermittent reinforcement? That's not a bug. (Well, it is, but not just th
 
 ## The Prisoner's Dilemma, Committed to Main
 
-But let's set aside the dopamine hits for a moment. There's a deeper pattern here, one I keep seeing in nearly every enterprise team I've ever worked with.
+But let's set aside the dopamine hits for a moment. A deeper pattern runs underneath, and most enterprise teams I've worked with show it.
 
 Code rots. Not because code is fragile, but because people are human.
 
@@ -36,7 +36,7 @@ Everyone defects. The code gets worse. The cruft accumulates. And then we call i
 
 ## What If the Agent Always Cooperates?
 
-Here's where my pessimism flips.
+This is where my pessimism flips.
 
 An agent doesn't feel social pressure. It doesn't worry about looking slow. It doesn't have a performance review next quarter. Well, maybe it does, but it can't know it.
 

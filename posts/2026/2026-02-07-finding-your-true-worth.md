@@ -18,13 +18,13 @@ In each I asked for volunteers to share what they'd written. And beautiful thing
 
 One developer had captured years of institutional knowledge in a few paragraphs. Another had articulated patterns so deeply internalized she'd never spoken them aloud. With each share, I found myself pointing out the same thing: "Do you see what you just did? You took tacit knowledge—stuff that lived only in your head—and made it explicit. You saved that agent from wandering through dozens of files trying to figure out what you already know."
 
-Here's the thing: many of them didn't realize how much they knew until they tried to teach a machine.
+Many of them didn't realize how much they knew until they tried to teach a machine.
 
 ## The Booch Interview and the Panic Cycle
 
 I'd been thinking about this all week, since watching [Gergely Orosz's interview with Grady Booch](https://youtu.be/OfMAtaocvJw). Booch has been around long enough to see these panic cycles before. Compilers. High-level languages. Frameworks. Each wave makes some skills less valuable, but expands what gets built and shifts demand upward.
 
-His framing stuck with me: software engineering is mostly decision-making under constraints, not typing code. We balance forces—physics and computation limits, economics, team dynamics, legal boundaries, and especially ethics. Code is just one instrument in that broader practice.
+His framing: software engineering is mostly decision-making under constraints, not typing code. We balance forces—physics and computation limits, economics, team dynamics, legal boundaries, and especially ethics. Code is just one instrument in that broader practice.
 
 So why do we keep reducing ourselves to the typing?
 
@@ -32,7 +32,7 @@ So why do we keep reducing ourselves to the typing?
 
 Booch predicts automation will eat the "pipeline glue" work—the repetitive, messy stuff like CI/CD scaffolding, infrastructure-as-code templates, simple CRUD apps. The well-worn patterns. And he's right. LLMs are brilliant at those because the distance between intent and output is short and predictable.
 
-But here's what they can't do: they can't know that your team tried microservices in 2019 and it was a disaster because of the org structure at the time. They can't know that the reason you never use that particular library is because of a security incident that never made it into the public CVE database. They can't know that Janet in accounting has a workflow that depends on that weird edge case in the billing module.
+They can't know that your team tried microservices in 2019 and it was a disaster because of the org structure at the time. They can't know that the reason you never use that particular library is because of a security incident that never made it into the public CVE database. They can't know that Janet in accounting has a workflow that depends on that weird edge case in the billing module.
 
 That's not in the code. That's in *you*.
 
@@ -40,7 +40,7 @@ That's not in the code. That's in *you*.
 
 The danger isn't that AI will replace developers. The danger is that companies—and developers themselves—will believe the only value developers provide is typing code. And if you believe that, you'll act accordingly. You'll optimize for keystrokes. You'll measure productivity in lines. You'll outsource everything to the machine and wonder why your systems grow brittle and your institutional memory evaporates.
 
-I've watched this happen before, in different forms. Every time we've treated knowledge workers as interchangeable units of output, we've paid for it later. The cost just shows up somewhere else: in bugs that take weeks to diagnose, in architectural decisions that seemed fine until they weren't, in the slow erosion of the judgment that keeps complex systems alive.
+This has happened before, in different forms. Every time we've treated knowledge workers as interchangeable units of output, we've paid for it later. The cost just shows up somewhere else: in bugs that take weeks to diagnose, in architectural decisions that seemed fine until they weren't, in the slow erosion of the judgment that keeps complex systems alive.
 
 ## Proving It to Yourself First
 

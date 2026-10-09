@@ -2,7 +2,7 @@
 title: "The four rules were always about intent"
 date: "2026-10-09"
 published: false
-description: "An eval showed agent-written tests add nothing, and the industry heard 'stop writing tests.' Beck's four rules of simple design, remodelled around intent, say something more useful about why."
+description: "An eval showed agent-written tests add nothing, and the rule drawn from it was 'stop writing tests.' Beck's four rules of simple design, remodelled around intent, say something more useful about why."
 tags:
   - Software Engineering
   - Craft
