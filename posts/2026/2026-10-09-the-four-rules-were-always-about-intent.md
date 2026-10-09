@@ -18,17 +18,15 @@ His explanation is the better half of the finding. The implementation and the te
 
 That's interesting empirical evidence. Then he drew the rule: tell your agents to stop writing tests. The next day [one project](https://github.com/douglasjarquin/sum/issues/287) made it a standing directive, and its agents no longer write tests at all.
 
-The finding is right. The takeaway misses the mark, and the reason starts with a rule I already knew.
+The finding is right. The takeaway misses the mark, and the reason is in the four rules I teach from.
 
 ## One rule ate the other three
 
-Kent Beck's [four rules of simple design](https://www.martinfowler.com/bliki/BeckDesignRules.html), in the order I learned them: passes the tests, reveals intent, no duplication, fewest elements. Beck wrote them down in the first edition of *Extreme Programming Explained*, and Corey Haines wrote [a whole book on them](https://leanpub.com/4rulesofsimpledesign). I taught them for years in [an eight-week program I ran under Coding Culture](/2026/2026-05-23-when-intent-moves-faster-than-code/). Beck's own two formulations in that first edition put the middle two in different orders, and people have argued about it ever since. I thought I knew them.
+Kent Beck's [four rules of simple design](https://www.martinfowler.com/bliki/BeckDesignRules.html), in the order I learned them: passes the tests, reveals intent, no duplication, fewest elements. Beck wrote them down in the first edition of *Extreme Programming Explained*, and Corey Haines wrote [a whole book on them](https://leanpub.com/4rulesofsimpledesign). I taught them for years in [an eight-week program I ran under Coding Culture](/2026/2026-05-23-when-intent-moves-faster-than-code/). Beck's own two formulations in that first edition put the middle two in different orders, and people have argued about it ever since.
 
-Over the past year the second rule quietly ate the other three.
+*Reveals intent* is the rule I teach from. In the current world, where an agent can produce code faster than I can read it, it's also the thing I spend most of my day on. Not writing code. Saying what I mean clearly enough that the code can be built from it, and checked against it, by something that has never met me.
 
-In the current world, where an agent can produce code faster than I can read it, *reveals intent* stopped being one rule among four and became the thing I spend most of my day on. Not writing code. Saying what I mean clearly enough that the code can be built from it, and checked against it, by something that has never met me.
-
-So I tried an experiment. What happens if you rewrite all four rules with intent as the subject?
+So today I did something I hadn't done explicitly before: rewrite all four rules with intent as the subject.
 
 1. **Validate intent continuously.** Not "passes the tests" but "keeps checking that what we built still matches what we meant." The tests are one way to do that. They are not the only way, and on their own they're the narrowest.
 2. **Express intent everywhere possible.** And if it isn't possible somewhere, invent a way. A function name. A type. A record in a registry. A sentence a stakeholder can read.
