@@ -2,18 +2,23 @@
 title: "The four rules were always about intent"
 date: "2026-10-09"
 published: false
-description: "Tests are an alternate expression of intent, and that's not quite enough. Beck's four rules of simple design remodel cleanly around one word, and the remodel changed where I let documentation live."
+description: "An eval showed agent-written tests add nothing, and the industry heard 'stop writing tests.' Beck's four rules of simple design, remodelled around intent, say something more useful about why."
 tags:
   - Software Engineering
   - Craft
   - Intent
   - Agentic Development
   - Simple Design
+  - Testing
 ---
 
-A colleague and I were trading notes this week on what tests are for. My answer has been the same for twenty years: tests are an alternate expression of intent. They say why the code is shaped the way it is, in a form that can be run. That's interesting empirical evidence about what we meant.
+[Kun Chen](#kun-chen) ran an experiment this week that got a lot of people excited. On the DeepSWE eval set, he forbade an agent from writing any tests. The success rate didn't drop. It went up a hair, not significantly, while time and tokens went down, significantly. Of the thousands of tests the unrestricted arm had written, about two thirds were unit tests and a third were integration tests, and neither bucket helped at all.
 
-It's also still missing the mark, and I've only recently been able to say why.
+His read on why is the part I keep coming back to. The implementation and the tests were both the agent's interpretation of the intent, so the tests couldn't be any more accurate than the code they were checking.
+
+That's interesting empirical evidence. And then he said what the industry has been itching to hear for twenty years: tell your agents to stop writing tests. Within a day I was seeing it quoted in repo guidelines as a standing rule.
+
+I think the finding is right and the takeaway misses the mark. The reason it misses has been bothering me for a while, and it starts with a rule I thought I knew.
 
 ## One rule ate the other three
 
@@ -32,9 +37,21 @@ So I tried an experiment. What happens if you rewrite all four rules with intent
 
 Read that list back and the original four rules are still there. Nothing got dropped. But the subject changed from *the code* to *the thing the code is for*, and that shift does more work than one word should.
 
+## What the eval actually measured
+
+Hold Kun Chen's result up against rule three.
+
+An agent reads a task description. It forms an interpretation. It writes an implementation from that interpretation, and then it writes tests from the same interpretation. Two expressions of one guess. If the guess was wrong, the tests agree with the wrong code, pass, and tell you nothing. If the guess was right, the tests agree with the right code, pass, and tell you nothing you didn't already have.
+
+That's not a finding about tests. It's a finding about duplication. The eval measured what happens when you hold two copies of the same expression of intent, and the answer is what rule three has always said: the second copy costs you something and buys you nothing.
+
+What tests are *for* is rule one. Validate, continuously, that what we built matches what we meant. A test can only do that job if the intent it carries came from somewhere other than the code it's checking. When I write a test before the code, the intent in the test came from me, and the code has to answer to it. When a stakeholder describes a case I hadn't considered, the test that captures it is a second *source* of intent, not a second copy. That's where the validation lives. Kun Chen's own caveat points at exactly this: he suspects tests still carry value when a human can say what they mean more precisely as cases than as requirements. I'd put it more strongly. That's the only time they ever did.
+
+So "stop writing tests" is the wrong rule. The right one is older and less exciting: don't let the same interpreter write both sides of a check.
+
 ## Duplication was never about code
 
-Rule three is the one that reorganized my week.
+Rule three is also the one that reorganized my week, because tests are only the most visible place it bites.
 
 We've always treated "no duplication" as a statement about code. Two functions that do the same thing. The same literal in six places. Copy-paste with the variable names changed. We're good at spotting that kind, and the tools are better than we are.
 
@@ -58,10 +75,16 @@ Is that a loss? I spent a long time believing documentation was a craft of its o
 
 ## Back to the tests
 
-Which brings me back to where my colleague and I started. Tests as an alternate expression of intent.
+Tests have always been an alternate expression of intent. That's the line I've used for twenty years, and the word doing the damage in it is *alternate*.
 
-The word doing the damage in that sentence is *alternate*. An alternate expression is a second one. If the tests are where intent lives, then the code is the duplicate, and the two will drift. If the code is where intent lives, then the tests are the duplicate, and they'll drift the other way. Either way I've got two expressions of the same thing and a rule that says I shouldn't.
+An alternate expression is a second one. If the tests are where intent lives, then the code is the duplicate, and the two will drift. If the code is where intent lives, then the tests are the duplicate, and they'll drift the other way. Either way I've got two expressions of the same thing and a rule that says I shouldn't. Kun Chen measured what that costs, and the number was zero gain for real spend.
 
-What I want from a test now is narrower and more useful. I want it to validate, continuously, that the code still does what the intent says. Rule one. The intent itself lives somewhere with an address, and the test points at it rather than restating it.
+What I want from a test now is narrower and more useful. I want it to validate, continuously, that the code still does what the intent says. Rule one. The intent itself lives somewhere with an address, and the test points at it rather than restating it. That means the intent has to be mine, or the stakeholder's, or the record's. Anyone's but the implementer's.
 
-Dijkstra said tests can only show that something doesn't work, never that it does. He was right, and the four rules were quietly agreeing with him the whole time. The tests were never the intent. They were the first way we found to check it. Now that I have other ways, I'd rather the test do that one job well than carry a second copy of a thing that already has a home.
+Dijkstra said tests can only show that something doesn't work, never that it does. He was right, and the four rules were quietly agreeing with him the whole time. The tests were never the intent. They were the first way we found to check it. An agent writing its own tests isn't checking anything. It's agreeing with itself, and we just paid to find out how much that's worth.
+
+---
+
+## Voices in this post
+
+<a id="kun-chen"></a>**Kun Chen** is a former principal engineer at Meta, Microsoft and Atlassian who now builds agentic development tooling, including the firstmate project, and publishes his own eval results. The experiment cited here is his [October 7, 2026 thread](https://x.com/kunchenguid/status/2108030810691629403) on a DeepSWE run with Sonnet 5.5: banning agent-written tests gave a slightly higher success rate (not statistically significant) with significantly less time and token spend, and disabling execution of existing tests on a 44-task sample didn't move the success rate either. He is careful to note the result says nothing about end-to-end tests, since the agent wrote almost none. His perspective matters here because he did the measurement, and because his explanation of the result is the one I think is right, even where I disagree with the rule people drew from it.
