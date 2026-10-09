@@ -12,11 +12,11 @@ tags:
   - Testing
 ---
 
-[Kun Chen](#kun-chen) ran an experiment this week that got a lot of people excited. On the DeepSWE eval set, he forbade an agent from writing any tests. The success rate didn't drop. It went up a hair, not significantly, while time and tokens went down, significantly. Of the thousands of tests the unrestricted arm had written, about two thirds were unit tests and a third were integration tests, and neither bucket helped at all.
+[Kun Chen](#kun-chen) ran an experiment this week. On the DeepSWE eval set, he forbade an agent from writing any tests. The success rate didn't drop. It went up a hair, not significantly, while time and tokens went down, significantly. Of the thousands of tests the unrestricted arm had written, about two thirds were unit tests and a third were integration tests, and neither bucket helped at all.
 
 His explanation is the better half of the finding. The implementation and the tests were both the agent's interpretation of the intent, so the tests couldn't be any more accurate than the code they were checking.
 
-That's interesting empirical evidence. And then he said what the industry has been itching to hear for twenty years: tell your agents to stop writing tests. Within a day I was seeing it quoted in repo guidelines as a standing rule.
+That's interesting empirical evidence. Then he drew the rule: tell your agents to stop writing tests. The next day [one project](https://github.com/douglasjarquin/sum/issues/287) made it a standing directive, and its agents no longer write tests at all.
 
 The finding is right. The takeaway misses the mark, and the reason starts with a rule I thought I knew.
 
