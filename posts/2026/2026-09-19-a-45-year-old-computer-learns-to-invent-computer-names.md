@@ -24,7 +24,7 @@ I've spent the past few years helping people at work figure out what to do with 
 
 Here's the whole answer. Guess the next word. Measure how wrong you were. Nudge every number a little in the direction that would have made you less wrong. Repeat.
 
-That's it. That's the trick. Everything the big models do rides on that loop, run on a great deal more text with a great many more numbers. So I wanted to see the loop with my own eyes, at a scale where I could point at every part of it, on a machine where nothing could hide. The CoCo was the obvious candidate (it's fair to say it's responsible for my entire career), and 6809 assembly language was the only way it was going to fit.
+That's the trick. Everything the big models do rides on that loop, run on a great deal more text with a great many more numbers. So I wanted to see the loop with my own eyes, at a scale where I could point at every part of it, on a machine where nothing could hide. The CoCo was the obvious candidate (it's fair to say it's responsible for my entire career), and 6809 assembly language was the only way it was going to fit.
 
 The model has 290 parameters, numbers that we can change to fit it to a purpose.
 
