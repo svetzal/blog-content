@@ -26,7 +26,7 @@ The finding is right. The takeaway misses the mark, and the reason is in the fou
 
 [Kent Beck](#kent-beck)'s four rules of simple design, in the order I learned them: passes the tests, reveals intent, no duplication, fewest elements. Beck wrote them down in the first edition of *Extreme Programming Explained*, and [Corey Haines](#corey-haines) wrote a whole book on them. I taught them for years in [an eight-week program I ran under Coding Culture](/2026/2026-05-23-when-intent-moves-faster-than-code/). Beck's own two formulations in that first edition put the middle two in different orders, and people have argued about it ever since.
 
-*Reveals intent* is the rule I teach from. In the current world, where an agent can produce code faster than I can read it, it's also the thing I spend most of my day on. Not writing code. Saying what I mean clearly enough that the code can be built from it, and checked against it, by something that has never met me.
+*Reveals intent* is the rule I teach from. In the current world, where an agent can produce code faster than I can read it, it's also the thing I spend most of my day on. Not writing code. Saying what I mean clearly enough that an agent, with nothing but what I wrote down, can build the code from it and check the code against it.
 
 So today I did something I hadn't done explicitly before: rewrite all four rules with intent as the subject.
 
