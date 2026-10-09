@@ -18,7 +18,7 @@ And then you read the code. And the code tells you something different.
 
 Not wrong, exactly. But different. The code tells you things the people either can't articulate or won't say out loud. It shows you what the organization considers dangerous — look at the error handling. It shows you what they consider important — look at where the tests are, and where they aren't. The naming conventions reveal a domain model that may or may not match the one on the whiteboard. The architecture reveals organizational boundaries that may or may not match the org chart.
 
-I've been doing this for over thirty years, and I'm only now finding language for what I've always been doing. When I sit down with a new codebase, I'm not just reading instructions for a machine. I'm reading a record of how an organization thinks — about its customers, its domain, its risks, and its trade-offs.
+I've been doing this for over thirty years. When I sit down with a new codebase, I'm not just reading instructions for a machine. I'm reading a record of how an organization thinks — about its customers, its domain, its risks, and its trade-offs.
 
 Code is knowledge. We've always known this implicitly. Now we have tools that can make it explicit.
 
