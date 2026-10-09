@@ -1,0 +1,79 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Hero image for a post arguing that Beck's four rules of simple design remodel around intent, that duplicate expressions of intent invite divergence, and that documentation is becoming a derivative artifact generated from a single source of intent",
+
+  "Character": {
+    "Description": "A highly competent, focused woman coder and systems thinker",
+    "Age": "Middle-aged, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": { "Type": "Size 16, feminine", "UpperBody": "Broad shoulders", "LowerBody": "Slim hips" },
+    "Face": { "Complexion": "Light", "Eyes": "Blue-grey", "Expression": "Thoughtful, analytical", "Makeup": "Bold, pinks or purples, with a touch of shimmer" },
+    "Hair": { "Color": "Grey/silver", "Length": "Long", "Style": "Flowing, big wavy curls" },
+    "Wardrobe": {
+      "Base": [ { "Name": "Dark blazer", "Description": "Professional dark blazer over tech-casual attire, sleeves pushed up", "Context": "Always present" } ]
+    }
+  },
+
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic, single dominant source",
+      "Sources": ["One glowing record card as the key light", "Faint cyan projection glow", "Rim lighting"],
+      "Shadows": "Sharp, emphasizing texture and form"
+    },
+    "ColorPalette": {
+      "Primary": ["Cyan", "Electric Blue", "Magenta", "Lime Green"],
+      "Accents": ["Silver", "White", "Cool Blues", "Metallic purples"],
+      "Treatment": "High saturation on the single source card and its projections; the redundant paper copies desaturated and warm-grey"
+    },
+    "Atmosphere": { "Effects": ["Bokeh", "Atmospheric haze", "Neon glow", "Reflections on the workbench"], "Mood": "Quiet, decisive, uncluttered" }
+  },
+
+  "Situation": {
+    "Name": "Subtraction",
+    "Setting": "A dark, nearly empty workshop at night. On a long steel workbench stands ONE upright glowing crystalline record card, about the size of a tablet, showing six short labelled rows stacked vertically. From that single card, three thin beams of cyan light fan out and upward to three translucent holographic panes hanging in the air behind the bench: a documentation page, a test file, and a plain text guidance file. Each pane is clearly a projection of the card, not a separate document: same six rows visible faintly through each, rendered in a different layout. Nothing else is on the bench except two old hand-written paper copies of the same six rows, warm-grey and slightly crumpled, whose wording visibly differs from each other.",
+    "Camera": "Wide mid-shot. Subject stands off-centre in the right third beside the bench, turned three-quarters toward camera. The glowing source card is at centre-left, the three projected panes fill the upper middle, with haze and negative space across the upper right for text overlay.",
+    "CharacterPose": {
+      "Expression": "Calm, decisive, a slight half-smile; the look of someone removing something that was never needed",
+      "BodyPosition": "Standing at the bench, weight settled, one hand resting flat near the glowing card",
+      "Gesture": "The other hand lifting one of the two paper copies up and away from the bench between finger and thumb, about to discard it"
+    },
+    "Props": {
+      "Character": [
+        { "Name": "Dark blazer", "Description": "Sleeves pushed up to the forearm", "Application": "Worn" }
+      ],
+      "Article": [
+        { "Name": "Source record card", "Description": "Single upright glowing crystalline card with six labelled rows, the brightest object in frame", "Application": "Standing on the bench at centre-left, casting the key light", "SymbolicMeaning": "One expression of intent, with an address" },
+        { "Name": "Three projected panes", "Description": "Translucent holographic documentation page, test file, and guidance file, each visibly derived from the card by a thin cyan beam", "Application": "Hanging in the air behind the bench", "SymbolicMeaning": "Documentation as a derivative artifact" },
+        { "Name": "Two paper duplicates", "Description": "Hand-written copies of the same six rows on warm-grey paper, wording drifted apart from each other, one crumpled", "Application": "One flat on the bench, one being lifted away", "SymbolicMeaning": "Duplicate expressions of intent, already diverging" }
+      ],
+      "Environment": [
+        { "Name": "Steel workbench", "Description": "Long, clean, reflective", "Application": "Runs across the lower third of frame" },
+        { "Name": "Empty workshop", "Description": "Dark walls, a few unlit tool silhouettes, no clutter", "Application": "Background, fading into haze" }
+      ]
+    },
+    "KeyDetails": [
+      "Exactly one glowing source card; everything bright in the scene traces back to it by a visible beam",
+      "The paper copies are the only warm-toned objects and are clearly redundant",
+      "No readable text anywhere; rows are suggested by short glowing bars, not letters",
+      "Large clean negative space upper right"
+    ],
+    "LightingFocus": "The single source card lights her face and hands from below-left; the discarded paper copy is in shadow",
+    "ThematicTags": ["intent", "simple-design", "duplication", "derivative-documentation"]
+  },
+
+  "ArticleContext": {
+    "Title": "The four rules were always about intent",
+    "Tags": ["Software Engineering", "Craft", "Intent", "Simple Design", "Testing"],
+    "Themes": ["four rules of simple design remodelled around intent", "duplicate expressions of intent diverge", "documentation as a derivative of intent"],
+    "Mood": "contemplative"
+  },
+
+  "PromptKeywords": [
+    "highly detailed", "digital painting", "concept art", "cyberpunk", "neon light",
+    "cinematic lighting", "high contrast", "16:9 aspect ratio", "wide shot", "banner composition", "no text"
+  ]
+}

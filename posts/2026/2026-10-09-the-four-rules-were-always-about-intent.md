@@ -1,7 +1,7 @@
 ---
 title: "The four rules were always about intent"
 date: "2026-10-09"
-published: false
+published: true
 description: "An eval showed agent-written tests add nothing, and the rule drawn from it was 'stop writing tests.' Beck's four rules of simple design, remodelled around intent, say something more useful about why."
 tags:
   - Software Engineering
@@ -10,6 +10,8 @@ tags:
   - Agentic Development
   - Simple Design
   - Testing
+image: images/four-rules-intent-banner.png
+imageAlt: "A silver-haired woman in a dark blazer stands at a steel workbench in a dark workshop. One glowing crystalline record card with six coloured rows stands on the bench, and three thin beams of light run from it up to three translucent projected panes showing the same six rows as a document, a code file, and a text file. One hand rests beside the card; the other drops a crumpled hand-written paper copy of the same rows into a wastebasket, while a second paper copy lies on the bench."
 ---
 
 [Kun Chen](#kun-chen) ran an experiment this week. On the DeepSWE eval set, he forbade an agent from writing any tests. The success rate didn't drop. It went up a hair, not significantly, while time and tokens went down, significantly. Of the thousands of tests the unrestricted arm had written, about two thirds were unit tests and a third were integration tests, and neither bucket helped at all.
@@ -22,7 +24,7 @@ The finding is right. The takeaway misses the mark, and the reason is in the fou
 
 ## One rule ate the other three
 
-Kent Beck's [four rules of simple design](https://www.martinfowler.com/bliki/BeckDesignRules.html), in the order I learned them: passes the tests, reveals intent, no duplication, fewest elements. Beck wrote them down in the first edition of *Extreme Programming Explained*, and Corey Haines wrote [a whole book on them](https://leanpub.com/4rulesofsimpledesign). I taught them for years in [an eight-week program I ran under Coding Culture](/2026/2026-05-23-when-intent-moves-faster-than-code/). Beck's own two formulations in that first edition put the middle two in different orders, and people have argued about it ever since.
+[Kent Beck](#kent-beck)'s four rules of simple design, in the order I learned them: passes the tests, reveals intent, no duplication, fewest elements. Beck wrote them down in the first edition of *Extreme Programming Explained*, and [Corey Haines](#corey-haines) wrote a whole book on them. I taught them for years in [an eight-week program I ran under Coding Culture](/2026/2026-05-23-when-intent-moves-faster-than-code/). Beck's own two formulations in that first edition put the middle two in different orders, and people have argued about it ever since.
 
 *Reveals intent* is the rule I teach from. In the current world, where an agent can produce code faster than I can read it, it's also the thing I spend most of my day on. Not writing code. Saying what I mean clearly enough that the code can be built from it, and checked against it, by something that has never met me.
 
@@ -77,10 +79,16 @@ An alternate expression is a second one. If the tests are where intent lives, th
 
 What I want from a test now is narrower and more useful. I want it to validate, continuously, that the code still does what the intent says. Rule one. The intent itself lives somewhere with an address, and the test points at it rather than restating it. That means the intent has to be mine, or the stakeholder's, or the record's. Anyone's but the implementer's.
 
-Dijkstra said testing can show the presence of bugs, never their absence. The tests were never the intent. They were the first way we found to check it. An agent writing its own tests isn't checking anything. It's agreeing with itself.
+[Dijkstra](#edsger-dijkstra) said testing can show the presence of bugs, never their absence. The tests were never the intent. They were the first way we found to check it. An agent writing its own tests isn't checking anything. It's agreeing with itself.
 
 ---
 
 ## Voices in this post
 
 <a id="kun-chen"></a>**Kun Chen** is a former principal engineer at Meta, Microsoft and Atlassian who now builds agentic development tooling, including the firstmate project, and publishes his own eval results. The experiment cited here is his [October 7, 2026 thread](https://x.com/kunchenguid/status/2108030810691629403) on a DeepSWE run with Sonnet 5.5: banning agent-written tests gave a slightly higher success rate (not statistically significant) with significantly less time and token spend, and disabling execution of existing tests on a 44-task sample didn't move the success rate either. He is careful to note the result says nothing about end-to-end tests, since the agent wrote almost none. His perspective matters here because he did the measurement, and because his explanation of the result is the one I think is right, even where I disagree with the rule people drew from it.
+
+<a id="kent-beck"></a>**Kent Beck** created Extreme Programming and wrote the four rules of simple design into the first edition of *Extreme Programming Explained* (1999). [Martin Fowler's 2015 history of the rules](https://www.martinfowler.com/bliki/BeckDesignRules.html) is the clearest account of their origin and wording, and notes that Beck's two formulations in that edition order the middle two rules differently. The rules are the frame for this whole post, and the version I teach from.
+
+<a id="corey-haines"></a>**Corey Haines** is a developer and coach who co-created the Code Retreat format and wrote [*Understanding the Four Rules of Simple Design*](https://leanpub.com/4rulesofsimpledesign), with forewords by Kent Beck and J.B. Rainsberger. It is the standard short treatment of the rules, built from watching thousands of pairs work the same small problem, and it's what I point people at when they ask where to start.
+
+<a id="edsger-dijkstra"></a>**Edsger W. Dijkstra** wrote that program testing can show the presence of bugs but never their absence, in [*Notes on Structured Programming*](https://www.cs.utexas.edu/~EWD/ewd02xx/EWD249.PDF) (1970). It's the line I use when explaining what tests are for, and it's why the closing argument here treats a test as validation of intent rather than proof.
