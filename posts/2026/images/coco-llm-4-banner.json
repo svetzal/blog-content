@@ -91,7 +91,7 @@
     "Illustration, not documentary evidence of a particular measured run or a literal reconstruction of the exhibit."
   ],
   "ProductionNotes": {
-    "Status": "Specification only; image not generated",
+    "Status": "Generated; attached to unpublished draft",
     "Output": "coco-llm-4-banner.png",
     "CharacterReferences": [
       "content/assets/reference-1.jpg",
@@ -117,8 +117,8 @@
       "https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-005-prompted-marketing-language.md",
       "https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-003-training-data-bias.md"
     ],
-    "ScreenReferenceStatus": "A readable prompt-demo frame must be captured or selected before generation; no existing frame is assumed. The black-on-green geometry reference is already available.",
-    "AltTextDraft": "An illustration of a silver-haired woman at a worn silver Color Computer, one hand on its keyboard as she watches a black-on-green CRT, with training-data printouts behind the machine."
+    "ScreenReferenceStatus": "Illustrative glyph detail is too small to convey readable output; no captured program frame is represented.",
+    "AltTextDraft": "An illustration of a silver-haired woman using a worn silver Color Computer beside a black-on-green CRT, with fanfold printouts behind the keyboard."
   },
   "Situation": {
     "Name": "Completing a familiar slogan",

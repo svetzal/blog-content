@@ -91,7 +91,7 @@
     "Illustration, not documentary evidence of a particular measured run or a literal reconstruction of the exhibit."
   ],
   "ProductionNotes": {
-    "Status": "Specification only; image not generated",
+    "Status": "Generated; attached to unpublished draft",
     "Output": "coco-llm-5-banner.png",
     "CharacterReferences": [
       "content/assets/reference-1.jpg",
@@ -118,8 +118,8 @@
       "https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-012-episode-titles.md",
       "https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-010-melody-continuation.md"
     ],
-    "ScreenReferenceStatus": "A title-demo frame must be captured or selected before generation if the title strings are to be readable. The existing training screen supplies display colour and border geometry only, not the title-demo content.",
-    "AltTextDraft": "An illustration of a silver-haired woman and a visitor beside a worn silver Color Computer displaying two columns of dark text on a bright green CRT, with a small eight-note seed card on the exhibit table."
+    "ScreenReferenceStatus": "Illustrative glyph detail is too small to convey readable output; no captured program frame is represented.",
+    "AltTextDraft": "An illustration of a silver-haired woman sharing a Color Computer demonstration with a visitor, beside a CRT showing two columns of dark glyphs on bright green."
   },
   "Situation": {
     "Name": "A visitor at the exhibit table",
