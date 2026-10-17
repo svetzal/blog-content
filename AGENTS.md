@@ -318,6 +318,25 @@ edit; do not rely on the image model to infer them from "retro computer".
 - Check these details in the generated image before accepting it. Character
   likeness alone does not make the computer prop correct.
 
+## Hardware implementation asides
+
+Keep the model explanation continuous. Put processor instructions, assembly
+examples, memory mapping, packing and cycle accounting in visible, expanded
+`<aside class="hardware-detail" aria-labelledby="unique-title-id">` regions.
+Give each a matching heading ID and an "Inside the 6809" or "Inside the
+6809 / 6309" heading appropriate to its contents.
+
+A reader who skips every hardware aside must still be able to follow the
+model's inputs, state changes and resulting behaviour. Keep model concepts,
+training provenance and consequences for output in the main text; explain
+how the processor implements them inside the aside.
+
+Link implementation explanations directly to the relevant source routine,
+test or measurement record, with verified line ranges or section anchors.
+Use short, exact assembly excerpts and explain their instructions. Keep the
+full routine in the linked repository rather than copying it into the post.
+Do not use the hardware label for model mathematics or ordinary sample output.
+
 ## Direct source references
 
 When explaining how software works, link directly to the source code that
