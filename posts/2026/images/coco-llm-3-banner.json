@@ -1,0 +1,164 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Character": {
+    "Description": "A highly competent, focused woman coder and systems thinker",
+    "Age": "Middle-aged, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": {
+      "Type": "Size 16, feminine",
+      "UpperBody": "Broad shoulders",
+      "LowerBody": "Slim hips"
+    },
+    "Face": {
+      "Complexion": "Light",
+      "Eyes": "Blue-grey",
+      "Expression": "Concentration with a trace of a smile, reading the numbers",
+      "Makeup": "Bold, pinks or purples, with a touch of shimmer"
+    },
+    "Hair": {
+      "Color": "Grey/silver",
+      "Length": "Long",
+      "Style": "Flowing, big wavy curls"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Professional dark blazer over tech-casual attire, sleeves pushed up",
+          "Context": "Always present"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": [
+        "Bright green CoCo raster glow from a color composite CRT as the dominant light",
+        "Cyan and magenta neon rim light from the room"
+      ],
+      "Shadows": "Sharp, emphasizing the worn texture of the old machine"
+    },
+    "ColorPalette": {
+      "Primary": [
+        "Phosphor green",
+        "Cyan",
+        "Electric Blue",
+        "Magenta"
+      ],
+      "Accents": [
+        "Silver",
+        "Warm yellowed plastic",
+        "Metallic purples"
+      ],
+      "Treatment": "High saturation, strong contrast between the warm old plastic and the cool neon"
+    },
+    "Atmosphere": {
+      "Effects": [
+        "Bokeh",
+        "Atmospheric haze",
+        "Neon glow",
+        "Reflections on the CRT glass"
+      ],
+      "Mood": "Quiet, close, patient: the machine opened up and every number in view"
+    }
+  },
+  "Situation": {
+    "Name": "Twenty epochs, then the assembly",
+    "Setting": "The same night-time retro-computing workbench as posts one and two. A worn silver 1981 Radio Shack Color Computer with black keyboard and a beige composite CRT showing a green raster. No modern computer performs the demonstration.",
+    "Camera": "Wide landscape editorial banner. Three-quarter view across the workbench. Character on the left, CoCo and CRT on the right, two clearly separated fanfold printouts in the foreground. Keep the important subjects within a central crop that works at 16:9.",
+    "CharacterPose": {
+      "Expression": "Focused, deliberate inspection; no surprise or revelation",
+      "BodyPosition": "Seated at the workbench, leaning forward slightly",
+      "Gesture": "One hand rests at a marked stopping point on the training checkpoint printout; the other rests beside the assembly listing. Natural hands, no floating gestures."
+    },
+    "Props": {
+      "Article": [
+        {
+          "Name": "Training checkpoint printout",
+          "Description": "Green-bar fanfold paper with a small sequence of checkpoint rows. One amber marker indicates epoch 20. It is a physical record being inspected, not a magical diagram. No invented computer names, numerical results or fabricated charts.",
+          "Application": "Foreground focal object beneath her hand"
+        },
+        {
+          "Name": "6809 assembly listing",
+          "Description": "A second narrower fanfold sheet, with monospaced instruction-like lines. Text can be too small to read. Do not fabricate legible code.",
+          "Application": "Beside the checkpoint sheet, visibly separate and secondary"
+        },
+        {
+          "Name": "1981 CoCo and composite CRT",
+          "Description": "Use the project hardware references for the silver case, black keys and beige CRT. Bright green display with dark uppercase pixel blocks, no lowercase, no modern terminal UI.",
+          "Application": "Right half of frame; screen subordinate to the physical inspection"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Workbench",
+          "Description": "Worn wooden surface, restrained cables, cyan and magenta room lighting",
+          "Application": "Background context, uncluttered"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "The woman deliberately chooses a stopping point; she does not discover her own design by accident.",
+      "Training progression is the primary subject; processor implementation is secondary.",
+      "No robot, brain, mind, humanoid machine, floating neural network or anthropomorphic computer.",
+      "No title text, slogans, invented outputs, fake measured values, illegible text pretending to be evidence.",
+      "This is an illustration, not a photograph or a hardware timing claim."
+    ],
+    "LightingFocus": "Green CRT light on hands and paper; restrained amber at the selected checkpoint; cyan and magenta rim light consistent with the previous banners.",
+    "ThematicTags": [
+      "training-checkpoints",
+      "stopping-training",
+      "6809-assembly",
+      "measured-computation"
+    ]
+  },
+  "ArticleContext": {
+    "Title": "Twenty epochs, then the assembly",
+    "Themes": [
+      "Loss continues falling while useful novel names decline",
+      "A person chooses the stopping point using a task-specific measurement",
+      "The same update can be followed through integer processor instructions"
+    ],
+    "Mood": "Analytical, deliberate, practical"
+  },
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "neon light",
+    "cinematic lighting",
+    "high contrast",
+    "shallow depth of field",
+    "16:9 aspect ratio",
+    "wide shot",
+    "banner composition"
+  ],
+  "NegativeConstraints": [
+    "no text outside the authentic CRT output and the non-legible printout",
+    "no added lettering",
+    "no signage",
+    "no slogans",
+    "no book spines with titles",
+    "no smartwatch",
+    "no modern gadgets",
+    "no clean or modernised computer",
+    "no die in her hand"
+  ],
+  "ProductionNotes": {
+    "Status": "Specification only; image not generated",
+    "Output": "coco-llm-3-banner.png",
+    "CharacterReferences": "Use the blog content/assets/reference-N.jpg images in numeric order.",
+    "HardwareReferences": [
+      "coco1-reference.jpg",
+      "coco-screen-reference.png"
+    ],
+    "AltTextDraft": "An illustration of a silver-haired woman at a night-time workbench beside a 1981 Color Computer, marking a training checkpoint on a green-bar printout with a separate assembly listing beside it.",
+    "TextPolicy": "If an exact checkpoint label is rendered, use only 20. All other evidence belongs in the article tables, not generated artwork."
+  }
+}
