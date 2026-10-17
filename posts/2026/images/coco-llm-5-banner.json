@@ -113,13 +113,15 @@
       "Any readable output matches the cited source or a captured program frame exactly.",
       "No fictitious settings, charts or mechanisms are presented as evidence.",
       "CoCo is narrower than the woman’s shoulders, with plausible hand-to-key scale.",
-      "Composition and primary action differ clearly from adjacent series banners."
+      "Composition and primary action differ clearly from adjacent series banners.",
+      "Flat, separated CoCo chiclet tiles match the hardware photograph; no sculpted mechanical keycaps."
     ],
     "SourceReferences": [
       "https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-010-melody-continuation.md"
     ],
     "ScreenReferenceStatus": "Illustrative glyph detail is too small to convey readable output; no captured program frame is represented.",
-    "AltTextDraft": "An illustration of a silver-haired woman standing beside a compact silver Color Computer, eyes closed and fingers resting on the table as she listens to a tune."
+    "AltTextDraft": "An illustration of a silver-haired woman standing beside a compact silver Color Computer, eyes closed and fingers resting on the table as she listens to a tune.",
+    "KeyboardRequirement": "Match the photographed CoCo 1 chiclet keyboard: small flat-topped, shallow, straight-sided cream square tiles with generous visible dark gaps; flat cream spacebar and rectangular modifier keys; red key at upper right. Preserve the original sparse layout and row count. No tall, sculpted or tapered mechanical keycaps, dense PC layout, function-key row or numeric keypad."
   },
   "Situation": {
     "Name": "Listening to the melody continuation",
@@ -134,7 +136,7 @@
       "Article": [
         {
           "Name": "CoCo and composite CRT",
-          "Description": "A worn silver 1981 Radio Shack Color Computer 1, dark keyboard surround, yellowed cream keys, red key and period badge, matched to the project photograph. A separate beige period composite CRT, matched to the monitor in the approved post-three banner. No generic beige computer, black replacement keys or flat panel. BLACK or very dark green chunky uppercase low-resolution characters ON A SOLID BRIGHT GREEN background. The green active rectangle occupies 7/8 (87.5%) of the visible screen-glass width AND height, centered with a dark border 1/16 of the glass width at each side and 1/16 of its height at top and bottom. These proportions apply in the screen plane before perspective and CRT curvature. Green fills spaces and blank lines. The dark border is inside the glass, not the plastic bezel. Never bright green glyphs on a black terminal background.",
+          "Description": "A worn silver 1981 Radio Shack Color Computer 1, dark keyboard surround, yellowed cream keys, red key and period badge, matched to the project photograph. A separate beige period composite CRT, matched to the monitor in the approved post-three banner. No generic beige computer, black replacement keys or flat panel. BLACK or very dark green chunky uppercase low-resolution characters ON A SOLID BRIGHT GREEN background. The green active rectangle occupies 7/8 (87.5%) of the visible screen-glass width AND height, centered with a dark border 1/16 of the glass width at each side and 1/16 of its height at top and bottom. These proportions apply in the screen plane before perspective and CRT curvature. Green fills spaces and blank lines. The dark border is inside the glass, not the plastic bezel. Never bright green glyphs on a black terminal background. Match the photographed CoCo 1 chiclet keyboard: small flat-topped, shallow, straight-sided cream square tiles with generous visible dark gaps; flat cream spacebar and rectangular modifier keys; red key at upper right. Preserve the original sparse layout and row count. No tall, sculpted or tapered mechanical keycaps, dense PC layout, function-key row or numeric keypad.",
           "Application": "Compact secondary tabletop hardware at realistic adult scale; incidental screen glyphs too small to read."
         },
         {
