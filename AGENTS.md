@@ -288,6 +288,36 @@ Stacey's Obsidian vault is located at `~/Work/HostedVault/`. It contains researc
 - Blog post body headings should start at H2 (`##`) and increment by one level only (no skipping from `##` to `####`)
 - Put blank lines above and below bulleted lists, numbered lists, headings, quotations, and code blocks
 
+## Recurring image props: Tandy Color Computer
+
+When a blog illustration includes the CoCo, preserve its recognizable hardware
+and display. Apply these requirements in every scene specification and image
+edit; do not rely on the image model to infer them from "retro computer".
+
+- Use [the CoCo 1 photograph](posts/2026/images/coco-llm-1-coco1-reference.jpg)
+  and [the display reference](posts/2026/images/coco-llm-1-screen-reference.png)
+  as visual references. For the CoCo 1,
+  preserve the worn silver case, dark keyboard surround, yellowed cream keys,
+  red key and period badge. Do not substitute a generic beige computer or a
+  modern keyboard. Use the appropriate reference for a different CoCo model.
+- Show the display in a separate period CRT. Match the referenced monitor's
+  case and proportions rather than inventing a flat panel.
+- The signature text display is **black or very dark green characters on a
+  solid bright green background**. Green fills the active rectangle, including
+  spaces and blank lines. Do not render green characters on a black field.
+- The green active rectangle occupies **seven-eighths of the visible display
+  width and seven-eighths of its height**, centered within a dark border. Allow
+  for perspective and CRT curvature; the border is part of the display, not
+  the monitor's plastic bezel.
+- Use chunky, low-resolution uppercase glyphs. Subtle scanlines, reflections
+  and glow may suggest a composite CRT, but must preserve the black-on-green
+  appearance and clear active-area boundary.
+- Use captured program output when readable screen content is needed. Do not
+  invent sample output, measurements or code. If the screen is incidental,
+  keep the character detail too small to convey factual claims.
+- Check these details in the generated image before accepting it. Character
+  likeness alone does not make the computer prop correct.
+
 ## Direct source references
 
 When explaining how software works, link directly to the source code that
