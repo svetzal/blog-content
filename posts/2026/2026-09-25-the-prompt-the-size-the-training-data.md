@@ -3,7 +3,7 @@ title: "The prompt, the size, the training data"
 date: 2026-09-25
 published: false
 image: "images/coco-llm-4-banner.png"
-imageAlt: "An illustration of a silver-haired woman using a worn silver Color Computer beside a black-on-green CRT, with fanfold printouts behind the keyboard."
+imageAlt: "An overhead illustration of a silver-haired woman comparing fanfold training-data sheets, with a compact silver Color Computer and green CRT at the far end of the table."
 description: "Post four of five: how prompts change context, larger models change capacity and cost, and training examples and their order change the output probabilities."
 tags:
   - ai

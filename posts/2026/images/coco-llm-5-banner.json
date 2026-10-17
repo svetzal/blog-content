@@ -12,7 +12,7 @@
     "Face": {
       "Complexion": "Light",
       "Eyes": "Blue-grey",
-      "Expression": "Warm, attentive, sharing a demonstration with a visitor",
+      "Expression": "Eyes softly closed with a small delighted smile, listening to the melody",
       "Makeup": "Bold, pinks or purples, with a touch of shimmer"
     },
     "Hair": {
@@ -62,7 +62,7 @@
         "Neon glow",
         "Reflections on the CRT glass"
       ],
-      "Mood": "Warm, attentive, sharing a demonstration with a visitor"
+      "Mood": "Eyes softly closed with a small delighted smile, listening to the melody"
     }
   },
   "PromptKeywords": [
@@ -91,7 +91,7 @@
     "Illustration, not documentary evidence of a particular measured run or a literal reconstruction of the exhibit."
   ],
   "ProductionNotes": {
-    "Status": "Generated; attached to unpublished draft",
+    "Status": "Generated replacement; attached to unpublished draft",
     "Output": "coco-llm-5-banner.png",
     "CharacterReferences": [
       "content/assets/reference-1.jpg",
@@ -102,7 +102,7 @@
     "DisplayReference": "content/posts/2026/images/coco-llm-1-screen-reference.png",
     "ContinuityReference": "content/posts/2026/images/coco-llm-3-banner.png",
     "ReferenceRoot": "/Users/svetzal/Work/Projects/Personal/stacey-blog",
-    "Framing": "True 16:9 landscape; keep face, hands, computer and active screen inside the central 80% of width. No panoramic multi-panel composition.",
+    "Framing": "16:9; realistic adult-to-hardware scale. CoCo about 40 cm wide, narrower than the woman’s shoulders; small separate period CRT. Keep hardware at the same distance as the person; avoid foreground enlargement.",
     "DisplayRequirement": "BLACK or very dark green chunky uppercase low-resolution characters ON A SOLID BRIGHT GREEN background. The green active rectangle occupies 7/8 (87.5%) of the visible screen-glass width AND height, centered with a dark border 1/16 of the glass width at each side and 1/16 of its height at top and bottom. These proportions apply in the screen plane before perspective and CRT curvature. Green fills spaces and blank lines. The dark border is inside the glass, not the plastic bezel. Never bright green glyphs on a black terminal background.",
     "AcceptanceChecks": [
       "Character matches all three portrait references.",
@@ -111,41 +111,36 @@
       "Green active area covers seven-eighths of each screen dimension.",
       "Main action is legible as a thumbnail.",
       "Any readable output matches the cited source or a captured program frame exactly.",
-      "No fictitious settings, charts or mechanisms are presented as evidence."
+      "No fictitious settings, charts or mechanisms are presented as evidence.",
+      "CoCo is narrower than the woman’s shoulders, with plausible hand-to-key scale.",
+      "Composition and primary action differ clearly from adjacent series banners."
     ],
     "SourceReferences": [
-      "https://github.com/svetzal/coco-llm/blob/main/presentation/deck/data/titles.json",
-      "https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-012-episode-titles.md",
       "https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-010-melody-continuation.md"
     ],
     "ScreenReferenceStatus": "Illustrative glyph detail is too small to convey readable output; no captured program frame is represented.",
-    "AltTextDraft": "An illustration of a silver-haired woman sharing a Color Computer demonstration with a visitor, beside a CRT showing two columns of dark glyphs on bright green."
+    "AltTextDraft": "An illustration of a silver-haired woman standing beside a compact silver Color Computer, eyes closed and fingers resting on the table as she listens to a tune."
   },
   "Situation": {
-    "Name": "A visitor at the exhibit table",
-    "Setting": "A small retro-computing exhibit table at night, retaining the green, cyan and magenta palette of the series. A single CoCo demonstration occupies the foreground; other tables fade into soft bokeh.",
-    "Camera": "Wide three-quarter view from the visitor side. The silver-haired woman is left of center, the CoCo and CRT near center-right, one adult visitor in partial profile at the far right. The visitor does not cover the active screen. Both faces, the computer and the interaction stay within the banner crop.",
+    "Name": "Listening to the melody continuation",
+    "Setting": "Spacious, quiet retro-computing exhibit room; warm amber face light, magenta rim light and restrained green CRT illumination.",
+    "Camera": "Low eye-level wide environmental portrait. Standing woman on the right, shown from head to mid-thigh; compact CoCo and small CRT on the left occupy about 20–25 percent of the image width. Person and hardware at the same distance.",
     "CharacterPose": {
-      "Expression": "A small, amused smile while watching the visitor inspect the titles",
-      "BodyPosition": "Seated or standing close behind the table, oriented toward the visitor and monitor",
-      "Gesture": "One hand rests beside the CoCo keyboard after generating a screen of titles; the other relaxed on the table. No presenter pointing into empty space."
+      "Expression": "Eyes softly closed, head slightly tilted, small delighted smile while listening",
+      "BodyPosition": "Standing with one hip gently against the exhibit table",
+      "Gesture": "Fingers loosely tapping the table edge; other hand relaxed by her side."
     },
     "Props": {
       "Article": [
         {
           "Name": "CoCo and composite CRT",
           "Description": "A worn silver 1981 Radio Shack Color Computer 1, dark keyboard surround, yellowed cream keys, red key and period badge, matched to the project photograph. A separate beige period composite CRT, matched to the monitor in the approved post-three banner. No generic beige computer, black replacement keys or flat panel. BLACK or very dark green chunky uppercase low-resolution characters ON A SOLID BRIGHT GREEN background. The green active rectangle occupies 7/8 (87.5%) of the visible screen-glass width AND height, centered with a dark border 1/16 of the glass width at each side and 1/16 of its height at top and bottom. These proportions apply in the screen plane before perspective and CRT curvature. Green fills spaces and blank lines. The dark border is inside the glass, not the plastic bezel. Never bright green glyphs on a black terminal background.",
-          "Application": "Main exhibit and focal object. One display shows one program, not four demonstrations running concurrently."
-        },
-        {
-          "Name": "Invented-title demonstration",
-          "Description": "Use a captured screen of the sixteen invented episode titles if readable content is shown. The existing titles.json export provides the exact allowed title strings. Preserve the actual two-column program layout when using a screen reference. Do not invent new titles, episode artwork or a television playback interface.",
-          "Application": "CRT content. Visitor looks toward the screen with a slight smile, echoing the opening exhibit scene in post one."
+          "Application": "Compact secondary tabletop hardware at realistic adult scale; incidental screen glyphs too small to read."
         },
         {
           "Name": "Eight-note seed card",
-          "Description": "A small plain card carrying only the documented seed 1 2 3 5 5 3 2 1. It refers to the melody continuation example, not a measured score or an invented transcription.",
-          "Application": "One unobtrusive foreground detail beside the keyboard. If exact digits cannot be rendered reliably, keep the card text too small to read."
+          "Description": "Small unobtrusive card with no readable text; the illustration makes no claim to reproduce a measured score.",
+          "Application": "Secondary tabletop detail beside the compact computer."
         }
       ],
       "Environment": [
@@ -157,14 +152,13 @@
       ]
     },
     "KeyDetails": [
-      "Primary story: a visitor inspecting a screen of invented titles. The wider post covers several mechanisms, but the banner does not attempt a four-panel infographic.",
-      "No neural model is implied for the counting game. No game gestures directed at a screen that is running the title demo.",
-      "The melody seed is a secondary reference. Do not add a piano, musical instrument controller or sound hardware not used in the demonstrations.",
+      "Melody continuation is the primary story; she listens and taps the table edge.",
+      "One program on one computer; incidental display glyphs are too small to read.",
+      "No floating musical notes, piano, headphones or added instruments.",
       "BLACK or very dark green chunky uppercase low-resolution characters ON A SOLID BRIGHT GREEN background. The green active rectangle occupies 7/8 (87.5%) of the visible screen-glass width AND height, centered with a dark border 1/16 of the glass width at each side and 1/16 of its height at top and bottom. These proportions apply in the screen plane before perspective and CRT curvature. Green fills spaces and blank lines. The dark border is inside the glass, not the plastic bezel. Never bright green glyphs on a black terminal background.",
-      "Use character references only for the recurring woman. The visitor is a generic adult, with no claimed real identity.",
-      "No Star Trek logos, spacecraft, costumes or familiar actors: the subject is the computer generating titles, not a scene from a television episode."
+      "16:9; realistic adult-to-hardware scale. CoCo about 40 cm wide, narrower than the woman’s shoulders; small separate period CRT. Keep hardware at the same distance as the person; avoid foreground enlargement."
     ],
-    "LightingFocus": "Green CRT glow shared by the two faces and the tabletop, cyan rim light on the monitor, magenta at the back of the room. Warmer and more social than the workbench banners.",
+    "LightingFocus": "Warm amber across the listening face, magenta on silver curls, restrained green from the small CRT at left.",
     "ThematicTags": [
       "exhibit-table",
       "invented-titles",
