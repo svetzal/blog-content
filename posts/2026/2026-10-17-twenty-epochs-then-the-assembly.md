@@ -55,7 +55,7 @@ I wanted new names with the right shape, so I scored that separately from loss. 
 
 I kept the model at 290 parameters and the run at 20 epochs to fit the demonstration on a stock CoCo 1.
 
-Each example takes 261 multiplies. With 58 examples per pass and 20 passes, training takes 302,760 multiplies. The full run executes 15.8 million instructions. Under the emulator at the 1981 clock rate that is a little over a minute. The full training run has not been timed on physical hardware.
+Each example takes 261 multiplies. With 58 examples per pass and 20 passes, training takes 302,760 multiplies. The full run executes 15.8 million instructions. The calculation and the emulator at the 1981 clock rate put training at a little over a minute. I have timed the full training run several times on physical hardware, with the same result.
 
 Inference needs 2,516 bytes for the forward pass, sampling and the 580 bytes of weights. Training requires another 730 bytes for its update code, training examples and progress display. Those additional bytes are not needed for inference. A released set of weights likewise does not include the entire system used to train it.
 
