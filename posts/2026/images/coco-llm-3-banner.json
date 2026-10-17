@@ -151,7 +151,7 @@
     "no die in her hand"
   ],
   "ProductionNotes": {
-    "Status": "Specification only; image not generated",
+    "Status": "Generated; attached to unpublished draft",
     "Output": "coco-llm-3-banner.png",
     "CharacterReferences": "Use the blog content/assets/reference-N.jpg images in numeric order.",
     "HardwareReferences": [
