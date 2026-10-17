@@ -139,4 +139,16 @@ Here's the whole thing, about two minutes, recorded from the emulator running at
 The emulator training for two minutes and then drawing names.
 </video>
 
+<aside class="hardware-detail" aria-labelledby="verification-detail-title">
+
+<h3 id="verification-detail-title">Inside the 6809: checking the training run</h3>
+
+Plausible names alone don't tell me whether the assembly did the arithmetic correctly. I check the numbers training changed. The 290 parameters occupy two bytes each, so the final result is 580 bytes that can be compared directly.
+
+The Mac runs a [fixed-point reference model](https://github.com/svetzal/coco-llm/blob/main/src/reference/fixed_token_lm.py) with the same integer arithmetic, starting seed, training examples and twenty epochs. A [build script](https://github.com/svetzal/coco-llm/blob/main/tools/generate_6809_data.py#L41-L58) records its final parameters as the expected result. The 6809 program starts from random parameters and performs the training itself; the expected bytes are there for comparison, not loaded as its starting weights.
+
+After training, the [verification routine](https://github.com/svetzal/coco-llm/blob/main/src/6809/model_core.asm#L55-L80) compares every byte. If one differs, it records the location, the actual byte and the expected byte. This checks agreement with the reference implementation, not whether an invented name is useful or true. The [live training experiment's correctness record](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-004-complete-6809-training.md#correctness) reports the simulator checks separately from the whole-machine emulator run.
+
+</aside>
+
 [Next post](https://stacey.vetzal.ca/2026/2026-09-21-where-the-numbers-live/): the training weights, why every word gets three of them, and why it's useful to think in probabilities.
