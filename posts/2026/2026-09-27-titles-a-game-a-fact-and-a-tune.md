@@ -1,7 +1,7 @@
 ---
 title: "Titles, a game, a fact, and a tune"
 date: 2026-09-27
-published: false
+published: true
 image: "images/coco-llm-5-banner.png"
 imageAlt: "An illustration of a silver-haired woman standing beside a compact silver Color Computer, eyes closed and fingers resting on the table as she listens to a tune."
 description: "Post five of five: four exhibit demonstrations beyond computer names. Sixteen episode titles that were never filmed, a game opponent that updates counts during play, a fact you hand it right now without training, and a tune it finishes from the bar you give it. Then what the whole thing is for."
