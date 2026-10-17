@@ -14,23 +14,23 @@ tags:
 
 Last Sunday I spent the day at an exhibit table with my Tandy Color Computers, rotating through demos: a rock-paper-scissors game that learns how you play, a sentence completer, a melody that finishes the bar you give it. The one I could have left up all day was a screen of sixteen Star Trek episode titles, none of which were ever filmed. I could tell who the Star Trek fans were. They'd stop, read TRIBBLES OF ARCHONS off the green screen, and laugh.
 
-Every one of those demos uses the same basic arithmetic, run on a machine that I got for Christmas 45 years ago with 32 kilobytes of memory. By the end of this series you will get a good glimpse inside how it works, and I'm hoping you too will be unimpressed by it in precisely the right way.
+The demonstrations run on a machine I got for Christmas 45 years ago, with 32 kilobytes of memory. This series follows the computer-name model from training examples to generated names, with its arithmetic small enough to inspect.
 
 This is post one of five. It covers the training data, what tokens are and how they work, and what the context window is. The arithmetic comes next time.
 
-## Same trick as ChatGPT
+## Predict, compare, update
 
 I've spent the past few years helping people at work figure out what to do with large language models, ever since I started tinkering with them to automate and improve how we do software engineering. The question under most of the other questions is the same one: what is it actually doing in there?
 
-Here's the whole answer. Guess the next word. Measure how wrong you were. Nudge every number a little in the direction that would have made you less wrong. Repeat.
+Training repeats a short loop: predict the next token, compare its probabilities with the training target, and adjust the parameters to reduce that prediction error.
 
-That's the trick. Everything the big models do rides on that loop, run on a great deal more text with a great many more numbers. So I wanted to see the loop with my own eyes, at a scale where I could point at every part of it, on a machine where nothing could hide. The CoCo was the obvious candidate (it's fair to say it's responsible for my entire career), and 6809 assembly language was the only way it was going to fit.
+The model shares a next-token learning objective with modern generative language models. It does not share their transformer architecture or scale. I wanted an implementation where I could follow each prediction and parameter update. The CoCo was the obvious candidate (it's fair to say it's responsible for my entire career), and 6809 assembly language was the only way it was going to fit.
 
 The model has 290 parameters, numbers that we can change to fit it to a purpose.
 
 ## The training data
 
-Eighteen names of vintage computers, [the file the run reads](https://github.com/svetzal/coco-llm/blob/main/experiments/data/EXP-001-computer-names.txt):
+Eighteen names of vintage computers, [the training names file](https://github.com/svetzal/coco-llm/blob/main/experiments/data/EXP-001-computer-names.txt):
 
 ```text
 ACORN ARCHIMEDES      ATARI ST              SINCLAIR ZX SPECTRUM
@@ -41,8 +41,6 @@ APPLE MACINTOSH       COMMODORE PET
 ATARI 400             SINCLAIR ZX80
 ATARI 800             SINCLAIR ZX81
 ```
-
-That is an absurdly small training set, and it's still useful. Big models differ from this one by the amount of training data, not by kind.
 
 A computer doesn't have words. It has numbers. So the first thing I had to decide was how to turn those names into numbered pieces. The pieces are called tokens, and here a token is a whole word. Split the eighteen names into words, sort the distinct words and number them. That gives [28 word tokens and one boundary token](https://github.com/svetzal/coco-llm/blob/main/experiments/data/EXP-002-tokenized-computer-names.txt). The boundary token marks the end of a name and fills unused positions at the start of the context window.
 
@@ -59,7 +57,7 @@ A computer doesn't have words. It has numbers. So the first thing I had to decid
 
 COMMODORE is 13. Why? Because it's thirteenth when we put the list in alphabetical order. That is all thirteen means. It's a reference, not a quantity, and there's nothing to be learned from doing arithmetic on it. (Next post is about what the model does instead.)
 
-Try asking this model for a word that isn't on that list. There is no graceful answer, because there's no number for it. When a much bigger model gets a word it has never seen, the same thing is happening, just less visibly.
+A word outside this list has no token identifier, so this model cannot accept or generate it. This whole-word tokenizer cannot assemble an unfamiliar word from smaller pieces.
 
 ## Two words at a time
 
@@ -71,7 +69,7 @@ Three guesses from one two-word name. Do that for all eighteen and you have 58 e
 
 ![A diagram on the CoCo's green screen, in its blocky pixel type, titled COMMODORE AMIGA BECOMES 3 TRAINING EXAMPLES. Across the top, the name as five boxes: END, END, COMMODORE, AMIGA, END. Below, a caption reads: what the model gets, two numbers; the words are for you. Then three rows labelled example 1, 2 and 3. Each row has an amber box with a navy edge holding two cells, and a black cell to the right with PREDICTS written above it. Every cell shows a token number in large type with its word in small type beneath: example 1 holds 0 (END) and 0 (END) and predicts 13 (COMMODORE); example 2 holds 0 (END) and 13 (COMMODORE) and predicts 7 (AMIGA); example 3 holds 13 (COMMODORE) and 7 (AMIGA) and predicts 0 (END). A legend reads: the context window, 2 tokens wide; the token that came next.](images/coco-llm-1-two-words-at-a-time.png)
 
-When people talk about a model with a 200,000-token context window, it's the same thing, just wider. And if you've ever had a long chat where the model seemed to forget details from the beginning of the conversation, you've watched the window slide.
+The context window limits which tokens are available for the next prediction. A larger window can contain more text; text omitted from the current context cannot directly affect this prediction.
 
 ## Watch it work
 
@@ -94,9 +92,7 @@ COMMODORE ATARI
 TANDY ARCHIMEDES
 ```
 
-Sinclair never made an Amiga. Commodore never made an Atari. But it's interesting to think, if they had how would it be different? Out of 200 draws at that point, 179 were both new (not one of the eighteen, word for word) and the right shape (two to four words, starting with a maker). The machine has no idea what any of those words mean. It knows which tokens tend to follow which, and that turns out to be enough to make something that reads like a product line.
-
-Is that impressive? Yes. Is it understanding? No. It's the same distance from understanding as the big models are, and here the distance is short enough to walk.
+Sinclair never made an Amiga. Commodore never made an Atari. But it's interesting to think, if they had how would it be different? Out of 200 draws at that point, 179 were both new (not one of the eighteen, word for word) and the right shape (two to four words, starting with a maker). Training adjusted the probabilities of tokens following each context. The examples contain no explanation of which words name companies or products, but the resulting word-order patterns can still produce plausible product names.
 
 ## Why stop at twenty?
 
@@ -111,11 +107,11 @@ COMMODORE 64
 TANDY MODEL COMPUTER
 ```
 
-COMMODORE 64 is in the training data. At sixty, so are 143 of the 200 draws, word for word. The model has stopped inventing and started reciting. At twenty, 18 of the 200 were copies. The longer I let it run, the more it slid from making things up to handing back the same training data it was given.
+COMMODORE 64 is in the training data. At sixty, so are 143 of the 200 draws, word for word. At twenty epochs, only 18 of the 200 draws were copies. Longer training increased exact reproduction of the training names and reduced the number of new ones.
 
 That has a name: overfitting.
 
-There's a trap at the other end too. At epoch zero, before any training, every draw is new, and every one is exactly six words long because six is where I stopped it. The end marker is a token like any other, and the model hasn't learned when to produce it. At the checkpoints shown here, twenty epochs produced the most names that were both new and the right shape: [179 of 200 draws](https://github.com/svetzal/coco-llm/blob/main/tools/export_deck_traces.py#L259-L290) that were not in the training data and still looked like a plausible computer name.
+There's a trap at the other end too. At epoch zero, before any training, every draw is new, and every one is exactly six words long because six is where I stopped it. The end marker is a token like any other. Before training, END's probability comes from the random parameters. At the checkpoints shown here, twenty epochs produced the most names that were both new and the right shape: [179 of 200 draws](https://github.com/svetzal/coco-llm/blob/main/tools/export_deck_traces.py#L259-L290) that were not in the training data and still looked like a plausible computer name.
 
 ## Try it yourself
 
@@ -136,7 +132,7 @@ The CoCo runs 6809 assembly, in [src/6809](https://github.com/svetzal/coco-llm/t
 Here's the whole thing, about two minutes, recorded from the emulator running at the real machine's clock rate. Nothing is sped up. Twenty times through the examples, then PRESS ANY KEY, then the same seed drawn before training and after it, one name at a time. The pause between names is the 6809 doing 29 multiplies and a softmax for every token.
 
 <video controls preload="metadata" playsinline style="width: 100%; max-width: 640px; display: block; margin: 0 auto; image-rendering: pixelated;" src="/2026/images/coco-llm-1-live-training.mp4">
-The emulator training for two minutes and then drawing names.
+The emulator completing twenty training epochs and then drawing names.
 </video>
 
 <aside class="hardware-detail" aria-labelledby="verification-detail-title">

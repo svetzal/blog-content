@@ -2,7 +2,7 @@
 title: "The prompt, the size, the training data"
 date: 2026-09-25
 published: false
-description: "Post four of five: three things a person can change without touching the loop. Two starting words steer the output and change nothing in the model; a model a hundred times bigger attempts more without getting better at what it already did; and the training data, including the order it is in, decides what the model favours."
+description: "Post four of five: how prompts change context, larger models change capacity and cost, and training examples and their order change the output probabilities."
 tags:
   - ai
   - coco
@@ -12,8 +12,8 @@ tags:
 
 [Last post](https://stacey.vetzal.ca/2026/2026-10-17-twenty-epochs-then-the-assembly/) covered:
 
-- Twenty passes through the 58 examples. Repeating a token goes first, the shape of a name comes second, and copying the training data arrives last. The loss falls the whole way and cannot tell you any of that.
-- What the run costs. 302,760 multiplies, and a trainer bigger than the model it trains.
+- Twenty passes through the 58 examples. Repeating a token goes first, the shape of a name comes second, and copying the training data arrives last. Loss falls even as the number of new, right-shaped names declines.
+- What the run costs. 302,760 multiplies, with 730 additional bytes needed for training beyond the inference program and weights.
 - The 6809 instructions for one nudge. Two unsigned multiplies and a subtraction make a signed one; four shift pairs are the learning rate; the bit that falls off the right is quantization.
 
 The next examples compare three ways to change the output: supply a prompt, enlarge the model, or change the training data.
@@ -35,9 +35,9 @@ WHY BUY JUST A VIDEO GAME
 
 Those eight lines are everything this model trained on. They make 38 tokens, 53 examples and 380 parameters, and I trained it for 80 epochs. Only four words carry over from the first model, 64, COLOR, COMMODORE and COMPUTER, and even those got new numbers. COMMODORE was 13; here it is 9, because that is where it lands alphabetically in this list. The weights were trained from scratch.
 
-Eighty epochs on eight lines is a lot of training, and you already know what that does. This model recites. Post one called that overfitting, and for a model whose job was inventing names it was the failure. This model's job is finishing famous slogans, so reciting is the assignment.
+After eighty epochs on eight slogans, exact reproduction is common. That reduced novelty in the names demonstration. Here, completing recognizable slogans is the task, so exact reproduction can be useful.
 
-Now hold the model still. All 380 numbers, [checksum `6f9a6c88742221bb` before and after](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-005-prompted-marketing-language.md#L88-L107). This run takes the highest-scoring token every time, so the same start always gives the same answer. The one thing that changes is the first two tokens in the window before it starts.
+The 380 parameters stay fixed during completion, with [parameter checksum `6f9a6c88742221bb` before and after](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-005-prompted-marketing-language.md#L88-L107). This run takes the highest-scoring token every time, so the same start always gives the same answer. The one thing that changes is the first two tokens in the window before it starts.
 
 | I put in the window | It produced |
 | --- | --- |
@@ -55,7 +55,7 @@ Here is the machine doing it, recorded from the emulator at the real clock rate 
 The emulator completing the six prompts, one Enter each.
 </video>
 
-Five of the six prompted completions reproduce a training slogan word for word. The completion of ARE YOU combines parts of two slogans. It starts inside Commodore's line and ends inside Radio Shack's, KEEPING UP IN LITTLE COMPUTERS, a slogan nobody ran. ARE YOU does occur in the training data, but greedy prediction does not reproduce its full continuation. With only two tokens of context, the output can switch between patterns from different slogans.
+Five of the six prompted completions reproduce a training slogan word for word. The completion of ARE YOU combines parts of two slogans. It starts inside Commodore's line and ends inside Radio Shack's, KEEPING UP IN LITTLE COMPUTERS, a combination absent from the eight training slogans. ARE YOU does occur in the training data, but greedy prediction does not reproduce its full continuation. With only two tokens of context, the output can switch between patterns from different slogans.
 
 In this demonstration, the prompt supplies the first two context tokens. It changes the input to prediction while the 380 parameters stay fixed. When you type into a chat window, paste in a document, or a product adds a system prompt or a memory feature on your behalf, all of it goes into the same place: the context window, in front of whatever the model produces next. Generating these completions does not update the weights. A product may separately save chat history or use it in later training; neither happens in this demo.
 
@@ -63,7 +63,7 @@ You can pick the prompts yourself. `make present EXP=5` trains the model and the
 
 ## The size
 
-The second lever is the number of parameters, and this is where training leaves the CoCo. The model in this section is over a hundred times bigger than the one that trained on stage. The Mac trained it, and the CoCo only predicts. The screen says so: MAC TRAINED - COCO PREDICTS. The weights are loaded for inference, as they are when a previously trained model is deployed.
+The second lever is the number of parameters, and this is where training leaves the CoCo. The model in this section has over a hundred times as many parameters as the 290-parameter names model. The Mac trained it, and the CoCo only predicts. The screen says so: MAC TRAINED - COCO PREDICTS.
 
 The model is a sentence completer, [EXP-007, the all-RAM sentence completer](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-007-all-ram-sentence-completion.md). It trained on 423 sentences about this computer:
 
@@ -110,7 +110,7 @@ The map change exposes ROM; `ANDCC` restores the interrupt environment expected 
 
 You type, press the right arrow, and it ranks your next word. Type THE MODEL CAN and it offers SUGGEST, BE, REMEMBER. Type RUN THE PROGRAM with the period and the top suggestion is the end-of-phrase token. Training associated a period with the end of a phrase. My first interface hid the end token because its identifier was also used to mean "no suggestion". The model ranked the end token first, but the interface displayed a different suggestion. I fixed the interface without retraining.
 
-The window is still the window. Type I KNOW THE OLD MODEL CAN and note the three suggestions. Type WE KNOW THE OLD MODEL CAN and you get the same three, because the model sees five tokens and both I and WE fell out the far side. To this model those are the same sentence.
+The larger model still has a finite context window. I KNOW THE OLD MODEL CAN and WE KNOW THE OLD MODEL CAN give the same three suggestions: both end with KNOW THE OLD MODEL CAN, the only five tokens available for the next prediction.
 
 Here are those four phrases typed into the emulator at the real clock rate. The pause after each right arrow is the CoCo scoring 255 tokens.
 
@@ -154,7 +154,7 @@ Each one drew twenty names. I counted the first word:
 | commodore fan | 0 | 15 | 0 | 5 | COMMODORE AMIGA |
 | tandy fan | 0 | 1 | 14 | 5 | TANDY COCO |
 
-Each model gives more probability to the maker repeated in its training data. The Tandy-trained model still drew one COMMODORE. Training on Tandy names made the other makers unlikely, not impossible. The words were still in the vocabulary, and nothing in the weights fences a word off.
+Each model gives more probability to the maker repeated in its training data. The Tandy-trained model still drew one COMMODORE. Training on Tandy names made the other makers unlikely, not impossible. The shared vocabulary still contains all three makers; training changes their output frequencies without removing their tokens.
 
 The last two isolate the order of the examples. Both train on all 54 names, 18 per maker, balanced. The only difference between them is the order of the file.
 
@@ -165,14 +165,12 @@ The last two isolate the order of the examples. Both train on all 54 names, 18 p
 
 Laid end to end, Apple then Commodore then Tandy, the model comes out a Tandy fan: 14 of 20, the same as the model that only ever trained on Tandy. Every pass through the file ends with the Tandy block, so the final updates favour Tandy. Interleaved, the same 54 names spread out, and the loss finishes at 0.88 instead of 2.18. The bad order trained worse as well as narrower.
 
-The fourth run shows how grouping examples by maker can produce a preference even when the totals are balanced.
-
-The same lever has a commercial name. Fine-tuning updates an existing model's weights through further training. A company fine-tuning a model on its own documents is choosing training data, and it inherits everything on this table, the order included.
+Fine-tuning updates an existing model's weights through further training. Example selection, repetition and order can affect that training too.
 
 ## What each change controls
 
 The prompt changes context while the weights stay fixed. A larger design changes what can fit in the model and what prediction costs. Training data and its order change the weights themselves. Those are different interventions, and the demonstrations let us check each one separately.
 
-Next post: the same machinery on things that are not computer names. Sixteen episode titles that were never filmed, a game that learns how you play, a fact you hand it right now, and a tune.
+Next post: invented episode titles, an opponent that updates counts during play, an editable fact in context, and a melody continuation.
 
-<!-- Draft voice check (remove before publication): Names the interventions directly and keeps the interface repair as a concrete example. Explains the output differences through the prompt, memory layout and ordering measurements. -->
+<!-- Draft voice check (remove before publication): Names the interventions directly and keeps the interface repair as a concrete example. Uses named quantities, explicit context comparisons and the recorded ordering measurements. -->

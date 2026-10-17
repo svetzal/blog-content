@@ -4,7 +4,7 @@ date: 2026-10-17
 published: true
 image: "images/coco-llm-3-banner.png"
 imageAlt: "An illustration of a silver-haired woman marking checkpoint 20 on a fanfold printout beside a separate assembly listing, a worn silver Color Computer and a beige CRT, under green, cyan and magenta light."
-description: "Post three of five: what 1,160 nudges do to the model, checkpoint by checkpoint, and then the 6809 instructions that do one of them: two unsigned multiplies, one subtraction, and four shifts."
+description: "Post three of five: what 1,160 nudges do to the model, checkpoint by checkpoint, and then the 6809 instructions that do one of them: two unsigned multiplies, one subtraction, and four shift pairs."
 tags:
   - ai
   - coco
@@ -37,9 +37,9 @@ The loss falls the whole way. It measures how wrong the guesses are, and by that
 
 Repeating a token goes first. At epoch 0, 83 of the 200 draws say the same word twice, ARCHIMEDES ARCHIMEDES ARCHIMEDES. After one pass it is 70. After five, 19. At twenty, 3.
 
-The shape comes second. I wrote down [what a name looks like](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-002-token-model-feasibility.md#L125-L170) before I drew a single sample: two to four tokens, and the first one is a maker, one of ACORN, APPLE, ATARI, COMMODORE, SINCLAIR or TANDY. That is a crude test; TANDY TANDY TANDY passes it. I wrote it before drawing anything so it could not be bent toward a result. One draw in 200 passes it at epoch 0, 12 after one pass, 109 after five, 197 at twenty. From there it has nowhere to go.
+The shape comes second. I wrote down [what a name looks like](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-002-token-model-feasibility.md#L125-L170) before I drew a single sample: two to four tokens, and the first one is a maker, one of ACORN, APPLE, ATARI, COMMODORE, SINCLAIR or TANDY. That is a crude test; TANDY TANDY TANDY passes it. I wrote it before drawing anything so it could not be bent toward a result. One draw in 200 passes it at epoch 0, 12 after one pass, 109 after five, 197 at twenty. At sixty epochs, 199 of 200 draws pass this shape test, but far fewer are new names.
 
-Copying comes last. Nothing at epoch 0 or epoch 1 is a training name. At five, 5 of the 200 are. At twenty, 18. At sixty, 143. The model kept training on the same 58 examples, and the shares kept narrowing onto the tokens that actually followed, until the die had almost nothing else to land on.
+Copying comes last. Nothing at epoch 0 or epoch 1 is a training name. At five, 5 of the 200 are. At twenty, 18. At sixty, 143. Further training increased the probabilities of the observed continuations, making complete training names more likely to be sampled.
 
 | Epoch | Repeats a token | Right shape | In the training data | New and the right shape |
 | ---: | ---: | ---: | ---: | ---: |
@@ -97,9 +97,9 @@ Here it is on a step from the run. [At epoch 5, example 37](https://github.com/s
 add 230 to the 1:        231 :  56
 ```
 
-A high byte of 231 and a low byte of 56 represent the signed sixteen-bit value -6,344. That matches 26 × (-244). The second product's high byte, 25, was never stored. The routine keeps the low sixteen bits of the signed product. I checked all 16,777,216 possible input pairs against the true signed product, and [they agree on every one](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-014-6309-multiplier.md#L174-L185).
+A high byte of 231 and a low byte of 56 represent the signed sixteen-bit value -6,344. That matches 26 × (-244). The second product's high byte, 25, was never stored. The routine keeps the low sixteen bits of the signed product. I checked the low sixteen bits against the true signed product for all 16,777,216 possible input pairs, with [no mismatches](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-014-6309-multiplier.md#L174-L185).
 
-There is one case the ten lines above get wrong, and the routine's [last five lines](https://github.com/svetzal/coco-llm/blob/main/src/6809/model_forward.asm#L290-L295) fix it:
+A negative eight-bit factor needs a sign correction. The routine's [last five lines](https://github.com/svetzal/coco-llm/blob/main/src/6809/model_forward.asm#L290-L295) fix it:
 
 ```text
         tst     multiply_factor
@@ -111,7 +111,7 @@ There is one case the ten lines above get wrong, and the routine's [last five li
 
 For a negative eight-bit factor, `MUL` uses its unsigned interpretation. For example, -121 and 135 have the same eight-bit representation. Using 135 instead of -121 adds 256 times the other operand to the product.
 
-To correct the low sixteen bits of the result, subtract the other operand's low byte from the product's high byte. Multiplying by 256 shifts a byte into that high-byte position; the other operand's high byte shifts beyond the sixteen-bit result and can be discarded. For -121 × 60, `MUL` calculates 135 × 60 = 8,100, with a high byte of 31 and a low byte of 164. Subtracting 60 from the high byte gives 227, leaving the low byte at 164. Those bytes represent -7,260. (That pair is a worked example, not a step from the run; it sits inside the range the run measured.)
+To correct the low sixteen bits of the result, subtract the other operand's low byte from the product's high byte. Multiplying by 256 shifts a byte into that high-byte position; the other operand's high byte shifts beyond the sixteen-bit result and can be discarded. For -121 × 60, `MUL` calculates 135 × 60 = 8,100, with a high byte of 31 and a low byte of 164. For the high byte, 31 - 60 = -29, stored as 227 after eight-bit wraparound. The low byte remains 164. Those bytes represent -7,260. (That pair is a worked example, not a step from the run; it sits inside the range the run measured.)
 
 ### The learning rate, in eight instructions
 
@@ -144,7 +144,7 @@ Shifting also discards the lowest bit. The first three pairs drop a 0. The fourt
 
 SINCLAIR's stored weight changes from 683 to 1,080: 683 - (-397) = 1,080. On the CoCo, the stored integer represents a weight multiplied by 4,096. Dividing by 4,096 gives the weight: 683 represents approximately 0.1667, and 1,080 represents approximately 0.2637. The decimals in the last post came from the Mac's floating-point reference. The CoCo uses fixed-point values, checked byte for byte against a separate reference that reproduces its integer arithmetic.
 
-Why a sixteenth and not 0.1 or 0.03? Because a shift is two cycles and the 6809 has no divide. The learning rate, the number everyone tunes, is on this machine a choice about which instructions exist. A rate of one eighth would be one fewer pair.
+The rate of one sixteenth lets the update use shifts instead of a general division routine. Each `ASRA` or `RORB` takes two cycles. A rate of one eighth would use three shift pairs instead of four.
 
 ### The same bits, two readings
 
@@ -163,10 +163,10 @@ On that chip, `MULD` handles the sign directly. [Sixteen instructions and 93 cyc
 | the 6309's MULD instruction | 338 | 1.54x |
 | MULD at double clock | 168 | 3.09x |
 
-Every row computed the same checksum as the Mac. Native mode alone buys 1.17x. The instruction buys the rest.
+Every row computed the same checksum as the Mac. Running the original code in native mode gives a 1.17x speedup; using `MULD` raises the measured speedup to 1.54x.
 
 That is the multiply, timed on its own. The multiply is [about 46%](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-014-6309-multiplier.md#L153-L172) of the training run, so on the whole run `MULD` should be worth about 1.26x, and I have not measured that. The measured speedup applies to the multiply benchmark. The rest of the training loop limits how much that instruction can improve the whole run.
 
 </aside>
 
-<p id="after-hardware-detail">Next post: three things a person can change without touching the loop. The two words it starts from, the size, and the training data.</p>
+<p id="after-hardware-detail">Next post: how prompts, model size and training data affect the output.</p>

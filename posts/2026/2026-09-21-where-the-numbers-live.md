@@ -22,7 +22,7 @@ tags:
 
 This post is about the 290 numbers: where they live, what each one does, and what one training step does to them.
 
-The token number is not one of them. The arithmetic is on three numbers per token, and they live in a table.
+Token identifiers stay fixed during training. Each identifier selects a row of three learned values from a table.
 
 ## Two tables
 
@@ -47,7 +47,7 @@ Here is the second table after 20 epochs, having been nudged into clusters:
 
 ![The position 2 table after 20 epochs, drawn on the CoCo's green screen as points inside a wireframe box, each with a dashed drop line to the floor. The six makers are larger amber points close together on the right, labelled ACORN, APPLE, ATARI, COMMODORE, SINCLAIR and TANDY. The model names are small black points bunched on the left, most of them labelled, with COLOR, BBC, ZX and MODEL high up on their own. A caption reads: tokens that are followed by the same kind of token end up near each other; END lies far above this box.](images/coco-llm-2-twenty-nine-points.png)
 
-APPLE and ATARI are 0.12 apart. COMMODORE is 0.44 from ATARI and 1.13 from 64. Nothing in the numbers says what a maker is. The makers ended up near each other because the same kind of token follows them. COLOR, BBC, ZX and MODEL sit high up on their own. Each begins a multiword model name: COLOR COMPUTER, BBC MICRO, ZX SPECTRUM and MODEL 100. That is what this space records: not what the words mean, but how and where they are encountered together. END is left off the figure because it sits far above everything else, and it should: it is the start of a name, and nothing else is.
+APPLE and ATARI are 0.12 apart. COMMODORE is 0.44 from ATARI and 1.13 from 64. Nothing in the numbers says what a maker is. The makers ended up near each other because the same kind of token follows them. COLOR, BBC, ZX and MODEL sit high up on their own. Each begins a multiword model name: COLOR COMPUTER, BBC MICRO, ZX SPECTRUM and MODEL 100. That is what this space records: not what the words mean, but how and where they are encountered together. END is left off the figure because its position 2 embedding lies far above the other points. In the training contexts, END in position 2 precedes the first word of a name.
 
 COMMODORE has a separate embedding for each context-window position. Its position 1 row is +0.0781, +0.0250, +0.0173; its position 2 row is -0.0009, -0.0266, -0.0168. Selecting a different row lets the same token contribute different numbers depending on which window position it occupies. The token identifier selects the row; the arithmetic uses the row's three values.
 
@@ -68,7 +68,7 @@ Every extra number is another 87 multiplies per example: 29 to score the tokens 
 | 5 | 464 | 504,600 | 75 s |
 | 6 | 551 | 605,520 | 90 s |
 
-The run you watched [last time](https://stacey.vetzal.ca/2026/2026-09-19-a-45-year-old-computer-learns-to-invent-computer-names/) took about 100 seconds to reach PRESS ANY KEY, and 45 of them were multiplies. The rest is computing probabilities, the updates and the display.
+The 45-second entry estimates time in the multiply routine alone. The run shown [last time](https://stacey.vetzal.ca/2026/2026-09-19-a-45-year-old-computer-learns-to-invent-computer-names/) also computes probabilities, updates parameters and draws the progress display.
 
 Six would probably still have fit my three-minute budget, but three was enough. Three numbers per token told 29 tokens apart well enough that the extra width never earned its cost in clock time.
 
@@ -76,25 +76,21 @@ The other choice I priced was the one I built first and threw away. Make a token
 
 ## What is a parameter?
 
-It's just something that can change in the model.
+A parameter is a numerical value that training is allowed to change.
 
 ```text
  2 window positions x 29 tokens x 3 numbers  =  174   the two tables
                      29 tokens x 3 numbers  =   87   a row for every token it can predict
-                     29 tokens              =   29   a starting nudge per token
+                     29 tokens              =   29   a bias per token
                                                ----
                                                 290
 ```
 
-This model has 290. GPT-3 had 175 billion; DeepSeek-V3 has 671 billion. But the thing I enjoyed most about doing all this was seeing what I could do at the very small end of the scale.
-
-In this computer field, we seem to get quickly obsessed with scale, buying the biggest computer, the biggest graphics card, training the biggest model. The whole world has gone crazy on this with gpu compute datacentres.
-
-I enjoy using this old hardware because I think it's easy to become wasteful these days, and there's no challenge in that. Especially if you have money. Constraints make me more creative, teach me more about how things can work.
+I enjoy working at this small scale. With 290 parameters, I can inspect every value and trace an update through the assembly. The CoCo's memory and clock budgets also make the cost of a wider model visible before I build it.
 
 ## A score for every token
 
-The scoreboard contains 87 weights and 29 biases. Each of the 29 possible output tokens has three weights and one bias. To score a token, multiply each context value by its corresponding weight, add the three products, then add the bias. Repeat for all 29 tokens.
+The scoreboard contains 87 weights and 29 biases. Each of the 29 possible output tokens has three weights and one bias, an offset added to its score. To score a token, multiply each context value by its corresponding weight, add the three products, then add the bias. Repeat for all 29 tokens.
 
 <aside class="hardware-detail" aria-labelledby="multiply-detail-title">
 
@@ -115,17 +111,15 @@ ATARI    3.48%
 AMIGA    3.45%    <- the right answer, in the middle of the pack
 ```
 
-Twenty-nine tokens, mostly indistinguished.
-
 ## Scores become shares
 
 Those percentages are what a score turns into once you push it through a [softmax](https://github.com/svetzal/coco-llm/blob/main/src/6809/model_forward.asm#L136).
 
-Suppose three tokens have raw scores of 3, 2 and 1. A score of 3 doesn't mean 3%, or three votes. Softmax makes every score a positive weight, then divides each by the total, so the results are shares of 100%: about 67%, 24% and 9%. It keeps the order and it exaggerates the lead.
+Suppose three tokens have raw scores of 3, 2 and 1. A score of 3 doesn't mean 3%, or three votes. Softmax makes every score a positive weight, then divides each by the total, so the results are shares of 100%: about 67%, 24% and 9%. The largest score receives the largest share.
 
 Why "soft"? A hard maximum would give the winner everything. Softmax lets the strongest choice lead while the others stay possible.
 
-Softmax doesn't choose. It hands you shares, and something else has to draw.
+Softmax produces probabilities. A separate step selects the next token.
 
 On the CoCo the shares add up to 256 instead of 100, so every token owns a stretch of a line from 0 to 255 as wide as its share. The machine draws one byte, and whatever stretch it lands on is the next token. That's the die.
 
@@ -152,7 +146,7 @@ The table saves an exponential calculation for every token, at the cost of preci
 
 ## Training is a nudge
 
-Back to the window END, COMMODORE, where the right answer is AMIGA and the model gave it 3.45%. Training is one step, done over and over: score, compare with the right answer, nudge every weight a little in the direction that would have raised the right answer's share. Here is the step, with [the real numbers](https://github.com/svetzal/coco-llm/blob/main/tools/export_deck_traces.py#L210-L223).
+For the window END, COMMODORE, the training target is AMIGA and its predicted probability is 3.45%. One training step computes the prediction errors and uses their gradients to update the output parameters and the selected embedding rows. Here is the step, with [the real numbers](https://github.com/svetzal/coco-llm/blob/main/tools/export_deck_traces.py#L210-L223).
 
 The training target assigns AMIGA a probability of 1, but its predicted probability was 0.0345. Target minus prediction is 0.9655. For each of AMIGA's output weights, multiply the learning rate by that difference and by the corresponding context value. Add the result to the weight.
 
@@ -162,9 +156,9 @@ I chose a learning rate of 0.0625. Multiplying that rate by the target-minus-pre
 
 ![Three columns on the CoCo's green screen, titled THREE WEIGHTS AND ONE NUDGE EACH, with the formula beneath: change equals 0.0625, a rate I chose, times 0.9655, how wrong it was, times the context number. Each column has the context number in a navy box marked negative or positive, the weight before, the change in an amber box with a navy arrow pointing down for the two negative changes and up for the positive one, and the weight after: +0.1214 to +0.1197, -0.0705 to -0.0732, +0.0325 to +0.0350. The caption reads: each weight moves the way that would have raised the score for AMIGA.](images/coco-llm-2-one-nudge.png)
 
-The rate, 0.0625, is a sixteenth. I chose it because dividing by sixteen is [four shift instructions](https://github.com/svetzal/coco-llm/blob/main/src/6809/training.asm#L133-L140) on a 6809.
+The rate, 0.0625, is a sixteenth. I chose it because dividing by sixteen uses [four shift pairs](https://github.com/svetzal/coco-llm/blob/main/src/6809/training.asm#L133-L140) on a 6809.
 
-Training also updates the two embedding rows used for this example: END in position 1 and COMMODORE in position 2. Their updates combine the prediction errors for all 29 tokens with the output weights that connect each context value to those scores. After the step, fetch and add those rows again and you get -0.0118, -0.0561, +0.0477. Those rows started random. Nudges like this are what make them mean something.
+Training also updates the two embedding rows used for this example: END in position 1 and COMMODORE in position 2. Their updates combine the prediction errors for all 29 tokens with the output weights that connect each context value to those scores. After the step, fetch and add those rows again and you get -0.0118, -0.0561, +0.0477. Repeated updates change which output tokens these rows favour.
 
 After this training step, AMIGA's predicted probability rises from 3.45% to 3.68%. The run contains 1,160 training steps. The output weights, biases and selected embedding rows are all updated using gradients from the same prediction.
 
@@ -178,12 +172,10 @@ The first draw, 50, landed on COMMODORE, which owned 27 of the 256. TANDY occupi
 
 COMMODORE 128. A real name; it's in the training data. It's also the first name on the screen at the end of the video.
 
-Seed 6810 drew 177, 110 and 29 from the same table, and got TANDY COMPUTER. Same weights, same rows, different bytes. The eleven names on that screen are eleven paths through one table.
+Seed 6810 drew 177, 110 and 29 from the same table, and got TANDY COMPUTER. Same weights, same rows, different bytes. Each generated token changes the context, so the next draw uses a newly computed probability distribution.
 
 Two things about the die. For the first two tokens, END's probability share is [transferred to the highest-probability non-END token](https://github.com/svetzal/coco-llm/blob/main/src/reference/fixed_token_lm.py#L218-L223), so a name is never one word long; that rule is in the code, not the weights. And you don't have to roll. Take the widest stretch every time and you get the same name every time: greedy decoding, which is what temperature zero means. Temperature rescales the scores before they become shares. Higher temperature makes the probability distribution flatter; lower temperature concentrates more probability on the highest-scoring tokens. At temperature zero, greedy decoding selects the highest-scoring token.
 
-This is why it's useful to think in probabilities. The model never answers. It hands over shares, and a draw picks. Take the biggest every time and you get one answer forever; draw, and you get variety, and now and then TANDY ZX80. It's the die.
-
-Two hundred and ninety numbers. A hundred and seventy-four are a lookup table, a hundred and sixteen are a scoreboard, and a byte from a die picks the word.
+The 174 embedding values and 116 output parameters determine the probabilities. Greedy decoding gives the same continuation from a fixed context and fixed weights. Sampling can produce different continuations from those same weights.
 
 [Next post](https://stacey.vetzal.ca/2026/2026-10-17-twenty-epochs-then-the-assembly/): what 1,160 of those nudges do, epoch by epoch, and the 6809 instructions that do one of them.
