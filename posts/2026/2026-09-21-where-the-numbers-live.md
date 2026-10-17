@@ -96,7 +96,13 @@ I enjoy using this old hardware because I think it's easy to become wasteful the
 
 The 87 and the 29 in that count are the scoreboard: for every token the model might predict, three numbers called its weights, plus its starting nudge. To score a token, multiply the three context numbers by the token's three weights and add the nudge. Do it 29 times and every token has a score.
 
-That's 87 multiplies, and the 6809's MUL instruction multiplies two unsigned 8-bit numbers. Each weight is stored as 16 bits but scores with its top byte, the context number goes in as all 16, and one product takes two MUL instructions plus [a step to fix the sign](https://github.com/svetzal/coco-llm/blob/main/src/6809/model_forward.asm#L290-L294). Next post shows the 6809 doing one.
+<aside class="hardware-detail" aria-labelledby="multiply-detail-title">
+
+<h3 id="multiply-detail-title">Inside the 6809: the multiply</h3>
+
+Scoring all 29 tokens takes 87 multiplies. The 6809's `MUL` instruction multiplies two unsigned 8-bit numbers. Each weight is stored as 16 bits but scores with its top byte; the context number goes in as all 16. One product takes two `MUL` instructions plus [a correction for a negative factor](https://github.com/svetzal/coco-llm/blob/main/src/6809/model_forward.asm#L280-L295). Post three follows one product through those instructions.
+
+</aside>
 
 Before training all 290 numbers are random and small, so the scores are all near zero. Here are the shares they turn into for the window END, COMMODORE, where the right answer is AMIGA:
 
@@ -122,6 +128,27 @@ Why "soft"? A hard maximum would give the winner everything. Softmax lets the st
 Softmax doesn't choose. It hands you shares, and something else has to draw.
 
 On the CoCo the shares add up to 256 instead of 100, so every token owns a stretch of a line from 0 to 255 as wide as its share. The machine draws one byte, and whatever stretch it lands on is the next token. That's the die.
+
+<aside class="hardware-detail" aria-labelledby="softmax-detail-title">
+
+<h3 id="softmax-detail-title">Inside the 6809: softmax from a lookup table</h3>
+
+Softmax uses an exponential to turn each score into a positive weight before dividing by their total. I replaced the exponential calculation with a [256-byte lookup table](https://github.com/svetzal/coco-llm/blob/main/tools/generate_6809_data.py). The table is prepared on the Mac when the program is built; it is fixed arithmetic data, not a set of learned parameters. The CoCo uses it during both training and prediction.
+
+The routine first finds the highest score. For each token, it subtracts that token's score from the highest, scales the gap into a table index, and caps the index at 255. A gap of zero selects the largest entry; wider gaps select smaller entries. Here are four entries from the [table definition](https://github.com/svetzal/coco-llm/blob/main/src/reference/fixed_token_lm.py#L30):
+
+| Table index | Stored exponential weight |
+| ---: | ---: |
+| 0 | 255 |
+| 32 | 94 |
+| 64 | 35 |
+| 255 | 1 |
+
+Subtracting the highest score leaves exact softmax probabilities unchanged, because it scales all the exponential weights by the same factor. The byte table approximates those weights and keeps even its smallest entry at one. The CoCo then uses an integer approximation to division to turn them into shares of 256, and applies the rounding correction to the largest share so the total is exactly 256.
+
+The table saves an exponential calculation for every token, at the cost of precision. These shares approximate softmax; they are not the floating-point percentages shown above.
+
+</aside>
 
 ## Training is a nudge
 
