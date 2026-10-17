@@ -1,6 +1,6 @@
 ---
 title: "Twenty epochs, then the assembly"
-date: 2026-10-17
+date: 2026-09-23
 published: true
 image: "images/coco-llm-3-banner.png"
 imageAlt: "An illustration of a silver-haired woman marking checkpoint 20 on a fanfold printout beside a separate assembly listing, a worn silver Color Computer and a beige CRT, under green, cyan and magenta light."
