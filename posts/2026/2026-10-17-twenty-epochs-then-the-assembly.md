@@ -97,7 +97,7 @@ Here it is on a step from the run. [At epoch 5, example 37](https://github.com/s
 add 230 to the 1:        231 :  56
 ```
 
-The bytes 231 and 56 read as a signed 16-bit number are minus 6,344. That matches 26 times minus 244. The second product's high byte, 25, was never stored. The routine keeps the low sixteen bits of the signed product. I checked all 16,777,216 possible input pairs against the true signed product, and [they agree on every one](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-014-6309-multiplier.md#L174-L185).
+A high byte of 231 and a low byte of 56 represent the signed sixteen-bit value -6,344. That matches 26 × (-244). The second product's high byte, 25, was never stored. The routine keeps the low sixteen bits of the signed product. I checked all 16,777,216 possible input pairs against the true signed product, and [they agree on every one](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-014-6309-multiplier.md#L174-L185).
 
 There is one case the ten lines above get wrong, and the routine's [last five lines](https://github.com/svetzal/coco-llm/blob/main/src/6809/model_forward.asm#L290-L295) fix it:
 
@@ -111,7 +111,7 @@ There is one case the ten lines above get wrong, and the routine's [last five li
 
 For a negative eight-bit factor, `MUL` uses its unsigned interpretation. For example, -121 and 135 have the same eight-bit representation. Using 135 instead of -121 adds 256 times the other operand to the product.
 
-To correct the low sixteen bits of the result, subtract the other operand's low byte from the product's high byte. Multiplying by 256 shifts a byte into that high-byte position; the other operand's high byte shifts beyond the sixteen-bit result and can be discarded. Minus 121 times 60: `MUL` makes 135 times 60, which is 8,100, bytes 31 and 164. Subtract 60 from the 31 and you have 227 and 164, which is minus 7,260. (That pair is a worked example, not a step from the run; it sits inside the range the run measured.)
+To correct the low sixteen bits of the result, subtract the other operand's low byte from the product's high byte. Multiplying by 256 shifts a byte into that high-byte position; the other operand's high byte shifts beyond the sixteen-bit result and can be discarded. For -121 × 60, `MUL` calculates 135 × 60 = 8,100, with a high byte of 31 and a low byte of 164. Subtracting 60 from the high byte gives 227, leaving the low byte at 164. Those bytes represent -7,260. (That pair is a worked example, not a step from the run; it sits inside the range the run measured.)
 
 ### The learning rate, in eight instructions
 
@@ -138,17 +138,17 @@ Register A holds the high byte of the sixteen-bit gradient; register B holds the
 | after three | `11111100 11100111` | -793 |
 | after four | `11111110 01110011` | -397 |
 
-The sign bit remains 1 after each shift. Each row in the table has one more leading 1 than the previous row. That is the "arithmetic" in arithmetic shift, and it is what keeps the number negative as it halves. The other shift instruction, the logical one, would put a 0 there and turn minus 6,344 into 29,596.
+The sign bit remains 1 after each shift. Each row in the table has one more leading 1 than the previous row. That is the "arithmetic" in arithmetic shift, and it is what keeps the number negative as it halves. The other shift instruction, the logical one, would put a 0 there and turn -6,344 into 29,596.
 
-Shifting also discards the lowest bit. The first three pairs drop a 0. The fourth drops a 1, and nothing collects it. Minus 6,344 divided by 16 is exactly minus 396.5; the shifts land on minus 397. That missing half is the bit that fell off. I used fixed-point arithmetic so the CoCo can train with integer instructions. Discarding fractional precision is quantization; this step shows exactly where it happens.
+Shifting also discards the lowest bit. The first three pairs drop a 0. The fourth drops a 1, and nothing collects it. -6,344 / 16 = -396.5; the shifts round down to -397. That missing half is the bit that fell off. I used fixed-point arithmetic so the CoCo can train with integer instructions. Discarding fractional precision is quantization; this step shows exactly where it happens.
 
-SINCLAIR's weight was 683. Subtract minus 397 and it is 1,080. On the CoCo, the stored integer represents a weight multiplied by 4,096. Dividing by 4,096 gives the weight: 683 represents approximately 0.1667, and 1,080 represents approximately 0.2637. The decimals in the last post came from the Mac's floating-point reference. The CoCo uses fixed-point values, checked byte for byte against a separate reference that reproduces its integer arithmetic.
+SINCLAIR's stored weight changes from 683 to 1,080: 683 - (-397) = 1,080. On the CoCo, the stored integer represents a weight multiplied by 4,096. Dividing by 4,096 gives the weight: 683 represents approximately 0.1667, and 1,080 represents approximately 0.2637. The decimals in the last post came from the Mac's floating-point reference. The CoCo uses fixed-point values, checked byte for byte against a separate reference that reproduces its integer arithmetic.
 
 Why a sixteenth and not 0.1 or 0.03? Because a shift is two cycles and the 6809 has no divide. The learning rate, the number everyone tunes, is on this machine a choice about which instructions exist. A rate of one eighth would be one fewer pair.
 
 ### The same bits, two readings
 
-Look at the two routines side by side. `MUL` read minus 121 as 135. `ASRA` read minus 6,344 as negative and kept the sign. Same kind of bits in both cases; the sixteen bits of minus 6,344 read as 59,192 if you take them unsigned. The bit pattern alone does not specify a signed or unsigned interpretation. `MUL` treats its inputs as unsigned; `ASRA` preserves the sign bit. That difference is why the multiply needs a correction and the shift does not.
+Look at the two routines side by side. `MUL` read -121 as 135. `ASRA` read -6,344 as negative and kept the sign. Same kind of bits in both cases; the sixteen bits of -6,344 read as 59,192 if you take them unsigned. The bit pattern alone does not specify a signed or unsigned interpretation. `MUL` treats its inputs as unsigned; `ASRA` preserves the sign bit. That difference is why the multiply needs a correction and the shift does not.
 
 ### The chip that has the instruction
 
