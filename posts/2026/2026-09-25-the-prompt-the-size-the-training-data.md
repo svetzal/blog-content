@@ -51,12 +51,6 @@ The 380 parameters stay fixed during completion, with [parameter checksum `6f9a6
 | GET YOUR | START IN COLOR COMPUTING |
 | THE COMPUTER | FOR THE REST OF US |
 
-Here is the machine doing it, recorded from the emulator at the real clock rate after the training had parked. One keypress opens the list; each Enter completes the selected prompt and moves to the next.
-
-<video controls preload="metadata" playsinline style="width: 100%; max-width: 640px; display: block; margin: 0 auto; image-rendering: pixelated;" src="/2026/images/coco-llm-4-prompts.mp4">
-The emulator completing the six prompts, one Enter each.
-</video>
-
 Five of the six prompted completions reproduce a training slogan word for word. The completion of ARE YOU combines parts of two slogans. It starts inside Commodore's line and ends inside Radio Shack's, KEEPING UP IN LITTLE COMPUTERS, a combination absent from the eight training slogans. ARE YOU does occur in the training data, but greedy prediction does not reproduce its full continuation. With only two tokens of context, the output can switch between patterns from different slogans.
 
 In this demonstration, the prompt supplies the first two context tokens. It changes the input to prediction while the 380 parameters stay fixed. When you type into a chat window, paste in a document, or a product adds a system prompt or a memory feature on your behalf, all of it goes into the same place: the context window, in front of whatever the model produces next. Generating these completions does not update the weights. A product may separately save chat history or use it in later training; neither happens in this demo.
