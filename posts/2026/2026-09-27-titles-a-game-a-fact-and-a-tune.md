@@ -32,7 +32,7 @@ A TASTE OF ARMAGEDDON       A <X> OF <X>         TASTE, ARMAGEDDON
 THE TROUBLE WITH TRIBBLES   THE <X> WITH <X>     TROUBLE, TRIBBLES
 ```
 
-Seventy-nine titles collapse to 32 shapes, and now the corpus contains the same thing happening twice. The model trains on the shapes: 400 bytes. The names go into a dictionary, 113 of them, 1,333 bytes, written by hand. And three rules, 258 bytes, also written by hand:
+The 79 titles reduce to 32 shapes, giving the training data repeated patterns. Training on those shapes produces 400 bytes of parameters. I put the 113 names in a separate, manually assembled dictionary occupying 1,333 bytes. Three written constraints occupy another 258 bytes:
 
 1. A word may only follow a word it actually follows somewhere in the real titles. Without this rule it writes TRISKELION THE MAN TRAP.
 2. A name only goes into a gap if it fits the words on either side. Without this rule it writes A TRIBBLES.
@@ -78,7 +78,7 @@ For rock, paper, scissors, lizard, Spock, I started with empty tables for the ru
 There is no gradient in this one. [EXP-013, the game opponent that learns](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-013-rpsls-opponent.md), is two tables and 100 bytes:
 
 - The rules: 25 cells, one per pair of throws. Each starts unknown and becomes loss, tie or win the first time that pair is played. The game engine supplies each round's outcome, which updates the corresponding cell.
-- Player history: 15 contexts, your last throw times how the last round ended, and in each context five counts, one per throw you might make next. Every round it adds one to the count for what you actually threw.
+- Player history: the five possible previous throws combine with the three possible previous outcomes to make 15 contexts. Each context stores five counts, one for each possible next throw. After a round, the program increments the count for your actual throw in the context that preceded it.
 
 Before you throw, the screen displays the predicted move. The program chooses a recorded winning response, otherwise an untested pair, otherwise a tie. Each round increments one count in the player-history table. This is a conditional-frequency Markov predictor.
 
@@ -122,7 +122,7 @@ Press Enter: ANSWER: CODE 2. Press E, type 6, and one byte in context RAM change
 The emulator: Enter answers CODE 2, E and 6 change the context record, Enter answers CODE 6.
 </video>
 
-Lisa's code varies across the training examples, so a fixed answer associated with Lisa cannot solve the task. The prediction must depend on the current context record. [EXP-011, the context-editing attention head](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-011-contextual-associative-recall.md), does it with two small tables: a query row for each name and a key row for each name, both learned. Multiply the question's query row against each record's key row, take the record with the biggest score, copy its value. This simplified attention head has 160 parameters and no value matrix. It selects the highest-scoring record rather than taking a weighted sum of values. It answered correctly on all 4,096 held-out bindings. A lookup stored in the parameters, with no way to read the context, scored 12.18%, about chance.
+Lisa's code varies across the training examples, so a fixed answer associated with Lisa cannot solve the task. The prediction must depend on the current context record. [EXP-011, the context-editing attention head](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-011-contextual-associative-recall.md), does it with two small tables: a query row for each name and a key row for each name, both learned. For each record, multiply corresponding query and key values and add the products to obtain a score. Select the record with the highest score and copy its stored value. This simplified attention head has 160 parameters and no value matrix. It selects the highest-scoring record rather than taking a weighted sum of values. It answered correctly on all 4,096 held-out bindings. A lookup stored in the parameters, with no way to read the context, scored 12.18%, about chance.
 
 The names model has no attention. I added this separate demonstration to show how learned queries and keys can select information supplied at prediction time. Changing CODE 2 to CODE 6 changes the answer without retraining. The mechanism retrieves the supplied value; it does not verify whether that value is true.
 
@@ -137,9 +137,9 @@ The Mac trained this melody model; the CoCo generates and plays the continuation
 7TH REGIMENT            major 2/4   12 . 12 16 19 12 16 19 24 16 19 24 28 . 26 24
 ```
 
-The number is how far the pitch sits above the home note, a dot holds it, R is a rest. Thirty-four tokens. The names model had 29 words; this one has 34 musical-event tokens.
+A number gives the pitch's distance above the tonic, measured in semitones. A dot continues the previous note; R represents a rest. The melody vocabulary has 34 musical-event tokens, compared with the names model's 29 word and boundary tokens.
 
-The pitch tokens are chromatic distances from the tonic, so they can include notes outside the diatonic scale. The representation does not make a wrong note impossible. I supplied mode, metre, beat and chord as context rather than asking the model to infer that structure from the preceding notes alone. Training adjusts the probabilities of melodic continuations given that context. Those chords were inferred from the melodies by a rule I wrote, so they are a derived feature and not ground truth. The model and the count-table baseline both got the same ones, so the comparison stays fair, and the model beats the best table by [0.494 bits per row](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-010-melody-continuation.md#L503-L545) on the held-out tunes. The table scored better on contexts present in its training data. The model scored better on unseen contexts, which accounted for 93% of the held-out rows.
+The pitch tokens are chromatic distances from the tonic, so they can include notes outside the diatonic scale. The representation does not make a wrong note impossible. I supplied mode, metre, beat and chord as context rather than asking the model to infer that structure from the preceding notes alone. Training adjusts the probabilities of melodic continuations given that context. Those chords were inferred from the melodies by a rule I wrote, so they are a derived feature and not ground truth. The model and the count-table baseline used the same inferred chords. With that input held constant, the model beats the best table by [0.494 bits per row](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-010-melody-continuation.md#L503-L545) on the held-out tunes. The table scored better on contexts present in its training data. The model scored better on unseen contexts, which accounted for 93% of the held-out rows.
 
 At the table you enter eight notes on the number keys, and the keys are scale degrees, so the seed stays within the supplied scale. The same loop as post one, predict the next token and write it down, composes the rest. The bass, the arpeggio and the drums are rules a person wrote that follow the chords, the same arrangement as the title machine. Then it plays. Playing four voices takes every cycle the machine has, so it composes the tune into memory first, then performs it.
 
@@ -169,13 +169,15 @@ The [sample loop](https://github.com/svetzal/coco-llm/blob/main/src/6809/steady_
 
 ## The same thing, in the usual symbols
 
-The names model is a log-bilinear language model in the sense of Mnih and Hinton (2007), with a separate input table per window position and the output table untied: one lookup, one linear layer, softmax, cross-entropy, plain stochastic gradient descent with a batch of one and a constant rate of a sixteenth. The backward pass is the chain rule from the loss to the parameters and it is two steps long, because there are two: the error at the scores is the shares minus the one-hot target, and the error at the context vector is the scoreboard transposed times that. It is backpropagation through a single linear layer. What you will not find: a hidden layer or an activation, attention in the main model, normalization, residuals, Adam, a schedule, a KV cache. The [concept map](https://github.com/svetzal/coco-llm/blob/main/presentation/concept-map.md#for-readers-who-know-the-classic-form) has the derivation and the list of what appears under another name.
+The names model is a log-bilinear language model in the sense of Mnih and Hinton (2007). Each window position has a separate input embedding table; the output-weight table is independent of those input tables. The forward pass adds the selected embeddings, applies a linear layer and computes softmax probabilities. Training uses cross-entropy loss and stochastic gradient descent, one example per update, with a constant learning rate of one sixteenth.
+
+The backward pass applies the chain rule to compute gradients from the loss. First, subtract the one-hot target from the predicted probabilities to obtain the score gradient. Then multiply the transpose of the output-weight matrix by the score gradient to obtain the context-vector gradient. It is backpropagation through a single linear layer. What you will not find: a hidden layer or an activation, attention in the main model, normalization, residuals, Adam, a schedule, a KV cache. The [concept map](https://github.com/svetzal/coco-llm/blob/main/presentation/concept-map.md#for-readers-who-know-the-classic-form) has the derivation and the list of what appears under another name.
 
 ## What it is for
 
 Prediction is not understanding. The names model learned that AMIGA plausibly follows COMMODORE without anything in it holding that either one was a company or a product. Checking whether an output is true needs evidence outside this prediction loop: a source, a test, a tool, or a person who knows what is at stake.
 
-The parameters are not a database of sentences. 290 numbers held eighteen names well enough to invent new ones and, trained longer, well enough to recite them. Which of those you get was a decision about how long to train.
+The parameters are not a database of sentences. Training the 290 parameters on eighteen names produced patterns that could generate new names. Longer training increased exact reproduction of training names. The training duration changed that balance.
 
 Useful is not the same as correct. The sentence completer saved half the typing while its top three suggestions missed the word four times in ten. The game opponent predicted my moves above chance without establishing a winning advantage.
 

@@ -55,7 +55,7 @@ Here is the machine doing it, recorded from the emulator at the real clock rate 
 The emulator completing the six prompts, one Enter each.
 </video>
 
-Five of the six are training lines, word for word, which is the overfit doing its job. ARE YOU is the one that is not. It starts inside Commodore's line and ends inside Radio Shack's, KEEPING UP IN LITTLE COMPUTERS, a slogan nobody ran. ARE YOU does occur in the training data, but greedy prediction does not reproduce its full continuation. With only two tokens of context, the output can switch between patterns from different slogans.
+Five of the six prompted completions reproduce a training slogan word for word. The completion of ARE YOU combines parts of two slogans. It starts inside Commodore's line and ends inside Radio Shack's, KEEPING UP IN LITTLE COMPUTERS, a slogan nobody ran. ARE YOU does occur in the training data, but greedy prediction does not reproduce its full continuation. With only two tokens of context, the output can switch between patterns from different slogans.
 
 In this demonstration, the prompt supplies the first two context tokens. It changes the input to prediction while the 380 parameters stay fixed. When you type into a chat window, paste in a document, or a product adds a system prompt or a memory feature on your behalf, all of it goes into the same place: the context window, in front of whatever the model produces next. Generating these completions does not update the weights. A product may separately save chat history or use it in later training; neither happens in this demo.
 
@@ -87,7 +87,7 @@ Its shape against the marketing model:
 | context window | 2 tokens | 5 |
 | trained on | this machine | the Mac, once |
 
-The vocabulary is 255 because a token identifier is one byte, and that byte has to cover everything. One seat for the boundary, six for punctuation, and 248 for the words the sentences use most. A period is a token, sitting in the window like any word. That lets training associate punctuation with the end of a sentence and with what follows it. I chose what counts as a token, the same way I chose whole words back in post one.
+The vocabulary contains 255 tokens, each identified by one byte: one boundary token, six punctuation tokens and 248 word tokens selected by frequency in the training data. A period is a token, sitting in the window like any word. That lets training associate punctuation with the end of a sentence and with what follows it. I chose what counts as a token, the same way I chose whole words back in post one.
 
 <aside class="hardware-detail" aria-labelledby="completion-memory-title">
 
@@ -108,7 +108,7 @@ The map change exposes ROM; `ANDCC` restores the interrupt environment expected 
 
 </aside>
 
-You type, press the right arrow, and it ranks your next word. Type THE MODEL CAN and it offers SUGGEST, BE, REMEMBER. Type RUN THE PROGRAM with the period and the top suggestion is the end-of-phrase token: it has learned that a period is usually the end. (My first interface hid that token, because the same number also meant no suggestion. The model ranked the end token first, but the interface displayed a different suggestion. I fixed the interface without retraining.)
+You type, press the right arrow, and it ranks your next word. Type THE MODEL CAN and it offers SUGGEST, BE, REMEMBER. Type RUN THE PROGRAM with the period and the top suggestion is the end-of-phrase token. Training associated a period with the end of a phrase. My first interface hid the end token because its identifier was also used to mean "no suggestion". The model ranked the end token first, but the interface displayed a different suggestion. I fixed the interface without retraining.
 
 The window is still the window. Type I KNOW THE OLD MODEL CAN and note the three suggestions. Type WE KNOW THE OLD MODEL CAN and you get the same three, because the model sees five tokens and both I and WE fell out the far side. To this model those are the same sentence.
 
@@ -127,7 +127,7 @@ Did the larger completer improve the suggestions? I built two versions and measu
 
 The larger design gained seven tenths of a point on the first line and lost seven points on the second. Its extra parameters supported a bigger vocabulary, a longer window and punctuation, but those additions did not improve both completion metrics.
 
-Both of those were called shots, and both missed. The 8 KiB model was supposed to reach 70% on the first line and got 59.3. The 32 KiB model was supposed to save 60% on the second and got 51.7. I kept the prototypes and recorded both missed targets. The scores are offline simulations on held-out text; nobody has timed a person at the keyboard.
+Both designs missed their stated targets. The 8 KiB model was supposed to include the correct next word in its top three suggestions 70% of the time; it reached 59.3%. The 32 KiB model was supposed to save 60% of typing; the simulation estimated 51.7%. I kept the prototypes and recorded both missed targets. The scores are offline simulations on held-out text; nobody has timed a person at the keyboard.
 
 Size is a decision with a bill. More parameters retain more patterns. They do not add understanding, and they do not necessarily add skill at the thing you wanted.
 
@@ -135,7 +135,7 @@ Size is a decision with a bill. More parameters retain more patterns. They do no
 
 For the training-data comparison, I returned to computer names and held the model design fixed.
 
-[EXP-003, the fan-corpus bias runs](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-003-training-data-bias.md), trains five models that are identical in every way but one. Same architecture, 310 parameters over a 31-token vocabulary. Same random starting numbers, seed 6809. Same 1,620 nudges. Same twenty seeds for the die when they draw. The only thing that differs is the training data.
+[EXP-003, the fan-corpus bias runs](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-003-training-data-bias.md), trains five models that are identical in every way but one. Each model has 310 parameters and a 31-token vocabulary. Each starts with the same random seed, 6809, and takes 1,620 training steps. Generation uses the same twenty sampling seeds for every model. The only thing that differs is the training data.
 
 For each of the first three runs, I used 18 names from one maker, with repeated examples:
 

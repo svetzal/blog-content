@@ -44,7 +44,7 @@ ATARI 800             SINCLAIR ZX81
 
 That is an absurdly small training set, and it's still useful. Big models differ from this one by the amount of training data, not by kind.
 
-A computer doesn't have words. It has numbers. So the first thing I had to decide was how to turn those names into numbered pieces. The pieces are called tokens, and here a token is a whole word, because I decided that would suit us to start. Split the eighteen names into words, sort them, number them, and you get [29 tokens](https://github.com/svetzal/coco-llm/blob/main/experiments/data/EXP-002-tokenized-computer-names.txt), counting one extra that stands in for nothing - indicating empty spaces, and the end of a name.
+A computer doesn't have words. It has numbers. So the first thing I had to decide was how to turn those names into numbered pieces. The pieces are called tokens, and here a token is a whole word, because I decided that would suit us to start. Split the eighteen names into words, sort the distinct words and number them. That gives [28 word tokens and one boundary token](https://github.com/svetzal/coco-llm/blob/main/experiments/data/EXP-002-tokenized-computer-names.txt). The boundary token marks the end of a name and fills unused positions at the start of the context window.
 
 ```text
  0 <END>       8 APPLE       16 LISA        24 TANDY
@@ -85,7 +85,7 @@ ARCHIMEDES ARCHIMEDES ARCHIMEDES 400 SINCLAIR COLOR
 
 Nonsense, and the particular kind of nonsense you'd expect from throwing dice: words repeated, no maker at the front, no end in sight.
 
-Then it trains. Fifty-eight examples, twenty times through, which is 1,160 corrections, each one a guess, a measurement of how wrong the guess was, and a nudge. Under the emulator, running at the real machine's clock rate, that takes a little over a minute. Then I ask for names again, same seed, same request:
+Then it trains on the 58 examples for twenty passes: 1,160 training steps. Each step predicts the next token, compares that prediction with the training target, and adjusts the parameters. Under the emulator, running at the real machine's clock rate, that takes a little over a minute. Then I ask for names again, same seed, same request:
 
 ```text
 SINCLAIR AMIGA
@@ -115,7 +115,7 @@ COMMODORE 64 is in the training data. At sixty, so are 143 of the 200 draws, wor
 
 That has a name: overfitting.
 
-There's a trap at the other end too. At epoch zero, before any training, every draw is new, and every one is exactly six words long because six is where I stopped it. The end marker is a token like any other, and the model hasn't learned when to produce it. Twenty was where this model had the most of it: [179 of 200 draws](https://github.com/svetzal/coco-llm/blob/main/tools/export_deck_traces.py#L259-L290) that were not in the training data and still looked like a plausible computer name.
+There's a trap at the other end too. At epoch zero, before any training, every draw is new, and every one is exactly six words long because six is where I stopped it. The end marker is a token like any other, and the model hasn't learned when to produce it. At the checkpoints shown here, twenty epochs produced the most names that were both new and the right shape: [179 of 200 draws](https://github.com/svetzal/coco-llm/blob/main/tools/export_deck_traces.py#L259-L290) that were not in the training data and still looked like a plausible computer name.
 
 ## Try it yourself
 
@@ -129,7 +129,7 @@ make present EXP=4
 
 It trains at the 1981 clock rate, parks when it's done, and draws names when you press a key. Nothing is sped up.
 
-The CoCo runs 6809 assembly, in [src/6809](https://github.com/svetzal/coco-llm/tree/main/src/6809). The Python beside it is how I organized the experiments: a reference model that does the same arithmetic on the Mac, so the CoCo's result can be checked against it, the experiment records with their data, and the scripts that pulled the numbers in these posts out of the runs. The [repository map](https://github.com/svetzal/coco-llm#repository-map) says what each folder holds. The live run is [EXP-004, the live training run](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-004-complete-6809-training.md).
+The CoCo runs 6809 assembly, in [src/6809](https://github.com/svetzal/coco-llm/tree/main/src/6809). A Python reference implementation performs the same arithmetic on the Mac so I can check the assembly's results. Experiment records hold the data and conclusions; export scripts extract the numbers shown in these posts. The [repository map](https://github.com/svetzal/coco-llm#repository-map) says what each folder holds. The live run is [EXP-004, the live training run](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-004-complete-6809-training.md).
 
 ## Watch it work, start to finish
 

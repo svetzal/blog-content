@@ -17,13 +17,13 @@ tags:
 - The two tables. One row of three numbers per token, one table per window position. Fetch a row from each, add them, and those three numbers are the model's whole input.
 - The scoreboard. Three weights and a bias per token, 116 numbers, that turn the input into a score for every token. With the 174 in the tables, that is the 290.
 - Scores become shares. On the CoCo they add up to 256, and one drawn byte picks the next token.
-- One nudge. The share the right answer got, minus 100%, times a rate I chose, times what each weight contributed. Every one of the 290 moves by that rule.
+- One update. The prediction error is predicted probability minus target probability. For an output weight, multiply that error by the learning rate and the corresponding context value, then subtract the result from the weight. Training also updates the biases and the embedding rows used by the example.
 
 I chose twenty epochs for the live demonstration: 1,160 training steps. The checkpoint scores show why I stopped there; the assembly shows what each step costs.
 
 ## Twenty times through
 
-An epoch is one pass through the 58 examples. The run is twenty of them. At a few points along the way I stopped the reference model on the Mac, drew 200 names from it, and scored them. Here is what came out, [two draws per checkpoint](https://github.com/svetzal/coco-llm/blob/main/tools/export_deck_traces.py#L259-L290), with the loss the training loop reported at that point:
+An epoch is one pass through the 58 examples. The demonstration trains for twenty epochs. At a few points along the way I stopped the reference model on the Mac, drew 200 names from it, and scored them. Here is what came out, [two draws per checkpoint](https://github.com/svetzal/coco-llm/blob/main/tools/export_deck_traces.py#L259-L290), with the loss the training loop reported at that point:
 
 | Epoch | Loss | Two of the 200 draws |
 | ---: | ---: | --- |
@@ -55,9 +55,9 @@ I wanted new names with the right shape, so I scored that separately from loss. 
 
 I kept the model at 290 parameters and the run at 20 epochs to fit the demonstration on a stock CoCo 1.
 
-Each example takes 261 multiplies, 58 examples a pass, 20 passes: 302,760 multiplies, and 15.8 million instructions for the whole run. Under the emulator at the 1981 clock rate that is a little over a minute. The full training run has not been timed on physical hardware.
+Each example takes 261 multiplies. With 58 examples per pass and 20 passes, training takes 302,760 multiplies. The full run executes 15.8 million instructions. Under the emulator at the 1981 clock rate that is a little over a minute. The full training run has not been timed on physical hardware.
 
-Space splits in two. The bytes needed to use the trained model, the forward pass and the die and the 580 bytes of weights, come to 2,516. The bytes needed to train it, the loops and the nudges and the 58 examples and the progress display, are another 730 on top, and none of them are needed once the run ends. Training needs code and data that inference can leave out. A released set of weights likewise does not include the entire system used to train it.
+Inference needs 2,516 bytes for the forward pass, sampling and the 580 bytes of weights. Training requires another 730 bytes for its update code, training examples and progress display. Those additional bytes are not needed for inference. A released set of weights likewise does not include the entire system used to train it.
 
 The model uses fixed-point numbers: integers that stand for fractions. Updates can lose fractional precision, a form of quantization. The processor details below show where that precision goes and how the CoCo executes the update.
 
@@ -71,7 +71,7 @@ This section follows the processor instructions for multiplication and weight up
 
 The 6809 has one multiply instruction, `MUL`. It takes two bytes, each 0 to 255, and produces their product, 0 to 65,025. Eleven clock cycles. It treats both inputs as unsigned.
 
-The nudge needs a signed multiply: a context number, which can be negative, times how wrong the model was, which usually is. My first version did it the way you would on paper, one bit at a time. It was correct, it was easy to read, and the run took 38.6 million instructions. Here is what replaced it, [from the source](https://github.com/svetzal/coco-llm/blob/main/src/6809/model_forward.asm#L280-L295):
+The weight update multiplies a context value by a prediction error. Either factor can be negative, so the multiplication must handle signed numbers. My first version did it the way you would on paper, one bit at a time. It was correct, it was easy to read, and the run took 38.6 million instructions. Here is what replaced it, [from the source](https://github.com/svetzal/coco-llm/blob/main/src/6809/model_forward.asm#L280-L295):
 
 ```text
 multiply_s8_s16
@@ -86,9 +86,9 @@ multiply_s8_s16
         stb     multiply_product
 ```
 
-Two `MUL`s. The 16-bit number arrives as two bytes, high and low. Multiply the factor by the low byte, keep all sixteen bits of that. Multiply the factor by the high byte, and add the low byte of that product to the high byte of the first. That gives the low sixteen bits of the product. The run dropped to 15.8 million instructions with every one of the 580 trained bytes unchanged.
+The routine uses two `MUL` instructions to multiply an eight-bit factor by a sixteen-bit operand. First, multiply the factor by the operand's low byte and keep both result bytes. Next, multiply the factor by the operand's high byte. Add the low byte of this second product to the high byte of the first product. The combined result contains the low sixteen bits of the multiplication. The run dropped to 15.8 million instructions with every one of the 580 trained bytes unchanged.
 
-Here it is on a step from the run. [At epoch 5, example 37](https://github.com/svetzal/coco-llm/blob/main/tools/export_shift_trace.py), the model was nudging SINCLAIR's third weight. The context number was 26. The error was minus 244, which as two unsigned bytes is 255 and 12.
+Here it is on a step from the run. [At epoch 5, example 37](https://github.com/svetzal/coco-llm/blob/main/tools/export_shift_trace.py), the model was nudging SINCLAIR's third weight. The context value was 26 and the prediction error was -244. In the sixteen-bit representation, -244 has a high byte of 255 and a low byte of 12.
 
 ```text
 26 x  12 =   312   bytes   1 :  56
@@ -97,7 +97,7 @@ Here it is on a step from the run. [At epoch 5, example 37](https://github.com/s
 add 230 to the 1:        231 :  56
 ```
 
-The bytes 231 and 56 read as a signed 16-bit number are minus 6,344. That matches 26 times minus 244. The second product's high byte, 25, was never stored. The low sixteen bits are the whole answer, and that is not a lucky property of this example. I checked all 16,777,216 possible input pairs against the true signed product, and [they agree on every one](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-014-6309-multiplier.md#L174-L185).
+The bytes 231 and 56 read as a signed 16-bit number are minus 6,344. That matches 26 times minus 244. The second product's high byte, 25, was never stored. The routine keeps the low sixteen bits of the signed product. I checked all 16,777,216 possible input pairs against the true signed product, and [they agree on every one](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-014-6309-multiplier.md#L174-L185).
 
 There is one case the ten lines above get wrong, and the routine's [last five lines](https://github.com/svetzal/coco-llm/blob/main/src/6809/model_forward.asm#L290-L295) fix it:
 
@@ -109,11 +109,13 @@ There is one case the ten lines above get wrong, and the routine's [last five li
         sta     multiply_product
 ```
 
-When the factor is negative, `MUL` cannot see that. It takes minus 121 as 135, because those are the same eight bits, and 135 is 256 more than minus 121. So the product is too big by 256 times the multiplier. In sixteen bits, 256 times anything is that thing moved up into the high byte. So the whole error is the multiplier's low byte, sitting one byte too high, and one subtraction from the high byte takes it out. Minus 121 times 60: `MUL` makes 135 times 60, which is 8,100, bytes 31 and 164. Subtract 60 from the 31 and you have 227 and 164, which is minus 7,260. (That pair is a worked example, not a step from the run; it sits inside the range the run measured.)
+For a negative eight-bit factor, `MUL` uses its unsigned interpretation. For example, -121 and 135 have the same eight-bit representation. Using 135 instead of -121 adds 256 times the other operand to the product.
+
+To correct the low sixteen bits of the result, subtract the other operand's low byte from the product's high byte. Multiplying by 256 shifts a byte into that high-byte position; the other operand's high byte shifts beyond the sixteen-bit result and can be discarded. Minus 121 times 60: `MUL` makes 135 times 60, which is 8,100, bytes 31 and 164. Subtract 60 from the 31 and you have 227 and 164, which is minus 7,260. (That pair is a worked example, not a step from the run; it sits inside the range the run measured.)
 
 ### The learning rate, in eight instructions
 
-The multiply hands back minus 6,344. That is the raw nudge, and it is far too big. The rate I chose, 0.0625, is a sixteenth, and [here it is](https://github.com/svetzal/coco-llm/blob/main/src/6809/training.asm#L133-L140):
+The context value multiplied by the prediction error gives a gradient of -6,344 in the fixed-point representation. The learning rate scales this gradient before the weight is updated. I chose 0.0625, or one sixteenth, and [here it is](https://github.com/svetzal/coco-llm/blob/main/src/6809/training.asm#L133-L140):
 
 ```text
         asra
@@ -126,7 +128,7 @@ The multiply hands back minus 6,344. That is the raw nudge, and it is far too bi
         rorb
 ```
 
-The 16-bit number sits in two 8-bit registers, A on the left and B on the right. `ASRA` shifts A one bit to the right, keeps its top bit where it was, and drops the bit that fell off the bottom into a flag called the carry. `RORB` shifts B one bit to the right and pulls the carry in at the top. Together they move all sixteen bits one place right, which halves the number. Four pairs divide by sixteen.
+Register A holds the high byte of the sixteen-bit gradient; register B holds the low byte. `ASRA` shifts A one bit to the right, keeps its top bit where it was, and drops the bit that fell off the bottom into a flag called the carry. `RORB` shifts B one bit to the right and pulls the carry in at the top. Together they move all sixteen bits one place right, which halves the number. Four pairs divide by sixteen.
 
 | | Bits | Value |
 | --- | --- | ---: |
@@ -136,23 +138,23 @@ The 16-bit number sits in two 8-bit registers, A on the left and B on the right.
 | after three | `11111100 11100111` | -793 |
 | after four | `11111110 01110011` | -397 |
 
-Two things to see in the bits. The left edge stays 1 and copies itself downward, one more each row. That is the "arithmetic" in arithmetic shift, and it is what keeps the number negative as it halves. The other shift instruction, the logical one, would put a 0 there and turn minus 6,344 into 29,596.
+The sign bit remains 1 after each shift. Each row in the table has one more leading 1 than the previous row. That is the "arithmetic" in arithmetic shift, and it is what keeps the number negative as it halves. The other shift instruction, the logical one, would put a 0 there and turn minus 6,344 into 29,596.
 
-The other thing is the bit that falls off the right. The first three pairs drop a 0. The fourth drops a 1, and nothing collects it. Minus 6,344 divided by 16 is exactly minus 396.5; the shifts land on minus 397. That missing half is the bit that fell off. I used fixed-point arithmetic so the CoCo can train with integer instructions. Discarding fractional precision is quantization; this step shows exactly where it happens.
+Shifting also discards the lowest bit. The first three pairs drop a 0. The fourth drops a 1, and nothing collects it. Minus 6,344 divided by 16 is exactly minus 396.5; the shifts land on minus 397. That missing half is the bit that fell off. I used fixed-point arithmetic so the CoCo can train with integer instructions. Discarding fractional precision is quantization; this step shows exactly where it happens.
 
-SINCLAIR's weight was 683. Subtract minus 397 and it is 1,080. On the CoCo a weight is a whole number that stands for itself divided by 4,096, so 683 is 0.1667 and 1,080 is 0.2637. The decimals in the last post came from the Mac's floating-point reference. The CoCo uses fixed-point values, checked byte for byte against a separate reference that reproduces its integer arithmetic.
+SINCLAIR's weight was 683. Subtract minus 397 and it is 1,080. On the CoCo, the stored integer represents a weight multiplied by 4,096. Dividing by 4,096 gives the weight: 683 represents approximately 0.1667, and 1,080 represents approximately 0.2637. The decimals in the last post came from the Mac's floating-point reference. The CoCo uses fixed-point values, checked byte for byte against a separate reference that reproduces its integer arithmetic.
 
 Why a sixteenth and not 0.1 or 0.03? Because a shift is two cycles and the 6809 has no divide. The learning rate, the number everyone tunes, is on this machine a choice about which instructions exist. A rate of one eighth would be one fewer pair.
 
 ### The same bits, two readings
 
-Look at the two routines side by side. `MUL` read minus 121 as 135. `ASRA` read minus 6,344 as negative and kept the sign. Same kind of bits in both cases; the sixteen bits of minus 6,344 read as 59,192 if you take them unsigned. Nothing in the bits says which. The instruction you choose decides, and that is why the multiply needed a correction and the shift did not.
+Look at the two routines side by side. `MUL` read minus 121 as 135. `ASRA` read minus 6,344 as negative and kept the sign. Same kind of bits in both cases; the sixteen bits of minus 6,344 read as 59,192 if you take them unsigned. The bit pattern alone does not specify a signed or unsigned interpretation. `MUL` treats its inputs as unsigned; `ASRA` preserves the sign bit. That difference is why the multiply needs a correction and the shift does not.
 
 ### The chip that has the instruction
 
 The CoCo 3 on my exhibit table has a Hitachi 6309 in it. It runs 6809 code as it is, and in its own native mode it has instructions the 6809 does not. One of them is `MULD`, a signed 16-by-16 multiply, in one instruction.
 
-On that chip, `MULD` handles the sign directly. [Sixteen instructions and 93 cycles become five and 43](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-014-6309-multiplier.md#L63-L81). I measured it on the physical machine on 5 September 2026: 58,000 multiplies over the trained model's own weights, timed with the 60 Hz frame counter, [all three ways](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-014-6309-multiplier.md#L83-L110).
+On that chip, `MULD` handles the sign directly. [Sixteen instructions and 93 cycles become five and 43](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-014-6309-multiplier.md#L63-L81). I measured it on the physical machine on 5 September 2026: 58,000 multiplies over the trained model's weights, timed with the 60 Hz frame counter, [comparing the 6809 routine, native-mode execution and MULD](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-014-6309-multiplier.md#L83-L110).
 
 | What ran | Ticks | Against the first row |
 | --- | ---: | ---: |
