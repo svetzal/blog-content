@@ -16,7 +16,7 @@ tags:
 - What the run costs. 302,760 multiplies, and a trainer bigger than the model it trains.
 - The 6809 instructions for one nudge. Two unsigned multiplies and a subtraction make a signed one; four shift pairs are the learning rate; the bit that falls off the right is quantization.
 
-The loop is the same in every post so far. This post holds it fixed and changes one thing at a time: the words it starts from, the number of parameters, and the training data. Each change is a decision a person made, and each one shows up in what comes out.
+The next examples compare three ways to change the output: supply a prompt, enlarge the model, or change the training data.
 
 ## The prompt
 
@@ -35,7 +35,7 @@ WHY BUY JUST A VIDEO GAME
 
 Those eight lines are everything this model trained on. They make 38 tokens, 53 examples and 380 parameters, and I trained it for 80 epochs. Only four words carry over from the first model, 64, COLOR, COMMODORE and COMPUTER, and even those got new numbers. COMMODORE was 13; here it is 9, because that is where it lands alphabetically in this list. The weights were trained from scratch.
 
-Eighty epochs on eight lines is a lot of training, and you already know what that does. This model recites. Post one called that overfitting, and for a model whose job was inventing names it was the failure. This model's job is finishing famous slogans, so reciting is the assignment. Whether overfitting is a problem is a decision about the task.
+Eighty epochs on eight lines is a lot of training, and you already know what that does. This model recites. Post one called that overfitting, and for a model whose job was inventing names it was the failure. This model's job is finishing famous slogans, so reciting is the assignment.
 
 Now hold the model still. All 380 numbers, [checksum `6f9a6c88742221bb` before and after](https://github.com/svetzal/coco-llm/blob/main/experiments/EXP-005-prompted-marketing-language.md#L88-L107). This run takes the highest-scoring token every time, so the same start always gives the same answer. The one thing that changes is the first two tokens in the window before it starts.
 
@@ -87,7 +87,7 @@ Its shape against the marketing model:
 | context window | 2 tokens | 5 |
 | trained on | this machine | the Mac, once |
 
-The vocabulary contains 255 tokens, each identified by one byte: one boundary token, six punctuation tokens and 248 word tokens selected by frequency in the training data. A period is a token, sitting in the window like any word. That lets training associate punctuation with the end of a sentence and with what follows it. I chose what counts as a token, the same way I chose whole words back in post one.
+The vocabulary contains 255 tokens, each identified by one byte: one boundary token, six punctuation tokens and 248 word tokens selected by frequency in the training data. A period is a token, sitting in the window like any word. That lets training associate punctuation with the end of a sentence and with what follows it. Unlike the names model, this vocabulary represents punctuation separately from words.
 
 <aside class="hardware-detail" aria-labelledby="completion-memory-title">
 
@@ -129,7 +129,7 @@ The larger design gained seven tenths of a point on the first line and lost seve
 
 Both designs missed their stated targets. The 8 KiB model was supposed to include the correct next word in its top three suggestions 70% of the time; it reached 59.3%. The 32 KiB model was supposed to save 60% of typing; the simulation estimated 51.7%. I kept the prototypes and recorded both missed targets. The scores are offline simulations on held-out text; nobody has timed a person at the keyboard.
 
-Size is a decision with a bill. More parameters retain more patterns. They do not add understanding, and they do not necessarily add skill at the thing you wanted.
+More parameters increase storage and computation, and can retain more patterns. They do not add understanding, and they do not necessarily add skill at the thing you wanted.
 
 ## The training data
 
@@ -165,9 +165,9 @@ The last two isolate the order of the examples. Both train on all 54 names, 18 p
 
 Laid end to end, Apple then Commodore then Tandy, the model comes out a Tandy fan: 14 of 20, the same as the model that only ever trained on Tandy. Every pass through the file ends with the Tandy block, so the final updates favour Tandy. Interleaved, the same 54 names spread out, and the loss finishes at 0.88 instead of 2.18. The bad order trained worse as well as narrower.
 
-I deliberately compared those two orders. The fourth run shows how grouping examples by maker can produce a preference even when the totals are balanced.
+The fourth run shows how grouping examples by maker can produce a preference even when the totals are balanced.
 
-The same lever has a commercial name. Fine-tuning is more training, on data somebody chose. A company fine-tuning a model on its own documents is choosing training data, and it inherits everything on this table, the order included.
+The same lever has a commercial name. Fine-tuning updates an existing model's weights through further training. A company fine-tuning a model on its own documents is choosing training data, and it inherits everything on this table, the order included.
 
 ## What each change controls
 
@@ -175,4 +175,4 @@ The prompt changes context while the weights stay fixed. A larger design changes
 
 Next post: the same machinery on things that are not computer names. Sixteen episode titles that were never filmed, a game that learns how you play, a fact you hand it right now, and a tune.
 
-<!-- Draft voice check (remove before publication): Names the interventions directly and keeps the interface repair as a concrete example. Removes invented surprise and attributes the ordering experiment to deliberate design. -->
+<!-- Draft voice check (remove before publication): Names the interventions directly and keeps the interface repair as a concrete example. Explains the output differences through the prompt, memory layout and ordering measurements. -->

@@ -44,7 +44,7 @@ ATARI 800             SINCLAIR ZX81
 
 That is an absurdly small training set, and it's still useful. Big models differ from this one by the amount of training data, not by kind.
 
-A computer doesn't have words. It has numbers. So the first thing I had to decide was how to turn those names into numbered pieces. The pieces are called tokens, and here a token is a whole word, because I decided that would suit us to start. Split the eighteen names into words, sort the distinct words and number them. That gives [28 word tokens and one boundary token](https://github.com/svetzal/coco-llm/blob/main/experiments/data/EXP-002-tokenized-computer-names.txt). The boundary token marks the end of a name and fills unused positions at the start of the context window.
+A computer doesn't have words. It has numbers. So the first thing I had to decide was how to turn those names into numbered pieces. The pieces are called tokens, and here a token is a whole word. Split the eighteen names into words, sort the distinct words and number them. That gives [28 word tokens and one boundary token](https://github.com/svetzal/coco-llm/blob/main/experiments/data/EXP-002-tokenized-computer-names.txt). The boundary token marks the end of a name and fills unused positions at the start of the context window.
 
 ```text
  0 <END>       8 APPLE       16 LISA        24 TANDY

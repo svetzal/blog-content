@@ -181,11 +181,9 @@ The parameters are not a database of sentences. Training the 290 parameters on e
 
 Useful is not the same as correct. The sentence completer saved half the typing while its top three suggestions missed the word four times in ten. The game opponent predicted my moves above chance without establishing a winning advantage.
 
-Automating a task is not taking on its purpose. The CoCo can invent a computer name. A person chose the problem, assembled the examples, designed the model, judged the output, and decided what the demonstration meant. Nothing in the loop decides which outcomes matter or answers for them.
+For the names demonstration, I counted output as successful when it was new and had the right shape. The training loop optimizes a different criterion: the probability assigned to the training targets. The checkpoint scores showed those criteria diverging. I remain responsible for judging whether the output serves the demonstration; lowering loss does not make that judgment.
 
 This model shares the next-token learning objective used by modern generative language models, but not their transformer architecture or scale. It is the same loop at a size where every part is visible.
-
-Everything I could point at in this series traces back to a person who decided something: what a token is, how wide the window is, how many numbers, how long to train, what data and in what order, what goes into context, what the rules throw out. Those choices determine what the arithmetic can produce and how we judge it.
 
 The practical move is the same at every scale: give a model a bounded job, relevant context, and a way to check the result.
 
