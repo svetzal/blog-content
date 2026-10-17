@@ -288,6 +288,24 @@ Stacey's Obsidian vault is located at `~/Work/HostedVault/`. It contains researc
 - Blog post body headings should start at H2 (`##`) and increment by one level only (no skipping from `##` to `####`)
 - Put blank lines above and below bulleted lists, numbered lists, headings, quotations, and code blocks
 
+## Direct source references
+
+When explaining how software works, link directly to the source code that
+implements the mechanism. When reporting a measurement or result, link to the
+test, experiment record, or data that supports it. Make this standard practice
+in technical posts, including implementation asides.
+
+- Put the link beside the claim or explanation it supports.
+- Link to the relevant routine, definition, test, or data rather than the
+  repository homepage. Use a line range or section anchor when it helps.
+- Use descriptive link text that names what the reader will find.
+- Read the linked source and verify that it supports the explanation. Do not
+  invent a source location or line number.
+- Prefer commit permalinks when a claim depends on a particular code version,
+  so later edits do not move the evidence out from under the post.
+- Explain the mechanism in the post. Source links let readers inspect and
+  verify it; following them must not be necessary to understand the argument.
+
 ## Voice and Style
 
 Stacey's writing and presenting voice are defined in standalone skills, installed globally via `cmx`:
