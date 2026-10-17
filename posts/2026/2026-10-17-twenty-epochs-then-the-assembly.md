@@ -1,7 +1,7 @@
 ---
 title: "Twenty epochs, then the assembly"
-date: 2026-09-23
-published: false
+date: 2026-10-17
+published: true
 image: "images/coco-llm-3-banner.png"
 imageAlt: "An illustration of a silver-haired woman marking checkpoint 20 on a fanfold printout beside a separate assembly listing, a worn silver Color Computer and a beige CRT, under green, cyan and magenta light."
 description: "Post three of five: what 1,160 nudges do to the model, checkpoint by checkpoint, and then the 6809 instructions that do one of them: two unsigned multiplies, one subtraction, and four shifts."
@@ -168,5 +168,3 @@ That is the multiply, timed on its own. The multiply is [about 46%](https://gith
 </aside>
 
 <p id="after-hardware-detail">Next post: three things a person can change without touching the loop. The two words it starts from, the size, and the training data.</p>
-
-<!-- Draft voice check (remove before publication): Keeps the checkpoint results and assembly as the argument. Cuts repeated conclusions and signalled importance; first person names design choices already documented in the draft. -->

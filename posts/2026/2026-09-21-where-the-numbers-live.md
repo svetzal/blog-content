@@ -184,4 +184,4 @@ This is why it's useful to think in probabilities. The model never answers. It h
 
 Two hundred and ninety numbers. A hundred and seventy-four are a lookup table, a hundred and sixteen are a scoreboard, and a byte from a die picks the word.
 
-Next post: what 1,160 of those nudges do, epoch by epoch, and the 6809 instructions that do one of them.
+[Next post](https://stacey.vetzal.ca/2026/2026-10-17-twenty-epochs-then-the-assembly/): what 1,160 of those nudges do, epoch by epoch, and the 6809 instructions that do one of them.
