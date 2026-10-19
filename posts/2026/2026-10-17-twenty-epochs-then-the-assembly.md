@@ -169,4 +169,4 @@ That is the multiply, timed on its own. The multiply is [about 46%](https://gith
 
 </aside>
 
-<p id="after-hardware-detail">Next post: how prompts, model size and training data affect the output.</p>
+<p id="after-hardware-detail"><a href="https://stacey.vetzal.ca/2026/2026-09-25-the-prompt-the-size-the-training-data/">Next post</a>: how prompts, model size and training data affect the output.</p>

@@ -167,6 +167,6 @@ Fine-tuning updates an existing model's weights through further training. Exampl
 
 The prompt changes context while the weights stay fixed. A larger design changes what can fit in the model and what prediction costs. Training data and its order change the weights themselves. Those are different interventions, and the demonstrations let us check each one separately.
 
-Next post: invented episode titles, an opponent that updates counts during play, an editable fact in context, and a melody continuation.
+[Next post](https://stacey.vetzal.ca/2026/2026-09-27-titles-a-game-a-fact-and-a-tune/): invented episode titles, an opponent that updates counts during play, an editable fact in context, and a melody continuation.
 
 <!-- Draft voice check (remove before publication): Names the interventions directly and keeps the interface repair as a concrete example. Uses named quantities, explicit context comparisons and the recorded ordering measurements. -->

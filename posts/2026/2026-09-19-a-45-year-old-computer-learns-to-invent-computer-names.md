@@ -16,7 +16,13 @@ Last Sunday I spent the day at an exhibit table with my Tandy Color Computers, r
 
 The demonstrations run on a machine I got for Christmas 45 years ago, with 32 kilobytes of memory. This series follows the computer-name model from training examples to generated names, with its arithmetic small enough to inspect.
 
-This is post one of five. It covers the training data, what tokens are and how they work, and what the context window is. The arithmetic comes next time.
+The five posts in this series:
+
+1. [A 45-year-old computer learns to invent computer names](https://stacey.vetzal.ca/2026/2026-09-19-a-45-year-old-computer-learns-to-invent-computer-names/): the training data, tokens and context window.
+2. [Where the numbers live](https://stacey.vetzal.ca/2026/2026-09-21-where-the-numbers-live/): the weights, next-token probabilities and how training changes them.
+3. [Twenty epochs, then the assembly](https://stacey.vetzal.ca/2026/2026-10-17-twenty-epochs-then-the-assembly/): what changes over twenty training passes, and how the 6809 implements the updates.
+4. [The prompt, the size, the training data](https://stacey.vetzal.ca/2026/2026-09-25-the-prompt-the-size-the-training-data/): how prompts, model size and training examples affect the output.
+5. [Titles, a game, a fact, and a tune](https://stacey.vetzal.ca/2026/2026-09-27-titles-a-game-a-fact-and-a-tune/): title generation, a game that updates counts, retrieving an editable fact from context, and melody continuation.
 
 ## Predict, compare, update
 
