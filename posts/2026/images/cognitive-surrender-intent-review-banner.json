@@ -1,0 +1,187 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Banner for a post on cognitive surrender and intent review: people investigate a discrepancy despite a reassuring automated approval.",
+  "Character": {
+    "Description": "A striking, confident middle-aged woman with a cyberpunk edge; intelligent, seductive, and unapologetically powerful.",
+    "Age": "Middle-aged, confident, formidable",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Curvy, powerful, feminine",
+      "UpperBody": "Broad shoulders, strong arms, pronounced curves",
+      "LowerBody": "Full hips and thighs, assertive stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, intense, sharp focus",
+      "Expression": "Self-assured, knowing, slightly dangerous",
+      "Makeup": "High-contrast makeup; sharp eyeliner, metallic accents, bold magenta or neon lips",
+      "Complexion": "Fair-light skin with cool highlights and cinematic contrast"
+    },
+    "Hair": {
+      "Color": "Silver-grey with subtle neon reflections",
+      "Length": "Long",
+      "Style": "Loose waves or wind-swept, dramatic movement"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Professional dark blazer over tech-casual attire, sleeves often pushed up",
+          "Context": "Always present, bridges corporate and technical worlds"
+        }
+      ],
+      "Situational": [
+        {
+          "Name": "Cyberpunk details",
+          "Description": "Subtle cyan seams and metallic smart wearable, restrained rather than costume-like",
+          "Context": "Collaborative workshop"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": [
+        "Neon signs",
+        "Screen glow",
+        "Rim lighting",
+        "Side lighting"
+      ],
+      "Shadows": "Sharp, emphasizing texture and form"
+    },
+    "ColorPalette": {
+      "Primary": [
+        "Magenta",
+        "Cyan",
+        "Electric Blue",
+        "Lime Green"
+      ],
+      "Accents": [
+        "Silver",
+        "White",
+        "Cool Blues",
+        "Metallic purples"
+      ],
+      "Treatment": "High saturation, strong contrast between warm neons and cool tech light"
+    },
+    "Atmosphere": {
+      "Effects": [
+        "Bokeh",
+        "Atmospheric haze",
+        "Neon glow",
+        "Reflections on surfaces"
+      ],
+      "Mood": "Electric, gritty yet stylish, high-tech urban"
+    }
+  },
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "neon light",
+    "cinematic lighting",
+    "high contrast",
+    "collaborative investigation",
+    "silver-haired woman systems thinker",
+    "wide banner composition",
+    "clear focal point",
+    "no typography"
+  ],
+  "CompositionNotes": {
+    "Framing": "Wide or mid-shot to show environment context",
+    "SubjectPlacement": "Character typically off-center with negative space for environment",
+    "DepthOfField": "Shallow to medium, background elements visible but not distracting",
+    "TextSafeArea": "Consider leaving space for potential text overlay"
+  },
+  "Situation": {
+    "Name": "Questioning the green light",
+    "Setting": "A cyberpunk collaborative systems workshop at night. A shared physical worktable faces an open window onto a lived-in city. Two colleagues stand across the table from the recurring silver-haired woman. The scene is an investigation together, with automation operating in the background.",
+    "Camera": "Wide cinematic banner, eye-level three-quarter view across the table. Silver-haired woman on left third, shared evidence and a single visible discrepancy in centre, colleagues on right. Keep all essential faces and actions in the central horizontal band for a 16:9 crop of the 1536x1024 canvas.",
+    "CharacterPose": {
+      "Expression": "Alert, questioning concentration, engaged with a colleague rather than staring at code",
+      "BodyPosition": "Standing at the shared table, shoulders open toward the other people",
+      "Gesture": "One hand indicates the point where an amber evidence path diverges from a cyan projected intent path; the other rests on the table. Natural anatomy and gestures."
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Professional black blazer with sleeves pushed up over a subtle futuristic fitted top",
+          "Application": "Worn by the main woman"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "Automated approval display",
+          "Description": "One translucent background panel with a prominent lime-green checkmark and faint orderly abstract rows; no readable text or code",
+          "Application": "Behind and above the table, visually secondary, still green while the discrepancy is examined",
+          "SymbolicMeaning": "A persuasive clean result does not settle whether the assumptions hold"
+        },
+        {
+          "Name": "Shared intent and evidence map",
+          "Description": "A restrained tabletop projection of a few connected cyan paths. One amber path from a physical evidence card enters from outside and visibly diverges at a single junction. Large simple geometry readable at thumbnail size",
+          "Application": "Centre foreground, directly between the people, discrepancy indicated by the woman",
+          "SymbolicMeaning": "External evidence challenges an internally coherent system of intents"
+        },
+        {
+          "Name": "Evidence card",
+          "Description": "A physical card bearing a simple abstract journey trace, no words or numerical claims",
+          "Application": "A colleague places it beside the projection and points to its divergent path",
+          "SymbolicMeaning": "Support and observations of actual usage enter the intent review"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Shared worktable",
+          "Description": "Dark brushed metal, tactile edges, uncluttered surface",
+          "Application": "Spans the foreground and physically connects the people"
+        },
+        {
+          "Name": "Colleagues",
+          "Description": "Two adult colleagues with distinct appearances, ordinary professional tech clothing, attentive expressions",
+          "Application": "Across the table, one contributing the evidence card, the other following the discussion; no passive audience"
+        },
+        {
+          "Name": "Open city-facing window",
+          "Description": "Distant occupied city with warm window lights, atmospheric depth",
+          "Application": "Background right, conveys the world beyond the local model"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "People examine a disagreement while the automated status stays green.",
+      "Do not depict manual line-by-line code review, robots, vendor branding, Alloy branding, tool logos, or a dashboard collage.",
+      "One focal discrepancy; no mass of floating panels or tangled connections.",
+      "No title, captions, speech bubbles, readable text, fake metrics, or fabricated code.",
+      "Keep character likeness consistent with repository character reference photographs.",
+      "Main character and colleagues remain active collaborators; no sleep, hypnosis, or helpless surrender imagery."
+    ],
+    "LightingFocus": "Cool cyan projection and restrained magenta rim light, warm amber from the evidence card reflected on faces and hands. Green approval stays in softer background focus. Dramatic but readable faces.",
+    "ThematicTags": [
+      "cognitive-surrender",
+      "intent-review",
+      "external-validation",
+      "shared-judgment"
+    ]
+  },
+  "ArticleContext": {
+    "Title": "What are you hiring code reviews to do?",
+    "Tags": [
+      "Software Engineering",
+      "Intent",
+      "Agentic Development"
+    ],
+    "Themes": [
+      "Questioning persuasive automated assurance",
+      "Reconciling intent across organizational roles",
+      "External evidence can challenge shared assumptions",
+      "Automation continues while people review intent"
+    ],
+    "Mood": "analytical"
+  }
+}
