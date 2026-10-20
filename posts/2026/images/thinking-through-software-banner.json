@@ -1,0 +1,175 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Character": {
+    "Description": "A striking, confident middle-aged woman with a cyberpunk edge; intelligent, seductive, and unapologetically powerful.",
+    "Age": "Middle-aged, confident, formidable",
+    "Ethnicity": "Northern / Eastern European build",
+    "Build": {
+      "Type": "Curvy, powerful, feminine",
+      "UpperBody": "Broad shoulders, strong arms, pronounced curves",
+      "LowerBody": "Full hips and thighs, assertive stance"
+    },
+    "Face": {
+      "Eyes": "Blue-grey, intense, sharp focus",
+      "Expression": "Self-assured, knowing, slightly dangerous",
+      "Makeup": "High-contrast makeup; sharp eyeliner, metallic accents, bold magenta or neon lips",
+      "Complexion": "Fair-light skin with cool highlights and cinematic contrast"
+    },
+    "Hair": {
+      "Color": "Silver-grey with subtle neon reflections",
+      "Length": "Long",
+      "Style": "Loose waves or wind-swept, dramatic movement"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Professional dark blazer over tech-casual attire, sleeves often pushed up",
+          "Context": "Always present, bridges corporate and technical worlds"
+        }
+      ],
+      "Situational": [
+        {
+          "Name": "Leather coat",
+          "Description": "Dark leather with high collar, tactical styling",
+          "Context": "Outdoor or street scenes, adds edge"
+        },
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern rectangular frames, subtle tech integration",
+          "Context": "Close-up work, reading, screen-focused scenes"
+        },
+        {
+          "Name": "Futuristic sunglasses",
+          "Description": "Sleek, angular frames with reflective or holographic lenses",
+          "Context": "Outdoor urban scenes, adds mystery"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": [
+        "Neon signs",
+        "Screen glow",
+        "Rim lighting",
+        "Side lighting"
+      ],
+      "Shadows": "Sharp, emphasizing texture and form"
+    },
+    "ColorPalette": {
+      "Primary": [
+        "Magenta",
+        "Cyan",
+        "Electric Blue",
+        "Lime Green"
+      ],
+      "Accents": [
+        "Silver",
+        "White",
+        "Cool Blues",
+        "Metallic purples"
+      ],
+      "Treatment": "High saturation, strong contrast between warm neons and cool tech light"
+    },
+    "Atmosphere": {
+      "Effects": [
+        "Bokeh",
+        "Atmospheric haze",
+        "Neon glow",
+        "Reflections on surfaces"
+      ],
+      "Mood": "Electric, gritty yet stylish, high-tech urban"
+    }
+  },
+  "Situation": {
+    "Name": "Weaving a coherent speculative system",
+    "Setting": "Futuristic textile atelier with a monumental partially woven luminous tapestry on a sleek loom",
+    "Camera": "Wide 16:9, woman at left, tapestry dominates center and right, central crop-safe focal band",
+    "CharacterPose": {
+      "Expression": "Thoughtful analytical concentration",
+      "BodyPosition": "Standing in three-quarter profile beside the loom",
+      "Gesture": "Adjusting one amber thread with a weaving shuttle"
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Dark professional blazer",
+          "Description": "Black fitted blazer over tech-casual attire, sleeves pushed up",
+          "Application": "Worn"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "System tapestry",
+          "Description": "Customer journey and abstract signup form woven into one textile, continuous luminous threads connect the surface to deeper branching rules and service motifs",
+          "Application": "Stretched on the loom across the frame",
+          "SymbolicMeaning": "Speculative layers reconciled as a coherent whole"
+        },
+        {
+          "Name": "Amber thread",
+          "Description": "One traceable strand traverses the journey and underlying patterns",
+          "Application": "Adjusted with the shuttle, soft pulse visible across connected motifs",
+          "SymbolicMeaning": "A decision propagates through the whole system"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Loom",
+          "Description": "Sleek dark loom supporting tactile woven cloth with unfinished translucent edges",
+          "Application": "Fills center and right"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "Real textile fibers and interlaced warp and weft",
+      "Unfinished sections signal provisional design",
+      "No typography, logos or readable code",
+      "Interface motifs are woven into cloth, not floating holograms"
+    ],
+    "LightingFocus": "Cyan and magenta luminous threads, restrained warm amber pulse, silver rim light on hair",
+    "ThematicTags": [
+      "system-coherence",
+      "speculative-design",
+      "customer-journeys"
+    ]
+  },
+  "ArticleContext": {
+    "Title": "Thinking through the software we might build",
+    "Tags": [
+      "software-design",
+      "product-development",
+      "agentic-development"
+    ],
+    "Themes": [
+      "Coherence across speculative layers",
+      "Customer experience connected to supporting capabilities"
+    ],
+    "Mood": "analytical"
+  },
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "neon light",
+    "cinematic lighting",
+    "high contrast",
+    "16:9 aspect ratio",
+    "wide shot",
+    "banner composition"
+  ],
+  "FinalPrompt": "Use case: stylized-concept. Create one wide 16:9 blog hero banner, no text or typography. Reference photos are identity references only for the same middle-aged woman, not composition targets: retain her recognizable face, fair skin, blue-grey eyes, long silver-grey wavy hair and sturdy broad-shouldered feminine build. Dress her in a fitted dark professional blazer over a black tech-casual top, sleeves pushed up, subtle magenta makeup. Scene: a quiet futuristic textile atelier, cyberpunk/tech-noir high-detail cinematic digital painting with believable materials. A monumental partially woven tapestry fills most of the picture, stretched on a sleek loom, tilted in perspective so both its beautiful front and interwoven depth are visible. She stands beside it at left, three-quarter profile, thoughtful focused expression, naturally using a small weaving shuttle to adjust one luminous amber thread. The tapestry is the main subject. Its upper woven pattern subtly depicts a customer's route across three small abstract interface panels including a signup form with blank input shapes; no words, no logos. Those shapes are woven into the textile itself, not floating screens. Continuous cyan, magenta, silver and amber warp and weft threads visibly connect this surface journey to deeper geometric motifs of branching rules and interconnected system structures lower in the SAME textile. Show several unfinished translucent sections and loose but orderly strands at its edge, suggesting a provisional design whose supporting layers are being resolved together. The thread she touches can be visually traced through multiple motifs, with a soft amber pulse propagating across the weave; everything belongs to one coherent woven whole. Rich tactile fibers, precise interlacing, substantial cloth, elegant craft rather than a glowing computer dashboard. Dark charcoal and midnight-blue atelier, cyan and magenta thread glow with restrained warm amber accents, gentle screenlike illumination on face, silver rim lighting in hair, atmospheric depth. Medium-wide composition, tapestry dominates center and right, face and tapestry occupy central crop-safe band; detailed without visual clutter. Mood: analytical, capable, contemplative. Avoid disconnected waterfall tiers, tangled chaos, robots, extra people, readable code, UI labels, title lettering, watermarks, generic floating hologram cards, glamor poses. Output wide landscape 16:9.",
+  "Generation": {
+    "Mode": "built-in image_gen",
+    "ReferenceImages": [
+      "../../../assets/reference-1.jpg",
+      "../../../assets/reference-2.jpg",
+      "../../../assets/reference-3.jpg"
+    ]
+  }
+}
