@@ -3,7 +3,7 @@ title: "Code review changes the team"
 date: "2026-11-03"
 published: false
 image: images/code-review-changes-the-team.png
-imageAlt: "A silver-haired woman and two colleagues discuss a shared diagram beside a window overlooking a busy service counter."
+imageAlt: "A silver-haired woman and two colleagues discuss a shared diagram, with another team collaborating in the office behind them."
 description: "As AI takes on more review, how do we preserve the learning that helps people reason together about software's effects?"
 tags:
   - Software Engineering

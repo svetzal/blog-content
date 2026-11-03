@@ -129,8 +129,8 @@
     }
   },
   "Situation": {
-    "Name": "Learning together, looking outward",
-    "Setting": "A modest software team workspace overlooking a busy public service counter through a large interior window, in a near-future city at dusk. The service counter is physically connected to their workplace, not a hologram.",
+    "Name": "Teams learning together",
+    "Setting": "A shared software workspace in a near-future city at dusk. Through the interior window at the left, another small team collaborates around a shared table and whiteboard in a connected office, softly out of focus.",
     "Camera": "Wide horizontal banner composition, eye-level medium-wide view. Three colleagues form an open triangle beside a glass planning board; protagonist on left. Keep faces and shared diagram in central area safe for 16:9 crop.",
     "CharacterPose": {
       "Expression": "Thoughtful and attentive, looking at a speaking colleague rather than the camera",
@@ -153,16 +153,16 @@
           "SymbolicMeaning": "A change being questioned together"
         },
         {
-          "Name": "Service counter",
-          "Description": "A staff member listening to a customer holding a small parcel, natural ordinary interaction",
-          "Application": "Visible through the broad interior window in the background",
-          "SymbolicMeaning": "People whose lives and work are affected by the software"
+          "Name": "Collaborating background team",
+          "Description": "Three colleagues clustered around a shared worktable and modest whiteboard, discussing a change",
+          "Application": "Visible through the interior window at the far left, smaller and softly out of focus",
+          "SymbolicMeaning": "Collective learning across teams"
         }
       ],
       "Environment": [
         {
           "Name": "Neighbourhood light",
-          "Description": "Restrained cyan and magenta reflections from the city, warm light around the service counter",
+          "Description": "Restrained cyan and magenta city reflections with cool blue ambient light throughout both workspaces",
           "Application": "Across window and room edges"
         }
       ]
@@ -172,9 +172,10 @@
       "The other colleagues are visually distinct from the recurring silver-haired protagonist",
       "Human faces and listening gestures are the focal point",
       "No robots, floating dashboards, logos, titles or readable text",
-      "Hands anatomically natural; uncluttered composition"
+      "Hands anatomically natural; uncluttered composition",
+      "Background is a collaborating software team, with no retail counter, parcels, service uniforms or warm yellow room"
     ],
-    "LightingFocus": "Cool blue ambient light with soft magenta rim light on silver curls. Warm light in the public-facing space connects technical discussion to everyday life.",
+    "LightingFocus": "Cool blue ambient light throughout the connected offices, with soft magenta rim light on silver curls. Background team receives subdued cyan light, keeping foreground faces the focal point.",
     "ThematicTags": [
       "collective-learning",
       "software-as-social-system",
