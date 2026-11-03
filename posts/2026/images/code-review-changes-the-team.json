@@ -1,0 +1,192 @@
+{
+  "ImageType": "banner",
+  "AspectRatio": "16:9",
+  "Size": "1536x1024",
+  "Purpose": "Hero image at top of blog post, sets the tone and theme",
+  "Character": {
+    "Description": "A highly competent, focused woman coder and systems thinker",
+    "Age": "Middle-aged, experienced",
+    "Ethnicity": "Eastern European build",
+    "Build": {
+      "Type": "Size 16, feminine",
+      "UpperBody": "Broad shoulders",
+      "LowerBody": "Slim hips"
+    },
+    "Face": {
+      "Complexion": "Light",
+      "Eyes": "Blue-grey",
+      "Expression": "Thoughtful, analytical",
+      "Makeup": "Bold, pinks or purples, with a touch of shimmer"
+    },
+    "Hair": {
+      "Color": "Grey/silver",
+      "Length": "Long",
+      "Style": "Flowing, big wavy curls"
+    },
+    "Wardrobe": {
+      "Base": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Professional dark blazer over tech-casual attire, sleeves often pushed up",
+          "Context": "Always present, bridges corporate and technical worlds"
+        }
+      ],
+      "Situational": [
+        {
+          "Name": "Leather coat",
+          "Description": "Dark leather with high collar, tactical styling",
+          "Context": "Outdoor or street scenes, adds edge"
+        },
+        {
+          "Name": "Professional glasses",
+          "Description": "Modern rectangular frames, subtle tech integration",
+          "Context": "Close-up work, reading, screen-focused scenes"
+        },
+        {
+          "Name": "Futuristic sunglasses",
+          "Description": "Sleek, angular frames with reflective or holographic lenses",
+          "Context": "Outdoor urban scenes, adds mystery"
+        }
+      ]
+    }
+  },
+  "Style": {
+    "Genre": "Cyberpunk / Tech Noir",
+    "Rendering": "High-detail digital painting, photorealistic, concept art quality",
+    "Lighting": {
+      "Type": "Dramatic, high-contrast, cinematic",
+      "Sources": [
+        "Neon signs",
+        "Screen glow",
+        "Rim lighting",
+        "Side lighting"
+      ],
+      "Shadows": "Sharp, emphasizing texture and form"
+    },
+    "ColorPalette": {
+      "Primary": [
+        "Magenta",
+        "Cyan",
+        "Electric Blue",
+        "Lime Green"
+      ],
+      "Accents": [
+        "Silver",
+        "White",
+        "Cool Blues",
+        "Metallic purples"
+      ],
+      "Treatment": "High saturation, strong contrast between warm neons and cool tech light"
+    },
+    "Atmosphere": {
+      "Effects": [
+        "Bokeh",
+        "Atmospheric haze",
+        "Neon glow",
+        "Reflections on surfaces"
+      ],
+      "Mood": "Attentive, collaborative, reflective"
+    }
+  },
+  "PromptKeywords": [
+    "highly detailed",
+    "digital painting",
+    "concept art",
+    "cyberpunk",
+    "neon light",
+    "cinematic lighting",
+    "high contrast",
+    "16:9 aspect ratio",
+    "wide shot",
+    "banner composition"
+  ],
+  "CompositionNotes": {
+    "Framing": "Wide or mid-shot to show environment context",
+    "SubjectPlacement": "Character typically off-center with negative space for environment",
+    "DepthOfField": "Shallow to medium, background elements visible but not distracting",
+    "TextSafeArea": "Consider leaving space for potential text overlay"
+  },
+  "MoodVariations": {
+    "optimistic": {
+      "LightingAdjustment": "Warmer tones, more amber and gold accents",
+      "AtmosphereAdjustment": "Lighter haze, more open spaces",
+      "ExpressionTendency": "Slight smile, engaged, forward-leaning"
+    },
+    "analytical": {
+      "LightingAdjustment": "Cool blue-dominant, screen glow emphasis",
+      "AtmosphereAdjustment": "Clean, organized environment",
+      "ExpressionTendency": "Focused concentration, slight squint"
+    },
+    "frustrated": {
+      "LightingAdjustment": "Harsh contrasts, red/amber warning tones",
+      "AtmosphereAdjustment": "Cluttered, chaotic elements",
+      "ExpressionTendency": "Tension in jaw, exasperated gaze"
+    },
+    "contemplative": {
+      "LightingAdjustment": "Soft, diffused, single source dominant",
+      "AtmosphereAdjustment": "Quiet, still environment",
+      "ExpressionTendency": "Distant gaze, thoughtful half-smile"
+    }
+  },
+  "Situation": {
+    "Name": "Learning together, looking outward",
+    "Setting": "A modest software team workspace overlooking a busy public service counter through a large interior window, in a near-future city at dusk. The service counter is physically connected to their workplace, not a hologram.",
+    "Camera": "Wide horizontal banner composition, eye-level medium-wide view. Three colleagues form an open triangle beside a glass planning board; protagonist on left. Keep faces and shared diagram in central area safe for 16:9 crop.",
+    "CharacterPose": {
+      "Expression": "Thoughtful and attentive, looking at a speaking colleague rather than the camera",
+      "BodyPosition": "Standing alongside two colleagues as an equal participant",
+      "Gesture": "Holding a marker loosely, pausing to listen"
+    },
+    "Props": {
+      "Character": [
+        {
+          "Name": "Dark blazer",
+          "Description": "Dark tailored blazer over tech casual shirt, sleeves pushed up",
+          "Application": "Worn by silver-haired protagonist"
+        }
+      ],
+      "Article": [
+        {
+          "Name": "Shared change diagram",
+          "Description": "A few hand-drawn connected boxes and a branching path with a question mark, no legible text or code",
+          "Application": "On a transparent board beside the group, kept visually secondary to faces",
+          "SymbolicMeaning": "A change being questioned together"
+        },
+        {
+          "Name": "Service counter",
+          "Description": "A staff member listening to a customer holding a small parcel, natural ordinary interaction",
+          "Application": "Visible through the broad interior window in the background",
+          "SymbolicMeaning": "People whose lives and work are affected by the software"
+        }
+      ],
+      "Environment": [
+        {
+          "Name": "Neighbourhood light",
+          "Description": "Restrained cyan and magenta reflections from the city, warm light around the service counter",
+          "Application": "Across window and room edges"
+        }
+      ]
+    },
+    "KeyDetails": [
+      "Three colleagues are engaged with one another, no lone heroic coder",
+      "The other colleagues are visually distinct from the recurring silver-haired protagonist",
+      "Human faces and listening gestures are the focal point",
+      "No robots, floating dashboards, logos, titles or readable text",
+      "Hands anatomically natural; uncluttered composition"
+    ],
+    "LightingFocus": "Cool blue ambient light with soft magenta rim light on silver curls. Warm light in the public-facing space connects technical discussion to everyday life.",
+    "ThematicTags": [
+      "collective-learning",
+      "software-as-social-system",
+      "human-consequences"
+    ]
+  },
+  "ArticleContext": {
+    "Title": "Code review changes the team",
+    "Themes": [
+      "Shared understanding grows through participation",
+      "Software changes affect people beyond the team"
+    ],
+    "Mood": "analytical"
+  }
+}

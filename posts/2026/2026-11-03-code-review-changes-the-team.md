@@ -2,6 +2,8 @@
 title: "Code review changes the team"
 date: "2026-11-03"
 published: false
+image: images/code-review-changes-the-team.png
+imageAlt: "A silver-haired woman and two colleagues discuss a shared diagram beside a window overlooking a busy service counter."
 description: "As AI takes on more review, how do we preserve the learning that helps people reason together about software's effects?"
 tags:
   - Software Engineering
@@ -60,6 +62,13 @@ That makes the team changed by a review part of its outcome. Who understands
 an unfamiliar corner now? Who learned that a colleague knows the history behind
 a strange constraint? Who became more willing to question a decision?
 
+[Kent Beck](#kent-beck) gives a concrete example in "The Story of A." A developer's
+structural changes were languishing in review. Beck describes how questioning
+the design, considering teammates' needs, and making smaller changes helped
+the developer become someone colleagues sought out. Reviews became quicker
+as the way they worked together improved. That account makes me wary of
+treating a review queue as a problem we can understand from the queue alone.
+
 We don't need to preserve every review ceremony to preserve those outcomes.
 [Martin Fowler](#martin-fowler)'s refinement code review
 describes the continuing work of improving code as the team understands more
@@ -104,7 +113,7 @@ refactoring, and development practices. His [refinement code review essay](https
 describes ongoing review through the team's work on changing software, giving us
 ways to preserve review beyond a pre-integration gate.
 
-<!-- Draft voice check: Connects to Stacey's existing October 20 argument.
-The refund scenario is explicitly hypothetical. Persuasive reframe keeps the
-collective-learning question while removing speculation about competence or
-market influence. Remove this editorial note before publication. -->
+<a id="kent-beck"></a>**Kent Beck** writes about software design as an exercise
+in human relationships. In ["The Story of A"](https://newsletter.kentbeck.com/p/the-story-of-a),
+he describes coaching a developer through stalled structural changes. The account
+connects design choices and review delays to how colleagues work together.
