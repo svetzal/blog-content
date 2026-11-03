@@ -47,13 +47,13 @@ An agent might raise that question too. What matters is that the people
 responsible work through it and carry the resulting understanding into future
 decisions. Approving the implementation doesn't tell us whether that happened.
 
-[Carol Lee and Cat Hicks](#carol-lee-and-cat-hicks)'s research on code review anxiety
+[Carol Lee and Cat Hicks](#carol-lee-and-cat-hicks)'s [research on code review anxiety](https://link.springer.com/article/10.1007/s10664-024-10550-9)
 examines how anxiety relates to avoidance and disengagement. A review can be
 completed while people withdraw from the participation that makes it useful.
 Their study doesn't test AI replacing reviewers. It does give us reason to
 examine the experience of participating, alongside the time a review takes.
 
-[Jessica Kerr](#jessica-kerr) describes software teams as mutually learning systems,
+[Jessica Kerr](#jessica-kerr) describes [software teams as mutually learning systems](https://jessitron.com/2018/10/25/symmathecist-n/),
 including people, running software, and tools. We learn from each other and
 from the software's behaviour in the world. Our ability to respond depends on
 those relationships as well as the information available to each of us.
@@ -62,7 +62,7 @@ That makes the team changed by a review part of its outcome. Who understands
 an unfamiliar corner now? Who learned that a colleague knows the history behind
 a strange constraint? Who became more willing to question a decision?
 
-[Kent Beck](#kent-beck) gives a concrete example in "The Story of A." A developer's
+[Kent Beck](#kent-beck) gives a concrete example in ["The Story of A"](https://newsletter.kentbeck.com/p/the-story-of-a). A developer's
 structural changes were languishing in review. Beck describes how questioning
 the design, considering teammates' needs, and making smaller changes helped
 the developer become someone colleagues sought out. Reviews became quicker
@@ -70,7 +70,7 @@ as the way they worked together improved. That account makes me wary of
 treating a review queue as a problem we can understand from the queue alone.
 
 We don't need to preserve every review ceremony to preserve those outcomes.
-[Martin Fowler](#martin-fowler)'s refinement code review
+[Martin Fowler](#martin-fowler)'s [refinement code review](https://martinfowler.com/bliki/RefinementCodeReview.html)
 describes the continuing work of improving code as the team understands more
 and its context changes. Review can happen throughout that work. A pull-request
 gate is one possible mechanism.

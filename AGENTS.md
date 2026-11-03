@@ -339,6 +339,10 @@ Do not use the hardware label for model mathematics or ordinary sample output.
 
 ## Direct source references
 
+When the body references a work, link its title or the relevant claim directly
+to that work. An author link to "Voices in this post" provides context, but does
+not replace an in-body source link. Keep both where useful.
+
 When explaining how software works, link directly to the source code that
 implements the mechanism. When reporting a measurement or result, link to the
 test, experiment record, or data that supports it. Make this standard practice
