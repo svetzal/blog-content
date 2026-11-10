@@ -206,21 +206,19 @@ The disk images are on the project's GitHub release. Each zip holds the image an
 
 Each one boots straight into the piano and plays all ten pieces by itself. The audio filter starts off, and F turns it on and off. You'll need your own Kickstart ROMs; the images don't include any.
 
-These are the settings I recorded with, in Amiberry 8.5.0.
+Here's how to set them up in Amiberry 8.5.0. Put your Kickstart ROMs in Amiberry's ROM folder first, so Quickstart can find them.
 
 For the Amiga 500 floppy:
 
-1. On the Quickstart panel, pick the A500 model and NTSC.
-2. On ROM, choose Kickstart 1.2.
-3. On RAM, set 512 KB of chip RAM and 512 KB of slow RAM.
-4. On Floppy drives, put `amiga500-piano.adf` in DF0: and start.
+1. On the Quickstart panel, set Model to Amiga 500 and Configuration to "1.2 ROM, OCS Agnus, 512 KB Chip RAM + 512 KB Slow RAM". Tick NTSC.
+2. Next to DF0:, choose Select file and pick `amiga500-piano.adf`.
+3. Press Start.
 
 For either Amiga 3000 hard disk:
 
-1. On the Quickstart panel, pick the A3000 model and NTSC.
-2. On ROM, choose the A3000's Kickstart 2.04.
-3. On CPU and FPU, set a 68030, with cycle exact on.
-4. On RAM, set 2 MB of chip RAM and 16 MB of fast RAM. I used the A3000's motherboard fast RAM. The 16 kHz image needs nearly all of it.
-5. On Hard drives, add the HDF as a hardfile on the A3000 SCSI controller, then start.
+1. On the Quickstart panel, set Model to Amiga 3000 and Configuration to "2.04 ROM, 2MB Chip + 8MB Fast". Tick NTSC, and leave Compatibility at "Best compatibility".
+2. On the RAM panel, raise Motherboard Fast to 16 MB. The 16 kHz image needs nearly all of it.
+3. On the Hard drives/CD panel, choose Add Hardfile, pick the HDF, and set Interface to A3000 SCSI.
+4. Press Start.
 
 On real hardware, the ADF goes on a floppy or a Gotek. I built the HDF for the BlueSCSI in my own machine, and it should work on other SCSI emulators that take HDF images.
