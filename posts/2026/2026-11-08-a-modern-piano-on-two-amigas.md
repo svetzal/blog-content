@@ -223,4 +223,4 @@ For either Amiga 3000 hard disk:
 4. On RAM, set 2 MB of chip RAM and 16 MB of fast RAM. I used the A3000's motherboard fast RAM. The 16 kHz image needs nearly all of it.
 5. On Hard drives, add the HDF as a hardfile on the A3000 SCSI controller, then start.
 
-On real hardware, the ADF goes on a floppy or a Gotek. I built the HDF for the BlueSCSI in my own machine, and it should work on other SCSI emulators that take HDF images. I've only tested these in Amiberry so far, so I'd love to hear how they do on a real machine.
+On real hardware, the ADF goes on a floppy or a Gotek. I built the HDF for the BlueSCSI in my own machine, and it should work on other SCSI emulators that take HDF images.
