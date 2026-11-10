@@ -193,3 +193,34 @@ My friend also asked whether the attack makes fast runs stumble in places. I thi
 On the A500, the voice count sets the limit. Paula plays every note in tune, at a volume that follows the pianist's touch, from samples sized to fit. It can't hold a pedalled Chopin texture in four voices.
 
 On the A3000, the voice count mostly stops mattering. What's left is in the samples (how their attacks were trimmed and where their loops sit) and in the restrikes a real piano would let ring. The trimming and looping happen on the Mac, so both machines get the next improvement in sample preparation at no cost at run time.
+
+## Play it yourself
+
+The disk images are on the project's GitHub release. Each zip holds the image and a Credits file.
+
+| Download | For | Size |
+| --- | --- | --- |
+| [amiga500-piano.zip](https://github.com/svetzal/amiga-llm/releases/download/pianos-2026-11-10/amiga500-piano.zip) | Amiga 500, floppy (ADF) | 0.4 MB |
+| [amiga3000-piano-11khz.zip](https://github.com/svetzal/amiga-llm/releases/download/pianos-2026-11-10/amiga3000-piano-11khz.zip) | Amiga 3000, hard disk (HDF), 11 kHz samples | 9.9 MB |
+| [amiga3000-piano-16khz.zip](https://github.com/svetzal/amiga-llm/releases/download/pianos-2026-11-10/amiga3000-piano-16khz.zip) | Amiga 3000, hard disk (HDF), 16 kHz samples | 13.4 MB |
+
+Each one boots straight into the piano and plays all ten pieces by itself. The audio filter starts off, and F turns it on and off. You'll need your own Kickstart ROMs; the images don't include any.
+
+These are the settings I recorded with, in Amiberry 8.5.0.
+
+For the Amiga 500 floppy:
+
+1. On the Quickstart panel, pick the A500 model and NTSC.
+2. On ROM, choose Kickstart 1.2.
+3. On RAM, set 512 KB of chip RAM and 512 KB of slow RAM.
+4. On Floppy drives, put `amiga500-piano.adf` in DF0: and start.
+
+For either Amiga 3000 hard disk:
+
+1. On the Quickstart panel, pick the A3000 model and NTSC.
+2. On ROM, choose the A3000's Kickstart 2.04.
+3. On CPU and FPU, set a 68030, with cycle exact on.
+4. On RAM, set 2 MB of chip RAM and 16 MB of fast RAM. I used the A3000's motherboard fast RAM. The 16 kHz image needs nearly all of it.
+5. On Hard drives, add the HDF as a hardfile on the A3000 SCSI controller, then start.
+
+On real hardware, the ADF goes on a floppy or a Gotek. I built the HDF for the BlueSCSI in my own machine, and it should work on other SCSI emulators that take HDF images. I've only tested these in Amiberry so far, so I'd love to hear how they do on a real machine.
